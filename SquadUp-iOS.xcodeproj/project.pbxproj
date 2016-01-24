@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		855DF5561C5417E7009B6D82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5551C5417E7009B6D82 /* DataService.swift */; };
+		855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5571C54360F009B6D82 /* FeedVCViewController.swift */; };
+		855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */; };
+		855DF55E1C54505D009B6D82 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF55D1C54505D009B6D82 /* Post.swift */; };
 		85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */; };
 		85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C29C1C536B5A00EF39EA /* ViewController.swift */; };
 		85A3C2A01C536B5A00EF39EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C29E1C536B5A00EF39EA /* Main.storyboard */; };
@@ -14,6 +18,21 @@
 		85A3C2A51C536B5A00EF39EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C2A31C536B5A00EF39EA /* LaunchScreen.storyboard */; };
 		85A3C2B01C536B5A00EF39EA /* SquadUp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2AF1C536B5A00EF39EA /* SquadUp_iOSTests.swift */; };
 		85A3C2BB1C536B5A00EF39EA /* SquadUp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2BA1C536B5A00EF39EA /* SquadUp_iOSUITests.swift */; };
+		85A3C2CD1C536FC900EF39EA /* FacebookLoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */; };
+		85A3C2CF1C53700500EF39EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2CE1C53700500EF39EA /* Constants.swift */; };
+		85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */; };
+		85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2D21C53704E00EF39EA /* FacebookLoginButton.swift */; };
+		85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C2D41C53707300EF39EA /* EmailPasswordTextField.swift */; };
+		85A3C2DA1C5371AF00EF39EA /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C2D61C5371AF00EF39EA /* NotoSans-Bold.ttf */; };
+		85A3C2DB1C5371AF00EF39EA /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C2D71C5371AF00EF39EA /* NotoSans-BoldItalic.ttf */; };
+		85A3C2DC1C5371AF00EF39EA /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C2D81C5371AF00EF39EA /* NotoSans-Italic.ttf */; };
+		85A3C2DD1C5371AF00EF39EA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C2D91C5371AF00EF39EA /* NotoSans-Regular.ttf */; };
+		85A3C2E41C537F3000EF39EA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2DF1C537F3000EF39EA /* Bolts.framework */; };
+		85A3C2E51C537F3000EF39EA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E01C537F3000EF39EA /* FBSDKCoreKit.framework */; };
+		85A3C2E61C537F3000EF39EA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */; };
+		85A3C2E71C537F3000EF39EA /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */; };
+		85A3C2E81C537F3000EF39EA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */; };
+		9E5E270CFABE55F98D8840C2 /* Pods_SquadUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		855DF5551C5417E7009B6D82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		855DF5571C54360F009B6D82 /* FeedVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVCViewController.swift; sourceTree = "<group>"; };
+		855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCellTableViewCell.swift; sourceTree = "<group>"; };
+		855DF55D1C54505D009B6D82 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		85A3C2971C536B5A00EF39EA /* SquadUp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SquadUp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85A3C29C1C536B5A00EF39EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +72,21 @@
 		85A3C2B61C536B5A00EF39EA /* SquadUp-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SquadUp-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A3C2BA1C536B5A00EF39EA /* SquadUp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadUp_iOSUITests.swift; sourceTree = "<group>"; };
 		85A3C2BC1C536B5A00EF39EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginContainer.swift; sourceTree = "<group>"; };
+		85A3C2CE1C53700500EF39EA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLoginContainerView.swift; sourceTree = "<group>"; };
+		85A3C2D21C53704E00EF39EA /* FacebookLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
+		85A3C2D41C53707300EF39EA /* EmailPasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailPasswordTextField.swift; sourceTree = "<group>"; };
+		85A3C2D61C5371AF00EF39EA /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		85A3C2D71C5371AF00EF39EA /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		85A3C2D81C5371AF00EF39EA /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		85A3C2D91C5371AF00EF39EA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		85A3C2DF1C537F3000EF39EA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		85A3C2E01C537F3000EF39EA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A3C2E71C537F3000EF39EA /* FBSDKMessengerShareKit.framework in Frameworks */,
+				85A3C2E41C537F3000EF39EA /* Bolts.framework in Frameworks */,
+				85A3C2E81C537F3000EF39EA /* FBSDKShareKit.framework in Frameworks */,
+				85A3C2E51C537F3000EF39EA /* FBSDKCoreKit.framework in Frameworks */,
+				85A3C2E61C537F3000EF39EA /* FBSDKLoginKit.framework in Frameworks */,
+				9E5E270CFABE55F98D8840C2 /* Pods_SquadUp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +120,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C69BEE00844CCEC4C58819F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */,
+				B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C249A82A0EBD3D18E24EA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		855DF5541C5417DE009B6D82 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				855DF5551C5417E7009B6D82 /* DataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		85A3C28E1C536B5A00EF39EA = {
 			isa = PBXGroup;
 			children = (
 				85A3C2991C536B5A00EF39EA /* SquadUp-iOS */,
+				85A3C2CB1C536F9B00EF39EA /* Utilities */,
 				85A3C2AE1C536B5A00EF39EA /* SquadUp-iOSTests */,
 				85A3C2B91C536B5A00EF39EA /* SquadUp-iOSUITests */,
 				85A3C2981C536B5A00EF39EA /* Products */,
+				0C69BEE00844CCEC4C58819F /* Pods */,
+				2C249A82A0EBD3D18E24EA35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +171,12 @@
 		85A3C2991C536B5A00EF39EA /* SquadUp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				855DF5541C5417DE009B6D82 /* Service */,
+				85A3C2DE1C537F2500EF39EA /* Frameworks */,
+				85A3C2CA1C536F9700EF39EA /* Controller */,
+				85A3C2C91C536F9400EF39EA /* View */,
+				85A3C2C81C536F8F00EF39EA /* Model */,
 				85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */,
-				85A3C29C1C536B5A00EF39EA /* ViewController.swift */,
 				85A3C29E1C536B5A00EF39EA /* Main.storyboard */,
 				85A3C2A11C536B5A00EF39EA /* Assets.xcassets */,
 				85A3C2A31C536B5A00EF39EA /* LaunchScreen.storyboard */,
@@ -125,6 +203,60 @@
 			path = "SquadUp-iOSUITests";
 			sourceTree = "<group>";
 		};
+		85A3C2C81C536F8F00EF39EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				855DF55D1C54505D009B6D82 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		85A3C2C91C536F9400EF39EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */,
+				85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */,
+				85A3C2D21C53704E00EF39EA /* FacebookLoginButton.swift */,
+				85A3C2D41C53707300EF39EA /* EmailPasswordTextField.swift */,
+				855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		85A3C2CA1C536F9700EF39EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85A3C29C1C536B5A00EF39EA /* ViewController.swift */,
+				855DF5571C54360F009B6D82 /* FeedVCViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		85A3C2CB1C536F9B00EF39EA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				85A3C2D61C5371AF00EF39EA /* NotoSans-Bold.ttf */,
+				85A3C2D71C5371AF00EF39EA /* NotoSans-BoldItalic.ttf */,
+				85A3C2D81C5371AF00EF39EA /* NotoSans-Italic.ttf */,
+				85A3C2D91C5371AF00EF39EA /* NotoSans-Regular.ttf */,
+				85A3C2CE1C53700500EF39EA /* Constants.swift */,
+			);
+			name = Utilities;
+			path = "SquadUp-iOS";
+			sourceTree = "<group>";
+		};
+		85A3C2DE1C537F2500EF39EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85A3C2DF1C537F3000EF39EA /* Bolts.framework */,
+				85A3C2E01C537F3000EF39EA /* FBSDKCoreKit.framework */,
+				85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */,
+				85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */,
+				85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85A3C2BF1C536B5A00EF39EA /* Build configuration list for PBXNativeTarget "SquadUp-iOS" */;
 			buildPhases = (
+				66FC7964325E39492F347F3A /* Check Pods Manifest.lock */,
 				85A3C2931C536B5A00EF39EA /* Sources */,
 				85A3C2941C536B5A00EF39EA /* Frameworks */,
 				85A3C2951C536B5A00EF39EA /* Resources */,
+				0649BE8E1967AEADEE80EE91 /* Embed Pods Frameworks */,
+				4EE2568371E503D8F3039BDA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +367,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A3C2DA1C5371AF00EF39EA /* NotoSans-Bold.ttf in Resources */,
 				85A3C2A51C536B5A00EF39EA /* LaunchScreen.storyboard in Resources */,
+				85A3C2DB1C5371AF00EF39EA /* NotoSans-BoldItalic.ttf in Resources */,
+				85A3C2DC1C5371AF00EF39EA /* NotoSans-Italic.ttf in Resources */,
 				85A3C2A21C536B5A00EF39EA /* Assets.xcassets in Resources */,
 				85A3C2A01C536B5A00EF39EA /* Main.storyboard in Resources */,
+				85A3C2DD1C5371AF00EF39EA /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +393,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0649BE8E1967AEADEE80EE91 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE2568371E503D8F3039BDA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66FC7964325E39492F347F3A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85A3C2931C536B5A00EF39EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
+				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
+				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
+				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
+				855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */,
 				85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
+				85A3C2CD1C536FC900EF39EA /* FacebookLoginContainer.swift in Sources */,
+				85A3C2CF1C53700500EF39EA /* Constants.swift in Sources */,
+				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,
+				855DF5561C5417E7009B6D82 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +594,14 @@
 		};
 		85A3C2C01C536B5A00EF39EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SquadUp-iOS",
+				);
 				INFOPLIST_FILE = "SquadUp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shaheen-Sharifian.SquadUp-iOS";
@@ -409,8 +611,14 @@
 		};
 		85A3C2C11C536B5A00EF39EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SquadUp-iOS",
+				);
 				INFOPLIST_FILE = "SquadUp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shaheen-Sharifian.SquadUp-iOS";
@@ -485,6 +693,7 @@
 				85A3C2C11C536B5A00EF39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A3C2C21C536B5A00EF39EA /* Build configuration list for PBXNativeTarget "SquadUp-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +702,7 @@
 				85A3C2C41C536B5A00EF39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A3C2C51C536B5A00EF39EA /* Build configuration list for PBXNativeTarget "SquadUp-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +711,7 @@
 				85A3C2C71C536B5A00EF39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
