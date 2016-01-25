@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CB2314D30DC99BD048058FE02B8B44CB4BC4A093",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CB2314D30DC99BD048058FE02B8B44CB4BC4A093" : 0,
+    "01C81FEC5B7F44AA0B07477B0B9271CE6E867F4D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08551D6A-1B75-46F3-81EC-DC7F912D6694",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CB2314D30DC99BD048058FE02B8B44CB4BC4A093" : "SquadUp-iOS\/",
+    "01C81FEC5B7F44AA0B07477B0B9271CE6E867F4D" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SquadUp-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SquadUp-iOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/ssharif66\/park-n-go.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01C81FEC5B7F44AA0B07477B0B9271CE6E867F4D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ssharif6\/SquadUp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB2314D30DC99BD048058FE02B8B44CB4BC4A093"
+    }
+  ]
+}

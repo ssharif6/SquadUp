@@ -33,4 +33,10 @@ class DataService {
     func createFirebaseUser(uid: String, user: Dictionary<String, String>) {
         REF_USERS.childByAppendingPath(uid).setValue(user)
     }
+    
+    var REF_USER_CURRENT: Firebase {
+        let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+        let user = Firebase(url: "\(URL_BASE)").childByAppendingPath("users").childByAppendingPath(uid)
+        return user
+    }
 }

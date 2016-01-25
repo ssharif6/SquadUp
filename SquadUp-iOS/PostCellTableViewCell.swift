@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class PostCellTableViewCell: UITableViewCell {
     
@@ -16,13 +17,18 @@ class PostCellTableViewCell: UITableViewCell {
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var numLikes: UILabel!
+    @IBOutlet weak var likeImage: UIImageView!
     
     var post: Post!
     var request = Request?()
+    var likeRef: Firebase!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        let tap = UITapGestureRecognizer(target: self, action: "likeTapped:")
+        tap.numberOfTapsRequired = 1
+        likeImage.addGestureRecognizer(tap)
+        likeImage.userInteractionEnabled = true
     }
     
     override func drawRect(rect: CGRect) {
@@ -33,6 +39,7 @@ class PostCellTableViewCell: UITableViewCell {
 
     func configureCell(post: Post, image: UIImage?) {
         self.post = post
+        likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
         self.nameLabel.text = post.name
         self.activityLabel.text = post.activity
         self.numLikes.text = "\(post.numLikes)"
@@ -50,7 +57,32 @@ class PostCellTableViewCell: UITableViewCell {
                 })
             }
         }
+       // Reference for likes
         
+        likeRef.observeSingleEventOfType(.Value, withBlock:{snapshot in
+            if let doesNotExist = snapshot.value as? NSNull {
+                // Post is not liked
+                self.likeImage.image = UIImage(named: "heart-empty")
+            } else {
+                self.likeImage.image = UIImage(named: "heart-full")
+            }
+        })
+        
+    }
+    
+    func likeTapped(sender: UITapGestureRecognizer) {
+        likeRef.observeSingleEventOfType(.Value, withBlock:{snapshot in
+            if let doesNotExist = snapshot.value as? NSNull {
+                // Post is not liked
+                self.likeImage.image = UIImage(named: "heart-full")
+                self.post.adjustLikes(true) // add like
+                self.likeRef.setValue(true) // References specific post
+            } else {
+                self.likeImage.image = UIImage(named: "heart-empty")
+                self.post.adjustLikes(false) // remove like
+                self.likeRef.removeValue() // removes value AND key
+            }
+        })
     }
 
 }
