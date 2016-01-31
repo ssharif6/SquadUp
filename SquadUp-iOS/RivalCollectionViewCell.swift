@@ -16,4 +16,5 @@ class RivalCollectionViewCell: UICollectionViewCell {
     func configureCell() {
         profileImage.contentMode = UIViewContentMode.ScaleAspectFit
     }
+    
 }

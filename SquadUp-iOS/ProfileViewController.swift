@@ -8,30 +8,35 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    var images: [String] = ["2011-11-07 21.04.01.jpg", "2011-11-07 21.04.01.jpg", "2011-11-07 21.04.01.jpg", "2011-11-07 21.04.01.jpg"]
-    var tableData: [String] = ["Jay Jay", "Jay Jay", "Jay Jay", "Jay Jay"]
+class ProfileViewController: UIViewController {
+
     
-    @IBOutlet weak var rivalCollectionView: UICollectionView!
+    @IBOutlet weak var coverImage: UIImageView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var recentHistoryButton: UIButton!
+    @IBOutlet weak var moreInfoButton: UIButton!
+    @IBOutlet weak var findRivalButton: UIButton!
+    @IBOutlet weak var oneStar: UIImageView!
+    @IBOutlet weak var secondStar: UIImageView!
+    @IBOutlet weak var thirdStar: UIImageView!
+    @IBOutlet weak var fourthStar: UIImageView!
+    @IBOutlet weak var fifthStar: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+    @IBAction func cameraButtonClicked(sender: AnyObject) {
+    }
+    @IBAction func moreButtonClicked(sender: AnyObject) {
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: RivalCollectionViewCell = (collectionView.dequeueReusableCellWithReuseIdentifier("rivalCollectionCell", forIndexPath: indexPath) as? RivalCollectionViewCell)!
-        cell.configureCell()
-        cell.nameLabel.text = tableData[indexPath.row]
-        cell.profileImage.image = UIImage(named: images[indexPath.row])
-        return cell
+    @IBAction func findRivalButtonClicked(sender: AnyObject) {
+    }
+    @IBAction func recentActivityClicked(sender: AnyObject) {
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // Do something
-    }
+    
 }
