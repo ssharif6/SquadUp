@@ -11,6 +11,9 @@ import UIKit
 class FindGameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var sportsTableView: UITableView!
+    @IBOutlet weak var chooseSportView: UIView!
+
+    
     var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis"]
     
     override func viewDidLoad() {
@@ -24,10 +27,11 @@ class FindGameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCellWithIdentifier("sportCell", forIndexPath: indexPath) as! SportCell
         let sport = sportCategories[indexPath.row]
         cell.configureCell(sport)
         return cell
     }
-
+    
 }

@@ -35,12 +35,17 @@ class SportCell: UITableViewCell {
             sportImage.image = UIImage(named: "soccerTableView")
         } else if (sport == "Tennis") {
             sportLabel.text = sport
+            sportImage.image = UIImage(named: "Tennis")
         } else if (sport == "Baseball") {
             sportLabel.text = sport
+            sportImage.image = UIImage(named: "Baseball")
         } else if (sport == "Football") {
             sportLabel.text = sport
+            sportImage.image = UIImage(named: "Football")
+            sportImage.contentMode = UIViewContentMode.ScaleToFill
         } else if (sport == "Badminton") {
             sportLabel.text = sport
+            sportImage.image = UIImage(named: "Badminton")
         }
     }
     

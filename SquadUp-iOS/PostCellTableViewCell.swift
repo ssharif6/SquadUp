@@ -29,13 +29,15 @@ class PostCellTableViewCell: UITableViewCell {
         tap.numberOfTapsRequired = 1
         likeImage.addGestureRecognizer(tap)
         likeImage.userInteractionEnabled = true
-    }
-    
-    override func drawRect(rect: CGRect) {
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.layer.borderWidth = 1
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.borderColor = UIColor.whiteColor().CGColor
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
         profileImage.clipsToBounds = true
-        
+        profileImage.contentMode = UIViewContentMode.ScaleAspectFit
+
     }
+
 
     func configureCell(post: Post, image: UIImage?) {
         self.post = post

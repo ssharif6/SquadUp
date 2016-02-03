@@ -9,6 +9,8 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SwiftyJSON
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -108,6 +110,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
         } else {
             showErrorAlert("Email and Password Required", msg: "You must enter an Email and Password")
+        }
+    }
+    
+    func populateStubData() {
+        if let path = NSBundle.mainBundle().pathForResource("StubNamesMale", ofType: "json") {
+            do {
+                let json = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                if let dict = json as? Dictionary<String, AnyObject> {
+                    if 
+                }
+            } catch {
+                // Do something
+            }
         }
     }
     
