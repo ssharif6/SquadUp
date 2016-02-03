@@ -37,9 +37,12 @@ class UserModel {
         return _sports
     }
     
-    init(firstName: String, lastName: String, gender: String) {
+    init(firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String]) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
+        _userId = userId
+        _posts = posts
+        _sports = sports
     }
 }

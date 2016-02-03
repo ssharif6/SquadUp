@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
+    var usersArray: [UserModel]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,18 +113,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func populateStubData() {
-        if let path = NSBundle.mainBundle().pathForResource("StubNamesMale", ofType: "json") {
-            do {
-                let json = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
-                if let dict = json as? Dictionary<String, AnyObject> {
-                    if 
-                }
-            } catch {
-                // Do something
-            }
-        }
-    }
+    
+    
     
     func showErrorAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)

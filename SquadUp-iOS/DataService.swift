@@ -15,7 +15,7 @@ class DataService {
     static let ds = DataService() // A singleton
     
     private var _REF_BASE = Firebase(url: "\(URL_BASE)")
-    private var _REF_POSTS = Firebase(url: "\(URL_BASE)/Posts")
+    private var _REF_POSTS = Firebase(url: "\(URL_BASE)/posts")
     private var _REF_USERS = Firebase(url: "\(URL_BASE)/users")
     
     var REF_BASE: Firebase {

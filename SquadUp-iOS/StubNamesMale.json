@@ -5,7 +5,7 @@
 			"firstName": "Albert",
 			"lastName": "Dawson",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111110",
 				"11111111"
@@ -20,7 +20,7 @@
 			"firstName": "Dwight",
 			"lastName": "Gray",
 			"gender": "male",
-			"provide": "Facebook",
+			"providerr": "Facebook",
 			"posts": [
 				"11111112",
 				"11111113",
@@ -38,7 +38,7 @@
 			"firstName": "Santos",
 			"lastName": "Gilbert",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111116",
 				"11111117",
@@ -54,7 +54,7 @@
 			"firstName": "Nicolas",
 			"lastName": "Rivera",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111119"
 			],
@@ -67,7 +67,7 @@
 			"firstName": "Douglas",
 			"lastName": "Robbins",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111120",
 				"11111121",
@@ -87,7 +87,7 @@
 			"firstName": "Jose",
 			"lastName": "Phillips",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111125",
 				"11111126"
@@ -101,7 +101,7 @@
 			"firstName": "Todd",
 			"lastName": "Rodiquez",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111127",
 				"11111128",
@@ -122,7 +122,7 @@
 			"firstName": "Tommie",
 			"lastName": "Walker",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111133",
 				"11111134",
@@ -138,7 +138,7 @@
 			"firstName": "Glen",
 			"lastName": "Hawkins",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111136",
 	      "11111137",
@@ -155,7 +155,7 @@
 			"firstName": "Adrian",
 			"lastName": "Matthews",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111139",
 				"11111140",
@@ -173,7 +173,7 @@
 	    "firstName": "Alfred",
 	    "lastName": "Boyd",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111143",
 	      "11111144",
@@ -194,7 +194,7 @@
 	    "firstName": "Guadalupe",
 	    "lastName": "Neal",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111149",
 	      "11111150",
@@ -216,7 +216,7 @@
 	    "firstName": "Emilio",
 	    "lastName": "Ray",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111155",
 	      "11111156",
@@ -235,7 +235,7 @@
 	    "firstName": "Horace",
 	    "lastName": "Cooper",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111160",
 				"11111161"
@@ -250,7 +250,7 @@
 	    "firstName": "Harvey",
 	    "lastName": "Hubbard",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111162",
 	      "11111163",
@@ -267,7 +267,7 @@
 	    "firstName": "Kurt",
 	    "lastName": "Mclaughlin",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111165",
 	      "11111166"
@@ -281,7 +281,7 @@
 	    "firstName": "Samuel",
 	    "lastName": "Tran",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts":[
 	      "11111167",
 	      "11111168",
@@ -299,7 +299,7 @@
 	    "firstName": "Calvin",
 	    "lastName": "Mason",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111172",
 	      "11111173",
@@ -317,7 +317,7 @@
 	    "firstName": "Ted",
 	    "lastName": "Phelps",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111175",
 	      "11111176",
@@ -344,7 +344,7 @@
 	    "firstName": "Ernesto",
 	    "lastName": "Valdez",
 	    "gender": "male",
-	    "provide": "Facebook",
+	    "provider": "Facebook",
 	    "posts": [
 	      "11111185",
 	      "11111186"
@@ -359,7 +359,7 @@
 			"firstName": "Hector",
 			"lastName": "Martinez",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111187",
 				"11111188",
@@ -377,7 +377,7 @@
 			"firstName": "Shawn",
 			"lastName": "Coleman",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111191",
 				"11111192",
@@ -398,7 +398,7 @@
 			"firstName": "Stuart",
 			"lastName": "Waters",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111196"
 			],
@@ -412,7 +412,7 @@
 			"firstName": "Freddie",
 			"lastName": "Blair",
 			"gender": "male",
-			"provide": "Email",
+			"provider": "Email",
 			"posts": [
 				"11111197"
 			],
@@ -425,7 +425,7 @@
 			"firstName": "Sylvester",
 			"lastName": "Richardson",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111198",
 				"11111199",
@@ -443,7 +443,7 @@
 			"firstName": "Ronaldo",
 			"lastName": "Sanchez",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111203",
 				"11111204"
@@ -457,7 +457,7 @@
 			"firstName": "Anthony",
 			"lastName": "Roy",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111205",
 				"11111206",
@@ -477,7 +477,7 @@
 			"firstName": "Dan",
 			"lastName": "Watkins",
 			"gender": "male",
-			"provide": "Email",
+			"provider": "Email",
 			"posts": [
 				"11111211",
 				"11111212",
@@ -494,7 +494,7 @@
 			"firstName": "Gerald",
 			"lastName": "Easy",
 			"gender": "male",
-			"provide": "Facebook",
+			"provider": "Facebook",
 			"posts": [
 				"11111214",
 				"11111215",
@@ -512,7 +512,7 @@
 			"firstName": "Jacob",
 			"lastName": "Ramirez",
 			"gender": "male",
-			"provide": "Email",
+			"provider": "Email",
 			"posts": [
 				"11111217",
 				"11111218",
@@ -530,7 +530,7 @@
 			"firstName": "Lyndon",
 			"lastName": "Anderson",
 			"gender": "male",
-			"provide": "Email",
+			"provider": "Email",
 			"posts": [
 				"11111221",
 				"11111222",
@@ -545,6 +545,21 @@
 				"badminton",
 				"football"
 			]
+		}
+	],
+	"posts": [
+		{
+			"id": "11111110",
+			"name": "Max Shao",
+			"activity": "Playing Tennis",
+			"numLikes": 50,
+			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
+		},
+		{
+			"id": "11111225",
+			"name": "Lyndon Anderson",
+			"activity": "Playing basketball",
+			"numLikes": 13
 		}
 	]
 }

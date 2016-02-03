@@ -55,7 +55,7 @@ class Post {
     
     init(postKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._postKey = postKey
-        if let likes = dictionary["TotalLikes"] as? Int {
+        if let likes = dictionary["numLikes"] as? Int {
             self._numLikes = likes
         }
         if let imageUrl = dictionary["profileImageUrl"] as? String {
