@@ -40,7 +40,6 @@
 		85A3C2E61C537F3000EF39EA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */; };
 		85A3C2E71C537F3000EF39EA /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */; };
 		85A3C2E81C537F3000EF39EA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */; };
-		85D664941C61F21F00CBDD0A /* StubNamesMale.json in Resources */ = {isa = PBXBuildFile; fileRef = 85D664931C61F21F00CBDD0A /* StubNamesMale.json */; };
 		85D664961C61F57D00CBDD0A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D664951C61F57D00CBDD0A /* UserModel.swift */; };
 		9E5E270CFABE55F98D8840C2 /* Pods_SquadUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -106,7 +105,6 @@
 		85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		85D664931C61F21F00CBDD0A /* StubNamesMale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StubNamesMale.json; sourceTree = "<group>"; };
 		85D664951C61F57D00CBDD0A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,7 +263,6 @@
 		85A3C2CB1C536F9B00EF39EA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				85D664931C61F21F00CBDD0A /* StubNamesMale.json */,
 				855758721C5594AA00399C83 /* Tahoma Bold.ttf */,
 				855758701C55944D00399C83 /* Tahoma.ttf */,
 				85A3C2D61C5371AF00EF39EA /* NotoSans-Bold.ttf */,
@@ -410,7 +407,6 @@
 				85A3C2A01C536B5A00EF39EA /* Main.storyboard in Resources */,
 				855758731C5594AA00399C83 /* Tahoma Bold.ttf in Resources */,
 				85A3C2DD1C5371AF00EF39EA /* NotoSans-Regular.ttf in Resources */,
-				85D664941C61F21F00CBDD0A /* StubNamesMale.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
