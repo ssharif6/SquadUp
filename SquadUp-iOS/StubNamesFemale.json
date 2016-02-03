@@ -1,0 +1,167 @@
+{
+  "F1": {
+    "firstName": "Ana",
+    "lastName": "Yates",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true",
+      "21111112": "true",
+      "21111113": "true",
+      "21111114": "true"
+    },
+    "Sports": {
+      "baseball": "true",
+      "basketball": "true",
+      "badminton": "true"
+    }
+  },
+  "F2": {
+    "firstName": "Vivian",
+    "lastName": "Su",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111115": "true",
+      "21111116": "true",
+      "21111117": "true",
+      "21111118": "true",
+      "21111119": "true",
+      "21111120": "true"
+    },
+    "Sports": {
+      "basketball": "true",
+      "football": "true",
+      "soccer": "true"
+    }
+  },
+  "F3": {
+    "firstName": "Jana",
+    "lastName": "Hickman",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111121": "true",
+      "21111122": "true",
+      "21111123": "true",
+      "21111124": "true"
+    },
+    "Sports": {
+      "basketball": "true",
+      "soccer": "true",
+      "tennis": "true",
+      "badminton": "true"
+    }
+  },
+  "F4": {
+    "firstName": "Alice",
+    "lastName": "Hopkins",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111125": "true",
+      "21111126": "true",
+      "21111127": "true"
+    },
+    "Sports": {
+        "soccer": "true",
+        "tennis": "true"
+    }
+  },
+  "F5": {
+    "firstName": "Kelly",
+    "lastName": "Reynolds",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111128": "true",
+      "21111129": "true",
+      "21111130": "true"
+    },
+    "Sports": {
+        "football": "true",
+        "baseball": "true",
+        "soccer": "true",
+        "tennis": "true"
+    }
+  },
+  "F6": {
+    "firstName": "Brenda",
+    "lastName": "Wise",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111131": "true",
+      "21111132": "true",
+      "21111133": "true",
+      "21111134": "true",
+      "21111135": "true",
+      "21111136": "true",
+      "21111137": "true"
+    },
+    "Sports": {
+        "soccer": "true",
+        "badminton": "true",
+        "basketball": "true"
+    }
+  },
+  "F7": {
+    "firstName": "",
+    "lastName": "",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true"
+    },
+    "Sports": {
+
+    }
+  },
+  "F8": {
+    "firstName": "",
+    "lastName": "",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true"
+    },
+    "Sports": {
+
+    }
+  },
+  "F9": {
+    "firstName": "",
+    "lastName": "",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true"
+    },
+    "Sports": {
+
+    }
+  },
+  "F10": {
+    "firstName": "",
+    "lastName": "",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true"
+    },
+    "Sports": {
+
+    }
+  },
+  "F11": {
+    "firstName": "",
+    "lastName": "",
+    "gender": "female",
+    "provide": "Facebook",
+    "posts": {
+      "21111111": "true"
+    },
+    "Sports": {
+
+    }
+  },
