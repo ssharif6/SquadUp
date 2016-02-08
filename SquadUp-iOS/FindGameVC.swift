@@ -13,8 +13,10 @@ class FindGameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var sportsTableView: UITableView!
     @IBOutlet weak var chooseSportView: UIView!
 
+    var labelToPass:String!
+    var imageToPass:UIImage!
     
-    var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis"]
+    var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis", "Ultimate Frisbee"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,22 @@ class FindGameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let sport = sportCategories[indexPath.row]
         cell.configureCell(sport)
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow!
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath) as! SportCell
+        labelToPass = currentCell.sportLabel.text
+        imageToPass = currentCell.sportImage.image
+        performSegueWithIdentifier("sportSelected", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "sportSelected" {
+            let vc = segue.destinationViewController as! SportViewController
+            vc.passedLabel = self.labelToPass
+            vc.passedImage = self.imageToPass
+        }
     }
     
 }

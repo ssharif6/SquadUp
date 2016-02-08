@@ -12,7 +12,7 @@ class SportCell: UITableViewCell {
     
     @IBOutlet weak var sportLabel: UILabel!
     @IBOutlet weak var sportImage: UIImageView!
-    var sportCategories = ["Basketball", "Badminton", "Baseball", "Football", "Soccer", "Tennis"]
+    var sportCategories = ["Basketball", "Badminton", "Baseball", "Football", "Soccer", "Tennis", "Ultimate Frisbee"]
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,6 +46,9 @@ class SportCell: UITableViewCell {
         } else if (sport == "Badminton") {
             sportLabel.text = sport
             sportImage.image = UIImage(named: "Badminton")
+        } else if (sport == "Ultimate Frisbee") {
+            sportLabel.text = sport
+            // Set an image for Frisbee
         }
     }
     

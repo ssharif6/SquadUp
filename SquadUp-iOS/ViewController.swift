@@ -60,9 +60,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     } else {
                         print("Logged in")
                         // Create Firebase User
-                        let user = ["provider": AuthData.provider!, "Blah": "Test"]
+                        // TODO: Find Post History for Facebook User
+
+                        let user = ["provider": AuthData.provider!, "id": "asdf23534", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
                         DataService.ds.createFirebaseUser(AuthData.uid, user: user)
-                        
                         NSUserDefaults.standardUserDefaults().setValue(AuthData.uid, forKey: KEY_UID)
                         
                         self.performSegueWithIdentifier("LoggedIn", sender: nil)

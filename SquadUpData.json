@@ -547,6 +547,7 @@
 			]
 		}
 	],
+
 	"posts": [
 		{
 			"id": "11111110",
@@ -560,6 +561,24 @@
 			"name": "Lyndon Anderson",
 			"activity": "Playing basketball",
 			"numLikes": 13
+		}
+	],
+
+	"lobbyGames": [
+		{
+			"id": "game1234",
+			"lobbyName": "5 v 5 Basketball",
+			"maxCapacity": "10",
+			"currentCapacity": "7",
+			"currentPlayers": [
+				"11114243",
+				"132314124",
+				"1251512412",
+				"13435155",
+				"5555151",
+				"222626262",
+				"2342342"
+			]
 		}
 	]
 }

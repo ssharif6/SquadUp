@@ -41,6 +41,9 @@
 		85A3C2E71C537F3000EF39EA /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */; };
 		85A3C2E81C537F3000EF39EA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */; };
 		85D664961C61F57D00CBDD0A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D664951C61F57D00CBDD0A /* UserModel.swift */; };
+		85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */; };
+		85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */; };
+		85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F8DE001C620E65006DFF11 /* SportViewController.swift */; };
 		9E5E270CFABE55F98D8840C2 /* Pods_SquadUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +109,9 @@
 		85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		85D664951C61F57D00CBDD0A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameLobbyViewController.swift; sourceTree = "<group>"; };
+		85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinLobbyCell.swift; sourceTree = "<group>"; };
+		85F8DE001C620E65006DFF11 /* SportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,6 +251,7 @@
 				856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */,
 				856E84181C56254100AC544C /* RatingStarContainerView.swift */,
 				8509CDA91C5DEE2C00063F7D /* SportCell.swift */,
+				85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -256,6 +263,8 @@
 				855DF5571C54360F009B6D82 /* FeedVCViewController.swift */,
 				8569C9A71C55E93700CE7197 /* ProfileViewController.swift */,
 				8509CDA71C5DED9100063F7D /* FindGameVC.swift */,
+				85F8DE001C620E65006DFF11 /* SportViewController.swift */,
+				85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -482,6 +491,7 @@
 				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
 				856C67141C5CA3F400012D28 /* SWRevealViewController.m in Sources */,
+				85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */,
 				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
 				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
 				855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */,
@@ -489,11 +499,13 @@
 				85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
+				85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
 				856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */,
 				85A3C2CD1C536FC900EF39EA /* FacebookLoginContainer.swift in Sources */,
 				85A3C2CF1C53700500EF39EA /* Constants.swift in Sources */,
 				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,
+				85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */,
 				855DF5561C5417E7009B6D82 /* DataService.swift in Sources */,
 				85D664961C61F57D00CBDD0A /* UserModel.swift in Sources */,
 				8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */,

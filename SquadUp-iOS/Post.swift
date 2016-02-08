@@ -82,7 +82,7 @@ class Post {
         } else {
             _numLikes = _numLikes - 1
         }
-        _postRef.childByAppendingPath("TotalLikes").setValue(_numLikes)
+        _postRef.childByAppendingPath("numLikes").setValue(_numLikes)
     }
     
 }
