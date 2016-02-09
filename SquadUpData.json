@@ -11,8 +11,8 @@
 				"11111111"
 			],
 			"Sports": [
-				"basketball",
-				"soccer"
+				"Basketball",
+				"Soccer"
 			]
 		},
 	  {
@@ -28,9 +28,9 @@
 				"11111115"
 			],
 			"Sports": [
-				"soccer",
-				"badminton",
-				"football"
+				"Soccer",
+				"Badminton",
+				"Football"
 			]
 		},
 		{
@@ -45,8 +45,8 @@
 				"11111118"
 			],
 			"Sports": [
-				"tennis",
-				"football"
+				"Tennis",
+				"Football"
 			]
 		},
 		{
@@ -59,7 +59,7 @@
 				"11111119"
 			],
 			"Sports": [
-				"baseball"
+				"Baseball"
 			]
 		},
 		{
@@ -77,9 +77,9 @@
 			],
 			"Sports": [
 				"Soccer",
-				"baseball",
-				"basketball",
-				"tennis"
+				"Baseball",
+				"Basketball",
+				"Tennis"
 			]
 		},
 	  {
@@ -93,7 +93,7 @@
 				"11111126"
 			],
 			"Sports": [
-				"soccer"
+				"Soccer"
 			]
 		},
 		{
@@ -111,10 +111,10 @@
 	      "11111132"
 			],
 			"Sports": [
-				"soccer",
-				"badminton",
-				"football",
-	      "basketball"
+				"Soccer",
+				"Badminton",
+				"Football",
+	      "Basketball"
 			]
 		},
 		{
@@ -129,8 +129,8 @@
 				"11111135"
 			],
 			"Sports": [
-				"soccer",
-				"football"
+				"Soccer",
+				"Football"
 			]
 		},
 		{
@@ -145,9 +145,9 @@
 	      "11111138"
 			],
 			"Sports": [
-				"baseball",
-	      "football",
-	      "tennis"
+				"Baseball",
+	      "Football",
+	      "Tennis"
 			]
 		},
 		{
@@ -164,8 +164,8 @@
 			],
 			"Sports": [
 				"Soccer",
-				"baseball",
-				"tennis"
+				"Baseball",
+				"Tennis"
 			]
 	  },
 	  {
@@ -183,10 +183,10 @@
 	      "11111148"
 	    ],
 	    "Sports": [
-	      "basketball",
-	      "soccer",
-	      "badminton",
-	      "football"
+	      "Basketball",
+	      "Soccer",
+	      "Badminton",
+	      "Football"
 	    ]
 	  },
 	  {
@@ -204,11 +204,11 @@
 				"11111154"
 	    ],
 	    "Sports": [
-	      "soccer",
-	      "badminton",
-	      "football",
-				"baseball",
-				"basketball"
+	      "Soccer",
+	      "Badminton",
+	      "Football",
+				"Baseball",
+				"Basketball"
 	    ]
 	  },
 	  {
@@ -225,9 +225,9 @@
 				"11111159"
 	    ],
 	    "Sports": [
-	      "tennis",
-	      "football",
-				"badminton"
+	      "Tennis",
+	      "Football",
+				"Badminton"
 	    ]
 	  },
 	  {
@@ -241,8 +241,8 @@
 				"11111161"
 	    ],
 	    "Sports": [
-	      "baseball",
-				"soccer"
+	      "Baseball",
+				"Soccer"
 	    ]
 	  },
 	  {
@@ -257,9 +257,9 @@
 	      "11111164"
 	    ],
 	    "Sports": [
-	      "baseball",
-	      "basketball",
-	      "tennis"
+	      "Baseball",
+	      "Basketball",
+	      "Tennis"
 	    ]
 	  },
 	  {
@@ -273,7 +273,7 @@
 	      "11111166"
 	    ],
 	    "Sports": [
-	      "football"
+	      "Football"
 	    ]
 	  },
 		{
@@ -290,8 +290,8 @@
 	      "11111171"
 	    ],
 	    "Sports": [
-	      "football",
-	      "basketball"
+	      "Football",
+	      "Basketball"
 	    ]
 	  },
 		{
@@ -306,10 +306,10 @@
 	      "11111174"
 	    ],
 	    "Sports": [
-	      "soccer",
-	      "football",
-				"badminton",
-				"tennis"
+	      "Soccer",
+	      "Football",
+				"Badminton",
+				"Tennis"
 	    ]
 	  },
 		{
@@ -331,12 +331,12 @@
 				"11111184"
 	    ],
 	    "Sports": [
-	      "baseball",
-	      "football",
-	      "tennis",
-				"badminton",
-				"baseball",
-				"basketball"
+	      "Baseball",
+	      "Football",
+	      "Tennis",
+				"Badminton",
+				"Baseball",
+				"Basketball"
 	    ]
 	  },
 		{
@@ -350,8 +350,8 @@
 	      "11111186"
 	    ],
 	    "Sports": [
-	      "baseball",
-	      "tennis"
+	      "Baseball",
+	      "Tennis"
 	    ]
 	  },
 		{
@@ -367,9 +367,9 @@
 				"11111190"
 			],
 			"Sports": [
-				"basketball",
-				"soccer",
-				"badminton"
+				"Basketball",
+				"Soccer",
+				"Badminton"
 			]
 		},
 		{
@@ -386,11 +386,11 @@
 				"11111195"
 			],
 			"Sports": [
-				"soccer",
-				"badminton",
-				"football",
-				"basketball",
-				"tennis"
+				"Soccer",
+				"Badminton",
+				"Football",
+				"Basketball",
+				"Tennis"
 			]
 		},
 		{
@@ -403,8 +403,8 @@
 				"11111196"
 			],
 			"Sports": [
-				"tennis",
-				"football"
+				"Tennis",
+				"Football"
 			]
 		},
 		{
@@ -417,7 +417,7 @@
 				"11111197"
 			],
 			"Sports": [
-				"baseball"
+				"Baseball"
 			]
 		},
 		{
@@ -435,7 +435,7 @@
 			],
 			"Sports": [
 				"Soccer",
-				"tennis"
+				"Tennis"
 			]
 		},
 		{
@@ -449,7 +449,7 @@
 				"11111204"
 			],
 			"Sports": [
-				"soccer"
+				"Soccer"
 			]
 		},
 		{
@@ -467,9 +467,9 @@
 				"11111210"
 			],
 			"Sports": [
-				"soccer",
-				"badminton",
-				"football"
+				"Soccer",
+				"Badminton",
+				"Football"
 			]
 		},
 		{
@@ -484,9 +484,9 @@
 				"11111213"
 			],
 			"Sports": [
-				"soccer",
-				"football",
-				"basketball"
+				"Soccer",
+				"Football",
+				"Basketball"
 			]
 		},
 		{
@@ -501,10 +501,10 @@
 				"11111216"
 			],
 			"Sports": [
-				"baseball",
-				"football",
-				"tennis",
-				"soccer"
+				"Baseball",
+				"Football",
+				"Tennis",
+				"Soccer"
 			]
 		},
 		{
@@ -521,8 +521,8 @@
 			],
 			"Sports": [
 				"Soccer",
-				"baseball",
-				"tennis"
+				"Baseball",
+				"Tennis"
 			]
 		},
 		{
@@ -540,10 +540,10 @@
 				"11111226"
 			],
 			"Sports": [
-				"basketball",
-				"soccer",
-				"badminton",
-				"football"
+				"Basketball",
+				"Soccer",
+				"Badminton",
+				"Football"
 			]
 		}
 	],
@@ -559,7 +559,7 @@
 		{
 			"id": "11111225",
 			"name": "Lyndon Anderson",
-			"activity": "Playing basketball",
+			"activity": "Playing Basketball",
 			"numLikes": 13
 		}
 	],
@@ -567,7 +567,8 @@
 	"lobbyGames": [
 		{
 			"id": "game1234",
-			"lobbyName": "5 v 5 Basketball",
+			"lobbyStyle": "5 v 5",
+			"sportsID": "Basketball",
 			"maxCapacity": "10",
 			"currentCapacity": "7",
 			"currentPlayers": [
@@ -578,6 +579,39 @@
 				"5555151",
 				"222626262",
 				"2342342"
+			],
+			"id": "game2101",
+			"lobbyStyle": "2 v 2",
+			"sportsID": "Tennis",
+			"maxCapacity": "4",
+			"currentCapacity": "1",
+			"currentPlayers": [
+				"31848192",
+				"44819291",
+				"50093184",
+			],
+			"id": "game3171",
+			"lobbyStyle": "7 v 7",
+			"sportsID": "Soccer",
+			"maxCapacity": "14",
+			"currentCapacity": "8",
+			"currentPlayers": [
+				"91939411",
+				"31478139",
+				"84717993",
+				"391481",
+				"1948141128",
+				"1339914818",
+				"1391941001",
+				"13184881"
+			],
+			"id": "game9183",
+			"lobbyStyle": "1 v 1",
+			"sportsID": "Badminton",
+			"maxCapacity": "2",
+			"currentCapacity": "1",
+			"currentPlayers": [
+				"69146996"
 			]
 		}
 	]
