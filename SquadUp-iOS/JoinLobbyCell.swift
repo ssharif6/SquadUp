@@ -17,6 +17,7 @@ class JoinLobbyCell: UITableViewCell {
     
     var gameLobby: LobbyGameModel!
     var request = Request?()
+    var currentTotalPlayers: String!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +26,8 @@ class JoinLobbyCell: UITableViewCell {
     func configureCell(gameLobby: LobbyGameModel) {
         self.gameLobby = gameLobby
         self.lobbyName.text = gameLobby.lobbyName
-        self.numPeople.text = gameLobby.currentCapacity
+        currentTotalPlayers = gameLobby.currentCapacity + " /" + " " + gameLobby.maxCapacity
+        self.numPeople.text = currentTotalPlayers
     }
     
     // Add functgions for when somebody joins the lobby to increment the currentcapacity

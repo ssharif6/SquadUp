@@ -624,6 +624,7 @@
                                         </state>
                                         <connections>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPR-Th-0JR"/>
+                                            <segue destination="fN9-hb-5pA" kind="show" id="SeC-SE-gDC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -671,6 +672,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybc-GO-nHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3745" y="1229"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fLb-Tg-gb0">
+            <objects>
+                <viewController id="fN9-hb-5pA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="84t-rc-P1s"/>
+                        <viewControllerLayoutGuide type="bottom" id="2MU-Ka-nap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPD-FL-mPq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create a New Lobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-no-aqf">
+                                <rect key="frame" x="97" y="64" width="220" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufh-mY-9qQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3493" y="2024"/>
         </scene>
         <!--Join Game Lobby View Controller-->
         <scene sceneID="v9F-7n-EfK">
@@ -736,11 +764,31 @@
                     <connections>
                         <outlet property="sportLabel" destination="UPp-fG-I1x" id="crK-lp-nZV"/>
                         <outlet property="sportsTableView" destination="bP6-af-IZg" id="GYA-us-rHy"/>
+                        <segue destination="wUR-xT-2ho" kind="show" identifier="lobbyToGame" id="6qs-Ld-BXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yb2-jO-jtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3937" y="2024"/>
+        </scene>
+        <!--Game Lobby View Controller-->
+        <scene sceneID="SjH-na-vLa">
+            <objects>
+                <viewController id="wUR-xT-2ho" customClass="GameLobbyViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Pd-q3-08H"/>
+                        <viewControllerLayoutGuide type="bottom" id="LC7-pn-s0k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaZ-nC-NtO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3V-R6-sah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4396" y="2024"/>
         </scene>
         <!--Feed-->
         <scene sceneID="dr8-q1-bXl">
