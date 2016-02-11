@@ -17,6 +17,8 @@ class LobbyGameModel {
     private var _currentPlayers: [String]!
     private var _currentLobbyRef: Firebase!
     private var _lobbyKey: String!
+    private var _distance: String!
+    private var _sportsId: String!
     
     var lobbyName: String {
         return _lobbyName
@@ -34,6 +36,14 @@ class LobbyGameModel {
         return _currentPlayers
     }
     
+    var distance: String {
+        return _distance
+    }
+    
+    var sport: String {
+        return _sportsId
+    }
+    
     
     init(lobbyKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._lobbyKey = lobbyKey
@@ -48,6 +58,15 @@ class LobbyGameModel {
         }
         if let currentPlayers = dictionary["currentPlayers"] as? [String] {
             self._currentPlayers = currentPlayers
+        }
+        if let distance = dictionary["distance"] as? String {
+            self._distance = distance;
+        }
+        if let sportsId = dictionary["sportsID"] as? String {
+            self._sportsId = sportsId
+        }
+        if let lobbyId = dictionary["id"] as? String {
+            self._lobbyId = lobbyId
         }
     }
 }

@@ -25,9 +25,10 @@ class JoinLobbyCell: UITableViewCell {
     
     func configureCell(gameLobby: LobbyGameModel) {
         self.gameLobby = gameLobby
-        self.lobbyName.text = gameLobby.lobbyName
+        self.lobbyName.text = gameLobby.lobbyName + " " + gameLobby.sport
         currentTotalPlayers = gameLobby.currentCapacity + " /" + " " + gameLobby.maxCapacity
         self.numPeople.text = currentTotalPlayers
+        self.distanceLabel.text = gameLobby.distance
     }
     
     // Add functgions for when somebody joins the lobby to increment the currentcapacity

@@ -532,7 +532,6 @@
 			"frisbee"
 		]
 	}],
-
 	"posts": [{
 		"id": "11111110",
 		"name": "Max Shao",
@@ -545,13 +544,13 @@
 		"activity": "Playing basketball",
 		"numLikes": 13
 	}],
-
 	"lobbyGames": [{
 		"id": "game1234",
 		"lobbyName": "5 v 5",
 		"sportsID": "basketball",
 		"maxCapacity": "10",
 		"currentCapacity": "7",
+		"distance": "0.9",
 		"currentPlayers": [
 			"11114243",
 			"132314124",
@@ -560,23 +559,29 @@
 			"5555151",
 			"222626262",
 			"2342342"
-		],
+		]
+	},
+	{
 
 		"id": "game2101",
 		"lobbyName": "2 v 2",
 		"sportsID": "tennis",
 		"maxCapacity": "4",
 		"currentCapacity": "1",
+		"distance": "0.9",
 		"currentPlayers": [
 			"31848192",
 			"44819291",
 			"50093184"
-		],
+		]
+	},
+	{
 		"id": "game3171",
 		"lobbyName": "7 v 7",
 		"sportsID": "soccer",
 		"maxCapacity": "14",
 		"currentCapacity": "8",
+		"distance": "0.9",
 		"currentPlayers": [
 			"91939411",
 			"31478139",
@@ -586,20 +591,26 @@
 			"1339914818",
 			"1391941001",
 			"13184881"
-		],
+		]
+	},
+	{
 		"id": "game9183",
 		"lobbyName": "1 v 1",
 		"sportsID": "badminton",
 		"maxCapacity": "2",
 		"currentCapacity": "1",
+		"distance": "0.9",
 		"currentPlayers": [
 			"69146996"
-		],
+		]
+	},
+	{
 		"id": "game3184",
 		"lobbyName": "5 v 5",
 		"sportsID": "football",
 		"maxCapacity": "10",
 		"currentCapacity": "10",
+		"distance": "0.9",
 		"currentPlayers": [
 			"123455678",
 			"234567890",
@@ -611,12 +622,15 @@
 			"148185100",
 			"134919499",
 			"144895017"
-		],
+		]
+	},
+	{
 		"id": "game2491",
 		"lobbyName": "11 v 11",
 		"sportsID": "baseball",
 		"maxCapacity": "22",
 		"currentCapacity": "6",
+		"distance": "0.9",
 		"currentPlayers": [
 			"98765432",
 			"87665412",
@@ -624,12 +638,15 @@
 			"41271471",
 			"99999118",
 			"14713131"
-		],
+		]
+	},
+	{
 		"id": "game9983",
 		"lobbyName": "3 v 3",
 		"sportsID": "frisbee",
 		"maxCapacity": "6",
 		"currentCapacity": "6",
+		"distance": "0.9",
 		"currentPlayers": [
 			"13848199",
 			"12844991",
@@ -637,7 +654,9 @@
 			"31818820",
 			"30101009",
 			"20300301"
-		],
+		]
+	},
+	{
 		"id": "game1309",
 		"lobbyName": "2 v 2",
 		"sportsID": "tennis",
@@ -647,12 +666,15 @@
 			"39991841",
 			"18812391",
 			"43883493"
-		],
+		]
+	},
+	{
 		"id": "game1398",
 		"lobbyName": "5 v 5",
 		"sportsID": "soccer",
 		"maxCapacity": "10",
 		"currentCapacity": "6",
+		"distance": "0.9",
 		"currentPlayers": [
 			"19124010",
 			"28418812",
@@ -660,12 +682,15 @@
 			"85917190",
 			"09384811",
 			"10994941"
-		],
+		]
+	},
+	{
 		"id": "game9982",
 		"lobbyName": "2 v 2",
 		"sportsID": "badminton",
 		"maxCapacity": "4",
 		"currentCapacity": "2",
+		"distance": "0.9",
 		"currentPlayers": [
 			"29181948",
 			"10491981"
