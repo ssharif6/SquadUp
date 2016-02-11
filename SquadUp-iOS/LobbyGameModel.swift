@@ -14,7 +14,7 @@ class LobbyGameModel {
     private var _lobbyName: String!
     private var _maxCapacity: String!
     private var _currentCapacity: String!
-    private var _currentPlayers: [String]!
+    private var _currentPlayers: [UserModel]!
     private var _currentLobbyRef: Firebase!
     private var _lobbyKey: String!
     private var _distance: String!
@@ -32,7 +32,7 @@ class LobbyGameModel {
         return _currentCapacity
     }
     
-    var currentPlayers: [String] {
+    var currentPlayers: [UserModel] {
         return _currentPlayers
     }
     
@@ -56,7 +56,7 @@ class LobbyGameModel {
         if let currentCapacity = dictionary["currentCapacity"] as? String {
             self._currentCapacity = currentCapacity
         }
-        if let currentPlayers = dictionary["currentPlayers"] as? [String] {
+        if let currentPlayers = dictionary["currentPlayers"] as? [UserModel] {
             self._currentPlayers = currentPlayers
         }
         if let distance = dictionary["distance"] as? String {
