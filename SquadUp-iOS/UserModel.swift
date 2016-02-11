@@ -16,9 +16,15 @@ class UserModel {
     private var _gender: String!
     private var _posts: [String]!
     private var _sports: [String]!
+    private var _userKey: String!
+    private var _provider: String!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var provider: String {
+        return _provider
     }
     
     var lastName: String {
@@ -44,5 +50,30 @@ class UserModel {
         _userId = userId
         _posts = posts
         _sports = sports
+    }
+    
+    init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
+        self._userKey = userKey
+        if let id = dictionary["id"] as? String {
+            self._userId = id
+        }
+        if let firstName = dictionary["firstName"] as? String {
+            self._firstName = firstName
+        }
+        if let lastName = dictionary["lastName"] as? String {
+            self._lastName = lastName
+        }
+        if let gender = dictionary["gender"] as? String {
+            self._gender = gender
+        }
+        if let provider = dictionary["provider"] as? String {
+            self._provider = provider
+        }
+        if let posts = dictionary["posts"] as? [String] {
+            self._posts = posts
+        }
+        if let sports = dictionary["Sports"] as? [String] {
+            self._sports = sports
+        }
     }
 }

@@ -88,7 +88,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
                     if let lobbyDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let lobby = LobbyGameModel(lobbyKey: key, dictionary: lobbyDict)
-                        let currentUsers = lobby.currentPlayers
+                        let currentUsers = lobby.currentPlayersList
                         for player in currentUsers {
                             self.playersInLobby.append(player)
                         }

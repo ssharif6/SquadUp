@@ -14,11 +14,12 @@ class LobbyGameModel {
     private var _lobbyName: String!
     private var _maxCapacity: String!
     private var _currentCapacity: String!
-    private var _currentPlayers: [UserModel]!
+    private var _currentPlayers: [String]!
     private var _currentLobbyRef: Firebase!
     private var _lobbyKey: String!
     private var _distance: String!
     private var _sportsId: String!
+    private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
         return _lobbyName
@@ -32,7 +33,7 @@ class LobbyGameModel {
         return _currentCapacity
     }
     
-    var currentPlayers: [UserModel] {
+    var currentPlayers: [String] {
         return _currentPlayers
     }
     
@@ -42,6 +43,10 @@ class LobbyGameModel {
     
     var sport: String {
         return _sportsId
+    }
+    
+    var currentPlayersList: [UserModel] {
+        return _currentPlayersList
     }
     
     
@@ -56,7 +61,7 @@ class LobbyGameModel {
         if let currentCapacity = dictionary["currentCapacity"] as? String {
             self._currentCapacity = currentCapacity
         }
-        if let currentPlayers = dictionary["currentPlayers"] as? [UserModel] {
+        if let currentPlayers = dictionary["currentPlayers"] as? [String] {
             self._currentPlayers = currentPlayers
         }
         if let distance = dictionary["distance"] as? String {
@@ -68,5 +73,24 @@ class LobbyGameModel {
         if let lobbyId = dictionary["id"] as? String {
             self._lobbyId = lobbyId
         }
+    }
+    
+    func getCurrentPlayers() {
+        var currentIdList = _currentPlayers
+        for player in _currentPlayers {
+            DataService.ds.REF_USERS.queryOrderedByChild(player).observeEventType(.Value, withBlock: { (snapshot) -> Void in
+                self._currentPlayersList = []
+                if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                    for snap in snapshots {
+                        if let userDict = snap.value as? Dictionary<String, AnyObject> {
+                            let key = snap.key
+                            let user = UserModel(userKey: key, dictionary: userDict)
+                            self._currentPlayersList.append(user)
+                        }
+                    }
+                }
+            })
+        }
+        
     }
 }
