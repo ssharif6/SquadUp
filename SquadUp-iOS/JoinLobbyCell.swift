@@ -28,7 +28,7 @@ class JoinLobbyCell: UITableViewCell {
         self.lobbyName.text = gameLobby.lobbyName + " " + gameLobby.sport
         currentTotalPlayers = gameLobby.currentCapacity + " /" + " " + gameLobby.maxCapacity
         self.numPeople.text = currentTotalPlayers
-        self.distanceLabel.text = gameLobby.distance
+//        self.distanceLabel.text = gameLobby.distance
     }
     
     // Add functgions for when somebody joins the lobby to increment the currentcapacity

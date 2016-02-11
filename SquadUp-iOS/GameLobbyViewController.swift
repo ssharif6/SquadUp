@@ -18,15 +18,28 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
     
-    var teamOneArray:[String]!
-    var teamTwoArray: [String]!
-    var playersInLobby: [UserModel]!
+    var teamOneArray = [UserModel]()
+    var teamTwoArray = [UserModel]()
+    var playersInLobby = [UserModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         team1TableView.dataSource = self
         team1TableView.delegate = self
-
+        getTeamInfo()
+        divideTeams()
+    }
+    
+    func divideTeams() {
+        var shit: Bool = true
+        for player in self.playersInLobby {
+            if (shit) {
+                teamOneArray.append(player)
+            } else {
+                teamTwoArray.append(player)
+            }
+            shit = !shit
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,10 +64,10 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         switch(teamSegmentedControl.selectedSegmentIndex)
         {
         case 0:
-            cell.textLabel?.text = teamOneArray[indexPath.row]
+            cell.textLabel?.text = teamOneArray[indexPath.row].firstName + " " + teamOneArray[indexPath.row].lastName
             break
         case 1:
-            cell.textLabel?.text = teamTwoArray[indexPath.row]
+            cell.textLabel?.text = teamTwoArray[indexPath.row].firstName + " " + teamTwoArray[indexPath.row].lastName
             break
         default:
             break
@@ -68,25 +81,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func getTeamInfo() {
-        // Grab data from Firebase and put into teams
-//        DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
-//            print(snapshot.value)
-//            self.posts = []
-//            // Parse Firebase Data
-//            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-//                for snap in snapshots {
-//                    print("SNAP \(snap)")
-//                    if let postDict = snap.value as? Dictionary<String, AnyObject> {
-//                        let key = snap.key
-//                        let post = Post(postKey: key, dictionary: postDict)
-//                        self.posts.append(post)
-//                    }
-//                }
-//            }
-//            self.tableView.reloadData()
-//        })
-        // TODO: Refactor and pass the given lobby through segue so don't have to query database again
-        
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value) { (snapshot: FDataSnapshot!) -> Void in
             self.playersInLobby = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
@@ -95,8 +89,8 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
                         let key = snap.key
                         let lobby = LobbyGameModel(lobbyKey: key, dictionary: lobbyDict)
                         let currentUsers = lobby.currentPlayers
-                        for(var i = 0; i < currentUsers.count; i++) {
-                            self.playersInLobby[i] = currentUsers[i]
+                        for player in currentUsers {
+                            self.playersInLobby.append(player)
                         }
                     }
                 }

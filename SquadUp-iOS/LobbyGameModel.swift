@@ -60,7 +60,7 @@ class LobbyGameModel {
             self._currentPlayers = currentPlayers
         }
         if let distance = dictionary["distance"] as? String {
-            self._distance = distance;
+            self._distance = distance
         }
         if let sportsId = dictionary["sportsID"] as? String {
             self._sportsId = sportsId
