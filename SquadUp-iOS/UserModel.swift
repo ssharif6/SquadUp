@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 class UserModel {
-    private var _userId: String!
+    internal var _userId: String!
     private var _firstName: String!
     private var _lastName: String!
     private var _gender: String!

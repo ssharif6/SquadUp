@@ -21,11 +21,13 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var teamOneArray = [UserModel]()
     var teamTwoArray = [UserModel]()
     var playersInLobby = [UserModel]()
+    var playerIdList = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         team1TableView.dataSource = self
         team1TableView.delegate = self
+        getIds()
         getTeamInfo()
         divideTeams()
     }
@@ -80,22 +82,30 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+    func getIds() {
+        DataService.ds.REF_LOBBYGAMES.queryOrderedByChild("currentPlayers").observeEventType(.Value, withBlock: { snapshot in
+            if let currentPlayers = snapshot.value["currentPlayers"] as? [String] {
+                for player in currentPlayers {
+                    self.playerIdList.append(player)
+                }
+            }
+        
+        })
+    }
+    
     func getTeamInfo() {
-        DataService.ds.REF_LOBBYGAMES.observeEventType(.Value) { (snapshot: FDataSnapshot!) -> Void in
-            self.playersInLobby = []
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-                for snap in snapshots {
-                    if let lobbyDict = snap.value as? Dictionary<String, AnyObject> {
-                        let key = snap.key
-                        let lobby = LobbyGameModel(lobbyKey: key, dictionary: lobbyDict)
-                        let currentUsers = lobby.currentPlayersList
-                        for player in currentUsers {
-                            self.playersInLobby.append(player)
-                        }
+        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
+            if let userDict = snapshot.value as? Dictionary<String, AnyObject> {
+                for playerId in self.playerIdList {
+                    if snapshot.key == playerId {
+                        let user = UserModel(userKey: snapshot.key, dictionary: userDict)
+                        self.playersInLobby.append(user)
                     }
                 }
             }
-        }
+            
+        })
     }
-
 }
+
+

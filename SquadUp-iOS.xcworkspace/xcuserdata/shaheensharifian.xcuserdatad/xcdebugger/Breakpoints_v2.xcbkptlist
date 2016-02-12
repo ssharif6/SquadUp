@@ -9,13 +9,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SquadUp-iOS/GameLobbyViewController.swift"
-            timestampString = "476867313.538989"
+            filePath = "SquadUp-iOS/LobbyGameModel.swift"
+            timestampString = "476874892.613478"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "getTeamInfo()"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "getCurrentPlayers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SquadUp-iOS/LobbyGameModel.swift"
+            timestampString = "476874500.572281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getCurrentPlayers()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SquadUp_iOS.LobbyGameModel.getCurrentPlayers (SquadUp_iOS.LobbyGameModel)() -&gt; Swift.Array&lt;SquadUp_iOS.UserModel&gt;"
+                  moduleName = "SquadUp-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaheensharifian/Desktop/iOS%20Apps/SquadUp/SquadUp-iOS/SquadUp-iOS/LobbyGameModel.swift"
+                  timestampString = "476874504.99873"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SquadUp_iOS.LobbyGameModel.(getCurrentPlayers (SquadUp_iOS.LobbyGameModel) -&gt; () -&gt; Swift.Array&lt;SquadUp_iOS.UserModel&gt;).(closure #1)"
+                  moduleName = "SquadUp-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaheensharifian/Desktop/iOS%20Apps/SquadUp/SquadUp-iOS/SquadUp-iOS/LobbyGameModel.swift"
+                  timestampString = "476874504.998856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SquadUp-iOS/LobbyGameModel.swift"
+            timestampString = "476874945.454383"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getCurrentPlayers()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
