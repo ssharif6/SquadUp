@@ -22,13 +22,11 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var teamTwoArray = [UserModel]()
     var playersInLobby = [UserModel]()
     var playerIdList = [String]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         team1TableView.dataSource = self
         team1TableView.delegate = self
-        getIds()
-        getTeamInfo()
         divideTeams()
     }
     
@@ -74,7 +72,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         default:
             break
         }
-
+        
         return cell
     }
     
@@ -82,30 +80,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
-    func getIds() {
-        DataService.ds.REF_LOBBYGAMES.queryOrderedByChild("currentPlayers").observeEventType(.Value, withBlock: { snapshot in
-            if let currentPlayers = snapshot.value["currentPlayers"] as? [String] {
-                for player in currentPlayers {
-                    self.playerIdList.append(player)
-                }
-            }
-        
-        })
-    }
     
-    func getTeamInfo() {
-        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
-            if let userDict = snapshot.value as? Dictionary<String, AnyObject> {
-                for playerId in self.playerIdList {
-                    if snapshot.key == playerId {
-                        let user = UserModel(userKey: snapshot.key, dictionary: userDict)
-                        self.playersInLobby.append(user)
-                    }
-                }
-            }
-            
-        })
-    }
 }
 
 
