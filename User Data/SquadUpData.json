@@ -1,116 +1,108 @@
 {
-  "lobbyGames1" : {
-    "currentCapacity" : "7",
-    "currentPlayers" : [ 1, 2, 3, "M4", "M5", "M6", "M7" ],
-    "distance" : "0.9",
-    "id" : "game1234",
-    "lobbyName" : "5 v 5",
-    "maxCapacity" : "10",
-    "sportsID" : "basketball"
+  "lobbyGames" : {
+    "game1" : {
+      "currentCapacity" : "7",
+      "currentPlayers" : [ 1, 2, 3, "M4", "M5", "M6", "M7" ],
+      "distance" : "0.9",
+      "id" : "game1234",
+      "lobbyName" : "5 v 5",
+      "maxCapacity" : "10",
+      "sportsID" : "basketball"
+    },
+    "game10" : {
+      "currentCapacity" : "2",
+      "currentPlayers" : [ "29181948", "10491981" ],
+      "distance" : "0.9",
+      "id" : "game9982",
+      "lobbyName" : "2 v 2",
+      "maxCapacity" : "4",
+      "sportsID" : "badminton"
+    },
+    "game2" : {
+      "currentCapacity" : "1",
+      "currentPlayers" : [ "31848192", "44819291", "50093184" ],
+      "distance" : "0.9",
+      "id" : "game2101",
+      "lobbyName" : "2 v 2",
+      "maxCapacity" : "4",
+      "sportsID" : "tennis"
+    },
+    "game3" : {
+      "currentCapacity" : "8",
+      "currentPlayers" : [ "91939411", "31478139", "84717993", "391481", "1948141128", "1339914818", "1391941001", "13184881" ],
+      "distance" : "0.9",
+      "id" : "game3171",
+      "lobbyName" : "7 v 7",
+      "maxCapacity" : "14",
+      "sportsID" : "soccer"
+    },
+    "game4" : {
+      "currentCapacity" : "1",
+      "currentPlayers" : [ "69146996" ],
+      "distance" : "0.9",
+      "id" : "game9183",
+      "lobbyName" : "1 v 1",
+      "maxCapacity" : "2",
+      "sportsID" : "badminton"
+    },
+    "game5" : {
+      "currentCapacity" : "10",
+      "currentPlayers" : [ "123455678", "234567890", "345678901", "456789012", "567789012", "248199410", "914911992", "148185100", "134919499", "144895017" ],
+      "distance" : "0.9",
+      "id" : "game3184",
+      "lobbyName" : "5 v 5",
+      "maxCapacity" : "10",
+      "sportsID" : "football"
+    },
+    "game6" : {
+      "currentCapacity" : "6",
+      "currentPlayers" : [ "98765432", "87665412", "21841719", "41271471", "99999118", "14713131" ],
+      "distance" : "0.9",
+      "id" : "game2491",
+      "lobbyName" : "11 v 11",
+      "maxCapacity" : "22",
+      "sportsID" : "baseball"
+    },
+    "game7" : {
+      "currentCapacity" : "6",
+      "currentPlayers" : [ "13848199", "12844991", "24910488", "31818820", "30101009", "20300301" ],
+      "distance" : "0.9",
+      "id" : "game9983",
+      "lobbyName" : "3 v 3",
+      "maxCapacity" : "6",
+      "sportsID" : "frisbee"
+    },
+    "game8" : {
+      "currentCapacity" : "3",
+      "currentPlayers" : [ "39991841", "18812391", "43883493" ],
+      "id" : "game1309",
+      "lobbyName" : "2 v 2",
+      "maxCapacity" : "4",
+      "sportsID" : "tennis"
+    },
+    "game9" : {
+      "currentCapacity" : "6",
+      "currentPlayers" : [ "M1", "28418812", "19950382", "85917190", "09384811", "10994941" ],
+      "distance" : "0.9",
+      "id" : "game1398",
+      "lobbyName" : "5 v 5",
+      "maxCapacity" : "10",
+      "sportsID" : "soccer"
+    }
   },
-  "lobbyGames2" : {
-    "currentCapacity" : "1",
-    "currentPlayers" : [ "31848192", "44819291", "50093184" ],
-    "distance" : "0.9",
-    "id" : "game2101",
-    "lobbyName" : "2 v 2",
-    "maxCapacity" : "4",
-    "sportsID" : "tennis"
-  },
-  "lobbyGames3" : {
-    "currentCapacity" : "8",
-    "currentPlayers" : [ "91939411", "31478139", "84717993", "391481", "1948141128", "1339914818", "1391941001", "13184881" ],
-    "distance" : "0.9",
-    "id" : "game3171",
-    "lobbyName" : "7 v 7",
-    "maxCapacity" : "14",
-    "sportsID" : "soccer"
-  },
-  "lobbyGames4" : {
-    "currentCapacity" : "1",
-    "currentPlayers" : [ "69146996" ],
-    "distance" : "0.9",
-    "id" : "game9183",
-    "lobbyName" : "1 v 1",
-    "maxCapacity" : "2",
-    "sportsID" : "badminton"
-  },
-  "lobbyGames5" : {
-    "currentCapacity" : "10",
-    "currentPlayers" : [ "123455678", "234567890", "345678901", "456789012", "567789012", "248199410", "914911992", "148185100", "134919499", "144895017" ],
-    "distance" : "0.9",
-    "id" : "game3184",
-    "lobbyName" : "5 v 5",
-    "maxCapacity" : "10",
-    "sportsID" : "football"
-  },
-  "lobbyGames6" : {
-    "currentCapacity" : "6",
-    "currentPlayers" : [ "98765432", "87665412", "21841719", "41271471", "99999118", "14713131" ],
-    "distance" : "0.9",
-    "id" : "game2491",
-    "lobbyName" : "11 v 11",
-    "maxCapacity" : "22",
-    "sportsID" : "baseball"
-  },
-  "lobbyGames7" : {
-    "currentCapacity" : "6",
-    "currentPlayers" : [ "13848199", "12844991", "24910488", "31818820", "30101009", "20300301" ],
-    "distance" : "0.9",
-    "id" : "game9983",
-    "lobbyName" : "3 v 3",
-    "maxCapacity" : "6",
-    "sportsID" : "frisbee"
-  },
-  "lobbyGames8" : {
-    "currentCapacity" : "3",
-    "currentPlayers" : [ "39991841", "18812391", "43883493" ],
-    "id" : "game1309",
-    "lobbyName" : "2 v 2",
-    "maxCapacity" : "4",
-    "sportsID" : "tennis"
-  },
-  "lobbyGames9" : {
-    "currentCapacity" : "6",
-    "currentPlayers" : [ "M1", "28418812", "19950382", "85917190", "09384811", "10994941" ],
-    "distance" : "0.9",
-    "id" : "game1398",
-    "lobbyName" : "5 v 5",
-    "maxCapacity" : "10",
-    "sportsID" : "soccer"
-  },
-  "lobbyGames10" : {
-    "currentCapacity" : "2",
-    "currentPlayers" : [ "29181948", "10491981" ],
-    "distance" : "0.9",
-    "id" : "game9982",
-    "lobbyName" : "2 v 2",
-    "maxCapacity" : "4",
-    "sportsID" : "badminton"
-  },
-  "posts1" : {
+  "posts" : [ null, {
     "activity" : "Playing tennis",
     "id" : "11111110",
     "name" : "Max Shao",
     "numLikes" : 50,
     "profileImageUrl" : "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
-  },
-  "posts2" : {
+  }, {
     "activity" : "Playing basketball",
     "id" : "11111225",
     "name" : "Lyndon Anderson",
     "numLikes" : 13
-  },
+  } ],
   "users" : {
-    "0" : {
-      "Sports" : [ "basketball", "soccer", "frisbee" ],
-      "firstName" : "Albert",
-      "gender" : "male",
-      "id" : "M1",
-      "lastName" : "Dawson",
-      "posts" : [ "11111110", "11111111" ],
-      "provider" : "Facebook"
-    },
     "1" : {
       "Sports" : [ "soccer", "badminton", "football", "frisbee" ],
       "firstName" : "Dwight",
@@ -380,6 +372,21 @@
       "lastName" : "Anderson",
       "posts" : [ "11111221", "11111222", "11111223", "11111224", "11111225", "11111226" ],
       "provider" : "Email"
+    },
+    "579" : {
+      "name" : "Nelson Tan",
+      "posts" : [ "15541", "42241", "24414" ],
+      "provider" : "Facebook",
+      "sports" : [ "Basketball", "Soccer", "Tennis" ]
+    },
+    "asdfasdf787" : {
+      "Sports" : [ "basketball", "soccer", "frisbee" ],
+      "firstName" : "Albert",
+      "gender" : "male",
+      "id" : "M1",
+      "lastName" : "Dawson",
+      "posts" : [ "11111110", "11111111" ],
+      "provider" : "Facebook"
     },
     "facebook:10208631930738547" : {
       "firstName" : "Shaheen",
