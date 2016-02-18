@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA71C5DED9100063F7D /* FindGameVC.swift */; };
 		8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA91C5DEE2C00063F7D /* SportCell.swift */; };
+		8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */; };
+		8548BCFB1C755A6300CF3CA3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */; };
 		855758711C55944D00399C83 /* Tahoma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758701C55944D00399C83 /* Tahoma.ttf */; };
 		855758731C5594AA00399C83 /* Tahoma Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758721C5594AA00399C83 /* Tahoma Bold.ttf */; };
 		855DF5561C5417E7009B6D82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5551C5417E7009B6D82 /* DataService.swift */; };
@@ -71,6 +73,8 @@
 		5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8509CDA71C5DED9100063F7D /* FindGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGameVC.swift; sourceTree = "<group>"; };
 		8509CDA91C5DEE2C00063F7D /* SportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
+		8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLobbyViewController.swift; sourceTree = "<group>"; };
+		8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		855758701C55944D00399C83 /* Tahoma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tahoma.ttf; sourceTree = "<group>"; };
 		855758721C5594AA00399C83 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
 		855DF5551C5417E7009B6D82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				85F8DE001C620E65006DFF11 /* SportViewController.swift */,
 				85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */,
 				85DA31F31C691BA10078CCEF /* GameLobbyViewController.swift */,
+				8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */,
+				8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -502,6 +508,7 @@
 				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
 				855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */,
 				856E84191C56254100AC544C /* RatingStarContainerView.swift in Sources */,
+				8548BCFB1C755A6300CF3CA3 /* MapViewController.swift in Sources */,
 				85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
@@ -512,6 +519,7 @@
 				85A3C2CF1C53700500EF39EA /* Constants.swift in Sources */,
 				85DA31F21C6883290078CCEF /* LobbyGameModel.swift in Sources */,
 				85DA31F41C691BA10078CCEF /* GameLobbyViewController.swift in Sources */,
+				8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */,
 				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,
 				85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */,
 				855DF5561C5417E7009B6D82 /* DataService.swift in Sources */,
