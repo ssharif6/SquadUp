@@ -42,6 +42,7 @@ class PostCellTableViewCell: UITableViewCell {
     func configureCell(post: Post, image: UIImage?) {
         self.post = post
         likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
+        print(likeRef)
         self.nameLabel.text = post.name
         self.activityLabel.text = post.activity
         self.numLikes.text = "\(post.numLikes)"

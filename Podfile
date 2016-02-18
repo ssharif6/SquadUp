@@ -3,16 +3,17 @@
 use_frameworks!
 
 target 'SquadUp-iOS' do
-pod 'Firebase', '>= 2.5.0'
-pod 'Alamofire', '~> 3.0'
-pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'Firebase', '>= 2.5.0'
+    pod 'Alamofire', '~> 3.0'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    
 end
 
 target 'SquadUp-iOSTests' do
-
+    
 end
 
 target 'SquadUp-iOSUITests' do
-
+    
 end
 

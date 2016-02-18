@@ -18,11 +18,12 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
     
     var lobbyModelObject: LobbyGameModel!
-    
     var teamOneArray = [UserModel]()
     var teamTwoArray = [UserModel]()
     var playersInLobby = [UserModel]()
     var playerIdList = [String]()
+    var team1: Bool!
+    var currentUser: UserModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,8 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func divideTeams() {
+        teamOneArray = []
+        teamTwoArray = []
         var shit: Bool = true
         for player in self.playersInLobby {
             if (shit) {
@@ -83,9 +86,11 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         {
         case 0:
             returnValue = teamOneArray.count
+            team1 = true
             break
         case 1:
             returnValue = teamTwoArray.count
+            team1 = false
             break
         default:
             break
@@ -118,7 +123,16 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func controlChanged(sender: AnyObject) {
         team1TableView.reloadData()
     }
-    
+    @IBAction func joinTeam(sender: AnyObject) {
+        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+        let post = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(lobbyModelObject.lobbyKey).childByAppendingPath("currentPlayers").childByAutoId()
+        post.setValue("Shaheen")
+        playersInLobby.append(userUnarchived)
+        print(userUnarchived.firstName)
+        self.divideTeams()
+        self.team1TableView.reloadData()
+    }
 }
 
 

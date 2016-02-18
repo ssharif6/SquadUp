@@ -11,20 +11,21 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import SwiftyJSON
 
+var CURRENT_USER: UserModel!
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     var usersArray: [UserModel]!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.delegate = self
         passwordField.delegate = self
         
     }
-
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
@@ -61,11 +62,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         print("Logged in")
                         // Create Firebase User
                         // TODO: Find Post History for Facebook User
-
-                        let user = ["provider": AuthData.provider!, "id": "asdf23534", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
+                        let posts = []
+                        let sports = []
+                        let user = ["provider": AuthData.provider!, "id": "user", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
+                        let currentUser: UserModel = UserModel(key: "user", firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: "currentUser", posts: posts as! [String], sports: sports as! [String])
+                        
+                        let defaults = NSUserDefaults.standardUserDefaults()
+                        let UserModelKey = "userModelKey"
+                        let currentUserData = NSKeyedArchiver.archivedDataWithRootObject(currentUser)
+                        defaults.setObject(currentUserData, forKey: UserModelKey)
+                        
                         DataService.ds.createFirebaseUser(AuthData.uid, user: user)
                         NSUserDefaults.standardUserDefaults().setValue(AuthData.uid, forKey: KEY_UID)
-                        
                         self.performSegueWithIdentifier("LoggedIn", sender: nil)
                     }
                     
@@ -124,6 +132,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         presentViewController(alert, animated: true, completion: nil)
         
     }
-
+    
 }
 

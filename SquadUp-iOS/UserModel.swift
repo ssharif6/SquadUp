@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class UserModel {
+class UserModel: NSObject {
     internal var _userId: String!
     private var _firstName: String!
     private var _lastName: String!
@@ -43,13 +43,38 @@ class UserModel {
         return _sports
     }
     
-    init(firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String]) {
+    var userKey: String {
+        return _userKey
+    }
+    
+    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String]) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
         _userId = userId
         _posts = posts
         _sports = sports
+        _userKey = key
+    }
+    
+    required init(coder decoder: NSCoder) {
+        self._firstName = decoder.decodeObjectForKey("firstName") as! String
+        self._lastName = decoder.decodeObjectForKey("lastName") as! String
+        self._gender = decoder.decodeObjectForKey("gender") as! String
+        _userId = decoder.decodeObjectForKey("userId") as? String
+        _posts = decoder.decodeObjectForKey("posts") as? [String]
+        _sports = decoder.decodeObjectForKey("sports") as? [String]
+        _userKey = decoder.decodeObjectForKey("userKey") as? String
+        super.init()
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(_firstName, forKey: "firstName")
+        aCoder.encodeObject(_lastName, forKey: "lastName")
+        aCoder.encodeObject(_gender, forKey: "gender")
+        aCoder.encodeObject(_posts, forKey: "posts")
+        aCoder.encodeObject(_sports, forKey: "sports")
+        aCoder.encodeObject(_userKey, forKey: "userKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
