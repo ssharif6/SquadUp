@@ -76,4 +76,8 @@ class UserModel {
             self._sports = sports
         }
     }
+    
+    func toString() -> String {
+        return "id " + self._userId
+    }
 }

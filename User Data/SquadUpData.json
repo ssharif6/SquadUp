@@ -2,7 +2,7 @@
   "lobbyGames" : {
     "game1" : {
       "currentCapacity" : "7",
-      "currentPlayers" : [ 1, 2, 3, "M4", "M5", "M6", "M7" ],
+      "currentPlayers" : [ "1", "2", "3"],
       "distance" : "0.9",
       "id" : "game1234",
       "lobbyName" : "5 v 5",
@@ -107,7 +107,7 @@
       "Sports" : [ "soccer", "badminton", "football", "frisbee" ],
       "firstName" : "Dwight",
       "gender" : "male",
-      "id" : "M2",
+      "id" : "1",
       "lastName" : "Gray",
       "posts" : [ "11111112", "11111113", "11111114", "11111115" ],
       "providerr" : "Facebook"
@@ -116,7 +116,7 @@
       "Sports" : [ "tennis", "football" ],
       "firstName" : "Santos",
       "gender" : "male",
-      "id" : "M3",
+      "id" : "2",
       "lastName" : "Gilbert",
       "posts" : [ "11111116", "11111117", "11111118" ],
       "provider" : "Facebook"
@@ -125,7 +125,7 @@
       "Sports" : [ "baseball", "frisbee" ],
       "firstName" : "Nicolas",
       "gender" : "male",
-      "id" : "M4",
+      "id" : "3",
       "lastName" : "Rivera",
       "posts" : [ "11111119" ],
       "provider" : "Facebook"
@@ -134,7 +134,7 @@
       "Sports" : [ "soccer", "baseball", "basketball", "tennis" ],
       "firstName" : "Douglas",
       "gender" : "male",
-      "id" : "M5",
+      "id" : "4",
       "lastName" : "Robbins",
       "posts" : [ "11111120", "11111121", "11111122", "11111123", "11111124" ],
       "provider" : "Facebook"

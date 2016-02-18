@@ -13,10 +13,11 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var lobbyNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var addressButton: UIButton!
-    @IBOutlet weak var team1View: UIView!
     @IBOutlet weak var team1ContainerView: UIView!
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
+    
+    var lobbyModelObject: LobbyGameModel!
     
     var teamOneArray = [UserModel]()
     var teamTwoArray = [UserModel]()
@@ -27,7 +28,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         team1TableView.dataSource = self
         team1TableView.delegate = self
-        divideTeams()
+        getUsers()
     }
     
     func divideTeams() {
@@ -40,6 +41,40 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             shit = !shit
         }
+        print("Team 1")
+        print(teamOneArray)
+        print("Team 2")
+        print(teamTwoArray)
+    }
+    
+    func getUsers() {
+        var asdf = [UserModel]()
+        print(self.lobbyModelObject.currentPlayers)
+        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            // Parse Firebase Data
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        print("FUCK A " + snap.key)
+                        if (self.lobbyModelObject.currentPlayers.contains(snap.key)) {
+                            print("found")
+                            let user = UserModel(userKey: key, dictionary: userDict)
+                            asdf.append(user)
+                        } else {
+                            print("not found")
+                        }
+                    }
+                }
+            }
+            self.playersInLobby = asdf
+            self.divideTeams()
+            self.team1TableView.reloadData()
+            print(self.playersInLobby)
+        })
+        
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,7 +95,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("playerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
         switch(teamSegmentedControl.selectedSegmentIndex)
         {
         case 0:
@@ -80,6 +115,9 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+    @IBAction func controlChanged(sender: AnyObject) {
+        team1TableView.reloadData()
+    }
     
 }
 

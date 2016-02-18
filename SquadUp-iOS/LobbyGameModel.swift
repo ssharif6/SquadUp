@@ -45,8 +45,8 @@ class LobbyGameModel {
         return _sportsId
     }
     
-    var currentPlayersList: [UserModel] {
-        return _currentPlayersList
+    var lobbyKey: String {
+        return _lobbyKey
     }
     
     
@@ -75,26 +75,4 @@ class LobbyGameModel {
         }
     }
     
-    func getCurrentPlayers() -> [UserModel] {
-        var currentIdList = _currentPlayers
-        var currentPlayersList = [UserModel]()
-        for player in _currentPlayers {
-            DataService.ds.REF_USERS.queryOrderedByChild("id").queryStartingAtValue(player).queryLimitedToFirst(1).observeEventType(.Value, withBlock: { (snapshot) -> Void in
-                self._currentPlayersList = []
-                if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-                    var snap = snapshots[0]
-                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
-                        let key = snap.key
-                        let user = UserModel(userKey: key, dictionary: userDict)
-                        print(user.firstName)
-                        print("SHIT")
-                        currentPlayersList.append(user)
-                        print("FUCK")
-                        print(currentPlayersList.count)
-                    }
-                }
-            })
-        }
-        return currentPlayersList
-    }
 }

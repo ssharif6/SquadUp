@@ -15,7 +15,8 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var sportsTableView: UITableView!
     
     var lobbyGames = [LobbyGameModel]()
-
+    var lobbyObjectToPass: LobbyGameModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sportsTableView.dataSource = self
@@ -34,10 +35,14 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
             }
             self.sportsTableView.reloadData()
         })
-
+        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow!
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath) as! JoinLobbyCell
+        let lobbyObjectToPass = self.lobbyGames[indexPath.row]
+        self.lobbyObjectToPass = lobbyObjectToPass
         performSegueWithIdentifier("lobbyToGame", sender: nil)
     }
     
@@ -54,5 +59,12 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
             return JoinLobbyCell()
         }
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "lobbyToGame" {
+            let vc = segue.destinationViewController as! GameLobbyViewController
+            vc.lobbyModelObject = self.lobbyObjectToPass
+        }
+    }
+    
 }
