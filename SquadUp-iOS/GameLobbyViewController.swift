@@ -25,6 +25,13 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var team1: Bool!
     var currentUser: UserModel!
     
+    override func viewDidAppear(animated: Bool) {
+        team1TableView.dataSource = self
+        team1TableView.delegate = self
+        getUsers()
+        viewDidLoad()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         team1TableView.dataSource = self
@@ -52,6 +59,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func getUsers() {
         var asdf = [UserModel]()
+        
         print(self.lobbyModelObject.currentPlayers)
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -126,8 +134,9 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func joinTeam(sender: AnyObject) {
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-        let post = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(lobbyModelObject.lobbyKey).childByAppendingPath("currentPlayers").childByAutoId()
-        post.setValue("Shaheen")
+        let post = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(lobbyModelObject.lobbyKey).childByAppendingPath("currentPlayers").childByAppendingPath(String(self.lobbyModelObject.currentPlayers.count))
+
+        post.setValue(userUnarchived.userKey)
         playersInLobby.append(userUnarchived)
         print(userUnarchived.firstName)
         self.divideTeams()

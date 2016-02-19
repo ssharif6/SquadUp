@@ -16,7 +16,22 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     var lobbyGames = [LobbyGameModel]()
     var lobbyObjectToPass: LobbyGameModel!
-    
+    override func viewDidAppear(animated: Bool) {
+        DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
+            self.lobbyGames = []
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    if let gameLobbyDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let lobbyGame = LobbyGameModel(lobbyKey: key, dictionary: gameLobbyDict)
+                        self.lobbyGames.append(lobbyGame)
+                    }
+                }
+            }
+            self.sportsTableView.reloadData()
+        })
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         sportsTableView.dataSource = self

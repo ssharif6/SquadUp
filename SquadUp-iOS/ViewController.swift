@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         let posts = []
                         let sports = []
                         let user = ["provider": AuthData.provider!, "id": "user", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
-                        let currentUser: UserModel = UserModel(key: "user", firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: "currentUser", posts: posts as! [String], sports: sports as! [String])
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: "currentUser", posts: posts as! [String], sports: sports as! [String])
                         
                         let defaults = NSUserDefaults.standardUserDefaults()
                         let UserModelKey = "userModelKey"
