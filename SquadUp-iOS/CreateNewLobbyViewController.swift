@@ -34,8 +34,29 @@ class CreateNewLobbyViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func displayError() {
+        var emptyText = ""
+        if lobbyNameTextField.text == "" {
+            emptyText += "Lobby Name"
+        } else if descriptionTextField.text == "" {
+            emptyText += "Description"
+        } else if numPlayersTextField.text == "" {
+            emptyText += "Number Of Players Field"
+        } else if locationAddressTextField.text == "" {
+            emptyText += "Location Field"
+        }
+        if emptyText != "" {
+            let alert = UIAlertController(title: "All Fields Must be Filled In", message: "Not all Fields are Filled In", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+
+    }
+    
     
     @IBAction func createLobbyPressed (sender: AnyObject) {
+        displayError()
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
         var userArray = [String]()
@@ -46,7 +67,9 @@ class CreateNewLobbyViewController: UIViewController {
             "maxCapacity": numPlayersTextField.text!,
             "sportsID": "basketball",
             "currentCapacity": "1",
-            "currentPlayers": userArray]
+            "currentPlayers": userArray,
+            "location": locationAddressTextField.text!
+        ]
         let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
         lobbyPost.setValue(lobby)
     }

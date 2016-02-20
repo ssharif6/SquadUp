@@ -100,50 +100,50 @@
 		},
 		"post2": {
 			"activity": "Playing basketball",
-			"id": "11111225",
+			"id": "1f82b3e2-f5bb-41b8-a192-5492b88a8822",
 			"name": "Lyndon Anderson",
 			"numLikes": 13
 		},
 		"post3": {
 			"activity": "Playing soccer",
-			"id": "M26",
+			"id": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923",
 			"name": "Ronaldo Sanchez",
 			"numLikes": 142
 		},
 		"post4": {
 			"activity": "Taking a break",
 			"name": "Dwight Gray",
-			"id": "M2",
+			"id": "48dc592b-3471-48a1-bcc9-e990abccf8fa",
 			"numLikes": 23
 		},
 		"post5": {
 			"activity": "Playing ultimate frisbee",
 			"name": "Nicolas Rivera",
-			"id": "M4",
+			"id": "4881988c-a78e-4ce6-af46-73e265bf002c",
 			"numLikes": 10
 		},
 		"post6": {
 			"activity": "Playing football",
 			"name": "Samuel Tran",
-			"id": "M17",
+			"id": "66bad232-2bf0-453a-8e70-f727fb7514b8",
 			"numLikes": 59
 		},
 		"post7": {
 			"activity": "Playing soccer",
 			"name": "Adrian Matthews",
-			"id": "M10",
+			"id": "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2",
 			"numLikes": 243
 		},
 		"post8": {
 			"activity": "Taking a break",
 			"name": "Ernesto Valdez",
-			"id": "M20",
+			"id": "39287cf7-aa96-420d-9688-1affa01ad831",
 			"numLikes": 98
 		},
 		"post 9": {
 			"activity": "Playing baseball",
 			"name": "Jacob Ramirez",
-			"id": "M30",
+			"id": "79db5730-0641-447e-8935-fd09b8928189",
 			"numLikes": 32
 		}
 	},

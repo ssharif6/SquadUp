@@ -1,21 +1,20 @@
 //
-//  ProfileViewController.swift
+//  PublicProfileViewController.swift
 //  SquadUp-iOS
 //
-//  Created by Shaheen Sharifian on 1/24/16.
+//  Created by Shaheen Sharifian on 2/20/16.
 //  Copyright © 2016 Shaheen Sharifian. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+class PublicProfileViewController: UIViewController {
     
     @IBOutlet weak var coverImage: UIImageView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var recentHistoryButton: UIButton!
     @IBOutlet weak var moreInfoButton: UIButton!
-    @IBOutlet weak var findRivalButton: UIButton!
+    @IBOutlet weak var requestRivalButton: UIButton!
     @IBOutlet weak var oneStar: UIImageView!
     @IBOutlet weak var secondStar: UIImageView!
     @IBOutlet weak var thirdStar: UIImageView!
@@ -23,21 +22,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var fifthStar: UIImageView!
     @IBOutlet weak var profileName: UILabel!
     
-    var lobbyObjectPassed: LobbyGameModel!
+    var userPassed: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
     }
-    @IBAction func cameraButtonClicked(sender: AnyObject) {
-    }
-    @IBAction func moreButtonClicked(sender: AnyObject) {
-    }
-    
-    @IBAction func findRivalButtonClicked(sender: AnyObject) {
-    }
-    @IBAction func recentActivityClicked(sender: AnyObject) {
-    }
-    
     
 }

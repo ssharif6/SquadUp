@@ -34,9 +34,16 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLobbyInfo()
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
+    }
+    
+    func displayLobbyInfo() {
+        lobbyNameLabel.text = lobbyModelObject.lobbyName
+//        descriptionLabel.text = lobbyModelObject.description
+//        addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
     func divideTeams() {

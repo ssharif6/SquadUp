@@ -19,10 +19,20 @@ class LobbyGameModel {
     private var _lobbyKey: String!
     private var _distance: String!
     private var _sportsId: String!
+    private var _address: String!
+    private var _description: String!
     private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
         return _lobbyName
+    }
+    
+    var description: String {
+        return _description
+    }
+    
+    var address: String {
+        return _description
     }
     
     var maxCapacity: String {

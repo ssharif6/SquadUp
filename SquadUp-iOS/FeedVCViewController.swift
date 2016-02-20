@@ -15,6 +15,7 @@ class FeedVCViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()
     static var imageCache = NSCache()
+    var post: Post!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,5 +72,19 @@ class FeedVCViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 1
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let post = self.posts[indexPath.row]
+
+        self.post = post
+        performSegueWithIdentifier("FeedToProfile", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "FeedToProfile" {
+            let vc = segue.destinationViewController as! PublicProfileViewController
+            vc.userPassed = self.post.id
+            
+        }
+    }
 
 }
