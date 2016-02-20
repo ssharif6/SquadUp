@@ -15,16 +15,18 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     @IBOutlet weak var useCurrentLocationButton: FacebookLoginButton!
     @IBOutlet weak var locationMapView: MKMapView!
     var locationManager: CLLocationManager?
-
+    var currentLocationToPass: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationMapView.delegate = self
         locationManager = CLLocationManager()
         locationManager!.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.requestWhenInUseAuthorization()
         locationManager?.startUpdatingLocation()
         locationMapView.showsUserLocation = true
-       
+        
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -42,10 +44,10 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     @IBAction func useCurrentLocationPressed(sender: AnyObject) {
         let location = CLLocation(latitude: locationMapView.userLocation.coordinate.latitude, longitude: locationMapView.userLocation.coordinate.longitude)
         let annotation = MKPointAnnotation()
+        
         annotation.coordinate = self.locationMapView.userLocation.coordinate
         CLGeocoder().reverseGeocodeLocation(location) { (placemarks: [CLPlacemark]?, error: NSError?) -> Void in
             var title = ""
-            var subtitle = ""
             if error == nil {
                 if let placemark = placemarks?[0] {
                     var subThoroughfare: String = ""
@@ -74,34 +76,44 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
                         country = placemark.country!
                     }
                     title = " \(subThoroughfare) \(thoroughfare) \(locality), \(adminArea)"
-                    subtitle = " \(subThoroughfare) \(thoroughfare)";
                 }
-                
+                self.currentLocationToPass = title
                 annotation.title = title
                 annotation.subtitle = "Current Location"
                 self.locationMapView.addAnnotation(annotation)
                 self.useCurrentLocationButton.enabled = false
             }
-
+            
         }
         
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        let reuseId = "pin"
-        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
-        if annotationView == nil {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            annotationView?.canShowCallout = true
-            
-        } else {
-            annotationView?.annotation = annotation
+        if(annotation is MKUserLocation) {
+            print("This guy....");
+            return nil;
         }
-        return annotationView
+        let reuseId = "pin";
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView;
+        if(pinView == nil) {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId);
+            pinView!.canShowCallout = true;
+            pinView!.animatesDrop = true;
+        }
+        let rightButton = UIButton(type: UIButtonType.DetailDisclosure)
+        pinView?.rightCalloutAccessoryView = rightButton;
+        return pinView;
     }
     
-    func geoCode() {
-        
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        performSegueWithIdentifier(SEGUE_MAP_TO_CREATE_LOBBY, sender: nil)
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == SEGUE_MAP_TO_CREATE_LOBBY {
+            let vc = segue.destinationViewController as! CreateNewLobbyViewController
+            vc.passedLocationString = self.currentLocationToPass
+        }
+    }
+    
 }

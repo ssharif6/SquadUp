@@ -926,6 +926,12 @@
                         <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="Yvp-6e-WTn" id="F70-kg-Wpa"/>
+                        <outlet property="lobbyNameTextField" destination="E1j-0Z-oDT" id="mWB-wn-s00"/>
+                        <outlet property="locationAddressTextField" destination="Epo-tl-zkF" id="qqj-cj-ych"/>
+                        <outlet property="numPlayersTextField" destination="1IX-v4-DoF" id="COp-8v-Caz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufh-mY-9qQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -976,6 +982,7 @@
                         <outlet property="locationMapView" destination="CSh-io-Mci" id="5vo-v5-coJ"/>
                         <outlet property="searchBar" destination="Vt3-oc-ykN" id="tv9-UY-RdW"/>
                         <outlet property="useCurrentLocationButton" destination="bci-fd-nwc" id="37t-2p-Djr"/>
+                        <segue destination="fN9-hb-5pA" kind="show" identifier="MapToCreateLobby" id="R6O-au-n6v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-qc-drV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1330,4 +1337,7 @@
         <image name="moreAsset" width="577" height="179"/>
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R6O-au-n6v"/>
+    </inferredMetricsTieBreakers>
 </document>

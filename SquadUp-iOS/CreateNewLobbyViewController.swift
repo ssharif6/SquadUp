@@ -9,15 +9,22 @@
 import UIKit
 
 class CreateNewLobbyViewController: UIViewController {
+    
     @IBOutlet weak var lobbyNameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var numPlayersTextField: UITextField!
     @IBOutlet weak var locationAddressTextField: UITextField!
     
+    var passedLocationString: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if passedLocationString != nil {
+            locationAddressTextField.text = passedLocationString
+        }
     }
     
     @IBAction func createLobbyPressed (sender: AnyObject) {

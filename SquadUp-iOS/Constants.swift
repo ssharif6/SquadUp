@@ -17,6 +17,7 @@ let KEY_UID = "uid"
 
 // Segues
 let SEGUE_LOGGEDIN = "LoggedIn"
+let SEGUE_MAP_TO_CREATE_LOBBY = "MapToCreateLobby"
 
 // Status Codes
 let STATUS_ACCOUNT_NON_EXIST = -8
