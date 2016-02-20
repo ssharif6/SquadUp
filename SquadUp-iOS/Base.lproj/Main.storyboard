@@ -950,7 +950,7 @@
                                         </state>
                                         <connections>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEl-ba-Tdv"/>
-                                            <segue destination="Ccl-te-Tmf" kind="show" id="JCo-ui-rMR"/>
+                                            <segue destination="Ccl-te-Tmf" kind="show" identifier="JoinGameToLobbyList" id="JCo-ui-rMR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1484,6 +1484,6 @@
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R6O-au-n6v"/>
+        <segue reference="SeC-SE-gDC"/>
     </inferredMetricsTieBreakers>
 </document>

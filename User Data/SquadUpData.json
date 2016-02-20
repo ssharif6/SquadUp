@@ -7,7 +7,7 @@
 			"id": "game1111",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "basketball"
+			"sportsID": "Basketball"
 		},
 		"game10": {
 			"currentCapacity": "2",
@@ -16,7 +16,7 @@
 			"id": "game1112",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "badminton"
+			"sportsID": "Badminton"
 		},
 		"game2": {
 			"currentCapacity": "1",
@@ -25,7 +25,7 @@
 			"id": "game1113",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "tennis"
+			"sportsID": "Tennis"
 		},
 		"game3": {
 			"currentCapacity": "8",
@@ -34,7 +34,7 @@
 			"id": "game1114",
 			"lobbyName": "7 v 7",
 			"maxCapacity": "14",
-			"sportsID": "soccer"
+			"sportsID": "Soccer"
 		},
 		"game4": {
 			"currentCapacity": "1",
@@ -43,7 +43,7 @@
 			"id": "game1115",
 			"lobbyName": "1 v 1",
 			"maxCapacity": "2",
-			"sportsID": "badminton"
+			"sportsID": "Badminton"
 		},
 		"game5": {
 			"currentCapacity": "10",
@@ -52,7 +52,7 @@
 			"id": "game1116",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "football"
+			"sportsID": "Football"
 		},
 		"game6": {
 			"currentCapacity": "6",
@@ -61,7 +61,7 @@
 			"id": "game1117",
 			"lobbyName": "11 v 11",
 			"maxCapacity": "22",
-			"sportsID": "baseball"
+			"sportsID": "Baseball"
 		},
 		"game7": {
 			"currentCapacity": "6",
@@ -70,7 +70,7 @@
 			"id": "game1118",
 			"lobbyName": "3 v 3",
 			"maxCapacity": "6",
-			"sportsID": "frisbee"
+			"sportsID": "Frisbee"
 		},
 		"game8": {
 			"currentCapacity": "3",
@@ -78,7 +78,7 @@
 			"id": "game1119",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "tennis"
+			"sportsID": "Tennis"
 		},
 		"game9": {
 			"currentCapacity": "6",
@@ -87,7 +87,7 @@
 			"id": "game1120",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "soccer"
+			"sportsID": "Soccer"
 		}
 	},
 	"posts": {
