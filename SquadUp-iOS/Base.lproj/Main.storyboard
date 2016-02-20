@@ -366,11 +366,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="T1N-lS-Svy" id="gnH-Zv-fSM"/>
+                        <segue destination="6cc-7X-Y2t" kind="show" identifier="FeedToProfile" id="68i-b3-Qd1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2af-MC-gTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.5" y="314.5"/>
+            <point key="canvasLocation" x="2778.5" y="348.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="1xy-rI-C3M">
@@ -745,7 +746,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="coverImage" destination="ocC-kh-aZ8" id="p5l-yB-9Cg"/>
+                        <outlet property="coverImage" destination="ocC-kh-aZ8" id="0Ng-gm-P3R"/>
                         <outlet property="fifthStar" destination="BYO-5x-kgK" id="QRC-Vx-C0x"/>
                         <outlet property="fourthStar" destination="vXe-Av-Vk6" id="qnY-Hw-vij"/>
                         <outlet property="moreInfoButton" destination="cHF-k4-5FP" id="jGQ-m9-2OW"/>
@@ -898,7 +899,6 @@
                         <outlet property="chooseSportView" destination="6wQ-GL-ww1" id="0FA-ZU-Vai"/>
                         <outlet property="sportsTableView" destination="blW-1i-7ZD" id="aT3-2a-TFQ"/>
                         <segue destination="Z6c-MZ-48C" kind="show" identifier="sportSelected" id="p97-sY-gKl"/>
-                        <segue destination="6cc-7X-Y2t" kind="show" identifier="FeedToProfile" id="A71-N6-2Lh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmN-3t-YNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

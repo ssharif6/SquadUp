@@ -70,6 +70,9 @@ class Post {
         if let name = dictionary["name"] as? String {
             self._name = name
         }
+        if let id = dictionary["id"] as? String {
+            self._id = id
+        }
         // Reference to Post
         self._postRef = DataService.ds.REF_POSTS.childByAppendingPath(self._postKey)
         

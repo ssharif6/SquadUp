@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PublicProfileViewController: UIViewController {
     
@@ -23,11 +24,37 @@ class PublicProfileViewController: UIViewController {
     @IBOutlet weak var profileName: UILabel!
     
     var userPassed: String!
+    var user: UserModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var asdf: UserModel!
+        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            // Parse Firebase Data
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    print("SNAP \(snap)")
+                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        print(key)
+                        print("WaterMonkeys")
+                        if key == self.userPassed {
+                            let user = UserModel(userKey: key, dictionary: userDict)
+                            print("NIGGA")
+                            asdf = user
+                        }
+                    }
+                }
+            }
+            self.user = asdf
+            self.loadData()
+        })
         
-        // Do any additional setup after loading the view.
+    }
+    
+    func loadData() {
+        profileName.text = self.user.firstName + " " + self.user.lastName
     }
     
 }
