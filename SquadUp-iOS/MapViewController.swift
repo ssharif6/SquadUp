@@ -16,6 +16,11 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     @IBOutlet weak var locationMapView: MKMapView!
     var locationManager: CLLocationManager?
     var currentLocationToPass: String!
+    var lobbyNamePassed: String = ""
+    var descriptionPassed: String = ""
+    var numPlayersPassed: String = ""
+    var sportPassed: String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,6 +118,11 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
         if segue.identifier == SEGUE_MAP_TO_CREATE_LOBBY {
             let vc = segue.destinationViewController as! CreateNewLobbyViewController
             vc.passedLocationString = self.currentLocationToPass
+            vc.passedLobbyName = self.lobbyNamePassed
+            vc.passedDescription = self.descriptionPassed
+            vc.numPlayersPassed = self.numPlayersPassed
+            vc.sportPassed = self.sportPassed
+
         }
     }
     

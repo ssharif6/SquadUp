@@ -24,6 +24,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var playerIdList = [String]()
     var team1: Bool!
     var currentUser: UserModel!
+
     
     override func viewDidAppear(animated: Bool) {
         team1TableView.dataSource = self
@@ -42,6 +43,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName
+        lobbyNameLabel.textAlignment = .Center
 //        descriptionLabel.text = lobbyModelObject.description
 //        addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
@@ -66,7 +68,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func getUsers() {
         var asdf = [UserModel]()
-        
         print(self.lobbyModelObject.currentPlayers)
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)

@@ -19,7 +19,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     var sportPassed: String!
     
     override func viewDidAppear(animated: Bool) {
-        
+        self.sportsTableView.reloadData()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
         sportLabel.text = sportPassed + " Lobby"

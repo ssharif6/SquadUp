@@ -26,6 +26,9 @@ class SportViewController: UIViewController {
         if segue.identifier == "JoinGameToLobbyList" {
             let vc = segue.destinationViewController as! JoinGameLobbyViewController
             vc.sportPassed = passedLabel
+        } else if segue.identifier == "JoinGameToCreateLobby" {
+            let vc = segue.destinationViewController as! CreateNewLobbyViewController
+            vc.sportPassed = sportLabel.text
         }
     }
 

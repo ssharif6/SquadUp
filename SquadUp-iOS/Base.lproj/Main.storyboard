@@ -932,7 +932,7 @@
                                         </state>
                                         <connections>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPR-Th-0JR"/>
-                                            <segue destination="fN9-hb-5pA" kind="show" id="SeC-SE-gDC"/>
+                                            <segue destination="fN9-hb-5pA" kind="show" identifier="JoinGameToCreateLobby" id="SeC-SE-gDC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1031,7 +1031,7 @@
                                 <rect key="frame" x="142" y="391" width="26" height="30"/>
                                 <state key="normal" title="Button" image="locationPin"/>
                                 <connections>
-                                    <segue destination="qCe-es-cMz" kind="show" id="1Cp-Y7-qh1"/>
+                                    <segue destination="qCe-es-cMz" kind="show" identifier="LocationButtonToMap" id="1Cp-Y7-qh1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lobby Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-i0-phU">
@@ -1040,7 +1040,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lobby Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-0Z-oDT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lobby Name" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-0Z-oDT">
                                 <rect key="frame" x="192" y="165" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1066,7 +1066,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Players" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IX-v4-DoF">
                                 <rect key="frame" x="266" y="311" width="99" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -1077,6 +1077,7 @@
                         <outlet property="lobbyNameTextField" destination="E1j-0Z-oDT" id="mWB-wn-s00"/>
                         <outlet property="locationAddressTextField" destination="Epo-tl-zkF" id="qqj-cj-ych"/>
                         <outlet property="numPlayersTextField" destination="1IX-v4-DoF" id="COp-8v-Caz"/>
+                        <segue destination="wUR-xT-2ho" kind="show" identifier="CreateLobbyToLobby" id="kLt-Ag-aq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufh-mY-9qQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1133,7 +1134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-qc-drV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="2828"/>
+            <point key="canvasLocation" x="3493" y="3045"/>
         </scene>
         <!--Join Game Lobby View Controller-->
         <scene sceneID="v9F-7n-EfK">
@@ -1485,5 +1486,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SeC-SE-gDC"/>
+        <segue reference="kLt-Ag-aq1"/>
     </inferredMetricsTieBreakers>
 </document>

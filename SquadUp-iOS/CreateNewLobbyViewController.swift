@@ -16,6 +16,12 @@ class CreateNewLobbyViewController: UIViewController {
     @IBOutlet weak var locationAddressTextField: UITextField!
     
     var passedLocationString: String?
+    var passedLobbyName: String?
+    var passedDescription: String?
+    var numPlayersPassed: String?
+    var lobbyObjectToPass: LobbyGameModel!
+    var sportPassed: String!
+    var sportLabel: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +32,18 @@ class CreateNewLobbyViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         if passedLocationString != nil {
             locationAddressTextField.text = passedLocationString
+        }
+        if passedLobbyName != nil {
+            lobbyNameTextField.text = passedLobbyName
+        }
+        if passedDescription != nil {
+            descriptionTextField.text = passedDescription
+        }
+        if numPlayersPassed != nil {
+            numPlayersTextField.text = numPlayersPassed
+        }
+        if sportPassed != nil {
+            sportLabel = sportPassed
         }
         viewDidLoad()
     }
@@ -65,17 +83,34 @@ class CreateNewLobbyViewController: UIViewController {
             "distance": "0.9",
             "lobbyName": lobbyNameTextField.text!,
             "maxCapacity": numPlayersTextField.text!,
-            "sportsID": "basketball",
+            "sportsID": sportLabel!,
             "currentCapacity": "1",
             "currentPlayers": userArray,
             "location": locationAddressTextField.text!
         ]
         let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
         lobbyPost.setValue(lobby)
+        self.lobbyObjectToPass = LobbyGameModel(lobbyKey: lobbyPost.key, dictionary: lobby)
+        performSegueWithIdentifier("CreateLobbyToLobby", sender: nil)
     }
     
-    @IBAction func findLocationButtonPressed(sender: AnyObject) {
-        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "LocationButtonToMap" {
+            let vc = segue.destinationViewController as! MapViewController
+            if lobbyNameTextField != nil {
+                vc.lobbyNamePassed = lobbyNameTextField.text!
+            }
+            if descriptionTextField != nil {
+                vc.descriptionPassed = descriptionTextField.text!
+            }
+            if numPlayersTextField != nil {
+                vc.numPlayersPassed = numPlayersTextField.text!
+            }
+            vc.sportPassed = self.sportPassed
+        } else if segue.identifier == "CreateLobbyToLobby" {
+            let vc = segue.destinationViewController as! GameLobbyViewController
+            vc.lobbyModelObject = self.lobbyObjectToPass
+        }
     }
     
     
