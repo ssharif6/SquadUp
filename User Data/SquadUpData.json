@@ -1,8 +1,8 @@
 {
 	"lobbyGames": {
 		"game1": {
-			"currentCapacity": "7",
-			"currentPlayers": [1, 2, 3, "M4", "M5", "M6", "M7"],
+			"currentCapacity": "5",
+			"currentPlayers": ["06f11c84-c68e-43a6-99c0-cde53399946f", "21a20b5b-3dd3-4e09-926f-51c1dce575f0", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "f18af723-cfd4-4072-a15b-984f32cbb4fc"],
 			"distance": "0.9",
 			"id": "game1111",
 			"lobbyName": "5 v 5",
