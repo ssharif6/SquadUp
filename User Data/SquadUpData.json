@@ -170,7 +170,7 @@
 			"skill level": "intermediate",
 			"notifications": ["note1"],
 			"ranking": "4",
-			"rivals": []
+			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
 			"Sports": ["tennis", "football"],
