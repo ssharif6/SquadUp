@@ -25,6 +25,7 @@
         </mutableArray>
         <mutableArray key="Tahoma.ttf">
             <string>Tahoma</string>
+            <string>Tahoma</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -365,11 +366,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="T1N-lS-Svy" id="gnH-Zv-fSM"/>
+                        <segue destination="6cc-7X-Y2t" kind="show" identifier="FeedToProfile" id="68i-b3-Qd1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2af-MC-gTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.5" y="314.5"/>
+            <point key="canvasLocation" x="2778.5" y="348.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="1xy-rI-C3M">
@@ -591,10 +593,10 @@
             </objects>
             <point key="canvasLocation" x="2798" y="1164"/>
         </scene>
-        <!--View Controller-->
+        <!--Public Profile View Controller-->
         <scene sceneID="W7w-ie-IWt">
             <objects>
-                <viewController id="6cc-7X-Y2t" sceneMemberID="viewController">
+                <viewController id="6cc-7X-Y2t" customClass="PublicProfileViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tc4-G6-gXy"/>
                         <viewControllerLayoutGuide type="bottom" id="PBd-8C-oAU"/>
@@ -609,10 +611,153 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-a2-FHa">
+                                <rect key="frame" x="260" y="372" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="football_players_goal_gate_grid_ball_8837_1366x768" translatesAutoresizingMaskIntoConstraints="NO" id="ocC-kh-aZ8">
+                                <rect key="frame" x="0.0" y="64" width="414" height="182"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILf-4z-9jT">
+                                <rect key="frame" x="60" y="335" width="35" height="38"/>
+                                <state key="normal" title="Button" image="RecentHistoryAsset"/>
+                                <connections>
+                                    <action selector="recentActivityClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="Gyw-Zv-FNO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgQ-pL-RO3">
+                                <rect key="frame" x="20" y="372" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen Sharifian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U41-0M-Q87">
+                                <rect key="frame" x="31" y="288" width="352" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGj-fl-Tri">
+                                <rect key="frame" x="102" y="472" width="196" height="43"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-sW-poO">
+                                        <rect key="frame" x="42" y="3" width="34" height="32"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="zSg-E0-pOy">
+                                        <rect key="frame" x="81" y="3" width="34" height="32"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Av-Vk6">
+                                        <rect key="frame" x="123" y="3" width="34" height="32"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="BYO-5x-kgK">
+                                        <rect key="frame" x="162" y="3" width="34" height="32"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-Xd-mQH">
+                                        <rect key="frame" x="0.0" y="3" width="34" height="32"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUV-jo-CZV">
+                                <rect key="frame" x="142" y="431" width="117" height="33"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Rival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOs-CO-hFr">
+                                <rect key="frame" x="151" y="390" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07P-R1-prP" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="142" y="150" width="130" height="130"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile Pic" translatesAutoresizingMaskIntoConstraints="NO" id="EPv-f8-ZsW">
+                                        <rect key="frame" x="9" y="8" width="114" height="114"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyh-lc-NPQ">
+                                        <rect key="frame" x="94" y="101" width="29" height="21"/>
+                                        <state key="normal" title="Button" image="cameraWhite"/>
+                                        <connections>
+                                            <action selector="cameraButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="sEj-LU-Lux"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-96-mPX">
+                                <rect key="frame" x="174" y="325" width="53" height="57"/>
+                                <state key="normal" title="Button" image="boxingGlove"/>
+                                <connections>
+                                    <action selector="findRivalButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="wqn-TA-GKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-k4-5FP">
+                                <rect key="frame" x="291" y="349" width="52" height="15"/>
+                                <state key="normal" title="Button" image="moreAsset"/>
+                                <connections>
+                                    <action selector="moreButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="WNl-CB-d7c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Rivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ht-ul-aCT">
+                                <rect key="frame" x="16" y="523" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNK-Pn-d58" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="552" width="375" height="140"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Steph" highlightedImage="Profile Pic" translatesAutoresizingMaskIntoConstraints="NO" id="7AV-RN-Ped">
+                                        <rect key="frame" x="134" y="8" width="105" height="106"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DROSE" translatesAutoresizingMaskIntoConstraints="NO" id="fgK-t1-4Dt">
+                                        <rect key="frame" x="252" y="8" width="105" height="106"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JBUCKETS" translatesAutoresizingMaskIntoConstraints="NO" id="64e-Sx-Zmb">
+                                        <rect key="frame" x="15" y="8" width="105" height="106"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steph C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-Yv-v8I">
+                                        <rect key="frame" x="134" y="118" width="66" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D. Rose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-tA-pgZ">
+                                        <rect key="frame" x="252" y="119" width="59" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jimmy B." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-gf-Y0w">
+                                        <rect key="frame" x="15" y="119" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="coverImage" destination="ocC-kh-aZ8" id="0Ng-gm-P3R"/>
+                        <outlet property="fifthStar" destination="BYO-5x-kgK" id="QRC-Vx-C0x"/>
+                        <outlet property="fourthStar" destination="vXe-Av-Vk6" id="qnY-Hw-vij"/>
+                        <outlet property="moreInfoButton" destination="cHF-k4-5FP" id="jGQ-m9-2OW"/>
+                        <outlet property="oneStar" destination="sv7-Xd-mQH" id="0QR-NC-BOJ"/>
+                        <outlet property="profileImage" destination="EPv-f8-ZsW" id="GIA-Lq-df7"/>
+                        <outlet property="profileName" destination="U41-0M-Q87" id="Laj-Fk-Lp8"/>
+                        <outlet property="recentHistoryButton" destination="ILf-4z-9jT" id="V18-x2-eS3"/>
+                        <outlet property="requestRivalButton" destination="cWA-96-mPX" id="tyF-es-P7e"/>
+                        <outlet property="secondStar" destination="f3K-sW-poO" id="JAw-2r-h9v"/>
+                        <outlet property="thirdStar" destination="zSg-E0-pOy" id="8hP-8H-FDS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEW-pC-9ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -787,7 +932,7 @@
                                         </state>
                                         <connections>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPR-Th-0JR"/>
-                                            <segue destination="fN9-hb-5pA" kind="show" id="SeC-SE-gDC"/>
+                                            <segue destination="fN9-hb-5pA" kind="show" identifier="JoinGameToCreateLobby" id="SeC-SE-gDC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -805,7 +950,7 @@
                                         </state>
                                         <connections>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEl-ba-Tdv"/>
-                                            <segue destination="Ccl-te-Tmf" kind="show" id="JCo-ui-rMR"/>
+                                            <segue destination="Ccl-te-Tmf" kind="show" identifier="JoinGameToLobbyList" id="JCo-ui-rMR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -886,7 +1031,7 @@
                                 <rect key="frame" x="142" y="391" width="26" height="30"/>
                                 <state key="normal" title="Button" image="locationPin"/>
                                 <connections>
-                                    <segue destination="qCe-es-cMz" kind="show" id="1Cp-Y7-qh1"/>
+                                    <segue destination="qCe-es-cMz" kind="show" identifier="LocationButtonToMap" id="1Cp-Y7-qh1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lobby Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-i0-phU">
@@ -895,7 +1040,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lobby Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-0Z-oDT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lobby Name" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-0Z-oDT">
                                 <rect key="frame" x="192" y="165" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -911,6 +1056,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="createLobbyPressed:" destination="fN9-hb-5pA" eventType="touchUpInside" id="xno-Xf-CVa"/>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvX-Dq-B5q"/>
                                         </connections>
                                     </button>
@@ -920,7 +1066,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="# Players" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IX-v4-DoF">
                                 <rect key="frame" x="266" y="311" width="99" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -931,6 +1077,7 @@
                         <outlet property="lobbyNameTextField" destination="E1j-0Z-oDT" id="mWB-wn-s00"/>
                         <outlet property="locationAddressTextField" destination="Epo-tl-zkF" id="qqj-cj-ych"/>
                         <outlet property="numPlayersTextField" destination="1IX-v4-DoF" id="COp-8v-Caz"/>
+                        <segue destination="wUR-xT-2ho" kind="show" identifier="CreateLobbyToLobby" id="kLt-Ag-aq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufh-mY-9qQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -987,7 +1134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-qc-drV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="2828"/>
+            <point key="canvasLocation" x="3493" y="3045"/>
         </scene>
         <!--Join Game Lobby View Controller-->
         <scene sceneID="v9F-7n-EfK">
@@ -1338,6 +1485,7 @@
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R6O-au-n6v"/>
+        <segue reference="SeC-SE-gDC"/>
+        <segue reference="kLt-Ag-aq1"/>
     </inferredMetricsTieBreakers>
 </document>

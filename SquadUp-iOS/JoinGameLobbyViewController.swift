@@ -16,7 +16,14 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     var lobbyGames = [LobbyGameModel]()
     var lobbyObjectToPass: LobbyGameModel!
+    var sportPassed: String!
+    
     override func viewDidAppear(animated: Bool) {
+        self.sportsTableView.reloadData()
+        sportsTableView.dataSource = self
+        sportsTableView.delegate = self
+        sportLabel.text = sportPassed + " Lobby"
+        sportLabel.textAlignment = .Center;
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
@@ -24,7 +31,11 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
                     if let gameLobbyDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let lobbyGame = LobbyGameModel(lobbyKey: key, dictionary: gameLobbyDict)
-                        self.lobbyGames.append(lobbyGame)
+                        print(lobbyGame.sport)
+                        if lobbyGame.sport == self.sportPassed {
+                            print("HALLELUJA")
+                            self.lobbyGames.append(lobbyGame)
+                        }
                     }
                 }
             }
@@ -36,7 +47,8 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
-        
+        sportLabel.text = sportPassed + " Lobby"
+        sportLabel.textAlignment = .Center;
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
@@ -44,7 +56,12 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
                     if let gameLobbyDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let lobbyGame = LobbyGameModel(lobbyKey: key, dictionary: gameLobbyDict)
-                        self.lobbyGames.append(lobbyGame)
+                        print(lobbyGame.sport)
+                        print(self.sportPassed)
+                        if lobbyGame.sport == self.sportPassed {
+                            print("HALLELUJA")
+                            self.lobbyGames.append(lobbyGame)
+                        }
                     }
                 }
             }

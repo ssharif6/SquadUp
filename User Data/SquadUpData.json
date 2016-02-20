@@ -7,7 +7,7 @@
 			"id": "game1111",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "basketball"
+			"sportsID": "Basketball"
 		},
 		"game10": {
 			"currentCapacity": "2",
@@ -16,7 +16,7 @@
 			"id": "game1112",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "badminton"
+			"sportsID": "Badminton"
 		},
 		"game2": {
 			"currentCapacity": "1",
@@ -25,7 +25,7 @@
 			"id": "game1113",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "tennis"
+			"sportsID": "Tennis"
 		},
 		"game3": {
 			"currentCapacity": "5",
@@ -34,7 +34,7 @@
 			"id": "game1114",
 			"lobbyName": "7 v 7",
 			"maxCapacity": "14",
-			"sportsID": "soccer"
+			"sportsID": "Soccer"
 		},
 		"game4": {
 			"currentCapacity": "1",
@@ -43,7 +43,7 @@
 			"id": "game1115",
 			"lobbyName": "1 v 1",
 			"maxCapacity": "2",
-			"sportsID": "badminton"
+			"sportsID": "Badminton"
 		},
 		"game5": {
 			"currentCapacity": "10",
@@ -52,7 +52,7 @@
 			"id": "game1116",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "football"
+			"sportsID": "Football"
 		},
 		"game6": {
 			"currentCapacity": "6",
@@ -61,7 +61,7 @@
 			"id": "game1117",
 			"lobbyName": "11 v 11",
 			"maxCapacity": "22",
-			"sportsID": "baseball"
+			"sportsID": "Baseball"
 		},
 		"game7": {
 			"currentCapacity": "6",
@@ -70,7 +70,7 @@
 			"id": "game1118",
 			"lobbyName": "3 v 3",
 			"maxCapacity": "6",
-			"sportsID": "frisbee"
+			"sportsID": "Frisbee"
 		},
 		"game8": {
 			"currentCapacity": "3",
@@ -78,7 +78,7 @@
 			"id": "game1119",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "tennis"
+			"sportsID": "Tennis"
 		},
 		"game9": {
 			"currentCapacity": "6",
@@ -87,7 +87,7 @@
 			"id": "game1120",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "soccer"
+			"sportsID": "Soccer"
 		}
 	},
 	"posts": {
@@ -100,50 +100,50 @@
 		},
 		"post2": {
 			"activity": "Playing basketball",
-			"id": "11111225",
+			"id": "1f82b3e2-f5bb-41b8-a192-5492b88a8822",
 			"name": "Lyndon Anderson",
 			"numLikes": 13
 		},
 		"post3": {
 			"activity": "Playing soccer",
-			"id": "M26",
+			"id": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923",
 			"name": "Ronaldo Sanchez",
 			"numLikes": 142
 		},
 		"post4": {
 			"activity": "Taking a break",
 			"name": "Dwight Gray",
-			"id": "M2",
+			"id": "48dc592b-3471-48a1-bcc9-e990abccf8fa",
 			"numLikes": 23
 		},
 		"post5": {
 			"activity": "Playing ultimate frisbee",
 			"name": "Nicolas Rivera",
-			"id": "M4",
+			"id": "4881988c-a78e-4ce6-af46-73e265bf002c",
 			"numLikes": 10
 		},
 		"post6": {
 			"activity": "Playing football",
 			"name": "Samuel Tran",
-			"id": "M17",
+			"id": "66bad232-2bf0-453a-8e70-f727fb7514b8",
 			"numLikes": 59
 		},
 		"post7": {
 			"activity": "Playing soccer",
 			"name": "Adrian Matthews",
-			"id": "M10",
+			"id": "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2",
 			"numLikes": 243
 		},
 		"post8": {
 			"activity": "Taking a break",
 			"name": "Ernesto Valdez",
-			"id": "M20",
+			"id": "39287cf7-aa96-420d-9688-1affa01ad831",
 			"numLikes": 98
 		},
 		"post 9": {
 			"activity": "Playing baseball",
 			"name": "Jacob Ramirez",
-			"id": "M30",
+			"id": "79db5730-0641-447e-8935-fd09b8928189",
 			"numLikes": 32
 		}
 	},

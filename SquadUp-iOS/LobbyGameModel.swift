@@ -19,10 +19,20 @@ class LobbyGameModel {
     private var _lobbyKey: String!
     private var _distance: String!
     private var _sportsId: String!
+    private var _address: String!
+    private var _description: String!
     private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
         return _lobbyName
+    }
+    
+    var description: String {
+        return _description
+    }
+    
+    var address: String {
+        return _description
     }
     
     var maxCapacity: String {
@@ -49,7 +59,6 @@ class LobbyGameModel {
         return _lobbyKey
     }
     
-    
     init(lobbyKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._lobbyKey = lobbyKey
         if let lobbyName = dictionary["lobbyName"] as? String {
@@ -64,7 +73,6 @@ class LobbyGameModel {
         if let currentPlayers = dictionary["currentPlayers"] as? [String] {
             self._currentPlayers = currentPlayers
             print(currentPlayers)
-            print("FUCK LJDSJF")
         }
         if let distance = dictionary["distance"] as? String {
             self._distance = distance

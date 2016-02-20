@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var fifthStar: UIImageView!
     @IBOutlet weak var profileName: UILabel!
     
+    var lobbyObjectPassed: LobbyGameModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

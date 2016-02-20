@@ -13,7 +13,7 @@ class Post {
     private var _postDescription: String!
     private var _imageUrl: String?
     private var _numLikes: Int!
-    private var _username: String!
+    private var _id: String!
     private var _postKey: String!
     private var _activity: String!
     private var _name: String!
@@ -39,18 +39,18 @@ class Post {
         return _numLikes
     }
     
-    var username: String {
-        return _username
+    var id: String {
+        return _id
     }
     
     var activity: String {
         return _activity
     }
     
-    init(description: String, imageUrl: String?, username: String) {
+    init(description: String, imageUrl: String?, id: String) {
         self._postDescription = postDescription
         self._imageUrl = imageUrl
-        self._username = username
+        self._id = id
     }
     
     init(postKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -69,6 +69,9 @@ class Post {
         }
         if let name = dictionary["name"] as? String {
             self._name = name
+        }
+        if let id = dictionary["id"] as? String {
+            self._id = id
         }
         // Reference to Post
         self._postRef = DataService.ds.REF_POSTS.childByAppendingPath(self._postKey)

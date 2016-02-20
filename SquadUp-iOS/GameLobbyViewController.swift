@@ -24,6 +24,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var playerIdList = [String]()
     var team1: Bool!
     var currentUser: UserModel!
+
     
     override func viewDidAppear(animated: Bool) {
         team1TableView.dataSource = self
@@ -34,9 +35,17 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLobbyInfo()
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
+    }
+    
+    func displayLobbyInfo() {
+        lobbyNameLabel.text = lobbyModelObject.lobbyName
+        lobbyNameLabel.textAlignment = .Center
+//        descriptionLabel.text = lobbyModelObject.description
+//        addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
     func divideTeams() {
@@ -59,7 +68,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func getUsers() {
         var asdf = [UserModel]()
-        
         print(self.lobbyModelObject.currentPlayers)
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -68,7 +76,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
                 for snap in snapshots {
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
-                        print("FUCK A " + snap.key)
                         if (self.lobbyModelObject.currentPlayers.contains(snap.key)) {
                             print("found")
                             let user = UserModel(userKey: key, dictionary: userDict)
