@@ -90,53 +90,63 @@
 			"sportsID": "soccer"
 		}
 	},
-	"posts": [null, {
-		"activity": "Playing tennis",
-		"id": "11111110",
-		"name": "Max Shao",
-		"numLikes": 50,
-		"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
-	}, {
-		"activity": "Playing basketball",
-		"id": "11111225",
-		"name": "Lyndon Anderson",
-		"numLikes": 13
-	}, {
-		"activity": "Playing soccer",
-		"id": "M26",
-		"name": "Ronaldo Sanchez",
-		"numLikes": 142
-	}, {
-    "activity" : "Taking a break",
-    "name" : "Dwight Gray",
-    "id" : "M2",
-    "numLikes" : 23
-  }, {
-    "activity" : "Playing ultimate frisbee",
-    "name" : "Nicolas Rivera",
-    "id" : "M4",
-    "numLikes" : 10
-  }, {
-    "activity" : "Playing football",
-    "name" : "Samuel Tran",
-    "id" : "M17",
-    "numLikes" : 59
-  }, {
-    "activity" : "Playing soccer",
-    "name" : "Adrian Matthews",
-    "id" : "M10",
-    "numLikes" : 243
-  }, {
-    "activity" : "Taking a break",
-    "name" : "Ernesto Valdez",
-    "id" : "M20",
-    "numLikes" : 98
-  }, {
-    "activity" : "Playing baseball",
-    "name" : "Jacob Ramirez",
-    "id" : "M30",
-    "numLikes" : 32
-  }],
+	"posts": {
+		"post1": {
+			"activity": "Playing tennis",
+			"id": "11111110",
+			"name": "Max Shao",
+			"numLikes": 50,
+			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
+		},
+		"post2": {
+			"activity": "Playing basketball",
+			"id": "11111225",
+			"name": "Lyndon Anderson",
+			"numLikes": 13
+		},
+		"post3": {
+			"activity": "Playing soccer",
+			"id": "M26",
+			"name": "Ronaldo Sanchez",
+			"numLikes": 142
+		},
+		"post4": {
+			"activity": "Taking a break",
+			"name": "Dwight Gray",
+			"id": "M2",
+			"numLikes": 23
+		},
+		"post5": {
+			"activity": "Playing ultimate frisbee",
+			"name": "Nicolas Rivera",
+			"id": "M4",
+			"numLikes": 10
+		},
+		"post6": {
+			"activity": "Playing football",
+			"name": "Samuel Tran",
+			"id": "M17",
+			"numLikes": 59
+		},
+		"post7": {
+			"activity": "Playing soccer",
+			"name": "Adrian Matthews",
+			"id": "M10",
+			"numLikes": 243
+		},
+		"post8": {
+			"activity": "Taking a break",
+			"name": "Ernesto Valdez",
+			"id": "M20",
+			"numLikes": 98
+		},
+		"post 9": {
+			"activity": "Playing baseball",
+			"name": "Jacob Ramirez",
+			"id": "M30",
+			"numLikes": 32
+		}
+	},
 	"notifications": {
 		"note1": {
 			"description": "You have been challenged!",
@@ -159,7 +169,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
 			"Sports": ["tennis", "football"],
@@ -171,7 +182,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "2"
+			"ranking": "2",
+			"rivals": []
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
 			"Sports": ["baseball", "frisbee"],
@@ -183,7 +195,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
 			"Sports": ["soccer", "baseball", "basketball", "tennis"],
@@ -195,7 +208,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "5"
+			"ranking": "5",
+			"rivals": []
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
 			"Sports": ["soccer", "frisbee"],
@@ -207,7 +221,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "1"
+			"ranking": "1",
+			"rivals": []
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
 			"Sports": ["soccer", "badminton", "football", "basketball"],
@@ -219,7 +234,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "unranked"
+			"ranking": "unranked",
+			"rivals": []
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
 			"Sports": ["soccer", "football"],
@@ -231,7 +247,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "5"
+			"ranking": "5",
+			"rivals": []
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
 			"Sports": ["baseball", "football", "tennis", "frisbee"],
@@ -243,7 +260,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
 			"Sports": ["soccer", "baseball", "tennis", "frisbee"],
@@ -255,7 +273,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"c59731d4-e3ee-4169-ac57-6991e7f5ab9f": {
 			"Sports": ["basketball", "soccer", "badminton", "football"],
@@ -267,7 +286,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
 			"Sports": ["soccer", "badminton", "football", "baseball", "basketball", "frisbee"],
@@ -279,7 +299,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49": {
 			"Sports": ["tennis", "football", "badminton"],
@@ -291,7 +312,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"9801ca60-efcc-4902-9b3e-9e55372efc8f": {
 			"Sports": ["baseball", "soccer"],
@@ -303,7 +325,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "2"
+			"ranking": "2",
+			"rivals": []
 		},
 		"f18af723-cfd4-4072-a15b-984f32cbb4fc": {
 			"Sports": ["baseball", "basketball", "tennis"],
@@ -315,7 +338,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "2"
+			"ranking": "2",
+			"rivals": []
 		},
 		"551bfbae-51f8-4c1c-8023-b512e049e488": {
 			"Sports": ["football"],
@@ -327,7 +351,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "5"
+			"ranking": "5",
+			"rivals": []
 		},
 		"66bad232-2bf0-453a-8e70-f727fb7514b8": {
 			"Sports": ["football", "basketball"],
@@ -339,7 +364,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note1"],
-			"ranking": "unranked"
+			"ranking": "unranked",
+			"rivals": []
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
 			"Sports": ["soccer", "football", "badminton", "tennis"],
@@ -351,7 +377,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "1"
+			"ranking": "1",
+			"rivals": []
 		},
 		"d3d9d8ff-10d7-4476-adcf-23af9c8ebb42": {
 			"Sports": ["baseball", "football", "tennis", "badminton", "baseball", "basketball", "frisbee"],
@@ -363,7 +390,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"39287cf7-aa96-420d-9688-1affa01ad831": {
 			"Sports": ["baseball", "tennis"],
@@ -375,7 +403,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"70a2eea7-482d-4444-a4a1-70210ef25603": {
 			"Sports": ["basketball", "soccer", "badminton"],
@@ -387,7 +416,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"ranking": "2"
+			"ranking": "2",
+			"rivals": []
 		},
 		"2b53738f-a267-4a77-bd74-70e3fd03cf58": {
 			"Sports": ["soccer", "badminton", "football", "basketball", "tennis"],
@@ -399,7 +429,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"ad1602e0-07af-4cea-bf21-00c94d335952": {
 			"Sports": ["tennis", "football"],
@@ -411,7 +442,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"ranking": "unranked"
+			"ranking": "unranked",
+			"rivals": []
 		},
 		"27cef23f-942f-4cff-bfbf-7db0a2b7fdc9": {
 			"Sports": ["baseball", "frisbee"],
@@ -423,7 +455,8 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"ranking": "unranked"
+			"ranking": "unranked",
+			"rivals": []
 		},
 		"93b96669-cd50-4cd0-9f00-359d97f0d000": {
 			"Sports": ["soccer", "tennis", "frisbee"],
@@ -435,7 +468,8 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "unranked"
+			"ranking": "unranked",
+			"rivals": []
 		},
 		"8d3727d0-cfe1-4c21-8934-7dd5fdf1f923": {
 			"Sports": ["soccer", "football", "frisbee"],
@@ -447,7 +481,8 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"ranking": "1"
+			"ranking": "1",
+			"rivals": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
 			"Sports": ["soccer", "badminton", "football", "frisbee"],
@@ -459,7 +494,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"ranking": "1"
+			"ranking": "1",
+			"rivals": []
 		},
 		"fe93a43a-1e6b-49dc-9b00-184040c14526": {
 			"Sports": ["soccer", "football", "basketball", "frisbee"],
@@ -471,7 +507,8 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"bd161367-671d-45df-9b91-b8c6bed167fc": {
 			"Sports": ["baseball", "football", "tennis", "soccer", "frisbee"],
@@ -483,7 +520,8 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"ranking": "5"
+			"ranking": "5",
+			"rivals": []
 		},
 		"79db5730-0641-447e-8935-fd09b8928189": {
 			"Sports": ["soccer", "baseball", "tennis", "frisbee"],
@@ -495,7 +533,8 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"ranking": "4"
+			"ranking": "4",
+			"rivals": []
 		},
 		"1f82b3e2-f5bb-41b8-a192-5492b88a8822": {
 			"Sports": ["basketball", "soccer", "badminton", "football", "frisbee"],
@@ -506,7 +545,8 @@
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
 			"notifications": ["note2"],
-			"ranking": "3"
+			"ranking": "3",
+			"rivals": []
 		},
 		"579": {
 			"name": "Nelson Tan",
