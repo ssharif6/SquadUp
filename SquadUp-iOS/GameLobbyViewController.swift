@@ -68,7 +68,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
                 for snap in snapshots {
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
-                        print("FUCK A " + snap.key)
                         if (self.lobbyModelObject.currentPlayers.contains(snap.key)) {
                             print("found")
                             let user = UserModel(userKey: key, dictionary: userDict)

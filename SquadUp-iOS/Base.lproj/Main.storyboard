@@ -911,6 +911,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="createLobbyPressed:" destination="fN9-hb-5pA" eventType="touchUpInside" id="xno-Xf-CVa"/>
                                             <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvX-Dq-B5q"/>
                                         </connections>
                                     </button>

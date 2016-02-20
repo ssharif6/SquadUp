@@ -49,7 +49,6 @@ class LobbyGameModel {
         return _lobbyKey
     }
     
-    
     init(lobbyKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._lobbyKey = lobbyKey
         if let lobbyName = dictionary["lobbyName"] as? String {
@@ -64,7 +63,6 @@ class LobbyGameModel {
         if let currentPlayers = dictionary["currentPlayers"] as? [String] {
             self._currentPlayers = currentPlayers
             print(currentPlayers)
-            print("FUCK LJDSJF")
         }
         if let distance = dictionary["distance"] as? String {
             self._distance = distance
