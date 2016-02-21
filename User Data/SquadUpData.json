@@ -7,7 +7,9 @@
 			"id": "game1111",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "Basketball"
+			"sportsID": "Basketball",
+			"date" : "24-02-2016 20:00",
+			"description" : ""
 		},
 		"game10": {
 			"currentCapacity": "2",
@@ -16,7 +18,9 @@
 			"id": "game1112",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "Badminton"
+			"sportsID": "Badminton",
+			"date" : "24-02-2016 15:00",
+			"description" : ""
 		},
 		"game2": {
 			"currentCapacity": "1",
@@ -25,7 +29,9 @@
 			"id": "game1113",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "Tennis"
+			"sportsID": "Tennis",
+			"date" : "25-02-2016 14:30",
+			"description" : ""
 		},
 		"game3": {
 			"currentCapacity": "5",
@@ -34,7 +40,9 @@
 			"id": "game1114",
 			"lobbyName": "7 v 7",
 			"maxCapacity": "14",
-			"sportsID": "Soccer"
+			"sportsID": "Soccer",
+			"date" : "26-02-2016 15:30",
+			"description" : ""
 		},
 		"game4": {
 			"currentCapacity": "1",
@@ -43,7 +51,9 @@
 			"id": "game1115",
 			"lobbyName": "1 v 1",
 			"maxCapacity": "2",
-			"sportsID": "Badminton"
+			"sportsID": "Badminton",
+			"date" : "26-02-2016 14:30",
+			"description" : ""
 		},
 		"game5": {
 			"currentCapacity": "10",
@@ -52,7 +62,9 @@
 			"id": "game1116",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "Football"
+			"sportsID": "Football",
+			"date" : "27-02-2016 17:30",
+			"description" : ""
 		},
 		"game6": {
 			"currentCapacity": "6",
@@ -61,7 +73,9 @@
 			"id": "game1117",
 			"lobbyName": "11 v 11",
 			"maxCapacity": "22",
-			"sportsID": "Baseball"
+			"sportsID": "Baseball",
+			"date" : "27-02-2016 13:30",
+			"description" : ""
 		},
 		"game7": {
 			"currentCapacity": "6",
@@ -70,7 +84,9 @@
 			"id": "game1118",
 			"lobbyName": "3 v 3",
 			"maxCapacity": "6",
-			"sportsID": "Frisbee"
+			"sportsID": "Frisbee",
+			"date" : "28-02-2016 16:00",
+			"description" : ""
 		},
 		"game8": {
 			"currentCapacity": "3",
@@ -78,7 +94,9 @@
 			"id": "game1119",
 			"lobbyName": "2 v 2",
 			"maxCapacity": "4",
-			"sportsID": "Tennis"
+			"sportsID": "Tennis",
+			"date" : "29-02-2016 14:00",
+			"description" : ""
 		},
 		"game9": {
 			"currentCapacity": "6",
@@ -87,7 +105,9 @@
 			"id": "game1120",
 			"lobbyName": "5 v 5",
 			"maxCapacity": "10",
-			"sportsID": "Soccer"
+			"sportsID": "Soccer",
+			"date" : "29-02-2016 19:30",
+			"description" : ""
 		}
 	},
 	"posts": {
@@ -547,29 +567,6 @@
 			"notifications": ["note2"],
 			"ranking": "3",
 			"rivals": []
-		},
-		"579": {
-			"name": "Nelson Tan",
-			"posts": ["15541", "42241", "24414"],
-			"provider": "Facebook",
-			"sports": ["Basketball", "Soccer", "Tennis"]
-		},
-		"asdfasdf787": {
-			"Sports": ["basketball", "soccer", "frisbee"],
-			"firstName": "Albert",
-			"gender": "male",
-			"id": "M1",
-			"lastName": "Dawson",
-			"posts": ["11111110", "11111111"],
-			"provider": "Facebook"
-		},
-		"facebook:10208631930738547": {
-			"firstName": "Shaheen",
-			"gender": "male",
-			"id": "asdf23534",
-			"lastName": "Sharifian",
-			"posts": "hullo",
-			"provider": "facebook"
 		}
 	}
 }
