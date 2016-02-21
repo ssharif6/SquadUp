@@ -1016,24 +1016,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaC-h7-S21">
-                                <rect key="frame" x="20" y="389" width="102" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-tl-zkF">
-                                <rect key="frame" x="192" y="391" width="173" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bx-ed-ywI">
-                                <rect key="frame" x="142" y="391" width="26" height="30"/>
-                                <state key="normal" title="Button" image="locationPin"/>
-                                <connections>
-                                    <segue destination="qCe-es-cMz" kind="show" identifier="LocationButtonToMap" id="1Cp-Y7-qh1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lobby Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-i0-phU">
                                 <rect key="frame" x="20" y="167" width="156" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -1068,11 +1050,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaC-h7-S21">
+                                <rect key="frame" x="20" y="452" width="102" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-tl-zkF">
+                                <rect key="frame" x="192" y="454" width="173" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bx-ed-ywI">
+                                <rect key="frame" x="142" y="454" width="26" height="30"/>
+                                <state key="normal" title="Button" image="locationPin"/>
+                                <connections>
+                                    <segue destination="qCe-es-cMz" kind="show" identifier="LocationButtonToMap" id="1Cp-Y7-qh1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E86-Gm-s0p">
+                                <rect key="frame" x="20" y="378" width="156" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6vD-K3-b65">
+                                <rect key="frame" x="89" y="368" width="276" height="52"/>
+                                <date key="date" timeIntervalSinceReferenceDate="477727675.49153101">
+                                    <!--2016-02-21 06:07:55 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="fN9-hb-5pA" eventType="valueChanged" id="efG-ny-TBR"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.96078431369999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="datePicker" destination="6vD-K3-b65" id="rXk-E6-vwR"/>
                         <outlet property="descriptionTextField" destination="Yvp-6e-WTn" id="F70-kg-Wpa"/>
                         <outlet property="lobbyNameTextField" destination="E1j-0Z-oDT" id="mWB-wn-s00"/>
                         <outlet property="locationAddressTextField" destination="Epo-tl-zkF" id="qqj-cj-ych"/>
@@ -1172,14 +1188,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.9 Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-kp-mGV">
-                                                    <rect key="frame" x="359" y="30" width="47" height="21"/>
+                                                    <rect key="frame" x="359" y="42" width="47" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thurs 2/22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62g-5o-uND">
+                                                    <rect key="frame" x="322" y="12" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dateLabel" destination="62g-5o-uND" id="Yhy-Bu-Gya"/>
                                             <outlet property="distanceLabel" destination="DfV-kp-mGV" id="jEj-8p-8uA"/>
                                             <outlet property="lobbyName" destination="LBE-Z3-zPU" id="ng5-Pv-7Zu"/>
                                             <outlet property="numPeople" destination="TJ7-hf-2Nk" id="p7o-Om-aHD"/>
@@ -1286,6 +1309,7 @@
                     <connections>
                         <outlet property="addressButton" destination="gNa-tq-o2Q" id="y0d-7H-5uu"/>
                         <outlet property="descriptionLabel" destination="jm4-0M-HBo" id="8dz-U6-tMe"/>
+                        <outlet property="joinButton" destination="unV-eS-uGY" id="0Le-w2-SCo"/>
                         <outlet property="lobbyNameLabel" destination="jXd-M8-Ub0" id="BlL-cS-2qH"/>
                         <outlet property="team1ContainerView" destination="RCu-UL-YIt" id="px5-H3-nw1"/>
                         <outlet property="team1TableView" destination="kN5-A6-lDj" id="eNk-yo-vkV"/>

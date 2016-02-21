@@ -12,8 +12,8 @@ import Firebase
 class LobbyGameModel {
     private var _lobbyId: String!
     private var _lobbyName: String!
-    private var _maxCapacity: String!
-    private var _currentCapacity: String!
+    private var _maxCapacity: Int!
+    private var _currentCapacity: Int!
     private var _currentPlayers: [String]!
     private var _currentLobbyRef: Firebase!
     private var _lobbyKey: String!
@@ -21,25 +21,31 @@ class LobbyGameModel {
     private var _sportsId: String!
     private var _address: String!
     private var _description: String!
+    private var _date: String!
+    private var _dayOfWeek: String!
     private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
         return _lobbyName
     }
     
+//    var dayOfWeek: String {
+//        return _dayOfWeek
+//    }
+    
     var description: String {
         return _description
     }
     
-    var address: String {
-        return _description
-    }
+//    var address: String {
+//        return _address
+//    }
     
-    var maxCapacity: String {
+    var maxCapacity: Int {
         return _maxCapacity
     }
     
-    var currentCapacity: String {
+    var currentCapacity: Int {
         return _currentCapacity
     }
     
@@ -64,10 +70,10 @@ class LobbyGameModel {
         if let lobbyName = dictionary["lobbyName"] as? String {
             self._lobbyName = lobbyName
         }
-        if let maxCapacity = dictionary["maxCapacity"] as? String {
+        if let maxCapacity = dictionary["maxCapacity"] as? Int {
             self._maxCapacity = maxCapacity
         }
-        if let currentCapacity = dictionary["currentCapacity"] as? String {
+        if let currentCapacity = dictionary["currentCapacity"] as? Int {
             self._currentCapacity = currentCapacity
         }
         if let currentPlayers = dictionary["currentPlayers"] as? [String] {
@@ -83,6 +89,38 @@ class LobbyGameModel {
         if let lobbyId = dictionary["id"] as? String {
             self._lobbyId = lobbyId
         }
+        if let address = dictionary["address"] as? String {
+            self._address = address
+        }
+        if let dayOfWeek = dictionary["dayOfWeek"] as? String {
+            self._dayOfWeek = dayOfWeek
+        }
+    }
+    
+    func checkIfMaxCapacity() -> Bool{
+        if _currentCapacity == _maxCapacity {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func adjustCurrentCapacity(addPlayer: Bool) -> Bool{
+        if _currentCapacity < _maxCapacity {
+            if addPlayer {
+                let numPlayers = self._currentCapacity + 1
+                self._currentCapacity = numPlayers
+                DataService.ds.REF_LOBBYGAMES.childByAppendingPath(self._lobbyKey).childByAppendingPath("currentCapacity").setValue(numPlayers)
+            } else {
+                let numPlayers = self._currentCapacity - 1
+                self._currentCapacity = numPlayers
+                DataService.ds.REF_LOBBYGAMES.childByAppendingPath(self._lobbyKey).childByAppendingPath("currentCapacity").setValue(numPlayers)
+            }
+
+        } else {
+            return false // throw error
+        }
+        return true
     }
     
 }

@@ -14,6 +14,7 @@ class CreateNewLobbyViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var numPlayersTextField: UITextField!
     @IBOutlet weak var locationAddressTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     var passedLocationString: String?
     var passedLobbyName: String?
@@ -22,6 +23,7 @@ class CreateNewLobbyViewController: UIViewController {
     var lobbyObjectToPass: LobbyGameModel!
     var sportPassed: String!
     var sportLabel: String?
+    var selectedDate: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,8 @@ class CreateNewLobbyViewController: UIViewController {
         viewDidLoad()
     }
     
+    
+    
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -72,6 +76,13 @@ class CreateNewLobbyViewController: UIViewController {
 
     }
     
+    @IBAction func datePickerAction(sender: AnyObject) {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let strDate = dateFormatter.stringFromDate(datePicker.date)
+        self.selectedDate = strDate
+        print(strDate)
+    }
     
     @IBAction func createLobbyPressed (sender: AnyObject) {
         displayError()
@@ -79,6 +90,11 @@ class CreateNewLobbyViewController: UIViewController {
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
         var userArray = [String]()
         userArray.append(userUnarchived.userKey)
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let strDate = dateFormatter.stringFromDate(datePicker.date)
+        self.selectedDate = strDate
+        
         let lobby: Dictionary<String, AnyObject> = [
             "distance": "0.9",
             "lobbyName": lobbyNameTextField.text!,
@@ -86,7 +102,8 @@ class CreateNewLobbyViewController: UIViewController {
             "sportsID": sportLabel!,
             "currentCapacity": "1",
             "currentPlayers": userArray,
-            "location": locationAddressTextField.text!
+            "location": locationAddressTextField.text!,
+            "date": self.selectedDate
         ]
         let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
         lobbyPost.setValue(lobby)

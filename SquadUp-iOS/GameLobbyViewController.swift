@@ -16,6 +16,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var team1ContainerView: UIView!
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var joinButton: UIButton!
     
     var lobbyModelObject: LobbyGameModel!
     var teamOneArray = [UserModel]()
@@ -24,7 +25,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var playerIdList = [String]()
     var team1: Bool!
     var currentUser: UserModel!
-
+    
     
     override func viewDidAppear(animated: Bool) {
         team1TableView.dataSource = self
@@ -44,8 +45,8 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName
         lobbyNameLabel.textAlignment = .Center
-//        descriptionLabel.text = lobbyModelObject.description
-//        addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
+        //        descriptionLabel.text = lobbyModelObject.description
+        //        addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
     func divideTeams() {
@@ -139,16 +140,25 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         team1TableView.reloadData()
     }
     @IBAction func joinTeam(sender: AnyObject) {
+        joinButton.enabled = false
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-        let post = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(lobbyModelObject.lobbyKey).childByAppendingPath("currentPlayers").childByAppendingPath(String(self.lobbyModelObject.currentPlayers.count))
-
-        post.setValue(userUnarchived.userKey)
-        playersInLobby.append(userUnarchived)
-        print(userUnarchived.firstName)
-        self.divideTeams()
+        if lobbyModelObject.checkIfMaxCapacity() == true {
+            lobbyModelObject.adjustCurrentCapacity(true)
+            let post = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(lobbyModelObject.lobbyKey).childByAppendingPath("currentPlayers").childByAppendingPath(String(self.lobbyModelObject.currentPlayers.count))
+            post.setValue(userUnarchived.userKey)
+            playersInLobby.append(userUnarchived)
+            print(userUnarchived.firstName)
+            self.divideTeams()
+        } else {
+            let alert = UIAlertController(title: "Game is Full", message: "The Maximum Number of Players has been Reached.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
         self.team1TableView.reloadData()
+        
     }
+    
 }
 
 
