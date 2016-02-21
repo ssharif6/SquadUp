@@ -16,6 +16,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var team1ContainerView: UIView!
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var joinButton: UIButton!
     
     var lobbyModelObject: LobbyGameModel!
     var teamOneArray = [UserModel]()
@@ -139,6 +140,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         team1TableView.reloadData()
     }
     @IBAction func joinTeam(sender: AnyObject) {
+        joinButton.enabled = false
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
         if lobbyModelObject.checkIfMaxCapacity() == true {

@@ -21,6 +21,7 @@ class LobbyGameModel {
     private var _sportsId: String!
     private var _address: String!
     private var _description: String!
+    private var _date: String!
     private var _dayOfWeek: String!
     private var _currentPlayersList = [UserModel]()
     
