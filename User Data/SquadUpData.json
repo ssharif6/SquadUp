@@ -1,6 +1,7 @@
 {
 	"lobbyGames": {
 		"game1": {
+			"registered" : "no",
 			"currentCapacity": 5,
 			"currentPlayers": ["06f11c84-c68e-43a6-99c0-cde53399946f", "21a20b5b-3dd3-4e09-926f-51c1dce575f0", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "f18af723-cfd4-4072-a15b-984f32cbb4fc"],
 			"distance": "0.9",
@@ -12,7 +13,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game10": {
+		"game2": {
+			"registered" : "no",
 			"currentCapacity": 2,
 			"currentPlayers": ["1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f"],
 			"distance": "0.9",
@@ -24,7 +26,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game2": {
+		"game3": {
+			"registered" : "no",
 			"currentCapacity": 3,
 			"currentPlayers": ["742679cc-f04f-4c20-9b06-e4e582faef42", "f880a1e2-d4de-4ca2-84a1-42e843618d25", "100d0a06-5791-4865-96bf-3682dcd7922d"],
 			"distance": "0.9",
@@ -36,7 +39,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game3": {
+		"game4": {
+			"registered" : "no",
 			"currentCapacity": 5,
 			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "9801ca60-efcc-4902-9b3e-9e55372efc8f", "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1", "2b53738f-a267-4a77-bd74-70e3fd03cf58", "2b53738f-a267-4a77-bd74-70e3fd03cf58"],
 			"distance": "0.9",
@@ -48,7 +52,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game4": {
+		"game5": {
+			"registered" : "no",
 			"currentCapacity": 1,
 			"currentPlayers": ["1f82b3e2-f5bb-41b8-a192-5492b88a8822"],
 			"distance": "0.9",
@@ -60,7 +65,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game5": {
+		"game6": {
+			"registered" : "no",
 			"currentCapacity": 10,
 			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "742679cc-f04f-4c20-9b06-e4e582faef42", "21a20b5b-3dd3-4e09-926f-51c1dce575f0", "0b11d418-285b-4b3a-aadd-04d57ec98043", "f880a1e2-d4de-4ca2-84a1-42e843618d25", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49", "551bfbae-51f8-4c1c-8023-b512e049e488", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"],
 			"distance": "0.9",
@@ -72,7 +78,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game6": {
+		"game7": {
+			"registered" : "no",
 			"currentCapacity": 10,
 			"currentPlayers": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "f18af723-cfd4-4072-a15b-984f32cbb4fc", "27cef23f-942f-4cff-bfbf-7db0a2b7fdc9"],
 			"distance": "0.9",
@@ -84,7 +91,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game7": {
+		"game8": {
+			"registered" : "no",
 			"currentCapacity": 6,
 			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1", "fe93a43a-1e6b-49dc-9b00-184040c14526", "bd161367-671d-45df-9b91-b8c6bed167fc", "27cef23f-942f-4cff-bfbf-7db0a2b7fdc9", "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"],
 			"distance": "0.9",
@@ -96,7 +104,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game8": {
+		"game9": {
+			"registered" : "no",
 			"currentCapacity": 3,
 			"currentPlayers": ["f880a1e2-d4de-4ca2-84a1-42e843618d25", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
 			"id": "game1119",
@@ -107,7 +116,8 @@
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game9": {
+		"game10": {
+			"registered" : "no",
 			"currentCapacity": 6,
 			"currentPlayers": ["06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "0b11d418-285b-4b3a-aadd-04d57ec98043", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "9801ca60-efcc-4902-9b3e-9e55372efc8f", "100d0a06-5791-4865-96bf-3682dcd7922d", "70a2eea7-482d-4444-a4a1-70210ef25603", "93b96669-cd50-4cd0-9f00-359d97f0d000", "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"],
 			"distance": "0.9",
@@ -116,6 +126,84 @@
 			"maxCapacity": 10,
 			"sportsID": "Soccer",
 			"date" : "29-02-2016 19:30",
+			"description" : "",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game11" : {
+			"registered" : "no",
+			"currentCapacity": "1",
+			"currentPlayers": ["100d0a06-5791-4865-96bf-3682dcd7922d"],
+			"distance": "0.9",
+			"id": "game1121",
+			"lobbyName": "1 v 1",
+			"maxCapacity": 2,
+			"sportsID": "badminton",
+			"date" : "02-03-2016 14:30",
+			"description" : "",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game12" : {
+			"registered" : "no",
+			"currentCapacity": "2",
+			"currentPlayers": ["21a20b5b-3dd3-4e09-926f-51c1dce575f0",	"d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"],
+			"distance": "0.9",
+			"id": "game1122",
+			"lobbyName": "1 v 1",
+			"maxCapacity": 2,
+			"sportsID": "badminton",
+			"date" : "02-03-2016 18:30",
+			"description" : "UW Badminton Team Fundraiser Tournament",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game13" : {
+			"registered" : "yes",
+			"currentCapacity": "2",
+			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "21a20b5b-3dd3-4e09-926f-51c1dce575f0"],
+			"distance": "0.9",
+			"id": "game1123",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "badminton",
+			"date" : "01-03-2016 12:30",
+			"description" : "UW Badminton Team Fundraiser Tournament",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game14" : {
+			"registered" : "yes",
+			"currentCapacity": "1",
+			"currentPlayers": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "badminton",
+			"date" : "01-03-2016 12:30",
+			"description" : "UW Badminton Team Fundraiser Tournament",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game15" : {
+			"registered" : "yes",
+			"currentCapacity": "3",
+			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "badminton",
+			"date" : "01-03-2016 12:30",
+			"description" : "UW Badminton Team Fundraiser Tournament",
+			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game16" : {
+			"registered" : "yes",
+			"currentCapacity": "1",
+			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "badminton",
+			"date" : "01-03-2016 12:30",
 			"description" : "",
 			"address" : "3924 Montlake Blvd NE, Seattle, WA 98195"
 		}
@@ -132,49 +220,57 @@
 			"activity": "Playing basketball",
 			"id": "1f82b3e2-f5bb-41b8-a192-5492b88a8822",
 			"name": "Lyndon Anderson",
-			"numLikes": 13
+			"numLikes": 13,
+			"profileImageUrl": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102531.png&w=350&h=254"
 		},
 		"post3": {
 			"activity": "Playing soccer",
 			"id": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923",
 			"name": "Ronaldo Sanchez",
-			"numLikes": 142
+			"numLikes": 142,
+			"profileImageUrl": "http://soccer-tricks.com/wp-content/uploads/2014/10/cristiano-ronaldo1.jpg"
 		},
 		"post4": {
 			"activity": "Taking a break",
 			"name": "Dwight Gray",
 			"id": "48dc592b-3471-48a1-bcc9-e990abccf8fa",
-			"numLikes": 23
+			"numLikes": 23,
+			"profileImageUrl": "http://www.bbbswillgrundy.org/atf/cf/%7B8B4BC489-81A0-43A6-BB4A-EFD0C04F7349%7D/Dwight-Howard.jpg"
 		},
 		"post5": {
 			"activity": "Playing ultimate frisbee",
 			"name": "Nicolas Rivera",
 			"id": "4881988c-a78e-4ce6-af46-73e265bf002c",
-			"numLikes": 10
+			"numLikes": 10,
+			"profileImageUrl": "http://i.telegraph.co.uk/multimedia/archive/03465/lionel_messi_3465725k.jpg"
 		},
 		"post6": {
 			"activity": "Playing football",
 			"name": "Samuel Tran",
 			"id": "66bad232-2bf0-453a-8e70-f727fb7514b8",
-			"numLikes": 59
+			"numLikes": 59,
+			"profileImageUrl": "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/12642940_10205708269974139_2430665863436191798_n.jpg?oh=c596850aeb218eb886947c8630a0e5dd&oe=575FF63C"
 		},
 		"post7": {
 			"activity": "Playing soccer",
 			"name": "Adrian Matthews",
 			"id": "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2",
-			"numLikes": 243
+			"numLikes": 243,
+			"profileImageUrl": "https://usatthebiglead.files.wordpress.com/2014/09/adrian-peterson-minnesota-vikings.jpg?w=1000&h=687"
 		},
 		"post8": {
 			"activity": "Taking a break",
 			"name": "Ernesto Valdez",
 			"id": "39287cf7-aa96-420d-9688-1affa01ad831",
-			"numLikes": 98
+			"numLikes": 98,
+			"profileImageUrl": "https://i.ytimg.com/vi/2BxJP_LVGbI/maxresdefault.jpg"
 		},
 		"post 9": {
 			"activity": "Playing baseball",
 			"name": "Jacob Ramirez",
 			"id": "79db5730-0641-447e-8935-fd09b8928189",
-			"numLikes": 32
+			"numLikes": 32,
+			"profileImageUrl": "http://1.soompi.io/wp-content/uploads/2015/11/PSY.jpg"
 		}
 	},
 	"notifications": {
@@ -566,7 +662,7 @@
 			"ranking": "4",
 			"rivals": []
 		},
-		"1f82b3e2-f5bb-41b8-a192-5492b88a8822": {
+		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
 			"Sports": ["basketball", "soccer", "badminton", "football", "frisbee"],
 			"firstName": "Lyndon",
 			"gender": "male",
