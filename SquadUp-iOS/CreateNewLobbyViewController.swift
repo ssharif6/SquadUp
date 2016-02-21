@@ -100,7 +100,7 @@ class CreateNewLobbyViewController: UIViewController {
             "lobbyName": lobbyNameTextField.text!,
             "maxCapacity": numPlayersTextField.text!,
             "sportsID": sportLabel!,
-            "currentCapacity": "1",
+            "currentCapacity": 1,
             "currentPlayers": userArray,
             "location": locationAddressTextField.text!,
             "date": self.selectedDate,
