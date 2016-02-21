@@ -100,10 +100,11 @@ class CreateNewLobbyViewController: UIViewController {
             "lobbyName": lobbyNameTextField.text!,
             "maxCapacity": numPlayersTextField.text!,
             "sportsID": sportLabel!,
-            "currentCapacity": "1",
+            "currentCapacity": 1,
             "currentPlayers": userArray,
             "location": locationAddressTextField.text!,
-            "date": self.selectedDate
+            "date": self.selectedDate,
+            "address": self.locationAddressTextField.text!
         ]
         let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
         lobbyPost.setValue(lobby)
