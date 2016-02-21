@@ -14,6 +14,7 @@ class JoinLobbyCell: UITableViewCell {
     @IBOutlet weak var lobbyName: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var numPeople: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var gameLobby: LobbyGameModel!
     var request = Request?()
@@ -26,10 +27,12 @@ class JoinLobbyCell: UITableViewCell {
     func configureCell(gameLobby: LobbyGameModel) {
         self.gameLobby = gameLobby
         self.lobbyName.text = gameLobby.lobbyName + " " + gameLobby.sport
-        currentTotalPlayers = gameLobby.currentCapacity + " /" + " " + gameLobby.maxCapacity
+        currentTotalPlayers = String(gameLobby.currentCapacity) + " /" + " " + String(gameLobby.maxCapacity)
         self.numPeople.text = currentTotalPlayers
+//        self.dateLabel.text = gameLobby.dayOfWeek
 //        self.distanceLabel.text = gameLobby.distance
     }
     
     // Add functgions for when somebody joins the lobby to increment the currentcapacity
+    
 }

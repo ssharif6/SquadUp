@@ -1172,14 +1172,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.9 Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-kp-mGV">
-                                                    <rect key="frame" x="359" y="30" width="47" height="21"/>
+                                                    <rect key="frame" x="359" y="42" width="47" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thurs 2/22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62g-5o-uND">
+                                                    <rect key="frame" x="322" y="12" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dateLabel" destination="62g-5o-uND" id="Yhy-Bu-Gya"/>
                                             <outlet property="distanceLabel" destination="DfV-kp-mGV" id="jEj-8p-8uA"/>
                                             <outlet property="lobbyName" destination="LBE-Z3-zPU" id="ng5-Pv-7Zu"/>
                                             <outlet property="numPeople" destination="TJ7-hf-2Nk" id="p7o-Om-aHD"/>
@@ -1486,6 +1493,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SeC-SE-gDC"/>
-        <segue reference="kLt-Ag-aq1"/>
+        <segue reference="6qs-Ld-BXv"/>
     </inferredMetricsTieBreakers>
 </document>
