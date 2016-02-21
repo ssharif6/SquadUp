@@ -24,6 +24,7 @@ class PublicProfileViewController: UIViewController {
     @IBOutlet weak var profileName: UILabel!
     
     var userPassed: String!
+    var imageUrlPassed: String!
     var user: UserModel!
     
     override func viewDidLoad() {
@@ -55,6 +56,11 @@ class PublicProfileViewController: UIViewController {
     
     func loadData() {
         profileName.text = self.user.firstName + " " + self.user.lastName
+        let url = NSURL(string: imageUrlPassed)
+        let data = NSData(contentsOfURL:url!)
+        if data != nil {
+            profileImage.image = UIImage(data:data!)
+        }
     }
     
 }

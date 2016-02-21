@@ -24,11 +24,25 @@ class JoinLobbyCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    func configureDate(dateString: String) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let convertedDate = dateFormatter.dateFromString(dateString)
+        let dateConverted = dateFormatter.stringFromDate(convertedDate!)
+        let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        let myComponents = myCalendar.components(.Weekday, fromDate: convertedDate!)
+        let weekDay = myComponents.weekday
+        let daysOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
+        return daysOfWeek[weekDay - 1]
+    }
+    
     func configureCell(gameLobby: LobbyGameModel) {
         self.gameLobby = gameLobby
         self.lobbyName.text = gameLobby.lobbyName + " " + gameLobby.sport
         currentTotalPlayers = String(gameLobby.currentCapacity) + " /" + " " + String(gameLobby.maxCapacity)
         self.numPeople.text = currentTotalPlayers
+        self.dateLabel.text = configureDate(gameLobby.date)
+        self.dateLabel.textAlignment = .Right
 //        self.dateLabel.text = gameLobby.dayOfWeek
 //        self.distanceLabel.text = gameLobby.distance
     }

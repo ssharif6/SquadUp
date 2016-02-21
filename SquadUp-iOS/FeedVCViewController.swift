@@ -74,7 +74,6 @@ class FeedVCViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let post = self.posts[indexPath.row]
-
         self.post = post
         performSegueWithIdentifier("FeedToProfile", sender: nil)
     }
@@ -83,7 +82,7 @@ class FeedVCViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if segue.identifier == "FeedToProfile" {
             let vc = segue.destinationViewController as! PublicProfileViewController
             vc.userPassed = self.post.id
-            
+            vc.imageUrlPassed = self.post.imageUrl
         }
     }
 

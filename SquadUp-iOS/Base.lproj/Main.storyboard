@@ -373,7 +373,7 @@
             </objects>
             <point key="canvasLocation" x="2778.5" y="348.5"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="1xy-rI-C3M">
             <objects>
                 <viewController id="oth-yS-0ca" customClass="ProfileViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -433,6 +433,7 @@
                                 <state key="normal" title="Button" image="RecentHistoryAsset"/>
                                 <connections>
                                     <action selector="recentActivityClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="DTV-bD-jSO"/>
+                                    <segue destination="LTm-vQ-uDz" kind="show" id="EPj-0O-rS7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-kM-jh3">
@@ -447,6 +448,7 @@
                                 <state key="normal" title="Button" image="moreAsset"/>
                                 <connections>
                                     <action selector="moreButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="nDI-Tq-yzp"/>
+                                    <segue destination="Tbx-d8-gMd" kind="show" id="MMG-7V-rTw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a Rival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meK-9F-yZX">
@@ -518,7 +520,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="ZkO-2e-Pm0"/>
+                    <navigationItem key="navigationItem" id="cFa-a2-lv6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="coverImage" destination="HYt-FC-zhe" id="5Lp-4x-sor"/>
@@ -536,12 +538,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tb-Vo-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3253" y="349"/>
+            <point key="canvasLocation" x="3785" y="349"/>
         </scene>
-        <!--View Controller-->
+        <!--Recent Activity View Controller-->
         <scene sceneID="t0D-Vu-mnE">
             <objects>
-                <viewController id="LTm-vQ-uDz" sceneMemberID="viewController">
+                <viewController id="LTm-vQ-uDz" customClass="RecentActivityViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vr-lD-1Wg"/>
                         <viewControllerLayoutGuide type="bottom" id="VAT-BI-ny0"/>
@@ -550,14 +552,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-AG-ycK">
-                                <rect key="frame" x="123" y="20" width="169" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Cv-9Y-ork">
-                                <rect key="frame" x="0.0" y="95" width="414" height="641"/>
+                                <rect key="frame" x="0.0" y="206" width="414" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="fwt-dy-S43">
@@ -584,6 +580,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-AG-ycK">
+                                <rect key="frame" x="123" y="78" width="169" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -591,7 +593,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7f-PD-BlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="1164"/>
+            <point key="canvasLocation" x="2798" y="1262"/>
         </scene>
         <!--Public Profile View Controller-->
         <scene sceneID="W7w-ie-IWt">
@@ -761,7 +763,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEW-pC-9ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="1966"/>
+            <point key="canvasLocation" x="2798" y="2163"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qvo-So-pw8">
@@ -776,7 +778,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuN-iw-k3P">
-                                <rect key="frame" x="187" y="20" width="40" height="21"/>
+                                <rect key="frame" x="187" y="72" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -788,7 +790,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0v-Wr-HJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3243" y="1164"/>
+            <point key="canvasLocation" x="3253" y="1262"/>
         </scene>
         <!--Choose Sport Notification View Controller-->
         <scene sceneID="NOH-S5-UMT">
@@ -903,7 +905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmN-3t-YNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3745" y="349"/>
+            <point key="canvasLocation" x="4277" y="349"/>
         </scene>
         <!--Sport View Controller-->
         <scene sceneID="C0N-83-eSA">
@@ -1243,7 +1245,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igS-8r-3Cx" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
-                                <rect key="frame" x="71" y="72" width="272" height="110"/>
+                                <rect key="frame" x="20" y="72" width="374" height="110"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.73333333333333328" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basketball 4 v 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-M8-Ub0">
@@ -1408,7 +1410,7 @@
                                         <rect key="frame" x="17" y="12" width="227" height="47"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
-                                        <state key="normal" title="Create New Lobby">
+                                        <state key="normal" title="Next">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -1463,7 +1465,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="YvJ-S3-ENb" kind="relationship" relationship="viewControllers" id="VGY-WA-mgN"/>
-                        <segue destination="oth-yS-0ca" kind="relationship" relationship="viewControllers" id="9ht-77-zud"/>
+                        <segue destination="2tR-Jn-Oee" kind="relationship" relationship="viewControllers" id="9ht-77-zud"/>
                         <segue destination="7n0-qs-pBs" kind="relationship" relationship="viewControllers" id="N3K-5J-2vQ"/>
                     </connections>
                 </tabBarController>
@@ -1490,6 +1492,25 @@
             </objects>
             <point key="canvasLocation" x="3750" y="-371"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="4ZD-73-akx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2tR-Jn-Oee" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="ZkO-2e-Pm0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vm5-ZQ-8Xw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oth-yS-0ca" kind="relationship" relationship="rootViewController" id="wgt-m3-jJx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmI-f3-q5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3253" y="349"/>
+        </scene>
     </scenes>
     <resources>
         <image name="DROSE" width="300" height="300"/>
@@ -1510,6 +1531,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SeC-SE-gDC"/>
-        <segue reference="kLt-Ag-aq1"/>
+        <segue reference="6qs-Ld-BXv"/>
     </inferredMetricsTieBreakers>
 </document>

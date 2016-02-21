@@ -22,24 +22,23 @@ class LobbyGameModel {
     private var _address: String!
     private var _description: String!
     private var _date: String!
-    private var _dayOfWeek: String!
     private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
         return _lobbyName
     }
     
-//    var dayOfWeek: String {
-//        return _dayOfWeek
-//    }
+    var date: String {
+        return _date
+    }
     
     var description: String {
         return _description
     }
     
-//    var address: String {
-//        return _address
-//    }
+    var address: String {
+        return _address
+    }
     
     var maxCapacity: Int {
         return _maxCapacity
@@ -92,8 +91,8 @@ class LobbyGameModel {
         if let address = dictionary["address"] as? String {
             self._address = address
         }
-        if let dayOfWeek = dictionary["dayOfWeek"] as? String {
-            self._dayOfWeek = dayOfWeek
+        if let date = dictionary["date"] as? String {
+            self._date = date
         }
     }
     
