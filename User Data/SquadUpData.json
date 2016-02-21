@@ -131,7 +131,7 @@
 		},
 		"game11": {
 			"registered": "no",
-			"currentCapacity": "1",
+			"currentCapacity": 1,
 			"currentPlayers": ["100d0a06-5791-4865-96bf-3682dcd7922d"],
 			"distance": "0.9",
 			"id": "game1121",
@@ -144,7 +144,7 @@
 		},
 		"game12": {
 			"registered": "no",
-			"currentCapacity": "2",
+			"currentCapacity": 2,
 			"currentPlayers": ["21a20b5b-3dd3-4e09-926f-51c1dce575f0", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"],
 			"distance": "0.9",
 			"id": "game1122",
@@ -157,7 +157,7 @@
 		},
 		"game13": {
 			"registered": "yes",
-			"currentCapacity": "2",
+			"currentCapacity": 2,
 			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "21a20b5b-3dd3-4e09-926f-51c1dce575f0"],
 			"distance": "0.9",
 			"id": "game1123",
@@ -170,7 +170,7 @@
 		},
 		"game14": {
 			"registered": "yes",
-			"currentCapacity": "1",
+			"currentCapacity": 1,
 			"currentPlayers": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"distance": "0.9",
 			"id": "game1124",
@@ -183,7 +183,7 @@
 		},
 		"game15": {
 			"registered": "yes",
-			"currentCapacity": "3",
+			"currentCapacity": 3,
 			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
 			"distance": "0.9",
 			"id": "game1124",
@@ -196,7 +196,7 @@
 		},
 		"game16": {
 			"registered": "yes",
-			"currentCapacity": "1",
+			"currentCapacity": 1,
 			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
 			"distance": "0.9",
 			"id": "game1124",
