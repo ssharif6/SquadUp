@@ -53,7 +53,7 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game5": {
-			"registered": "yes",
+			"registered": "no",
 			"currentCapacity": 1,
 			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
 			"distance": "0.9",
@@ -62,11 +62,11 @@
 			"maxCapacity": 4,
 			"sportsID": "Badminton",
 			"date": "01-03-2016 12:30",
-			"description": "UW Badminton Team Fundraiser Tournament",
+			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game6": {
-			"registered": "yes",
+			"registered": "no",
 			"currentCapacity": 2,
 			"currentPlayers": ["1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f"],
 			"distance": "0.9",
@@ -75,7 +75,7 @@
 			"maxCapacity": 4,
 			"sportsID": "Badminton",
 			"date": "24-02-2016 15:00",
-			"description": "UW Badminton Team Fundraiser Tournament",
+			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game7": {
@@ -105,16 +105,16 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game9": {
-			"registered": "yes",
+			"registered": "no",
 			"currentCapacity": 1,
-			"currentPlayers": ["1f82b3e2-f5bb-41b8-a192-5492b88a8822"],
+			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
 			"distance": "0.9",
 			"id": "game1115",
 			"lobbyName": "1 v 1",
 			"maxCapacity": 2,
 			"sportsID": "Badminton",
 			"date": "26-02-2016 14:30",
-			"description": "UW Badminton Team Fundraiser Tournament",
+			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game10": {
@@ -182,7 +182,7 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game15": {
-			"registered": "no",
+			"registered": "yes",
 			"currentCapacity": 1,
 			"currentPlayers": ["100d0a06-5791-4865-96bf-3682dcd7922d"],
 			"distance": "0.9",
@@ -191,7 +191,7 @@
 			"maxCapacity": 2,
 			"sportsID": "Badminton",
 			"date": "02-03-2016 14:30",
-			"description": "",
+			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game16": {
@@ -518,7 +518,7 @@
 			"ranking": "unranked",
 			"rivals": []
 		},
-		"100d0a06-5791-4865-96bf-3682dcd7922d": {
+		"1": {
 			"Sports": ["Soccer", "Football", "Badminton", "Tennis"],
 			"firstName": "Calvin",
 			"gender": "male",
