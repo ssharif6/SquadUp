@@ -14,6 +14,58 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
 		"game2": {
+			"registered": "yes",
+			"currentCapacity": 2,
+			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "21a20b5b-3dd3-4e09-926f-51c1dce575f0"],
+			"distance": "0.9",
+			"id": "game1123",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "Badminton",
+			"date": "01-03-2016 12:30",
+			"description": "UW Badminton Team Fundraiser Tournament",
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game3": {
+			"registered": "yes",
+			"currentCapacity": 1,
+			"currentPlayers": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "Badminton",
+			"date": "01-03-2016 12:30",
+			"description": "UW Badminton Team Fundraiser Tournament",
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game4": {
+			"registered": "yes",
+			"currentCapacity": 3,
+			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "Badminton",
+			"date": "01-03-2016 12:30",
+			"description": "UW Badminton Team Fundraiser Tournament",
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game5": {
+			"registered": "yes",
+			"currentCapacity": 1,
+			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
+			"distance": "0.9",
+			"id": "game1124",
+			"lobbyName": "2 v 2",
+			"maxCapacity": 4,
+			"sportsID": "Badminton",
+			"date": "01-03-2016 12:30",
+			"description": "",
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game6": {
 			"registered": "no",
 			"currentCapacity": 2,
 			"currentPlayers": ["1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f"],
@@ -26,7 +78,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game3": {
+		"game7": {
 			"registered": "no",
 			"currentCapacity": 3,
 			"currentPlayers": ["742679cc-f04f-4c20-9b06-e4e582faef42", "f880a1e2-d4de-4ca2-84a1-42e843618d25", "100d0a06-5791-4865-96bf-3682dcd7922d"],
@@ -39,7 +91,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game4": {
+		"game8": {
 			"registered": "no",
 			"currentCapacity": 5,
 			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "9801ca60-efcc-4902-9b3e-9e55372efc8f", "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1", "2b53738f-a267-4a77-bd74-70e3fd03cf58", "2b53738f-a267-4a77-bd74-70e3fd03cf58"],
@@ -52,7 +104,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game5": {
+		"game9": {
 			"registered": "no",
 			"currentCapacity": 1,
 			"currentPlayers": ["1f82b3e2-f5bb-41b8-a192-5492b88a8822"],
@@ -65,7 +117,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game6": {
+		"game10": {
 			"registered": "no",
 			"currentCapacity": 10,
 			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "742679cc-f04f-4c20-9b06-e4e582faef42", "21a20b5b-3dd3-4e09-926f-51c1dce575f0", "0b11d418-285b-4b3a-aadd-04d57ec98043", "f880a1e2-d4de-4ca2-84a1-42e843618d25", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49", "551bfbae-51f8-4c1c-8023-b512e049e488", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"],
@@ -78,7 +130,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game7": {
+		"game11": {
 			"registered": "no",
 			"currentCapacity": 10,
 			"currentPlayers": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "f18af723-cfd4-4072-a15b-984f32cbb4fc", "27cef23f-942f-4cff-bfbf-7db0a2b7fdc9"],
@@ -91,7 +143,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game8": {
+		"game12": {
 			"registered": "no",
 			"currentCapacity": 6,
 			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1", "fe93a43a-1e6b-49dc-9b00-184040c14526", "bd161367-671d-45df-9b91-b8c6bed167fc", "27cef23f-942f-4cff-bfbf-7db0a2b7fdc9", "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"],
@@ -104,7 +156,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game9": {
+		"game13": {
 			"registered": "no",
 			"currentCapacity": 3,
 			"currentPlayers": ["f880a1e2-d4de-4ca2-84a1-42e843618d25", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
@@ -116,7 +168,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game10": {
+		"game14": {
 			"registered": "no",
 			"currentCapacity": 6,
 			"currentPlayers": ["06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "0b11d418-285b-4b3a-aadd-04d57ec98043", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "9801ca60-efcc-4902-9b3e-9e55372efc8f", "100d0a06-5791-4865-96bf-3682dcd7922d", "70a2eea7-482d-4444-a4a1-70210ef25603", "93b96669-cd50-4cd0-9f00-359d97f0d000", "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"],
@@ -129,7 +181,7 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game11": {
+		"game15": {
 			"registered": "no",
 			"currentCapacity": 1,
 			"currentPlayers": ["100d0a06-5791-4865-96bf-3682dcd7922d"],
@@ -137,12 +189,12 @@
 			"id": "game1121",
 			"lobbyName": "1 v 1",
 			"maxCapacity": 2,
-			"sportsID": "badminton",
+			"sportsID": "Badminton",
 			"date": "02-03-2016 14:30",
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		},
-		"game12": {
+		"game16": {
 			"registered": "no",
 			"currentCapacity": 2,
 			"currentPlayers": ["21a20b5b-3dd3-4e09-926f-51c1dce575f0", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"],
@@ -150,109 +202,57 @@
 			"id": "game1122",
 			"lobbyName": "1 v 1",
 			"maxCapacity": 2,
-			"sportsID": "badminton",
+			"sportsID": "Badminton",
 			"date": "02-03-2016 18:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game13": {
-			"registered": "yes",
-			"currentCapacity": 2,
-			"currentPlayers": ["48dc592b-3471-48a1-bcc9-e990abccf8fa", "21a20b5b-3dd3-4e09-926f-51c1dce575f0"],
-			"distance": "0.9",
-			"id": "game1123",
-			"lobbyName": "2 v 2",
-			"maxCapacity": 4,
-			"sportsID": "badminton",
-			"date": "01-03-2016 12:30",
-			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game14": {
-			"registered": "yes",
-			"currentCapacity": 1,
-			"currentPlayers": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
-			"distance": "0.9",
-			"id": "game1124",
-			"lobbyName": "2 v 2",
-			"maxCapacity": 4,
-			"sportsID": "badminton",
-			"date": "01-03-2016 12:30",
-			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game15": {
-			"registered": "yes",
-			"currentCapacity": 3,
-			"currentPlayers": ["70a2eea7-482d-4444-a4a1-70210ef25603", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
-			"distance": "0.9",
-			"id": "game1124",
-			"lobbyName": "2 v 2",
-			"maxCapacity": 4,
-			"sportsID": "badminton",
-			"date": "01-03-2016 12:30",
-			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game16": {
-			"registered": "yes",
-			"currentCapacity": 1,
-			"currentPlayers": ["9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1"],
-			"distance": "0.9",
-			"id": "game1124",
-			"lobbyName": "2 v 2",
-			"maxCapacity": 4,
-			"sportsID": "badminton",
-			"date": "01-03-2016 12:30",
-			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
 		}
 	},
 	"posts": {
 		"post1": {
-			"activity": "Playing tennis",
+			"activity": "Playing Tennis",
 			"id": "11111110",
 			"name": "Max Shao",
 			"numLikes": 50,
 			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
 		},
 		"post2": {
-			"activity": "Playing basketball",
+			"activity": "Playing Basketball",
 			"id": "1f82b3e2-f5bb-41b8-a192-5492b88a8822",
 			"name": "Lyndon Anderson",
 			"numLikes": 13,
 			"profileImageUrl": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102531.png&w=350&h=254"
 		},
 		"post3": {
-			"activity": "Playing soccer",
+			"activity": "Playing Soccer",
 			"id": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923",
 			"name": "Ronaldo Sanchez",
 			"numLikes": 142,
-			"profileImageUrl": "http://soccer-tricks.com/wp-content/uploads/2014/10/cristiano-ronaldo1.jpg"
+			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12074832_10153775433927164_5907529625463796036_n.jpg?oh=c2612d84ea69b047c8f80aa59deb6efc&oe=57566241"
 		},
 		"post4": {
 			"activity": "Taking a break",
 			"name": "Dwight Gray",
 			"id": "48dc592b-3471-48a1-bcc9-e990abccf8fa",
 			"numLikes": 23,
-			"profileImageUrl": "http://www.bbbswillgrundy.org/atf/cf/%7B8B4BC489-81A0-43A6-BB4A-EFD0C04F7349%7D/Dwight-Howard.jpg"
+			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10996479_852065677885_6552232101526768372_n.jpg?oh=4f46ab7d83bcf1075a5eee598221e6ad&oe=5724ADE6"
 		},
 		"post5": {
-			"activity": "Playing ultimate frisbee",
+			"activity": "Playing ultimate Frisbee",
 			"name": "Nicolas Rivera",
 			"id": "4881988c-a78e-4ce6-af46-73e265bf002c",
 			"numLikes": 10,
-			"profileImageUrl": "http://i.telegraph.co.uk/multimedia/archive/03465/lionel_messi_3465725k.jpg"
+			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11990645_728179417314752_2724151631881485315_n.jpg?oh=a8e7b0cbf362ee1e161fea419f71f7e4&oe=57707CE0"
 		},
 		"post6": {
-			"activity": "Playing football",
+			"activity": "Playing Football",
 			"name": "Samuel Tran",
 			"id": "66bad232-2bf0-453a-8e70-f727fb7514b8",
 			"numLikes": 59,
 			"profileImageUrl": "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/12642940_10205708269974139_2430665863436191798_n.jpg?oh=c596850aeb218eb886947c8630a0e5dd&oe=575FF63C"
 		},
 		"post7": {
-			"activity": "Playing soccer",
+			"activity": "Playing Soccer",
 			"name": "Adrian Matthews",
 			"id": "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2",
 			"numLikes": 243,
@@ -266,7 +266,7 @@
 			"profileImageUrl": "https://i.ytimg.com/vi/2BxJP_LVGbI/maxresdefault.jpg"
 		},
 		"post 9": {
-			"activity": "Playing baseball",
+			"activity": "Playing Baseball",
 			"name": "Jacob Ramirez",
 			"id": "79db5730-0641-447e-8935-fd09b8928189",
 			"numLikes": 32,
@@ -286,11 +286,12 @@
 	},
 	"users": {
 		"48dc592b-3471-48a1-bcc9-e990abccf8fa": {
-			"Sports": ["soccer", "badminton", "football", "frisbee"],
+			"Sports": ["Soccer", "Badminton", "Football", "Frisbee"],
 			"firstName": "Dwight",
 			"gender": "male",
 			"id": "M2",
 			"lastName": "Gray",
+			"profileImageUrl": "",
 			"posts": ["11111112", "11111113", "11111114", "11111115"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -299,11 +300,12 @@
 			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
-			"Sports": ["tennis", "football"],
+			"Sports": ["Tennis", "Football"],
 			"firstName": "Santos",
 			"gender": "male",
 			"id": "M3",
 			"lastName": "Gilbert",
+			"profileImageUrl": "",
 			"posts": ["11111116", "11111117", "11111118"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -312,11 +314,12 @@
 			"rivals": []
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
-			"Sports": ["baseball", "frisbee"],
+			"Sports": ["Baseball", "Frisbee"],
 			"firstName": "Nicolas",
 			"gender": "male",
 			"id": "M4",
 			"lastName": "Rivera",
+			"profileImageUrl": "",
 			"posts": ["11111119"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -325,11 +328,12 @@
 			"rivals": []
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
-			"Sports": ["soccer", "baseball", "basketball", "tennis"],
+			"Sports": ["Soccer", "Baseball", "Basketball", "Tennis"],
 			"firstName": "Douglas",
 			"gender": "male",
 			"id": "M5",
 			"lastName": "Robbins",
+			"profileImageUrl": "",
 			"posts": ["11111120", "11111121", "11111122", "11111123", "11111124"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -338,11 +342,12 @@
 			"rivals": []
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
-			"Sports": ["soccer", "frisbee"],
+			"Sports": ["Soccer", "Frisbee"],
 			"firstName": "Jose",
 			"gender": "male",
 			"id": "M6",
 			"lastName": "Phillips",
+			"profileImageUrl": "",
 			"posts": ["11111125", "11111126"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -351,11 +356,12 @@
 			"rivals": []
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
-			"Sports": ["soccer", "badminton", "football", "basketball"],
+			"Sports": ["Soccer", "Badminton", "Football", "Basketball"],
 			"firstName": "Todd",
 			"gender": "male",
 			"id": "M7",
 			"lastName": "Rodiquez",
+			"profileImageUrl": "",
 			"posts": ["11111127", "11111128", "11111129", "11111130", "11111131", "11111132"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -364,11 +370,12 @@
 			"rivals": []
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
-			"Sports": ["soccer", "football"],
+			"Sports": ["Soccer", "Football"],
 			"firstName": "Tommie",
 			"gender": "male",
 			"id": "M8",
 			"lastName": "Walker",
+			"profileImageUrl": "",
 			"posts": ["11111133", "11111134", "11111135"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -377,11 +384,12 @@
 			"rivals": []
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
-			"Sports": ["baseball", "football", "tennis", "frisbee"],
+			"Sports": ["Baseball", "Football", "Tennis", "Frisbee"],
 			"firstName": "Glen",
 			"gender": "male",
 			"id": "M9",
 			"lastName": "Hawkins",
+			"profileImageUrl": "",
 			"posts": ["11111136", "11111137", "11111138"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -390,11 +398,12 @@
 			"rivals": []
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
-			"Sports": ["soccer", "baseball", "tennis", "frisbee"],
+			"Sports": ["Soccer", "Baseball", "Tennis", "Frisbee"],
 			"firstName": "Adrian",
 			"gender": "male",
 			"id": "M10",
 			"lastName": "Matthews",
+			"profileImageUrl": "",
 			"posts": ["11111139", "11111140", "11111141", "11111142"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -403,11 +412,12 @@
 			"rivals": []
 		},
 		"c59731d4-e3ee-4169-ac57-6991e7f5ab9f": {
-			"Sports": ["basketball", "soccer", "badminton", "football"],
+			"Sports": ["Basketball", "Soccer", "Badminton", "Football"],
 			"firstName": "Alfred",
 			"gender": "male",
 			"id": "M11",
 			"lastName": "Boyd",
+			"profileImageUrl": "",
 			"posts": ["11111143", "11111144", "11111145", "11111146", "11111147", "11111148"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -416,11 +426,12 @@
 			"rivals": []
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
-			"Sports": ["soccer", "badminton", "football", "baseball", "basketball", "frisbee"],
+			"Sports": ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee"],
 			"firstName": "Guadalupe",
 			"gender": "male",
 			"id": "M12",
 			"lastName": "Neal",
+			"profileImageUrl": "",
 			"posts": ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -429,11 +440,12 @@
 			"rivals": []
 		},
 		"1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49": {
-			"Sports": ["tennis", "football", "badminton"],
+			"Sports": ["Tennis", "Football", "Badminton"],
 			"firstName": "Emilio",
 			"gender": "male",
 			"id": "M13",
 			"lastName": "Ray",
+			"profileImageUrl": "",
 			"posts": ["11111155", "11111156", "11111157", "11111158", "11111159"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -442,11 +454,12 @@
 			"rivals": []
 		},
 		"9801ca60-efcc-4902-9b3e-9e55372efc8f": {
-			"Sports": ["baseball", "soccer"],
+			"Sports": ["Baseball", "Soccer"],
 			"firstName": "Horace",
 			"gender": "male",
 			"id": "M14",
 			"lastName": "Cooper",
+			"profileImageUrl": "",
 			"posts": ["11111160", "11111161"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -455,11 +468,12 @@
 			"rivals": []
 		},
 		"f18af723-cfd4-4072-a15b-984f32cbb4fc": {
-			"Sports": ["baseball", "basketball", "tennis"],
+			"Sports": ["Baseball", "Basketball", "Tennis"],
 			"firstName": "Harvey",
 			"gender": "male",
 			"id": "M15",
 			"lastName": "Hubbard",
+			"profileImageUrl": "",
 			"posts": ["11111162", "11111163", "11111164"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -468,11 +482,12 @@
 			"rivals": []
 		},
 		"551bfbae-51f8-4c1c-8023-b512e049e488": {
-			"Sports": ["football"],
+			"Sports": ["Football"],
 			"firstName": "Kurt",
 			"gender": "male",
 			"id": "M16",
 			"lastName": "Mclaughlin",
+			"profileImageUrl": "",
 			"posts": ["11111165", "11111166"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -481,11 +496,12 @@
 			"rivals": []
 		},
 		"66bad232-2bf0-453a-8e70-f727fb7514b8": {
-			"Sports": ["football", "basketball"],
+			"Sports": ["Football", "Basketball"],
 			"firstName": "Samuel",
 			"gender": "male",
 			"id": "M17",
 			"lastName": "Tran",
+			"profileImageUrl": "",
 			"posts": ["11111167", "11111168", "11111169", "11111170", "11111171"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -494,11 +510,12 @@
 			"rivals": []
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
-			"Sports": ["soccer", "football", "badminton", "tennis"],
+			"Sports": ["Soccer", "Football", "Badminton", "Tennis"],
 			"firstName": "Calvin",
 			"gender": "male",
 			"id": "M18",
 			"lastName": "Mason",
+			"profileImageUrl": "",
 			"posts": ["11111172", "11111173", "11111174"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -507,11 +524,12 @@
 			"rivals": []
 		},
 		"d3d9d8ff-10d7-4476-adcf-23af9c8ebb42": {
-			"Sports": ["baseball", "football", "tennis", "badminton", "baseball", "basketball", "frisbee"],
+			"Sports": ["Baseball", "Football", "Tennis", "Badminton", "Baseball", "Basketball", "Frisbee"],
 			"firstName": "Ted",
 			"gender": "male",
 			"id": "M19",
 			"lastName": "Phelps",
+			"profileImageUrl": "",
 			"posts": ["11111175", "11111176", "11111177", "11111178", "11111179", "11111180", "11111181", "11111182", "11111183", "11111184"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -520,11 +538,12 @@
 			"rivals": []
 		},
 		"39287cf7-aa96-420d-9688-1affa01ad831": {
-			"Sports": ["baseball", "tennis"],
+			"Sports": ["Baseball", "Tennis"],
 			"firstName": "Ernesto",
 			"gender": "male",
 			"id": "M20",
 			"lastName": "Valdez",
+			"profileImageUrl": "",
 			"posts": ["11111185", "11111186"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -533,11 +552,12 @@
 			"rivals": []
 		},
 		"70a2eea7-482d-4444-a4a1-70210ef25603": {
-			"Sports": ["basketball", "soccer", "badminton"],
+			"Sports": ["Basketball", "Soccer", "Badminton"],
 			"firstName": "Hector",
 			"gender": "male",
 			"id": "M21",
 			"lastName": "Martinez",
+			"profileImageUrl": "",
 			"posts": ["11111187", "11111188", "11111189", "11111190"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -546,11 +566,12 @@
 			"rivals": []
 		},
 		"2b53738f-a267-4a77-bd74-70e3fd03cf58": {
-			"Sports": ["soccer", "badminton", "football", "basketball", "tennis"],
+			"Sports": ["Soccer", "Badminton", "Football", "Basketball", "Tennis"],
 			"firstName": "Shawn",
 			"gender": "male",
 			"id": "M22",
 			"lastName": "Coleman",
+			"profileImageUrl": "",
 			"posts": ["11111191", "11111192", "11111193", "11111194", "11111195"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -559,11 +580,12 @@
 			"rivals": []
 		},
 		"ad1602e0-07af-4cea-bf21-00c94d335952": {
-			"Sports": ["tennis", "football"],
+			"Sports": ["Tennis", "Football"],
 			"firstName": "Stuart",
 			"gender": "male",
 			"id": "M23",
 			"lastName": "Waters",
+			"profileImageUrl": "",
 			"posts": ["11111196"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -572,11 +594,12 @@
 			"rivals": []
 		},
 		"27cef23f-942f-4cff-bfbf-7db0a2b7fdc9": {
-			"Sports": ["baseball", "frisbee"],
+			"Sports": ["Baseball", "Frisbee"],
 			"firstName": "Freddie",
 			"gender": "male",
 			"id": "M24",
 			"lastName": "Blair",
+			"profileImageUrl": "",
 			"posts": ["11111197"],
 			"provider": "Email",
 			"skill level": "beginner",
@@ -585,11 +608,12 @@
 			"rivals": []
 		},
 		"93b96669-cd50-4cd0-9f00-359d97f0d000": {
-			"Sports": ["soccer", "tennis", "frisbee"],
+			"Sports": ["Soccer", "Tennis", "Frisbee"],
 			"firstName": "Sylvester",
 			"gender": "male",
 			"id": "M25",
 			"lastName": "Richardson",
+			"profileImageUrl": "",
 			"posts": ["11111198", "11111199", "11111200", "11111201", "11111202"],
 			"provider": "Facebook",
 			"skill level": "beginner",
@@ -598,11 +622,12 @@
 			"rivals": []
 		},
 		"8d3727d0-cfe1-4c21-8934-7dd5fdf1f923": {
-			"Sports": ["soccer", "football", "frisbee"],
+			"Sports": ["Soccer", "Football", "Frisbee"],
 			"firstName": "Ronaldo",
 			"gender": "male",
 			"id": "M26",
 			"lastName": "Sanchez",
+			"profileImageUrl": "",
 			"posts": ["11111203", "11111204"],
 			"provider": "Facebook",
 			"skill level": "advanced",
@@ -611,11 +636,12 @@
 			"rivals": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
-			"Sports": ["soccer", "badminton", "football", "frisbee"],
+			"Sports": ["Soccer", "Badminton", "Football", "Frisbee"],
 			"firstName": "Anthony",
 			"gender": "male",
 			"id": "M27",
 			"lastName": "Roy",
+			"profileImageUrl": "",
 			"posts": ["11111205", "11111206", "11111207", "11111208", "11111209", "11111210"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -624,11 +650,12 @@
 			"rivals": []
 		},
 		"fe93a43a-1e6b-49dc-9b00-184040c14526": {
-			"Sports": ["soccer", "football", "basketball", "frisbee"],
+			"Sports": ["Soccer", "Football", "Basketball", "Frisbee"],
 			"firstName": "Dan",
 			"gender": "male",
 			"id": "M28",
 			"lastName": "Watkins",
+			"profileImageUrl": "",
 			"posts": ["11111211", "11111212", "11111213"],
 			"provider": "Email",
 			"skill level": "beginner",
@@ -637,11 +664,12 @@
 			"rivals": []
 		},
 		"bd161367-671d-45df-9b91-b8c6bed167fc": {
-			"Sports": ["baseball", "football", "tennis", "soccer", "frisbee"],
+			"Sports": ["Baseball", "Football", "Tennis", "Soccer", "Frisbee"],
 			"firstName": "Gerald",
 			"gender": "male",
 			"id": "M29",
 			"lastName": "Easy",
+			"profileImageUrl": "",
 			"posts": ["11111214", "11111215", "11111216"],
 			"provider": "Facebook",
 			"skill level": "intermediate",
@@ -650,11 +678,12 @@
 			"rivals": []
 		},
 		"79db5730-0641-447e-8935-fd09b8928189": {
-			"Sports": ["soccer", "baseball", "tennis", "frisbee"],
+			"Sports": ["Soccer", "Baseball", "Tennis", "Frisbee"],
 			"firstName": "Jacob",
 			"gender": "male",
 			"id": "M30",
 			"lastName": "Ramirez",
+			"profileImageUrl": "",
 			"posts": ["11111217", "11111218", "11111219", "11111220"],
 			"provider": "Email",
 			"skill level": "beginner",
@@ -663,11 +692,12 @@
 			"rivals": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
-			"Sports": ["basketball", "soccer", "badminton", "football", "frisbee"],
+			"Sports": ["Basketball", "Soccer", "Badminton", "Football", "Frisbee"],
 			"firstName": "Lyndon",
 			"gender": "male",
 			"id": "M31",
 			"lastName": "Anderson",
+			"profileImageUrl": "",
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
 			"notifications": ["note2"],
