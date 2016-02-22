@@ -22,6 +22,7 @@ class LobbyGameModel {
     private var _address: String!
     private var _description: String!
     private var _date: String!
+    private var _registered: String!
     private var _currentPlayersList = [UserModel]()
     
     var lobbyName: String {
@@ -30,6 +31,10 @@ class LobbyGameModel {
     
     var date: String {
         return _date
+    }
+    
+    var registered: String {
+        return _registered
     }
     
     var description: String {
@@ -94,6 +99,13 @@ class LobbyGameModel {
         if let date = dictionary["date"] as? String {
             self._date = date
         }
+        if let description = dictionary["description"] as? String {
+            self._description = description
+        }
+        if let registered = dictionary["registered"] as? String {
+            self._registered = registered
+        }
+        
     }
     
     func checkIfMaxCapacity() -> Bool{

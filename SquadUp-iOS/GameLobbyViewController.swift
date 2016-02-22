@@ -55,7 +55,8 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName
         lobbyNameLabel.textAlignment = .Center
-        //        descriptionLabel.text = lobbyModelObject.description
+        descriptionLabel.text = lobbyModelObject.description
+
         addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
