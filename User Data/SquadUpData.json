@@ -209,16 +209,9 @@
 		}
 	},
 	"posts": {
-		"post1": {
-			"activity": "Playing Tennis",
-			"id": "11111110",
-			"name": "Max Shao",
-			"numLikes": 50,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/179555_114469108693851_1394028443_n.jpg?oh=32ba1673f221ebb9a2d66d18895d6c97&oe=5722DC1C"
-		},
 		"post2": {
 			"activity": "Playing Basketball",
-			"id": "1f82b3e2-f5bb-41b8-a192-5492b88a8822",
+			"id": "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1",
 			"name": "Lyndon Anderson",
 			"numLikes": 13,
 			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/549400_921117804604935_7705884156376729906_n.jpg?oh=07e233bf9f626b03366b5d957ab029ff&oe=5759C6DF"
@@ -311,7 +304,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			
+
 			"ranking": "2",
 			"rivals": []
 		},
