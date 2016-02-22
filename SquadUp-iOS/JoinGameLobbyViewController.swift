@@ -87,7 +87,9 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         if let cell: JoinLobbyCell = tableView.dequeueReusableCellWithIdentifier("JoinLobbyCell") as? JoinLobbyCell {
             cell.configureCell(lobbyGame)
             if lobbyGame.registered == "yes" {
-                cell.backgroundColor = UIColor.blueColor()
+                
+                cell.backgroundColor = UIColor(red: 0, green: 123, blue: 181, alpha: 1.0)
+                cell.textLabel?.textColor = UIColor.whiteColor()
             }
             return cell
         } else {

@@ -55,8 +55,10 @@ class ChooseSportNotificationViewController: UIViewController, UITableViewDelega
                 selectedSports.append(sportCategories[indexPath!])
             }
         }
+        let sportsRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("sports")
+        sportsRef.setValue(selectedSports)
         print(selectedSports)
-        NSUserDefaults.standardUserDefaults().setValue("selectedSports", forKey: SELECTED_SPORTS)
+        NSUserDefaults.standardUserDefaults().setValue(selectedSports, forKey: SELECTED_SPORTS)
         performSegueWithIdentifier("sportsPageToFeed", sender: nil)
     }
 

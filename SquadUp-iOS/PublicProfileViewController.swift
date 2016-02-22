@@ -42,7 +42,7 @@ class PublicProfileViewController: UIViewController {
                         print("WaterMonkeys")
                         if key == self.userPassed {
                             let user = UserModel(userKey: key, dictionary: userDict)
-                            print("NIGGA")
+                            self.user = user
                             asdf = user
                         }
                     }
