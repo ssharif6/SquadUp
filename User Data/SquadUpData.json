@@ -296,7 +296,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
 		},
@@ -311,7 +311,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+			
 			"ranking": "2",
 			"rivals": []
 		},
@@ -326,7 +326,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -341,7 +341,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "5",
 			"rivals": []
 		},
@@ -356,7 +356,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "1",
 			"rivals": []
 		},
@@ -371,7 +371,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "unranked",
 			"rivals": []
 		},
@@ -386,7 +386,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "5",
 			"rivals": []
 		},
@@ -401,7 +401,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": []
 		},
@@ -416,7 +416,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -431,7 +431,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -446,7 +446,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": []
 		},
@@ -461,7 +461,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -476,7 +476,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "2",
 			"rivals": []
 		},
@@ -491,7 +491,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "2",
 			"rivals": []
 		},
@@ -506,7 +506,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "5",
 			"rivals": []
 		},
@@ -521,7 +521,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "unranked",
 			"rivals": []
 		},
@@ -536,7 +536,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "1",
 			"rivals": []
 		},
@@ -551,7 +551,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -566,7 +566,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": []
 		},
@@ -581,7 +581,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "2",
 			"rivals": []
 		},
@@ -596,7 +596,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		},
@@ -611,7 +611,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "unranked",
 			"rivals": []
 		},
@@ -626,7 +626,7 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "unranked",
 			"rivals": []
 		},
@@ -641,7 +641,7 @@
 			"provider": "Facebook",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "unranked",
 			"rivals": []
 		},
@@ -656,7 +656,7 @@
 			"provider": "Facebook",
 			"skill level": "advanced",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "1",
 			"rivals": []
 		},
@@ -671,7 +671,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note1"],
-			"recentActivities" : "",
+
 			"ranking": "1",
 			"rivals": []
 		},
@@ -686,7 +686,7 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": []
 		},
@@ -701,7 +701,7 @@
 			"provider": "Facebook",
 			"skill level": "intermediate",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "5",
 			"rivals": []
 		},
@@ -716,7 +716,7 @@
 			"provider": "Email",
 			"skill level": "beginner",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "4",
 			"rivals": []
 		},
@@ -730,7 +730,7 @@
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
 			"notifications": ["note2"],
-			"recentActivities" : "",
+
 			"ranking": "3",
 			"rivals": []
 		}
