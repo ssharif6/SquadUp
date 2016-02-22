@@ -18,6 +18,8 @@ class UserModel: NSObject {
     private var _sports: [String]!
     private var _userKey: String!
     private var _provider: String!
+    private var _fullName: String!
+    private var _profileImageURL: String!
     
     var firstName: String {
         return _firstName

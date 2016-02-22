@@ -54,6 +54,7 @@ class PublicProfileViewController: UIViewController {
         
     }
     
+    
     func loadData() {
         profileName.text = self.user.firstName + " " + self.user.lastName
         let url = NSURL(string: imageUrlPassed)

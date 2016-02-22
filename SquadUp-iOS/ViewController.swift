@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import SwiftyJSON
+import Alamofire
 
 var CURRENT_USER: UserModel!
 
@@ -30,8 +31,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidAppear(true)
         
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
-            self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil)
+            if NSUserDefaults.standardUserDefaults().valueForKey(SELECTED_SPORTS) != nil {
+                self.performSegueWithIdentifier("loginToFeedSportsBypassed", sender: nil)
+            } else {
+                self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil)
+            }
         }
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -50,6 +56,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if facebookError != nil {
                 print("Facebook Error \(facebookError.description)")
                 // Maybe put a pop up notification
+                
             } else {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 print("Facebook Login Successful")
@@ -58,14 +65,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     
                     if error != nil {
                         print("Login Failed")
+                        
                     } else {
                         print("Logged in")
                         // Create Firebase User
                         // TODO: Find Post History for Facebook User
                         let posts = []
                         let sports = []
+                        let name = AuthData.providerData["displayName"]
+                        let facebookID = AuthData.providerData["id"]
+                        print(facebookID)
+                        let profileImageUrl = AuthData.providerData["profileImageURL"]
                         let user = ["provider": AuthData.provider!, "id": "user", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
-                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: "currentUser", posts: posts as! [String], sports: sports as! [String])
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String])
                         
                         let defaults = NSUserDefaults.standardUserDefaults()
                         let UserModelKey = "userModelKey"
@@ -121,7 +133,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             showErrorAlert("Email and Password Required", msg: "You must enter an Email and Password")
         }
     }
-    
     
     
     

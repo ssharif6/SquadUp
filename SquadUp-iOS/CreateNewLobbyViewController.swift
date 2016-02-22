@@ -56,7 +56,7 @@ class CreateNewLobbyViewController: UIViewController {
         view.endEditing(true)
     }
     
-    func displayError() {
+    func displayError() -> Bool{
         var emptyText = ""
         if lobbyNameTextField.text == "" {
             emptyText += "Lobby Name"
@@ -71,9 +71,10 @@ class CreateNewLobbyViewController: UIViewController {
             let alert = UIAlertController(title: "All Fields Must be Filled In", message: "Not all Fields are Filled In", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
+            return true
         }
         
-
+        return false
     }
     
     @IBAction func datePickerAction(sender: AnyObject) {
@@ -85,31 +86,33 @@ class CreateNewLobbyViewController: UIViewController {
     }
     
     @IBAction func createLobbyPressed (sender: AnyObject) {
-        displayError()
-        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
-        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-        var userArray = [String]()
-        userArray.append(userUnarchived.userKey)
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        let strDate = dateFormatter.stringFromDate(datePicker.date)
-        self.selectedDate = strDate
+        if(displayError() == false) {
+            let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+            let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+            var userArray = [String]()
+            userArray.append(userUnarchived.userKey)
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+            let strDate = dateFormatter.stringFromDate(datePicker.date)
+            self.selectedDate = strDate
+            
+            let lobby: Dictionary<String, AnyObject> = [
+                "distance": "0.9",
+                "lobbyName": lobbyNameTextField.text!,
+                "maxCapacity": Int(numPlayersTextField.text!)!,
+                "sportsID": sportLabel!,
+                "currentCapacity": 1,
+                "currentPlayers": userArray,
+                "location": locationAddressTextField.text!,
+                "date": self.selectedDate,
+                "address": self.locationAddressTextField.text!
+            ]
+            let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
+            lobbyPost.setValue(lobby)
+            self.lobbyObjectToPass = LobbyGameModel(lobbyKey: lobbyPost.key, dictionary: lobby)
+            performSegueWithIdentifier("CreateLobbyToLobby", sender: nil)
+        }
         
-        let lobby: Dictionary<String, AnyObject> = [
-            "distance": "0.9",
-            "lobbyName": lobbyNameTextField.text!,
-            "maxCapacity": numPlayersTextField.text!,
-            "sportsID": sportLabel!,
-            "currentCapacity": 1,
-            "currentPlayers": userArray,
-            "location": locationAddressTextField.text!,
-            "date": self.selectedDate,
-            "address": self.locationAddressTextField.text!
-        ]
-        let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
-        lobbyPost.setValue(lobby)
-        self.lobbyObjectToPass = LobbyGameModel(lobbyKey: lobbyPost.key, dictionary: lobby)
-        performSegueWithIdentifier("CreateLobbyToLobby", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

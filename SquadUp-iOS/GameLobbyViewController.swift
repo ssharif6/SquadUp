@@ -28,6 +28,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     override func viewDidAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
@@ -36,11 +37,20 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+
         displayLobbyInfo()
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
     }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName

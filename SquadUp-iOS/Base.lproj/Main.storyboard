@@ -198,7 +198,8 @@
                     <connections>
                         <outlet property="emailField" destination="kCV-dO-bm0" id="Ydu-V8-bRh"/>
                         <outlet property="passwordField" destination="zUH-R4-fzx" id="pbg-7Z-bGG"/>
-                        <segue destination="dC9-8h-Tnb" kind="show" identifier="LoggedIn" id="CGW-iM-k38"/>
+                        <segue destination="4RY-ow-c83" kind="show" identifier="LoggedIn" id="qC9-as-nke"/>
+                        <segue destination="dC9-8h-Tnb" kind="show" identifier="loginToFeedSportsBypassed" id="fRU-1G-gzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -814,19 +815,37 @@
                                 <rect key="frame" x="6" y="106" width="403" height="560"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="Urx-QT-c38">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="sportCell" rowHeight="62" id="Urx-QT-c38" customClass="ChooseSportsTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="403" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Urx-QT-c38" id="JlZ-vV-MXL">
                                             <rect key="frame" x="0.0" y="0.0" width="403" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTp-h3-6Qq">
+                                                    <rect key="frame" x="8" y="6" width="50" height="50"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basketball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXa-le-LId">
+                                                    <rect key="frame" x="77" y="20" width="136" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sportImage" destination="NTp-h3-6Qq" id="Wjy-df-xso"/>
+                                            <outlet property="sportLabel" destination="iXa-le-LId" id="0mL-Uo-pIm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4B-g4-Wbp">
                                 <rect key="frame" x="189" y="686" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="4RY-ow-c83" eventType="touchUpInside" id="XXK-5u-hn5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which sports would you like to receive notifications about?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyD-kj-JH1">
                                 <rect key="frame" x="13" y="68" width="381" height="21"/>
@@ -838,6 +857,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="sportTableView" destination="VQc-ZS-NiM" id="mji-0p-ibg"/>
+                        <segue destination="dC9-8h-Tnb" kind="show" identifier="sportsPageToFeed" id="bAx-IJ-bqG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4il-mD-POP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1530,7 +1553,8 @@
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fRU-1G-gzZ"/>
         <segue reference="SeC-SE-gDC"/>
-        <segue reference="6qs-Ld-BXv"/>
+        <segue reference="kLt-Ag-aq1"/>
     </inferredMetricsTieBreakers>
 </document>
