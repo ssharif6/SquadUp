@@ -170,7 +170,7 @@
 		},
 		"game14": {
 			"registered": "no",
-			"currentCapacity": 6,
+			"currentCapacity": 10,
 			"currentPlayers": ["06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "0b11d418-285b-4b3a-aadd-04d57ec98043", "c59731d4-e3ee-4169-ac57-6991e7f5ab9f", "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", "9801ca60-efcc-4902-9b3e-9e55372efc8f", "100d0a06-5791-4865-96bf-3682dcd7922d", "70a2eea7-482d-4444-a4a1-70210ef25603", "93b96669-cd50-4cd0-9f00-359d97f0d000", "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"],
 			"distance": "0.9",
 			"id": "game1120",
