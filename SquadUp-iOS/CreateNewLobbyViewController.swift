@@ -26,7 +26,10 @@ class CreateNewLobbyViewController: UIViewController {
     var selectedDate: String!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        datePicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
     }
