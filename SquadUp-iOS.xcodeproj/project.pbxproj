@@ -47,6 +47,7 @@
 		85A3C2E61C537F3000EF39EA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */; };
 		85A3C2E71C537F3000EF39EA /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */; };
 		85A3C2E81C537F3000EF39EA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */; };
+		85A5E0CA1C7FEFB700B2B5F8 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A5E0C91C7FEFB700B2B5F8 /* PostCellView.swift */; };
 		85D664961C61F57D00CBDD0A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D664951C61F57D00CBDD0A /* UserModel.swift */; };
 		85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */; };
 		85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */; };
@@ -124,6 +125,7 @@
 		85A3C2E11C537F3000EF39EA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		85A3C2E21C537F3000EF39EA /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		85A3C2E31C537F3000EF39EA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		85A5E0C91C7FEFB700B2B5F8 /* PostCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		85D664951C61F57D00CBDD0A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		85DA31ED1C6871E00078CCEF /* JoinGameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameLobbyViewController.swift; sourceTree = "<group>"; };
 		85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinLobbyCell.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				856C67131C5CA3F400012D28 /* SWRevealViewController.m */,
 				85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */,
 				85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */,
+				85A5E0C91C7FEFB700B2B5F8 /* PostCellView.swift */,
 				85A3C2D21C53704E00EF39EA /* FacebookLoginButton.swift */,
 				85A3C2D41C53707300EF39EA /* EmailPasswordTextField.swift */,
 				855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */,
@@ -518,6 +521,7 @@
 				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
 				856C67141C5CA3F400012D28 /* SWRevealViewController.m in Sources */,
+				85A5E0CA1C7FEFB700B2B5F8 /* PostCellView.swift in Sources */,
 				85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */,
 				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
 				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
