@@ -24,6 +24,7 @@
 		856C67141C5CA3F400012D28 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856C67131C5CA3F400012D28 /* SWRevealViewController.m */; };
 		856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */; };
 		856E84191C56254100AC544C /* RatingStarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84181C56254100AC544C /* RatingStarContainerView.swift */; };
+		8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572F4D01C86AFEF00A3D54E /* RoundButton.swift */; };
 		857DA4EE1C79A5A300B0AEA8 /* RecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DA4ED1C79A5A300B0AEA8 /* RecentActivityViewController.swift */; };
 		857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */; };
 		85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */; };
@@ -96,6 +97,7 @@
 		856C67131C5CA3F400012D28 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalCollectionViewCell.swift; sourceTree = "<group>"; };
 		856E84181C56254100AC544C /* RatingStarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingStarContainerView.swift; sourceTree = "<group>"; };
+		8572F4D01C86AFEF00A3D54E /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		857DA4ED1C79A5A300B0AEA8 /* RecentActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivityViewController.swift; sourceTree = "<group>"; };
 		857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSportsTableViewCell.swift; sourceTree = "<group>"; };
 		85A3C2971C536B5A00EF39EA /* SquadUp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SquadUp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +278,7 @@
 				8509CDA91C5DEE2C00063F7D /* SportCell.swift */,
 				85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */,
 				857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */,
+				8572F4D01C86AFEF00A3D54E /* RoundButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
 				85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
+				8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */,
 				857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */,
 				856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */,
 				85A3C2CD1C536FC900EF39EA /* FacebookLoginContainer.swift in Sources */,
