@@ -289,7 +289,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-			"rating": 4,
+			"rating": "4",
 			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
@@ -303,7 +303,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-			"rating": 2,
+			"rating": "2",
 			"rivals": []
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
@@ -317,7 +317,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 3,
+			"rating": "3",
 			"rivals": []
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
@@ -331,7 +331,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 5,
+			"rating": "5",
 			"rivals": []
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
@@ -345,7 +345,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 1,
+			"rating": "1",
 			"rivals": []
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
@@ -359,7 +359,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 0,
+			"rating": "0",
 			"rivals": []
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
@@ -373,7 +373,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 5,
+			"rating": "5",
 			"rivals": []
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
@@ -387,7 +387,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-			"rating": 4,
+			"rating": "4",
 			"rivals": []
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
@@ -401,7 +401,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 3,
+			"rating": "3",
 			"rivals": []
 		},
 		"c59731d4-e3ee-4169-ac57-6991e7f5ab9f": {
@@ -415,7 +415,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 3,
+			"rating": "3",
 			"rivals": []
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
@@ -429,7 +429,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 4,
+			"rating": "4",
 			"rivals": []
 		},
 		"1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49": {
@@ -443,7 +443,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 3,
+			"rating": "3",
 			"rivals": []
 		},
 		"9801ca60-efcc-4902-9b3e-9e55372efc8f": {
@@ -457,7 +457,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 2,
+			"rating": "2",
 			"rivals": []
 		},
 		"f18af723-cfd4-4072-a15b-984f32cbb4fc": {
@@ -471,7 +471,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-			"rating": 2,
+			"rating": "2",
 			"rivals": []
 		},
 		"551bfbae-51f8-4c1c-8023-b512e049e488": {
@@ -485,7 +485,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-			"rating": 5,
+			"rating": "5",
 			"rivals": []
 		},
 		"66bad232-2bf0-453a-8e70-f727fb7514b8": {
@@ -499,7 +499,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note1"],
-			"rating": 0,
+			"rating": "0",
 			"rivals": []
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
@@ -513,8 +513,9 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-			"rating": 1,
-			"rivals": []
+			"rating": "1",
+			"rivals": [],
+			"friends": []
 		},
 		"d3d9d8ff-10d7-4476-adcf-23af9c8ebb42": {
 			"Sports": ["Baseball", "Football", "Tennis", "Badminton", "Baseball", "Basketball", "Frisbee"],
@@ -527,8 +528,9 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-			"rating": 3,
-			"rivals": []
+			"rating": "3",
+			"rivals": [],
+			"friends": []
 		},
 		"39287cf7-aa96-420d-9688-1affa01ad831": {
 			"Sports": ["Baseball", "Tennis"],
@@ -541,8 +543,9 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-			"rating": 4,
-			"rivals": []
+			"rating": "4",
+			"rivals": [],
+			"friends": []
 		},
 		"70a2eea7-482d-4444-a4a1-70210ef25603": {
 			"Sports": ["Basketball", "Soccer", "Badminton"],
@@ -555,8 +558,9 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-			"rating": 2,
-			"rivals": []
+			"rating": "2",
+			"rivals": [],
+			"friends": []
 		},
 		"2b53738f-a267-4a77-bd74-70e3fd03cf58": {
 			"Sports": ["Soccer", "Badminton", "Football", "Basketball", "Tennis"],
@@ -569,8 +573,9 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-			"rating": 3,
-			"rivals": []
+			"rating": "3",
+			"rivals": [],
+			"friends": []
 		},
 		"ad1602e0-07af-4cea-bf21-00c94d335952": {
 			"Sports": ["Tennis", "Football"],
@@ -583,8 +588,9 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-			"rating": 0,
-			"rivals": []
+			"rating": "0",
+			"rivals": [],
+			"friends": []
 		},
 		"27cef23f-942f-4cff-bfbf-7db0a2b7fdc9": {
 			"Sports": ["Baseball", "Frisbee"],
@@ -597,8 +603,9 @@
 			"provider": "Email",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-			"rating": 0,
-			"rivals": []
+			"rating": "0",
+			"rivals": [],
+			"friends": []
 		},
 		"93b96669-cd50-4cd0-9f00-359d97f0d000": {
 			"Sports": ["Soccer", "Tennis", "Frisbee"],
@@ -611,10 +618,9 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-			"rating": 0,
-
-			"rivals": []
+			"rating": "0",
+			"rivals": [],
+			"friends": []
 		},
 		"8d3727d0-cfe1-4c21-8934-7dd5fdf1f923": {
 			"Sports": ["Soccer", "Football", "Frisbee"],
@@ -627,13 +633,9 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-
-			"rating": 1,
-
 			"rating": "1",
-
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
 			"Sports": ["Soccer", "Badminton", "Football", "Frisbee"],
@@ -646,13 +648,9 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-
-
-			"rating": 1,
-
 			"rating": "1",
-
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"fe93a43a-1e6b-49dc-9b00-184040c14526": {
 			"Sports": ["Soccer", "Football", "Basketball", "Frisbee"],
@@ -665,9 +663,9 @@
 			"provider": "Email",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-			"rating": 4,
-			"rivals": []
+			"rating": "4",
+			"rivals": [],
+			"friends": []
 		},
 		"bd161367-671d-45df-9b91-b8c6bed167fc": {
 			"Sports": ["Baseball", "Football", "Tennis", "Soccer", "Frisbee"],
@@ -680,9 +678,9 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-			"rating": 5,
-			"rivals": []
+			"rating": "5",
+			"rivals": [],
+			"friends": []
 		},
 		"79db5730-0641-447e-8935-fd09b8928189": {
 			"Sports": ["Soccer", "Baseball", "Tennis", "Frisbee"],
@@ -695,8 +693,9 @@
 			"provider": "Email",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-			"rating": 4,
-			"rivals": []
+			"rating": "4",
+			"rivals": [],
+			"friends": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
 			"Sports": ["Basketball", "Soccer", "Badminton", "Football", "Frisbee"],
@@ -708,9 +707,399 @@
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
 			"notifications": ["note2"],
-
-			"rating": 3,
-			"rivals": []
+			"rating": "3",
+			"rivals": [],
+			"friends": []
+		},
+		"c1d28692-5180-4d21-8ce7-598f2c36a92c": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"6550fa3a-20d5-4557-8635-3f841f6dec4a": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"380e6adf-4719-48a1-823e-e86c93a0297b": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"4c7ec21c-90cd-44e8-90b9-a39675864266": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
+		},
+		"": {
+		  "Sports": [],
+		  "firstName": "",
+		  "gender": "female",
+		  "id": "F",
+		  "lastName": "",
+		  "profileImageUrl": "",
+		  "posts": [],
+		  "skillLevel": "",
+		  "notifications": [],
+		  "rating": "",
+		  "rivals": [],
 		}
 	}
 }
