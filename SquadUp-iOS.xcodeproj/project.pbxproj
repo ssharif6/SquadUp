@@ -14,6 +14,10 @@
 		8510E42A1C785D5200C73C92 /* PublicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */; };
 		8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */; };
 		8548BCFB1C755A6300CF3CA3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */; };
+		8549C1651C8972AC009BA652 /* RivalChooseSportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1641C8972AC009BA652 /* RivalChooseSportVC.swift */; };
+		8549C1671C89783A009BA652 /* RivalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1661C89783A009BA652 /* RivalListViewController.swift */; };
+		8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1681C897B19009BA652 /* RivalListCell.swift */; };
+		8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */; };
 		855758711C55944D00399C83 /* Tahoma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758701C55944D00399C83 /* Tahoma.ttf */; };
 		855758731C5594AA00399C83 /* Tahoma Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758721C5594AA00399C83 /* Tahoma Bold.ttf */; };
 		855DF5561C5417E7009B6D82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5551C5417E7009B6D82 /* DataService.swift */; };
@@ -21,7 +25,6 @@
 		855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */; };
 		855DF55E1C54505D009B6D82 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF55D1C54505D009B6D82 /* Post.swift */; };
 		8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8569C9A71C55E93700CE7197 /* ProfileViewController.swift */; };
-		856C67141C5CA3F400012D28 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856C67131C5CA3F400012D28 /* SWRevealViewController.m */; };
 		856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */; };
 		856E84191C56254100AC544C /* RatingStarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84181C56254100AC544C /* RatingStarContainerView.swift */; };
 		8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572F4D01C86AFEF00A3D54E /* RoundButton.swift */; };
@@ -85,6 +88,10 @@
 		8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicProfileViewController.swift; sourceTree = "<group>"; };
 		8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLobbyViewController.swift; sourceTree = "<group>"; };
 		8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8549C1641C8972AC009BA652 /* RivalChooseSportVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalChooseSportVC.swift; sourceTree = "<group>"; };
+		8549C1661C89783A009BA652 /* RivalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalListViewController.swift; sourceTree = "<group>"; };
+		8549C1681C897B19009BA652 /* RivalListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalListCell.swift; sourceTree = "<group>"; };
+		8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalScreenViewController.swift; sourceTree = "<group>"; };
 		855758701C55944D00399C83 /* Tahoma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tahoma.ttf; sourceTree = "<group>"; };
 		855758721C5594AA00399C83 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
 		855DF5551C5417E7009B6D82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -93,8 +100,6 @@
 		855DF55D1C54505D009B6D82 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8569C9A71C55E93700CE7197 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		856C67111C5CA3F300012D28 /* SquadUp-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SquadUp-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		856C67121C5CA3F400012D28 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		856C67131C5CA3F400012D28 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalCollectionViewCell.swift; sourceTree = "<group>"; };
 		856E84181C56254100AC544C /* RatingStarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingStarContainerView.swift; sourceTree = "<group>"; };
 		8572F4D01C86AFEF00A3D54E /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -265,8 +270,6 @@
 		85A3C2C91C536F9400EF39EA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				856C67121C5CA3F400012D28 /* SWRevealViewController.h */,
-				856C67131C5CA3F400012D28 /* SWRevealViewController.m */,
 				85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */,
 				85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */,
 				85A5E0C91C7FEFB700B2B5F8 /* PostCellView.swift */,
@@ -279,6 +282,7 @@
 				85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */,
 				857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */,
 				8572F4D01C86AFEF00A3D54E /* RoundButton.swift */,
+				8549C1681C897B19009BA652 /* RivalListCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -298,6 +302,9 @@
 				8548BCFA1C755A6300CF3CA3 /* MapViewController.swift */,
 				8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */,
 				857DA4ED1C79A5A300B0AEA8 /* RecentActivityViewController.swift */,
+				8549C1641C8972AC009BA652 /* RivalChooseSportVC.swift */,
+				8549C1661C89783A009BA652 /* RivalListViewController.swift */,
+				8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -521,9 +528,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */,
 				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
-				856C67141C5CA3F400012D28 /* SWRevealViewController.m in Sources */,
 				85A5E0CA1C7FEFB700B2B5F8 /* PostCellView.swift in Sources */,
 				85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */,
 				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
@@ -536,6 +543,7 @@
 				8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */,
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
 				85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */,
+				8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
 				8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */,
 				857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */,
@@ -544,6 +552,8 @@
 				85A3C2CF1C53700500EF39EA /* Constants.swift in Sources */,
 				85DA31F21C6883290078CCEF /* LobbyGameModel.swift in Sources */,
 				85DA31F41C691BA10078CCEF /* GameLobbyViewController.swift in Sources */,
+				8549C1671C89783A009BA652 /* RivalListViewController.swift in Sources */,
+				8549C1651C8972AC009BA652 /* RivalChooseSportVC.swift in Sources */,
 				8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */,
 				8510E41E1C75C9B300C73C92 /* Message.swift in Sources */,
 				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,

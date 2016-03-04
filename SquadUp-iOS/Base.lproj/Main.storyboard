@@ -417,7 +417,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Rivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-SY-sWV">
-                                <rect key="frame" x="20" y="518" width="132" height="21"/>
+                                <rect key="frame" x="20" y="516" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -435,6 +435,7 @@
                                 <state key="normal" title="Button" image="boxingGlove"/>
                                 <connections>
                                     <action selector="findRivalButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="tfy-4x-P9t"/>
+                                    <segue destination="oJu-Nb-UUl" kind="show" identifier="RivalToSports" id="OfN-0v-p7D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dca-1x-gqE">
@@ -532,7 +533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tb-Vo-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3785" y="349"/>
+            <point key="canvasLocation" x="3784" y="378"/>
         </scene>
         <!--Recent Activity View Controller-->
         <scene sceneID="t0D-Vu-mnE">
@@ -759,6 +760,198 @@
             </objects>
             <point key="canvasLocation" x="2798" y="2163"/>
         </scene>
+        <!--Rival Choose SportVC-->
+        <scene sceneID="lIP-Q2-45h">
+            <objects>
+                <viewController id="oJu-Nb-UUl" customClass="RivalChooseSportVC" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pz7-qf-jbg"/>
+                        <viewControllerLayoutGuide type="bottom" id="75P-dG-xrd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mP2-Xw-ekw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brs-Cu-kLy">
+                                <rect key="frame" x="15" y="163" width="110" height="110"/>
+                                <state key="normal" title="Button" image="Badminton"/>
+                                <connections>
+                                    <action selector="badmintonClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="Hlb-09-7bq"/>
+                                    <action selector="badmintonClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="bMs-vE-xFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oin-UA-GCT">
+                                <rect key="frame" x="152" y="163" width="110" height="110"/>
+                                <state key="normal" title="Button" image="Baseball"/>
+                                <connections>
+                                    <action selector="baseballClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="Gdl-mo-WGB"/>
+                                    <action selector="baseballClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="tzS-oD-B4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxV-QU-lyu">
+                                <rect key="frame" x="289" y="163" width="110" height="110"/>
+                                <state key="normal" title="Button" image="basketballAndWhistle"/>
+                                <connections>
+                                    <action selector="basketballClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="9lo-JK-aKY"/>
+                                    <action selector="basketballClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="i84-Di-Fla"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMD-37-gZb">
+                                <rect key="frame" x="15" y="326" width="110" height="110"/>
+                                <state key="normal" title="Button" image="soccerTableView"/>
+                                <connections>
+                                    <action selector="soccerClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="E4K-qc-Sb2"/>
+                                    <action selector="soccerClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="cdk-vu-OGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYH-0k-VPw">
+                                <rect key="frame" x="152" y="326" width="110" height="110"/>
+                                <state key="normal" title="Button" image="Tennis"/>
+                                <connections>
+                                    <action selector="tennisClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="VhN-X7-MQi"/>
+                                    <action selector="tennisClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="u0t-Q9-tjQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-2E-a23">
+                                <rect key="frame" x="289" y="326" width="110" height="110"/>
+                                <state key="normal" title="Button" image="Football"/>
+                                <connections>
+                                    <action selector="footballClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="LBC-zq-dfV"/>
+                                    <action selector="footballClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="jeC-43-nw6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K82-cm-pb9">
+                                <rect key="frame" x="152" y="484" width="110" height="110"/>
+                                <state key="normal" title="Button" image="Frisbee"/>
+                                <connections>
+                                    <action selector="frisbeeClicked:" destination="oJu-Nb-UUl" eventType="touchUpInside" id="51w-EB-bXf"/>
+                                    <action selector="frisbeeClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="aW5-Jb-Dei"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAC-c8-8ar">
+                                <rect key="frame" x="104" y="78" width="207" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="badmintonImage" destination="brs-Cu-kLy" id="ywb-gB-Moa"/>
+                        <outlet property="baseballImage" destination="Oin-UA-GCT" id="k6V-la-lMC"/>
+                        <outlet property="basketballImage" destination="bxV-QU-lyu" id="YG4-QF-nFD"/>
+                        <outlet property="footballImage" destination="Fhe-2E-a23" id="wWN-hA-78x"/>
+                        <outlet property="frisbeeImage" destination="K82-cm-pb9" id="QUd-JD-hVA"/>
+                        <outlet property="soccerImage" destination="NMD-37-gZb" id="5wL-xP-lYi"/>
+                        <outlet property="tennisImage" destination="pYH-0k-VPw" id="sfv-t7-5eP"/>
+                        <segue destination="V3d-dN-cpB" kind="show" identifier="SportToRivalList" id="dmH-np-esF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0P-ez-OeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798" y="3055"/>
+        </scene>
+        <!--Rival Screen View Controller-->
+        <scene sceneID="ZuM-di-wDx">
+            <objects>
+                <viewController id="Dvz-pt-TB4" customClass="RivalScreenViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TI9-jD-Et6"/>
+                        <viewControllerLayoutGuide type="bottom" id="1C5-Dp-41q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o7d-Ld-Mcd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKm-sk-CTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="3055"/>
+        </scene>
+        <!--Rival List View Controller-->
+        <scene sceneID="ecE-oZ-tXg">
+            <objects>
+                <viewController id="V3d-dN-cpB" customClass="RivalListViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AKM-LM-mpT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ud6-Y0-nXD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bpw-cn-T6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-Sq-UEe">
+                                <rect key="frame" x="10" y="151" width="394" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RivalCell" rowHeight="107" id="ngr-sL-gQW" customClass="RivalListCell" customModule="SquadUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="394" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ngr-sL-gQW" id="hmQ-g3-ZaO">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-md-j2b">
+                                                    <rect key="frame" x="8" y="19" width="70" height="70"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen Sharifian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-MH-4bO">
+                                                    <rect key="frame" x="86" y="41" width="242" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-zv-G9c">
+                                                    <rect key="frame" x="352" y="34" width="34" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0d-4Z-bLa">
+                                                    <rect key="frame" x="336" y="41" width="13" height="23.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zE7-md-j2b" firstAttribute="centerY" secondItem="hmQ-g3-ZaO" secondAttribute="centerY" id="2hL-yQ-5p5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="2xh-MH-4bO" id="4C9-Yc-rFH"/>
+                                            <outlet property="numStarsLabel" destination="Z0d-4Z-bLa" id="MHa-3s-1FS"/>
+                                            <outlet property="profileImage" destination="zE7-md-j2b" id="OfW-LJ-weI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="V3d-dN-cpB" id="hfi-IZ-8TE"/>
+                                    <outlet property="delegate" destination="V3d-dN-cpB" id="KnE-fz-2CC"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose a Tennis Rival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meK-iB-agp">
+                                <rect key="frame" x="66" y="81" width="283" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="meK-iB-agp" firstAttribute="centerX" secondItem="bpw-cn-T6F" secondAttribute="centerX" id="oVo-j9-wml"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="sportLabel" destination="meK-iB-agp" id="cFb-UR-9Fn"/>
+                        <segue destination="Dvz-pt-TB4" kind="show" identifier="RivalChosen" id="IaT-oi-aOQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDl-Dc-QjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344" y="3055"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qvo-So-pw8">
             <objects>
@@ -859,7 +1052,7 @@
             </objects>
             <point key="canvasLocation" x="1836" y="1089"/>
         </scene>
-        <!--Sports-->
+        <!--Find GameVC-->
         <scene sceneID="Loq-CI-ut9">
             <objects>
                 <viewController id="evr-DG-UF3" customClass="FindGameVC" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -924,8 +1117,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blT-vl-59P">
-                                <rect key="frame" x="112" y="78" width="191" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <rect key="frame" x="104" y="78" width="207" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -933,7 +1126,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Sports" id="gD5-h0-J6Z"/>
+                    <navigationItem key="navigationItem" id="gD5-h0-J6Z"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -964,6 +1157,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soccerLobbyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-ek-KTC">
+                                <rect key="frame" x="0.0" y="357" width="414" height="371"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basketballAndWhistle" translatesAutoresizingMaskIntoConstraints="NO" id="Tr9-cb-mmL">
                                 <rect key="frame" x="0.0" y="64" width="414" height="294"/>
                             </imageView>
@@ -1026,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybc-GO-nHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3745" y="1164"/>
+            <point key="canvasLocation" x="3852" y="1356"/>
         </scene>
         <!--Create New Lobby View Controller-->
         <scene sceneID="fLb-Tg-gb0">
@@ -1152,7 +1348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufh-mY-9qQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="2024"/>
+            <point key="canvasLocation" x="3409" y="2230"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="je9-S3-gTd">
@@ -1282,7 +1478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yb2-jO-jtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3937" y="2024"/>
+            <point key="canvasLocation" x="3943" y="2230"/>
         </scene>
         <!--Game Lobby View Controller-->
         <scene sceneID="SjH-na-vLa">
@@ -1490,7 +1686,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hEG-3F-UmK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.0" green="0.62745098039215685" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1551,11 +1747,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2tR-Jn-Oee" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="ZkO-2e-Pm0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vm5-ZQ-8Xw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="I" id="vm5-ZQ-8Xw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.29803921570000003" green="0.68627450980000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1573,6 +1770,7 @@
         <image name="DROSE" width="300" height="300"/>
         <image name="Football" width="1292" height="635"/>
         <image name="Frisbee" width="250" height="237"/>
+        <image name="I" width="65" height="65"/>
         <image name="JBUCKETS" width="1035" height="941"/>
         <image name="Profile Pic" width="1365" height="1365"/>
         <image name="RecentHistoryAsset" width="284" height="369"/>
@@ -1589,13 +1787,14 @@
         <image name="heart-empty" width="150" height="147"/>
         <image name="locationPin" width="411" height="553"/>
         <image name="moreAsset" width="577" height="179"/>
+        <image name="soccerLobbyBackground" width="2208" height="1402"/>
         <image name="soccerTableView" width="1920" height="1080"/>
         <image name="startLobbyBackground" width="653" height="859"/>
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fRU-1G-gzZ"/>
         <segue reference="SeC-SE-gDC"/>
+        <segue reference="fRU-1G-gzZ"/>
         <segue reference="kLt-Ag-aq1"/>
     </inferredMetricsTieBreakers>
 </document>
