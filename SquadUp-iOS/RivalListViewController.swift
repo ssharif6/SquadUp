@@ -49,8 +49,6 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             self.rivalList = asdf
             self.rivalTableView.reloadData()
-            print("DOG")
-            print(self.rivalList)
         })
         
     }

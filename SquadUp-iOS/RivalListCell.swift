@@ -27,12 +27,16 @@ class RivalListCell: UITableViewCell {
     func configureCell(user: UserModel) {
         // figure out rating data here
         let url = NSURL(string: user.profileImageURL)
-        if url == "" {
-            profileImage.image = UIImage(named: "defaultProfle")
+        if user.profileImageURL == "" {
+            print("FUCKING SHIT")
+            print(user.firstName)
+            profileImage.image = UIImage(named: "defaultProfile")
         } else {
             let data = NSData(contentsOfURL:url!)
             if data != nil {
                 profileImage.image = UIImage(data:data!)
+                profileImage.contentMode = UIViewContentMode.ScaleAspectFit
+
             }
         }
         

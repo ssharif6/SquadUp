@@ -90,11 +90,9 @@ class UserModel: NSObject {
         if let id = dictionary["id"] as? String {
             self._userId = id
         }
-        if let profileImageURL = dictionary["profileImageURL"] as? String {
+        if let profileImageURL = dictionary["profileImageUrl"] as? String {
             self._profileImageURL = profileImageURL
-        } else {
-            self._profileImageURL = "default" // default pic
-        }
+        } 
         if let firstName = dictionary["firstName"] as? String {
             self._firstName = firstName
         }

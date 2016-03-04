@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         let facebookID = AuthData.providerData["id"]
                         print(facebookID)
                         let profileImageUrl = AuthData.providerData["profileImageURL"]
-                        let user = ["provider": AuthData.provider!, "id": "user", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo"]
+                        let user = ["provider": AuthData.provider!, "id": "user", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo", "profileImageUrl": ""]
                         let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String])
                         
                         let defaults = NSUserDefaults.standardUserDefaults()

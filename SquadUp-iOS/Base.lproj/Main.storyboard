@@ -906,9 +906,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="106.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-md-j2b">
-                                                    <rect key="frame" x="8" y="19" width="70" height="70"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen Sharifian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-MH-4bO">
                                                     <rect key="frame" x="86" y="41" width="242" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -924,10 +921,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-md-j2b">
+                                                    <rect key="frame" x="8" y="19" width="70" height="70"/>
+                                                </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zE7-md-j2b" firstAttribute="centerY" secondItem="hmQ-g3-ZaO" secondAttribute="centerY" id="2hL-yQ-5p5"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="2xh-MH-4bO" id="4C9-Yc-rFH"/>
@@ -1793,6 +1790,7 @@
         <image name="boxingGlove" width="495" height="583"/>
         <image name="cameraWhite" width="625" height="513"/>
         <image name="chooseASportPic" width="1080" height="1920"/>
+        <image name="defaultProfile" width="334" height="400"/>
         <image name="fb-icon" width="65" height="65"/>
         <image name="filledStar-1" width="632" height="587"/>
         <image name="football_players_goal_gate_grid_ball_8837_1366x768" width="1366" height="768"/>
