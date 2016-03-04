@@ -289,12 +289,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
@@ -308,12 +303,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 2,
-=======
-			"rating": "2",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
@@ -327,12 +317,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
@@ -346,12 +331,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 5,
-=======
-			"rating": "5",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
@@ -365,12 +345,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 1,
-=======
-			"rating": "1",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
@@ -384,12 +359,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 0,
-=======
-			"rating": "unranked",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
@@ -403,12 +373,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 5,
-=======
-			"rating": "5",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
@@ -422,12 +387,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
@@ -441,12 +401,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"c59731d4-e3ee-4169-ac57-6991e7f5ab9f": {
@@ -460,12 +415,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
@@ -479,12 +429,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49": {
@@ -498,12 +443,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"9801ca60-efcc-4902-9b3e-9e55372efc8f": {
@@ -517,12 +457,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 2,
-=======
-			"rating": "2",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"f18af723-cfd4-4072-a15b-984f32cbb4fc": {
@@ -536,12 +471,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 2,
-=======
-			"rating": "2",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"551bfbae-51f8-4c1c-8023-b512e049e488": {
@@ -555,12 +485,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 5,
-=======
-			"rating": "5",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"66bad232-2bf0-453a-8e70-f727fb7514b8": {
@@ -574,12 +499,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 0,
-=======
-			"rating": "unranked",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
@@ -593,12 +513,7 @@
 			"provider": "Facebook",
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 1,
-=======
-			"rating": "1",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"d3d9d8ff-10d7-4476-adcf-23af9c8ebb42": {
@@ -612,12 +527,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"39287cf7-aa96-420d-9688-1affa01ad831": {
@@ -631,12 +541,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"70a2eea7-482d-4444-a4a1-70210ef25603": {
@@ -650,12 +555,7 @@
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 2,
-=======
-			"rating": "2",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"2b53738f-a267-4a77-bd74-70e3fd03cf58": {
@@ -669,12 +569,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"ad1602e0-07af-4cea-bf21-00c94d335952": {
@@ -688,12 +583,7 @@
 			"provider": "Facebook",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 0,
-=======
-			"rating": "unranked",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"27cef23f-942f-4cff-bfbf-7db0a2b7fdc9": {
@@ -707,12 +597,7 @@
 			"provider": "Email",
 			"skillLevel": "beginner",
 			"notifications": ["note1"],
-
-<<<<<<< HEAD
 			"rating": 0,
-=======
-			"rating": "unranked",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"93b96669-cd50-4cd0-9f00-359d97f0d000": {
@@ -727,11 +612,8 @@
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
 
-<<<<<<< HEAD
 			"rating": 0,
-=======
-			"rating": "unranked",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
+
 			"rivals": []
 		},
 		"8d3727d0-cfe1-4c21-8934-7dd5fdf1f923": {
@@ -746,11 +628,11 @@
 			"skillLevel": "advanced",
 			"notifications": ["note2"],
 
-<<<<<<< HEAD
+
 			"rating": 1,
-=======
+
 			"rating": "1",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
+
 			"rivals": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
@@ -765,11 +647,11 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
 
-<<<<<<< HEAD
+
 			"rating": 1,
-=======
+
 			"rating": "1",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
+
 			"rivals": []
 		},
 		"fe93a43a-1e6b-49dc-9b00-184040c14526": {
@@ -784,11 +666,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
 
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"bd161367-671d-45df-9b91-b8c6bed167fc": {
@@ -803,11 +681,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note2"],
 
-<<<<<<< HEAD
 			"rating": 5,
-=======
-			"rating": "5",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"79db5730-0641-447e-8935-fd09b8928189": {
@@ -821,12 +695,7 @@
 			"provider": "Email",
 			"skillLevel": "beginner",
 			"notifications": ["note2"],
-
-<<<<<<< HEAD
 			"rating": 4,
-=======
-			"rating": "4",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		},
 		"9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1": {
@@ -840,11 +709,7 @@
 			"provider": "Email",
 			"notifications": ["note2"],
 
-<<<<<<< HEAD
 			"rating": 3,
-=======
-			"rating": "3",
->>>>>>> a3f6fb22ab8b09b4c5d67da8290b519da837dd3d
 			"rivals": []
 		}
 	}
