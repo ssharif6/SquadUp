@@ -28,8 +28,6 @@ class RivalListCell: UITableViewCell {
         // figure out rating data here
         let url = NSURL(string: user.profileImageURL)
         if user.profileImageURL == "" {
-            print("FUCKING SHIT")
-            print(user.firstName)
             profileImage.image = UIImage(named: "defaultProfile")
         } else {
             let data = NSData(contentsOfURL:url!)
@@ -39,9 +37,12 @@ class RivalListCell: UITableViewCell {
 
             }
         }
-        
         nameLabel.text = user.firstName + " " + user.lastName
-
+        let rating = user.rating
+        numStarsLabel.text = String(rating)
+    }
+    
+    func configureRating(rating: Int) {
         
     }
 

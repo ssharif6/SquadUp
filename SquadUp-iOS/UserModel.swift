@@ -20,9 +20,14 @@ class UserModel: NSObject {
     private var _provider: String!
     private var _fullName: String!
     private var _profileImageURL: String!
+    private var _rating: Int!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var rating: Int {
+        return _rating
     }
     
     var profileImageURL: String {
@@ -61,6 +66,7 @@ class UserModel: NSObject {
         _posts = posts
         _sports = sports
         _userKey = key
+        // rating
     }
     
     required init(coder decoder: NSCoder) {
@@ -72,6 +78,7 @@ class UserModel: NSObject {
         _sports = decoder.decodeObjectForKey("Sports") as? [String]
         _userKey = decoder.decodeObjectForKey("userKey") as? String
         _profileImageURL = decoder.decodeObjectForKey("profileImageKey") as? String
+        _rating = decoder.decodeObjectForKey("ratingKey") as? Int
         super.init()
     }
     
@@ -83,6 +90,7 @@ class UserModel: NSObject {
         aCoder.encodeObject(_sports, forKey: "Sports")
         aCoder.encodeObject(_userKey, forKey: "userKey")
         aCoder.encodeObject(_profileImageURL, forKey: "profileImageKey")
+        aCoder.encodeObject(_rating, forKey: "ratingKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -110,6 +118,9 @@ class UserModel: NSObject {
         }
         if let sports = dictionary["Sports"] as? [String] {
             self._sports = sports
+        }
+        if let rating = dictionary["rating"] as? Int {
+            self._rating = rating
         }
     }
     

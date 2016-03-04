@@ -218,7 +218,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blueFeedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-c6-8Kb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feedBackground-1" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-c6-8Kb">
                                 <rect key="frame" x="-6" y="0.0" width="381" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="137" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T1N-lS-Svy">
@@ -1166,7 +1166,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soccerLobbyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-ek-KTC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lobbyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-ek-KTC">
                                 <rect key="frame" x="0.0" y="357" width="414" height="371"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basketballAndWhistle" translatesAutoresizingMaskIntoConstraints="NO" id="Tr9-cb-mmL">
@@ -1786,18 +1786,18 @@
         <image name="Steph" width="640" height="400"/>
         <image name="Tennis" width="1253" height="762"/>
         <image name="basketballAndWhistle" width="1400" height="1050"/>
-        <image name="blueFeedBackground" width="2208" height="1402"/>
         <image name="boxingGlove" width="495" height="583"/>
         <image name="cameraWhite" width="625" height="513"/>
         <image name="chooseASportPic" width="1080" height="1920"/>
         <image name="defaultProfile" width="334" height="400"/>
         <image name="fb-icon" width="65" height="65"/>
+        <image name="feedBackground-1" width="1080" height="1920"/>
         <image name="filledStar-1" width="632" height="587"/>
         <image name="football_players_goal_gate_grid_ball_8837_1366x768" width="1366" height="768"/>
         <image name="heart-empty" width="150" height="147"/>
+        <image name="lobbyBackground" width="1080" height="1920"/>
         <image name="locationPin" width="411" height="553"/>
         <image name="moreAsset" width="577" height="179"/>
-        <image name="soccerLobbyBackground" width="2208" height="1402"/>
         <image name="soccerTableView" width="1920" height="1080"/>
         <image name="startLobbyBackground" width="653" height="859"/>
         <image name="twitter-icon-3" width="512" height="512"/>

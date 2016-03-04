@@ -76,7 +76,6 @@ class RivalChooseSportVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         badmintonImage.layer.borderColor = UIColor.blackColor().CGColor
         badmintonImage.layer.cornerRadius = badmintonImage.frame.height/2
         badmintonImage.clipsToBounds = true
@@ -100,15 +99,15 @@ class RivalChooseSportVC: UIViewController {
         baseballImage.clipsToBounds = true
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = false
-    }
+//    override func viewWillAppear(animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool)
+//    {
+//        super.viewWillDisappear(animated)
+//        self.navigationController?.navigationBarHidden = false
+//    }
     
     @IBAction func frisbeeClicked(sender: AnyObject) {
         labelToPass = "Frisbee"
