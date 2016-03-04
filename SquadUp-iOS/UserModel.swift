@@ -20,9 +20,18 @@ class UserModel: NSObject {
     private var _provider: String!
     private var _fullName: String!
     private var _profileImageURL: String!
+    private var _rating: Int!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var rating: Int {
+        return _rating
+    }
+    
+    var profileImageURL: String {
+        return _profileImageURL
     }
     
     var provider: String {
@@ -57,6 +66,7 @@ class UserModel: NSObject {
         _posts = posts
         _sports = sports
         _userKey = key
+        // rating
     }
     
     required init(coder decoder: NSCoder) {
@@ -65,8 +75,10 @@ class UserModel: NSObject {
         self._gender = decoder.decodeObjectForKey("gender") as! String
         _userId = decoder.decodeObjectForKey("userId") as? String
         _posts = decoder.decodeObjectForKey("posts") as? [String]
-        _sports = decoder.decodeObjectForKey("sports") as? [String]
+        _sports = decoder.decodeObjectForKey("Sports") as? [String]
         _userKey = decoder.decodeObjectForKey("userKey") as? String
+        _profileImageURL = decoder.decodeObjectForKey("profileImageKey") as? String
+        _rating = decoder.decodeObjectForKey("ratingKey") as? Int
         super.init()
     }
     
@@ -75,8 +87,10 @@ class UserModel: NSObject {
         aCoder.encodeObject(_lastName, forKey: "lastName")
         aCoder.encodeObject(_gender, forKey: "gender")
         aCoder.encodeObject(_posts, forKey: "posts")
-        aCoder.encodeObject(_sports, forKey: "sports")
+        aCoder.encodeObject(_sports, forKey: "Sports")
         aCoder.encodeObject(_userKey, forKey: "userKey")
+        aCoder.encodeObject(_profileImageURL, forKey: "profileImageKey")
+        aCoder.encodeObject(_rating, forKey: "ratingKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -84,6 +98,9 @@ class UserModel: NSObject {
         if let id = dictionary["id"] as? String {
             self._userId = id
         }
+        if let profileImageURL = dictionary["profileImageUrl"] as? String {
+            self._profileImageURL = profileImageURL
+        } 
         if let firstName = dictionary["firstName"] as? String {
             self._firstName = firstName
         }
@@ -101,6 +118,9 @@ class UserModel: NSObject {
         }
         if let sports = dictionary["Sports"] as? [String] {
             self._sports = sports
+        }
+        if let rating = dictionary["rating"] as? Int {
+            self._rating = rating
         }
     }
     

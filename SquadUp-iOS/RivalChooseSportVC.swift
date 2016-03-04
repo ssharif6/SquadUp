@@ -1,17 +1,14 @@
 //
-//  FindGameVC.swift
+//  RivalChooseSportVC.swift
 //  SquadUp-iOS
 //
-//  Created by Shaheen Sharifian on 1/30/16.
+//  Created by Shaheen Sharifian on 3/3/16.
 //  Copyright © 2016 Shaheen Sharifian. All rights reserved.
 //
 
 import UIKit
 
-class FindGameVC: UIViewController {
-    
-    @IBOutlet weak var chooseSportView: UIView!
-    
+class RivalChooseSportVC: UIViewController {
     
     var labelToPass:String!
     var imageToPass:UIImage!
@@ -23,8 +20,6 @@ class FindGameVC: UIViewController {
     @IBOutlet weak var frisbeeImage: UIButton!
     @IBOutlet weak var baseballImage: UIButton!
     @IBOutlet weak var badmintonImage: UIButton!
-    
-    var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis", "Ultimate Frisbee"]
     
     override func viewDidAppear(animated: Bool) {
         let badmintonCenter = badmintonImage.center
@@ -67,9 +62,8 @@ class FindGameVC: UIViewController {
             self.footballImage.alpha = 1
             
         }), completion: nil)
-        
+
     }
-    
     override func viewDidDisappear(animated: Bool) {
         badmintonImage.alpha = 0
         soccerImage.alpha = 0
@@ -82,7 +76,6 @@ class FindGameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         badmintonImage.layer.borderColor = UIColor.blackColor().CGColor
         badmintonImage.layer.cornerRadius = badmintonImage.frame.height/2
         badmintonImage.clipsToBounds = true
@@ -106,57 +99,58 @@ class FindGameVC: UIViewController {
         baseballImage.clipsToBounds = true
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = false
-    }
+//    override func viewWillAppear(animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool)
+//    {
+//        super.viewWillDisappear(animated)
+//        self.navigationController?.navigationBarHidden = false
+//    }
     
     @IBAction func frisbeeClicked(sender: AnyObject) {
         labelToPass = "Frisbee"
         imageToPass = frisbeeImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: self)
+        performSegueWithIdentifier("SportToRivalList", sender: self)
     }
     @IBAction func footballClicked(sender: AnyObject) {
         labelToPass = "Football"
         imageToPass = footballImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     @IBAction func tennisClicked(sender: AnyObject) {
         labelToPass = "Tennis"
         imageToPass = tennisImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     @IBAction func soccerClicked(sender: AnyObject) {
         labelToPass = "Soccer"
         imageToPass = soccerImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     @IBAction func badmintonClicked(sender: AnyObject) {
         labelToPass = "Badminton"
         imageToPass = badmintonImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     
     @IBAction func baseballClicked(sender: AnyObject) {
         labelToPass = "Baseball"
         imageToPass = baseballImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     @IBAction func basketballClicked(sender: AnyObject) {
         labelToPass = "Basketball"
         imageToPass = basketballImage.imageView?.image
-        performSegueWithIdentifier("sportSelected", sender: nil)
+        performSegueWithIdentifier("SportToRivalList", sender: nil)
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "sportSelected" {
-            let vc = segue.destinationViewController as! SportViewController
+        if segue.identifier == "SportToRivalList" {
+            let vc = segue.destinationViewController as! RivalListViewController
             vc.passedLabel = self.labelToPass
             vc.passedImage = self.imageToPass
         }
     }
+
 }
