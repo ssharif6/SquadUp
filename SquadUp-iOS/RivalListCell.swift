@@ -24,8 +24,21 @@ class RivalListCell: UITableViewCell {
         profileImage.clipsToBounds = true
     }
     
-    func configureCell() {
+    func configureCell(user: UserModel) {
         // figure out rating data here
+        let url = NSURL(string: user.profileImageURL)
+        if url == "" {
+            profileImage.image = UIImage(named: "defaultProfle")
+        } else {
+            let data = NSData(contentsOfURL:url!)
+            if data != nil {
+                profileImage.image = UIImage(data:data!)
+            }
+        }
+        
+        nameLabel.text = user.firstName + " " + user.lastName
+
+        
     }
 
 

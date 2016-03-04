@@ -25,6 +25,10 @@ class UserModel: NSObject {
         return _firstName
     }
     
+    var profileImageURL: String {
+        return _profileImageURL
+    }
+    
     var provider: String {
         return _provider
     }
@@ -65,8 +69,9 @@ class UserModel: NSObject {
         self._gender = decoder.decodeObjectForKey("gender") as! String
         _userId = decoder.decodeObjectForKey("userId") as? String
         _posts = decoder.decodeObjectForKey("posts") as? [String]
-        _sports = decoder.decodeObjectForKey("sports") as? [String]
+        _sports = decoder.decodeObjectForKey("Sports") as? [String]
         _userKey = decoder.decodeObjectForKey("userKey") as? String
+        _profileImageURL = decoder.decodeObjectForKey("profileImageKey") as? String
         super.init()
     }
     
@@ -75,14 +80,20 @@ class UserModel: NSObject {
         aCoder.encodeObject(_lastName, forKey: "lastName")
         aCoder.encodeObject(_gender, forKey: "gender")
         aCoder.encodeObject(_posts, forKey: "posts")
-        aCoder.encodeObject(_sports, forKey: "sports")
+        aCoder.encodeObject(_sports, forKey: "Sports")
         aCoder.encodeObject(_userKey, forKey: "userKey")
+        aCoder.encodeObject(_profileImageURL, forKey: "profileImageKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._userKey = userKey
         if let id = dictionary["id"] as? String {
             self._userId = id
+        }
+        if let profileImageURL = dictionary["profileImageURL"] as? String {
+            self._profileImageURL = profileImageURL
+        } else {
+            self._profileImageURL = "default" // default pic
         }
         if let firstName = dictionary["firstName"] as? String {
             self._firstName = firstName

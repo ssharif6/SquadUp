@@ -864,7 +864,18 @@
                     <view key="view" contentMode="scaleToFill" id="o7d-Ld-Mcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w92-sa-l5Q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w92-sa-l5Q" firstAttribute="leading" secondItem="o7d-Ld-Mcd" secondAttribute="leading" id="6cD-rp-j40"/>
+                            <constraint firstItem="w92-sa-l5Q" firstAttribute="top" secondItem="o7d-Ld-Mcd" secondAttribute="top" id="Mlt-Dr-II8"/>
+                            <constraint firstAttribute="trailing" secondItem="w92-sa-l5Q" secondAttribute="trailing" id="aDf-fd-bcw"/>
+                            <constraint firstAttribute="bottom" secondItem="w92-sa-l5Q" secondAttribute="bottom" id="fg2-iP-gLP"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
@@ -944,6 +955,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="rivalTableView" destination="dyC-Sq-UEe" id="slF-S3-veW"/>
                         <outlet property="sportLabel" destination="meK-iB-agp" id="cFb-UR-9Fn"/>
                         <segue destination="Dvz-pt-TB4" kind="show" identifier="RivalChosen" id="IaT-oi-aOQ"/>
                     </connections>
