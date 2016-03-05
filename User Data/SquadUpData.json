@@ -206,6 +206,19 @@
 			"date": "02-03-2016 18:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game17": {
+			"registered": "",
+			"currentCapacity": ,
+			"currentPlayers": [],
+			"distance": "",
+			"id": "",
+			"lobbyName": "",
+			"maxCapacity": ,
+			"sportsID": "",
+			"date": "",
+			"description": "",
+			"address": ""
 		}
 	},
 	"posts": {
@@ -268,39 +281,39 @@
 	},
 	"notifications": {
 		"note1": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "Ronaldo Sanchez has challenged you!",
+			"notificationType": "Challenge",
+			"sentFromID": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923"
 		},
 		"note2": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "Sonya Fields has challenged you!",
+			"notificationType": "Challenge",
+			"sentFromID": "a085fb98-a945-4e04-aebd-5cffe4b136bc"
 		},
 		"note3": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "There are games nearby!",
+			"notificationType": "Location",
+			"sentFromID": "JARVIS"
 		},
 		"note4": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "There are games nearby!",
+			"notificationType": "Location",
+			"sentFromID": "JARVIS"
 		},
 		"note5": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "Kara Park has challenged you!",
+			"notificationType": "Challenge",
+			"sentFromID": "9eb66b0d-212d-439e-807d-707546401707"
 		},
 		"note6": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "There are games nearby!",
+			"notificationType": "Location",
+			"sentFromID": "JARVIS"
 		},
 		"note7": {
-			"notificationMessage": "",
-			"notificationType": "",
-			"sentFromID": ""
+			"notificationMessage": "Santos Gilbert has challenged you!",
+			"notificationType": "Challenge",
+			"sentFromID": "742679cc-f04f-4c20-9b06-e4e582faef42"
 		}
 	},
 	"users": {
@@ -317,7 +330,8 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note1"],
 			"rating": "4",
-			"rivals": ["4881988c-a78e-4ce6-af46-73e265bf002c", "06f11c84-c68e-43a6-99c0-cde53399946f", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42"]
+			"rivals": [],
+			"friends": ["9801ca60-efcc-4902-9b3e-9e55372efc8f", "4881988c-a78e-4ce6-af46-73e265bf002c", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
 			"Sports": ["Tennis", "Football"],
@@ -330,9 +344,10 @@
 			"posts": ["11111116", "11111117", "11111118"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "2",
-			"rivals": []
+			"rivals": [],
+			"friends": ["4881988c-a78e-4ce6-af46-73e265bf002c", "79db5730-0641-447e-8935-fd09b8928189", "8a5e556d-6b2f-41e5-be56-87329831489b"]
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
 			"Sports": ["Baseball", "Frisbee"],
@@ -345,9 +360,10 @@
 			"posts": ["11111119"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "3",
-			"rivals": []
+			"rivals": [],
+			"friends": ["184fa9ac-3924-4f31-befe-b68efee57472", "70a2eea7-482d-4444-a4a1-70210ef25603", "66bad232-2bf0-453a-8e70-f727fb7514b8"]
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
 			"Sports": ["Soccer", "Baseball", "Basketball", "Tennis"],
@@ -360,9 +376,10 @@
 			"posts": ["11111120", "11111121", "11111122", "11111123", "11111124"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "5",
-			"rivals": []
+			"rivals": [],
+			"friends": ["a6fced76-f46a-43b3-ba2d-9bbf8e2d9c6e", "c1d28692-5180-4d21-8ce7-598f2c36a92c", "ff597885-bc51-4f8f-913b-95ac3af89811"]
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
 			"Sports": ["Soccer", "Frisbee"],
@@ -375,9 +392,10 @@
 			"posts": ["11111125", "11111126"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "1",
-			"rivals": []
+			"rivals": [],
+			"friends": ["66bad232-2bf0-453a-8e70-f727fb7514b8", "c1d28692-5180-4d21-8ce7-598f2c36a92c", "a085fb98-a945-4e04-aebd-5cffe4b136bc"]
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
 			"Sports": ["Soccer", "Badminton", "Football", "Basketball"],
@@ -390,9 +408,10 @@
 			"posts": ["11111127", "11111128", "11111129", "11111130", "11111131", "11111132"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "0",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
 			"Sports": ["Soccer", "Football"],
@@ -405,9 +424,10 @@
 			"posts": ["11111133", "11111134", "11111135"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "5",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
 			"Sports": ["Baseball", "Football", "Tennis", "Frisbee"],
@@ -420,9 +440,10 @@
 			"posts": ["11111136", "11111137", "11111138"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "4",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
 			"Sports": ["Soccer", "Baseball", "Tennis", "Frisbee"],
@@ -435,9 +456,10 @@
 			"posts": ["11111139", "11111140", "11111141", "11111142"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "3",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"c59731d4-e3ee-4169-ac57-6991e7f5ab9f": {
 			"Sports": ["Basketball", "Soccer", "Badminton", "Football"],
@@ -450,9 +472,10 @@
 			"posts": ["11111143", "11111144", "11111145", "11111146", "11111147", "11111148"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "3",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
 			"Sports": ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee"],
@@ -465,9 +488,10 @@
 			"posts": ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "4",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49": {
 			"Sports": ["Tennis", "Football", "Badminton"],
@@ -480,9 +504,10 @@
 			"posts": ["11111155", "11111156", "11111157", "11111158", "11111159"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "3",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"9801ca60-efcc-4902-9b3e-9e55372efc8f": {
 			"Sports": ["Baseball", "Soccer"],
@@ -495,9 +520,10 @@
 			"posts": ["11111160", "11111161"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "2",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"f18af723-cfd4-4072-a15b-984f32cbb4fc": {
 			"Sports": ["Baseball", "Basketball", "Tennis"],
@@ -510,9 +536,10 @@
 			"posts": ["11111162", "11111163", "11111164"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "2",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"551bfbae-51f8-4c1c-8023-b512e049e488": {
 			"Sports": ["Football"],
@@ -525,9 +552,10 @@
 			"posts": ["11111165", "11111166"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "5",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"66bad232-2bf0-453a-8e70-f727fb7514b8": {
 			"Sports": ["Football", "Basketball"],
@@ -540,9 +568,10 @@
 			"posts": ["11111167", "11111168", "11111169", "11111170", "11111171"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "0",
-			"rivals": []
+			"rivals": [],
+			"friends": []
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
 			"Sports": ["Soccer", "Football", "Badminton", "Tennis"],
@@ -555,7 +584,7 @@
 			"posts": ["11111172", "11111173", "11111174"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "1",
 			"rivals": [],
 			"friends": []
@@ -571,7 +600,7 @@
 			"posts": ["11111175", "11111176", "11111177", "11111178", "11111179", "11111180", "11111181", "11111182", "11111183", "11111184"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "3",
 			"rivals": [],
 			"friends": []
@@ -587,7 +616,7 @@
 			"posts": ["11111185", "11111186"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "4",
 			"rivals": [],
 			"friends": []
@@ -603,7 +632,7 @@
 			"posts": ["11111187", "11111188", "11111189", "11111190"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "2",
 			"rivals": [],
 			"friends": []
@@ -619,7 +648,7 @@
 			"posts": ["11111191", "11111192", "11111193", "11111194", "11111195"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "3",
 			"rivals": [],
 			"friends": []
@@ -635,7 +664,7 @@
 			"posts": ["11111196"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "0",
 			"rivals": [],
 			"friends": []
@@ -651,7 +680,7 @@
 			"posts": ["11111197"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "0",
 			"rivals": [],
 			"friends": []
@@ -667,7 +696,7 @@
 			"posts": ["11111198", "11111199", "11111200", "11111201", "11111202"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "0",
 			"rivals": [],
 			"friends": []
@@ -683,7 +712,7 @@
 			"posts": ["11111203", "11111204"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "1",
 			"rivals": [],
 			"friends": []
@@ -699,7 +728,7 @@
 			"posts": ["11111205", "11111206", "11111207", "11111208", "11111209", "11111210"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note1"],
+			"notifications": [""],
 			"rating": "1",
 			"rivals": [],
 			"friends": []
@@ -715,7 +744,7 @@
 			"posts": ["11111211", "11111212", "11111213"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "4",
 			"rivals": [],
 			"friends": []
@@ -731,7 +760,7 @@
 			"posts": ["11111214", "11111215", "11111216"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "5",
 			"rivals": [],
 			"friends": []
@@ -747,7 +776,7 @@
 			"posts": ["11111217", "11111218", "11111219", "11111220"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "4",
 			"rivals": [],
 			"friends": []
@@ -762,7 +791,7 @@
 			"profileImageUrl": "",
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
-			"notifications": ["note2"],
+			"notifications": [""],
 			"rating": "3",
 			"rivals": [],
 			"friends": []
@@ -852,7 +881,7 @@
 		  "profileImageUrl": "",
 		  "posts": [],
 		  "skillLevel": "intermediate",
-		  "notifications": [],
+		  "notifications": ["note2"],
 		  "rating": "2",
 		  "rivals": [],
 			"friends": []
@@ -1002,7 +1031,7 @@
 		  "profileImageUrl": "",
 		  "posts": [],
 		  "skillLevel": "beginner",
-		  "notifications": [],
+		  "notifications": ["note5"],
 		  "rating": "2",
 		  "rivals": [],
 			"friends": []
@@ -1212,9 +1241,24 @@
 		  "profileImageUrl": "",
 		  "posts": [],
 		  "skillLevel": "beginner",
-		  "notifications": [],
+		  "notifications": ["note7"],
 		  "rating": "5",
 		  "rivals": [],
+			"friends": []
+		},
+		"JARVIS": {
+			"Sports": [],
+			"sportsSubscribed": [],
+			"firstName": "",
+			"gender": "",
+			"id": "",
+			"lastName": "",
+			"profileImageUrl": "",
+			"posts": [],
+			"skillLevel": "",
+			"notifications": [],
+			"rating": "",
+			"rivals": [],
 			"friends": []
 		}
 	}
