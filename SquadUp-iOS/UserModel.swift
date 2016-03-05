@@ -26,7 +26,7 @@ class UserModel: NSObject {
         return _firstName
     }
     
-    var rating: Int {
+    var rating: String {
         return _rating
     }
     
@@ -58,7 +58,7 @@ class UserModel: NSObject {
         return _userKey
     }
     
-    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String) {
+    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
@@ -67,6 +67,7 @@ class UserModel: NSObject {
         _sports = sports
         _userKey = key
         _rating = rating
+        _profileImageURL = profileImageUrl
     }
     
     required init(coder decoder: NSCoder) {

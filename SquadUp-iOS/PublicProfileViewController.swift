@@ -39,7 +39,6 @@ class PublicProfileViewController: UIViewController {
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         print(key)
-                        print("WaterMonkeys")
                         if key == self.userPassed {
                             let user = UserModel(userKey: key, dictionary: userDict)
                             self.user = user
