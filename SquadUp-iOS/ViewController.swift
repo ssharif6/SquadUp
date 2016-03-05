@@ -23,7 +23,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.delegate = self
+        emailField.layer.borderColor = UIColor.clearColor().CGColor
+        emailField.layer.borderWidth = 0
         passwordField.delegate = self
+        passwordField.layer.borderColor = UIColor.clearColor().CGColor
+        passwordField.layer.borderWidth = 0
         
     }
     

@@ -10,11 +10,8 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
-            <string>NotoSans-Bold</string>
-            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
-            <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
@@ -41,156 +38,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPw-gj-X40">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS6-On-G4g">
-                                        <rect key="frame" x="21" y="26" width="202" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="n3z-E4-ZWR"/>
-                                            <constraint firstAttribute="width" constant="202" id="pcu-7t-odi"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signInBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-ia-U56">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyA-nc-jfk" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="17" y="526" width="328" height="74"/>
                                 <constraints>
-                                    <constraint firstItem="iS6-On-G4g" firstAttribute="leading" secondItem="PPw-gj-X40" secondAttribute="leading" constant="21" id="m9C-ef-C1G"/>
-                                    <constraint firstItem="iS6-On-G4g" firstAttribute="top" secondItem="PPw-gj-X40" secondAttribute="top" constant="26" id="rsn-23-lmw"/>
-                                    <constraint firstAttribute="height" constant="127" id="swP-ne-STN"/>
+                                    <constraint firstAttribute="height" constant="74" id="Ssb-Ld-osT"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-Be-wat" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="61" width="335" height="127"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="vZw-Js-rjy">
-                                        <rect key="frame" x="8" y="25" width="97" height="78"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="78" id="niV-iC-8or"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyA-nc-jfk" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="117" y="47" width="210" height="33"/>
-                                        <color key="backgroundColor" red="0.25587723753632891" green="0.53831663123494733" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
-                                        <state key="normal" title="Sign Up With Facebook">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuA-68-G7r"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                <state key="normal" backgroundImage="Facebook Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuA-68-G7r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyH-mM-Ac5" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="41" y="320" width="280" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="HyA-nc-jfk" secondAttribute="trailing" constant="8" id="5DP-TG-2jW"/>
-                                    <constraint firstAttribute="height" constant="127" id="Fn6-i8-TdI"/>
-                                    <constraint firstItem="vZw-Js-rjy" firstAttribute="leading" secondItem="nHg-Be-wat" secondAttribute="leading" constant="20" id="HsN-ZZ-wt6"/>
-                                    <constraint firstItem="vZw-Js-rjy" firstAttribute="top" secondItem="nHg-Be-wat" secondAttribute="top" constant="15" id="d9w-Bn-8nI"/>
-                                    <constraint firstItem="HyA-nc-jfk" firstAttribute="leading" secondItem="vZw-Js-rjy" secondAttribute="trailing" constant="20" id="dQ5-YY-kko"/>
-                                    <constraint firstAttribute="trailing" secondItem="HyA-nc-jfk" secondAttribute="trailing" constant="8" id="n9u-fb-3cP"/>
+                                    <constraint firstAttribute="height" constant="73" id="GOb-1X-QRt"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-NQ-Jbe" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="202" width="335" height="127"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-icon-3" translatesAutoresizingMaskIntoConstraints="NO" id="kr7-KR-ne1">
-                                        <rect key="frame" x="8" y="25" width="97" height="78"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="78" id="cOp-H4-jq0"/>
-                                            <constraint firstAttribute="width" constant="97" id="d5x-Cf-69B"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-Yd-WQ4" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="113" y="47" width="214" height="33"/>
-                                        <color key="backgroundColor" red="0.19719240642384178" green="0.85378808532226536" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="paw-Ky-N6A"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
-                                        <state key="normal" title="Sign Up with Twitter">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                <state key="normal" backgroundImage="Sign In Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7C-Pn-VK0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Password" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-R4-fzx" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="41" y="229" width="280" height="75"/>
                                 <constraints>
-                                    <constraint firstItem="kr7-KR-ne1" firstAttribute="top" secondItem="M0L-NQ-Jbe" secondAttribute="top" constant="25" id="5bF-F0-cWk"/>
-                                    <constraint firstItem="kr7-KR-ne1" firstAttribute="leading" secondItem="M0L-NQ-Jbe" secondAttribute="leading" constant="8" id="Bqa-UN-4a3"/>
-                                    <constraint firstItem="yCu-Yd-WQ4" firstAttribute="leading" secondItem="kr7-KR-ne1" secondAttribute="trailing" constant="8" id="Dw0-Tf-kHC"/>
-                                    <constraint firstAttribute="trailing" secondItem="yCu-Yd-WQ4" secondAttribute="trailing" constant="8" id="Ur1-UL-QtA"/>
-                                    <constraint firstAttribute="trailing" secondItem="yCu-Yd-WQ4" secondAttribute="trailing" constant="12" id="uUb-QE-LgX"/>
-                                    <constraint firstAttribute="trailing" secondItem="yCu-Yd-WQ4" secondAttribute="trailing" constant="8" id="utk-Ax-5jH"/>
+                                    <constraint firstAttribute="height" constant="75" id="r7E-mQ-zVf"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ec-V4-d5c" customClass="EmailLoginContainerView" customModule="SquadUp_iOS" customModuleProvider="target">
-                                <rect key="frame" x="20" y="343" width="335" height="304"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-dO-bm0" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="78" width="279" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyH-mM-Ac5" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="87" y="197" width="161" height="33"/>
-                                        <color key="backgroundColor" red="1" green="0.35225607440000001" blue="0.34381380109999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
-                                        <state key="normal" title="Sign Up">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7C-Pn-VK0"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-R4-fzx" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="128" width="279" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ7-UA-E2t">
-                                        <rect key="frame" x="28" y="16" width="247" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="gkY-qq-v6O"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="22"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squadUpTitle" translatesAutoresizingMaskIntoConstraints="NO" id="bYo-6o-0cs">
+                                <rect key="frame" x="67" y="28" width="240" height="74"/>
                                 <constraints>
-                                    <constraint firstItem="FJ7-UA-E2t" firstAttribute="top" secondItem="1ec-V4-d5c" secondAttribute="top" constant="16" id="35M-6y-myu"/>
-                                    <constraint firstItem="zUH-R4-fzx" firstAttribute="leading" secondItem="1ec-V4-d5c" secondAttribute="leading" constant="28" id="Get-L3-PCb"/>
-                                    <constraint firstAttribute="trailing" secondItem="HyH-mM-Ac5" secondAttribute="trailing" constant="87" id="KeW-R7-BBe"/>
-                                    <constraint firstAttribute="trailing" secondItem="kCV-dO-bm0" secondAttribute="trailing" constant="28" id="OIE-nA-Oi9"/>
-                                    <constraint firstItem="HyH-mM-Ac5" firstAttribute="top" secondItem="zUH-R4-fzx" secondAttribute="bottom" constant="41" id="Yv1-ra-jzc"/>
-                                    <constraint firstItem="FJ7-UA-E2t" firstAttribute="leading" secondItem="1ec-V4-d5c" secondAttribute="leading" constant="28" id="aS4-Mb-c3v"/>
-                                    <constraint firstAttribute="trailing" secondItem="zUH-R4-fzx" secondAttribute="trailing" constant="28" id="blE-tS-D0J"/>
-                                    <constraint firstItem="HyH-mM-Ac5" firstAttribute="leading" secondItem="1ec-V4-d5c" secondAttribute="leading" constant="87" id="lvM-Va-qhe"/>
-                                    <constraint firstItem="kCV-dO-bm0" firstAttribute="leading" secondItem="1ec-V4-d5c" secondAttribute="leading" constant="28" id="mxa-ov-9Wm"/>
+                                    <constraint firstAttribute="height" constant="74" id="rd4-di-YO0"/>
                                 </constraints>
-                            </view>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Email" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-dO-bm0" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="41" y="146" width="280" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="eiQ-IX-KDy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login With Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-fl-2dy">
+                                <rect key="frame" x="82" y="472" width="225" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.90980392156862744" green="0.96078431372549022" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nHg-Be-wat" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="6AF-dF-6M5"/>
-                            <constraint firstAttribute="trailing" secondItem="M0L-NQ-Jbe" secondAttribute="trailing" constant="20" id="74Z-UV-Wsu"/>
-                            <constraint firstItem="M0L-NQ-Jbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="CbX-TO-ZKO"/>
-                            <constraint firstItem="PPw-gj-X40" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HHf-C7-V4u"/>
-                            <constraint firstItem="nHg-Be-wat" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IgX-U3-fbI"/>
-                            <constraint firstItem="M0L-NQ-Jbe" firstAttribute="top" secondItem="nHg-Be-wat" secondAttribute="bottom" constant="20" id="JcH-tf-WfG"/>
-                            <constraint firstItem="1ec-V4-d5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ZoI-3c-ecb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ec-V4-d5c" secondAttribute="bottom" constant="20" id="dV4-YC-LEq"/>
-                            <constraint firstItem="PPw-gj-X40" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iou-E5-Hz0"/>
-                            <constraint firstItem="M0L-NQ-Jbe" firstAttribute="top" secondItem="nHg-Be-wat" secondAttribute="bottom" constant="10" id="j7B-Kb-oKE"/>
-                            <constraint firstItem="M0L-NQ-Jbe" firstAttribute="top" secondItem="nHg-Be-wat" secondAttribute="bottom" constant="14" id="jhc-D5-zk4"/>
-                            <constraint firstItem="nHg-Be-wat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pQ9-42-9jH"/>
-                            <constraint firstItem="1ec-V4-d5c" firstAttribute="top" secondItem="M0L-NQ-Jbe" secondAttribute="bottom" constant="20" id="tkW-wu-Usg"/>
-                            <constraint firstItem="M0L-NQ-Jbe" firstAttribute="top" secondItem="nHg-Be-wat" secondAttribute="bottom" constant="20" id="uRi-ck-SGm"/>
-                            <constraint firstAttribute="trailing" secondItem="1ec-V4-d5c" secondAttribute="trailing" constant="20" id="vqu-df-HEa"/>
-                            <constraint firstAttribute="trailing" secondItem="PPw-gj-X40" secondAttribute="trailing" id="zUe-KK-hun"/>
+                            <constraint firstItem="zUH-R4-fzx" firstAttribute="top" secondItem="kCV-dO-bm0" secondAttribute="bottom" constant="8" symbolic="YES" id="1Cp-9U-ofC"/>
+                            <constraint firstItem="HyH-mM-Ac5" firstAttribute="top" secondItem="zUH-R4-fzx" secondAttribute="bottom" constant="16" id="4Fi-ZX-rho"/>
+                            <constraint firstItem="bYo-6o-0cs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4lE-f7-Ci5"/>
+                            <constraint firstItem="HyA-nc-jfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="9gE-Sq-ZYZ"/>
+                            <constraint firstItem="HyA-nc-jfk" firstAttribute="centerX" secondItem="zUH-R4-fzx" secondAttribute="centerX" id="BBJ-rd-1Qd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kCV-dO-bm0" secondAttribute="trailing" constant="38" id="FcV-pc-F3P"/>
+                            <constraint firstItem="zUH-R4-fzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="G8b-Ag-XhK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HyH-mM-Ac5" secondAttribute="trailing" constant="20" id="GAe-c8-vvh"/>
+                            <constraint firstItem="FdW-fl-2dy" firstAttribute="centerX" secondItem="NPm-ia-U56" secondAttribute="centerX" id="MzD-c3-PWK"/>
+                            <constraint firstItem="bYo-6o-0cs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Nso-Lg-0NZ"/>
+                            <constraint firstItem="NPm-ia-U56" firstAttribute="centerX" secondItem="bYo-6o-0cs" secondAttribute="centerX" id="QKq-Sm-O8c"/>
+                            <constraint firstItem="HyA-nc-jfk" firstAttribute="top" secondItem="FdW-fl-2dy" secondAttribute="bottom" constant="21" id="Ryv-BB-AfV"/>
+                            <constraint firstItem="NPm-ia-U56" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XxB-a5-PB4"/>
+                            <constraint firstItem="HyH-mM-Ac5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Zl6-Ag-oRO"/>
+                            <constraint firstItem="bYo-6o-0cs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="bAb-iR-4rO"/>
+                            <constraint firstItem="kCV-dO-bm0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="bVk-cJ-nLc"/>
+                            <constraint firstItem="NPm-ia-U56" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eII-xh-bq1"/>
+                            <constraint firstItem="HyA-nc-jfk" firstAttribute="centerX" secondItem="HyH-mM-Ac5" secondAttribute="centerX" id="gsm-Pc-Tmd"/>
+                            <constraint firstItem="kCV-dO-bm0" firstAttribute="top" secondItem="bYo-6o-0cs" secondAttribute="bottom" constant="44" id="kjJ-SS-HBL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HyA-nc-jfk" secondAttribute="bottom" constant="67" id="wZZ-H8-Wib"/>
+                            <constraint firstItem="zUH-R4-fzx" firstAttribute="trailing" secondItem="kCV-dO-bm0" secondAttribute="trailing" id="wfj-bz-3BJ"/>
+                            <constraint firstItem="NPm-ia-U56" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="whv-gH-pa7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUH-R4-fzx" secondAttribute="trailing" constant="20" id="xwp-69-SX3"/>
+                            <constraint firstItem="zUH-R4-fzx" firstAttribute="leading" secondItem="kCV-dO-bm0" secondAttribute="leading" id="z2z-Fb-4sM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="AsH-6k-0Lu"/>
@@ -1432,7 +1362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-qc-drV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="3045"/>
+            <point key="canvasLocation" x="3409" y="3055"/>
         </scene>
         <!--Join Game Lobby View Controller-->
         <scene sceneID="v9F-7n-EfK">
@@ -1859,12 +1789,14 @@
         <image name="Badminton" width="936" height="825"/>
         <image name="Baseball" width="1210" height="823"/>
         <image name="DROSE" width="300" height="300"/>
+        <image name="Facebook Button" width="776" height="144"/>
         <image name="Football" width="1292" height="635"/>
         <image name="Frisbee" width="250" height="237"/>
         <image name="I" width="65" height="65"/>
         <image name="JBUCKETS" width="1035" height="941"/>
         <image name="Profile Pic" width="1365" height="1365"/>
         <image name="RecentHistoryAsset" width="284" height="369"/>
+        <image name="Sign In Button" width="824" height="210"/>
         <image name="Steph" width="640" height="400"/>
         <image name="Tennis" width="1253" height="762"/>
         <image name="basketballAndWhistle" width="1400" height="1050"/>
@@ -1872,22 +1804,23 @@
         <image name="cameraWhite" width="625" height="513"/>
         <image name="chooseASportPic" width="1080" height="1920"/>
         <image name="defaultProfile" width="334" height="400"/>
-        <image name="fb-icon" width="65" height="65"/>
         <image name="feedBackground-1" width="1080" height="1920"/>
         <image name="filledStar-1" width="632" height="587"/>
         <image name="football_players_goal_gate_grid_ball_8837_1366x768" width="1366" height="768"/>
         <image name="heart-empty" width="150" height="147"/>
+        <image name="inputBox" width="804" height="190"/>
         <image name="lobbyBackground" width="1080" height="1920"/>
         <image name="locationPin" width="411" height="553"/>
         <image name="moreAsset" width="577" height="179"/>
+        <image name="signInBackground" width="1077" height="1916"/>
         <image name="soccerTableView" width="1920" height="1080"/>
+        <image name="squadUpTitle" width="464" height="110"/>
         <image name="startLobbyBackground" width="653" height="859"/>
-        <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fRU-1G-gzZ"/>
-        <segue reference="SeC-SE-gDC"/>
-        <segue reference="kLt-Ag-aq1"/>
         <segue reference="vCP-ZV-YwD"/>
+        <segue reference="R6O-au-n6v"/>
+        <segue reference="kLt-Ag-aq1"/>
     </inferredMetricsTieBreakers>
 </document>
