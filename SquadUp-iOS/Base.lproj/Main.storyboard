@@ -416,8 +416,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Rivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-SY-sWV">
-                                <rect key="frame" x="20" y="516" width="132" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rivals Near You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-SY-sWV">
+                                <rect key="frame" x="33" y="516" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -663,12 +663,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Rival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOs-CO-hFr">
-                                <rect key="frame" x="151" y="390" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07P-R1-prP" customClass="FacebookLoginContainer" customModule="SquadUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="142" y="150" width="130" height="130"/>
                                 <subviews>
@@ -685,13 +679,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-96-mPX">
-                                <rect key="frame" x="174" y="325" width="53" height="57"/>
-                                <state key="normal" title="Button" image="boxingGlove"/>
-                                <connections>
-                                    <action selector="findRivalButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="wqn-TA-GKZ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-k4-5FP">
                                 <rect key="frame" x="291" y="349" width="52" height="15"/>
                                 <state key="normal" title="Button" image="moreAsset"/>
@@ -738,6 +725,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeM-iI-UIZ">
+                                <rect key="frame" x="166" y="342" width="75" height="30"/>
+                                <state key="normal" title="Add Friend"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -751,7 +742,6 @@
                         <outlet property="profileImage" destination="EPv-f8-ZsW" id="GIA-Lq-df7"/>
                         <outlet property="profileName" destination="U41-0M-Q87" id="Laj-Fk-Lp8"/>
                         <outlet property="recentHistoryButton" destination="ILf-4z-9jT" id="V18-x2-eS3"/>
-                        <outlet property="requestRivalButton" destination="cWA-96-mPX" id="tyF-es-P7e"/>
                         <outlet property="secondStar" destination="f3K-sW-poO" id="JAw-2r-h9v"/>
                         <outlet property="thirdStar" destination="zSg-E0-pOy" id="8hP-8H-FDS"/>
                     </connections>
@@ -869,7 +859,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Challenge Shaheen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-lY-pTf">
-                                <rect key="frame" x="66" y="93" width="328" height="38"/>
+                                <rect key="frame" x="81" y="90" width="253" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -877,26 +867,39 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-qP-0c6">
                                 <rect key="frame" x="20" y="305" width="125" height="125"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-Xs-V5y">
-                                <rect key="frame" x="269" y="305" width="125" height="125"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9H-Ps-WHu">
-                                <rect key="frame" x="177" y="360" width="61" height="52"/>
+                                <rect key="frame" x="177" y="359" width="61" height="52"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooa-bM-0cQ">
+                                <rect key="frame" x="150" y="570" width="115" height="42"/>
+                                <state key="normal" title="Challenge"/>
+                                <connections>
+                                    <action selector="ChallengeButtonPressed:" destination="Dvz-pt-TB4" eventType="touchUpInside" id="TvG-tO-FlZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-Xs-V5y">
+                                <rect key="frame" x="269" y="305" width="125" height="125"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6fa-lY-pTf" secondAttribute="trailing" constant="60" id="09Q-cZ-rA4"/>
                             <constraint firstItem="w92-sa-l5Q" firstAttribute="leading" secondItem="o7d-Ld-Mcd" secondAttribute="leading" id="6cD-rp-j40"/>
                             <constraint firstItem="w92-sa-l5Q" firstAttribute="top" secondItem="o7d-Ld-Mcd" secondAttribute="top" id="Mlt-Dr-II8"/>
+                            <constraint firstItem="6fa-lY-pTf" firstAttribute="leading" secondItem="o7d-Ld-Mcd" secondAttribute="leadingMargin" constant="60" id="MmE-u3-E6X"/>
                             <constraint firstAttribute="trailing" secondItem="w92-sa-l5Q" secondAttribute="trailing" id="aDf-fd-bcw"/>
-                            <constraint firstItem="6fa-lY-pTf" firstAttribute="centerY" secondItem="w92-sa-l5Q" secondAttribute="centerY" id="de4-Ua-bR9"/>
                             <constraint firstAttribute="bottom" secondItem="w92-sa-l5Q" secondAttribute="bottom" id="fg2-iP-gLP"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="challengeNameLabel" destination="6fa-lY-pTf" id="XvZ-8d-jWx"/>
+                        <outlet property="currentUserProfilePic" destination="7kk-qP-0c6" id="2v7-Y7-BGb"/>
+                        <outlet property="rivalProfilePic" destination="QVv-Xs-V5y" id="O2Q-HP-C3z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKm-sk-CTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -973,7 +976,7 @@
                     <connections>
                         <outlet property="rivalTableView" destination="dyC-Sq-UEe" id="slF-S3-veW"/>
                         <outlet property="sportLabel" destination="meK-iB-agp" id="cFb-UR-9Fn"/>
-                        <segue destination="Dvz-pt-TB4" kind="show" identifier="RivalChosen" id="IaT-oi-aOQ"/>
+                        <segue destination="Dvz-pt-TB4" kind="show" identifier="RivalChosen" id="RB3-Fc-lKP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDl-Dc-QjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

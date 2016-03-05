@@ -76,6 +76,21 @@ class RivalChooseSportVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        badmintonImage.center.x = self.view.frame.width - 30
+        soccerImage.center.x = self.view.frame.width - 30
+        baseballImage.center.y = self.view.frame.height - 30
+        tennisImage.center.y = self.view.frame.height - 30
+        frisbeeImage.center.y = self.view.frame.height - 30
+        basketballImage.center.x = self.view.frame.width + 30
+        footballImage.center.x = self.view.frame.width + 30
+        badmintonImage.alpha = 0
+        soccerImage.alpha = 0
+        baseballImage.alpha = 0
+        tennisImage.alpha = 0
+        frisbeeImage.alpha = 0
+        basketballImage.alpha = 0
+        footballImage.alpha = 0
+
         badmintonImage.layer.borderColor = UIColor.blackColor().CGColor
         badmintonImage.layer.cornerRadius = badmintonImage.frame.height/2
         badmintonImage.clipsToBounds = true
@@ -98,16 +113,6 @@ class RivalChooseSportVC: UIViewController {
         baseballImage.layer.cornerRadius = baseballImage.frame.height/2
         baseballImage.clipsToBounds = true
     }
-    
-//    override func viewWillAppear(animated: Bool) {
-//        self.navigationController?.setNavigationBarHidden(true, animated: false)
-//    }
-//    
-//    override func viewWillDisappear(animated: Bool)
-//    {
-//        super.viewWillDisappear(animated)
-//        self.navigationController?.navigationBarHidden = false
-//    }
     
     @IBAction func frisbeeClicked(sender: AnyObject) {
         labelToPass = "Frisbee"

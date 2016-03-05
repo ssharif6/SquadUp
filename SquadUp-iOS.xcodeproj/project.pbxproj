@@ -18,6 +18,7 @@
 		8549C1671C89783A009BA652 /* RivalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1661C89783A009BA652 /* RivalListViewController.swift */; };
 		8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1681C897B19009BA652 /* RivalListCell.swift */; };
 		8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */; };
+		8549C16D1C8AA353009BA652 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16C1C8AA353009BA652 /* NotificationModel.swift */; };
 		855758711C55944D00399C83 /* Tahoma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758701C55944D00399C83 /* Tahoma.ttf */; };
 		855758731C5594AA00399C83 /* Tahoma Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758721C5594AA00399C83 /* Tahoma Bold.ttf */; };
 		855DF5561C5417E7009B6D82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5551C5417E7009B6D82 /* DataService.swift */; };
@@ -92,6 +93,7 @@
 		8549C1661C89783A009BA652 /* RivalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalListViewController.swift; sourceTree = "<group>"; };
 		8549C1681C897B19009BA652 /* RivalListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalListCell.swift; sourceTree = "<group>"; };
 		8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalScreenViewController.swift; sourceTree = "<group>"; };
+		8549C16C1C8AA353009BA652 /* NotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		855758701C55944D00399C83 /* Tahoma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tahoma.ttf; sourceTree = "<group>"; };
 		855758721C5594AA00399C83 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
 		855DF5551C5417E7009B6D82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				855DF55D1C54505D009B6D82 /* Post.swift */,
 				85D664951C61F57D00CBDD0A /* UserModel.swift */,
 				85DA31F11C6883290078CCEF /* LobbyGameModel.swift */,
+				8549C16C1C8AA353009BA652 /* NotificationModel.swift */,
 				8510E41D1C75C9B300C73C92 /* Message.swift */,
 			);
 			name = Model;
@@ -546,6 +549,7 @@
 				8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
 				8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */,
+				8549C16D1C8AA353009BA652 /* NotificationModel.swift in Sources */,
 				857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */,
 				856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */,
 				85A3C2CD1C536FC900EF39EA /* FacebookLoginContainer.swift in Sources */,

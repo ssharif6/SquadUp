@@ -37,7 +37,6 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let user = UserModel(userKey: key, dictionary: userDict)
-                        print("SHIT")
                         print(user.firstName)
                         print(user.sports)
                         if user.sports.contains(self.passedLabel) {
@@ -65,12 +64,15 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // segue to individual
+        self.personToPass = rivalList[indexPath.row]
+        print(self.personToPass.firstName)
+        performSegueWithIdentifier("RivalChosen", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "RivalChosen" {
-            
+            let vc = segue.destinationViewController as! RivalScreenViewController
+            vc.personPassed = self.personToPass
         }
     }
     
