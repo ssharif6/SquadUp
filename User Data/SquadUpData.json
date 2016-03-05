@@ -1334,7 +1334,7 @@
 			"friends": []
 		},
 		"JARVIS": {
-			"Sports": [],
+			"Sports": ["frisbee"],
 			"sportsSubscribed": [],
 			"firstName": "",
 			"gender": "",
