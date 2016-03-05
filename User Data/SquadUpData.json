@@ -268,13 +268,39 @@
 	},
 	"notifications": {
 		"note1": {
-			"description": "You have been challenged!",
-			"sentFrom": "M5",
-			"sentTo": "M24"
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
 		},
 		"note2": {
-			"description": "A game is nearby!",
-			"id": "game1111"
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
+		},
+		"note3": {
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
+		},
+		"note4": {
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
+		},
+		"note5": {
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
+		},
+		"note6": {
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
+		},
+		"note7": {
+			"notificationMessage": "",
+			"notificationType": "",
+			"sentFromID": ""
 		}
 	},
 	"users": {
@@ -325,7 +351,7 @@
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
 			"Sports": ["Soccer", "Baseball", "Basketball", "Tennis"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Soccer", "Baseball", "Basketball", "Tennis"],
 			"firstName": "Douglas",
 			"gender": "male",
 			"id": "M5",
@@ -340,7 +366,7 @@
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
 			"Sports": ["Soccer", "Frisbee"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Soccer", "Frisbee"],
 			"firstName": "Jose",
 			"gender": "male",
 			"id": "M6",
@@ -355,7 +381,7 @@
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
 			"Sports": ["Soccer", "Badminton", "Football", "Basketball"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Soccer", "Badminton", "Football", "Basketball", "Frisbee"],
 			"firstName": "Todd",
 			"gender": "male",
 			"id": "M7",
@@ -370,7 +396,7 @@
 		},
 		"0b11d418-285b-4b3a-aadd-04d57ec98043": {
 			"Sports": ["Soccer", "Football"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Soccer", "Football", "Baseball"],
 			"firstName": "Tommie",
 			"gender": "male",
 			"id": "M8",
@@ -385,7 +411,7 @@
 		},
 		"f880a1e2-d4de-4ca2-84a1-42e843618d25": {
 			"Sports": ["Baseball", "Football", "Tennis", "Frisbee"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Baseball", "Football", "Tennis", "Frisbee", "Baseball"],
 			"firstName": "Glen",
 			"gender": "male",
 			"id": "M9",
@@ -400,7 +426,7 @@
 		},
 		"d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2": {
 			"Sports": ["Soccer", "Baseball", "Tennis", "Frisbee"],
-			"sportsSubscribed": [],
+			"sportsSubscribed": ["Soccer", "Baseball", "Tennis", "Frisbee", "Badminton"],
 			"firstName": "Adrian",
 			"gender": "male",
 			"id": "M10",
