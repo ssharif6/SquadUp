@@ -76,8 +76,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         // TODO: Find Post History for Facebook User
                         let posts = []
                         let sports = []
-                        var notifications:[String] = []
-                        notifications.append("note2")
+                        var notifications = [Dictionary<String, AnyObject>]()
+
+                        let notification1: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Nelson has challenged you!",
+                            "notificationType": "challenge",
+                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                        ]
+                        let notification2: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Zilai has challenged you!",
+                            "notificationType": "challenge",
+                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                        ]
+                        let notification3: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Alina has challenged you!",
+                            "notificationType": "challenge",
+                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                        ]
+                        let notification4: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Max has challenged you!",
+                            "notificationType": "challenge",
+                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                        ]
+                        notifications.append(notification1)
+                        notifications.append(notification2)
+                        notifications.append(notification3)
+                        notifications.append(notification4)
+                        
                         let facebookID = AuthData.providerData["id"]
                         print(facebookID)
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]

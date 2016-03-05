@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NotificaionTableViewCell: UITableViewCell {
     @IBOutlet weak var displayedImage: UIImageView!
@@ -18,6 +19,46 @@ class NotificaionTableViewCell: UITableViewCell {
     
     func configureCell(notification: NotificationModel) {
         notificationLabel.text = notification.notificationString
+        getUserData(notification)
+    }
+    
+    func getUserData(notification: NotificationModel) {
+//        let user = notification.sentFrom
+//        let userUrl = NSURL(string: user.profileImageURL)
+//        if user.profileImageURL == "" {
+//            displayedImage.image = UIImage(named: "defaultProfile")
+//        } else {
+//            let data = NSData(contentsOfURL: userUrl!)
+//            if data != nil {
+//                displayedImage.image = UIImage(data: data!)
+//                displayedImage.contentMode = UIViewContentMode.ScaleAspectFit
+//            }
+//        }
+        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
+                        print(snap.key)
+                        if(notification.sentFromId == snap.key) {
+                            let user = UserModel(userKey: snap.key, dictionary: userDict)
+                            print("Notification Person Found")
+                            let userUrl = NSURL(string: user.profileImageURL)
+                            if user.profileImageURL == "" {
+                                self.displayedImage.image = UIImage(named: "defaultProfile")
+                            } else {
+                                let data = NSData(contentsOfURL: userUrl!)
+                                if data != nil {
+                                    self.displayedImage.image = UIImage(data: data!)
+                                    self.displayedImage.contentMode = UIViewContentMode.ScaleAspectFit
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        })
+
     }
 
 

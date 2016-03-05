@@ -14,8 +14,6 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var notificationTableView: UITableView!
     
     var notifications = [NotificationModel]()
-    var notificationArray = [String]()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +21,22 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func parseNotificationData() {
-        
+        var asdf = [NotificationModel]()
+        DataService.ds.REF_USER_CURRENT.childByAppendingPath("notifications").observeEventType(.Value, withBlock: { snapshot in
+            asdf = []
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    if let notificationDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let notification: NotificationModel = NotificationModel(notificationKey: key, dictionary: notificationDict)
+                        asdf.append(notification)
+                    }
+                }
+            }
+            self.notifications = asdf
+            self.notificationTableView.reloadData()
+        })
     }
-    
-    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("NotificationCell") as! NotificaionTableViewCell

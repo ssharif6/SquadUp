@@ -15,6 +15,8 @@ class NotificationModel {
     private var _sentFrom: UserModel!
     private var _notificationKey: String!
     private var _sentFromID: String!
+    var user: UserModel!
+
     
     var notificationString: String {
         return _notificationString
@@ -24,24 +26,28 @@ class NotificationModel {
         return _notificationType
     }
     
-    var sentFrom: UserModel {
-        let key = _sentFromID
-        var user: UserModel!
-        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-                for snap in snapshots {
-                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
-                        let userKey = snap.key
-                        if(key == userKey) {
-                            user = UserModel(userKey: userKey, dictionary: userDict)
-                            print("Notification Person Found")
-                        }
-                    }
-                }
-            }
-        })
-        return user
+    var sentFromId: String {
+        return _sentFromID
     }
+    
+//    var sentFrom: UserModel {
+////        let key = _sentFromID
+////        DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
+////            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+////                for snap in snapshots {
+////                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
+////                        print(key)
+////                        print(snap.key)
+////                        if(key == snap.key) {
+////                            self.user = UserModel(userKey: snap.key, dictionary: userDict)
+////                            print("Notification Person Found")
+////                        }
+////                    }
+////                }
+////            }
+////        })
+////        return user
+//    }
     
     init(notificationKey: String, dictionary: Dictionary<String, AnyObject>) {
         if let notificationString = dictionary["notificationMessage"] {
