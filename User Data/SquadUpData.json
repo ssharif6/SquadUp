@@ -206,6 +206,19 @@
 			"date": "02-03-2016 18:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+		},
+		"game17": {
+			"registered": "",
+			"currentCapacity": ,
+			"currentPlayers": [],
+			"distance": "",
+			"id": "",
+			"lobbyName": "",
+			"maxCapacity": ,
+			"sportsID": "",
+			"date": "",
+			"description": "",
+			"address": ""
 		}
 	},
 	"posts": {
@@ -318,7 +331,7 @@
 			"notifications": ["note1"],
 			"rating": "4",
 			"rivals": [],
-			"friends": []
+			"friends": ["9801ca60-efcc-4902-9b3e-9e55372efc8f", "4881988c-a78e-4ce6-af46-73e265bf002c", "6b37dd11-c9d6-43fa-adbf-4c10c48699ca"]
 		},
 		"742679cc-f04f-4c20-9b06-e4e582faef42": {
 			"Sports": ["Tennis", "Football"],
@@ -334,7 +347,7 @@
 			"notifications": [""],
 			"rating": "2",
 			"rivals": [],
-			"friends": []
+			"friends": ["4881988c-a78e-4ce6-af46-73e265bf002c", "79db5730-0641-447e-8935-fd09b8928189", "8a5e556d-6b2f-41e5-be56-87329831489b"]
 		},
 		"4881988c-a78e-4ce6-af46-73e265bf002c": {
 			"Sports": ["Baseball", "Frisbee"],
@@ -350,7 +363,7 @@
 			"notifications": [""],
 			"rating": "3",
 			"rivals": [],
-			"friends": []
+			"friends": ["184fa9ac-3924-4f31-befe-b68efee57472", "70a2eea7-482d-4444-a4a1-70210ef25603", "66bad232-2bf0-453a-8e70-f727fb7514b8"]
 		},
 		"06f11c84-c68e-43a6-99c0-cde53399946f": {
 			"Sports": ["Soccer", "Baseball", "Basketball", "Tennis"],
@@ -366,7 +379,7 @@
 			"notifications": [""],
 			"rating": "5",
 			"rivals": [],
-			"friends": []
+			"friends": ["a6fced76-f46a-43b3-ba2d-9bbf8e2d9c6e", "c1d28692-5180-4d21-8ce7-598f2c36a92c", "ff597885-bc51-4f8f-913b-95ac3af89811"]
 		},
 		"6b37dd11-c9d6-43fa-adbf-4c10c48699ca": {
 			"Sports": ["Soccer", "Frisbee"],
@@ -382,7 +395,7 @@
 			"notifications": [""],
 			"rating": "1",
 			"rivals": [],
-			"friends": []
+			"friends": ["66bad232-2bf0-453a-8e70-f727fb7514b8", "c1d28692-5180-4d21-8ce7-598f2c36a92c", "a085fb98-a945-4e04-aebd-5cffe4b136bc"]
 		},
 		"21a20b5b-3dd3-4e09-926f-51c1dce575f0": {
 			"Sports": ["Soccer", "Badminton", "Football", "Basketball"],
