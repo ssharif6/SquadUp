@@ -658,6 +658,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeM-iI-UIZ">
                                 <rect key="frame" x="166" y="342" width="75" height="30"/>
                                 <state key="normal" title="Add Friend"/>
+                                <connections>
+                                    <action selector="addFriendPressed:" destination="6cc-7X-Y2t" eventType="touchUpInside" id="yyz-2T-k0z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -667,6 +670,7 @@
                         <outlet property="coverImage" destination="ocC-kh-aZ8" id="0Ng-gm-P3R"/>
                         <outlet property="fifthStar" destination="BYO-5x-kgK" id="QRC-Vx-C0x"/>
                         <outlet property="fourthStar" destination="vXe-Av-Vk6" id="qnY-Hw-vij"/>
+                        <outlet property="friendButton" destination="PeM-iI-UIZ" id="QBO-aK-ckI"/>
                         <outlet property="moreInfoButton" destination="cHF-k4-5FP" id="jGQ-m9-2OW"/>
                         <outlet property="oneStar" destination="sv7-Xd-mQH" id="0QR-NC-BOJ"/>
                         <outlet property="profileImage" destination="EPv-f8-ZsW" id="GIA-Lq-df7"/>
@@ -1690,8 +1694,8 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coV-AN-lj3">
                                                     <rect key="frame" x="8" y="16" width="76" height="75"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen has Challenged you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-uU-mXa">
-                                                    <rect key="frame" x="94" y="43" width="227" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen has Challenged you!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-uU-mXa">
+                                                    <rect key="frame" x="94" y="43" width="312" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>

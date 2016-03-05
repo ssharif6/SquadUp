@@ -15,7 +15,6 @@ class PublicProfileViewController: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var recentHistoryButton: UIButton!
     @IBOutlet weak var moreInfoButton: UIButton!
-    @IBOutlet weak var requestRivalButton: UIButton!
     @IBOutlet weak var oneStar: UIImageView!
     @IBOutlet weak var secondStar: UIImageView!
     @IBOutlet weak var thirdStar: UIImageView!
@@ -29,6 +28,7 @@ class PublicProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         var asdf: UserModel!
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -50,9 +50,25 @@ class PublicProfileViewController: UIViewController {
             self.user = asdf
             self.loadData()
         })
-        
     }
     
+    @IBOutlet weak var friendButton: UIButton!
+    @IBAction func addFriendPressed(sender: AnyObject) {
+        // post to firebase
+        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+        
+        let key = userUnarchived.userKey
+        let name = userUnarchived.firstName + " " + userUnarchived.lastName
+        let notification: Dictionary<String, AnyObject> = [
+            "notificationMessage": "\(name) has sent a Friend Request!",
+            "notificationType": "friendRequest",
+            "sentFromId": String(key)
+        ]
+        let notificationPost = DataService.ds.REF_USERS.childByAppendingPath(self.user.userKey).childByAppendingPath("notifications").childByAutoId()
+        notificationPost.setValue(notification)
+        friendButton.enabled = false
+    }
     
     func loadData() {
         profileName.text = self.user.firstName + " " + self.user.lastName
