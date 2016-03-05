@@ -21,6 +21,7 @@ class UserModel: NSObject {
     private var _fullName: String!
     private var _profileImageURL: String!
     private var _rating: String!
+    private var _notifications: [NotificationModel]!
     
     var firstName: String {
         return _firstName
@@ -28,6 +29,10 @@ class UserModel: NSObject {
     
     var rating: String {
         return _rating
+    }
+    
+    var notifications: [NotificationModel] {
+        return _notifications
     }
     
     var profileImageURL: String {

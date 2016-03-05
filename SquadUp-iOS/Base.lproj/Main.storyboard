@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.5" y="314.5"/>
+            <point key="canvasLocation" x="1608.5" y="163.5"/>
         </scene>
         <!--SquadUp Feed-->
         <scene sceneID="FaE-9p-NMB">
@@ -899,6 +899,7 @@
                         <outlet property="challengeNameLabel" destination="6fa-lY-pTf" id="XvZ-8d-jWx"/>
                         <outlet property="currentUserProfilePic" destination="7kk-qP-0c6" id="2v7-Y7-BGb"/>
                         <outlet property="rivalProfilePic" destination="QVv-Xs-V5y" id="O2Q-HP-C3z"/>
+                        <segue destination="V3d-dN-cpB" kind="show" identifier="ChallengeSentSegue" id="vCP-ZV-YwD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKm-sk-CTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -922,7 +923,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RivalCell" rowHeight="107" id="ngr-sL-gQW" customClass="RivalListCell" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="394" height="107"/>
+                                        <rect key="frame" x="0.0" y="28" width="394" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ngr-sL-gQW" id="hmQ-g3-ZaO">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="106.5"/>
@@ -1733,6 +1734,64 @@
             </objects>
             <point key="canvasLocation" x="2349" y="265"/>
         </scene>
+        <!--Notifications-->
+        <scene sceneID="CIF-IN-6UY">
+            <objects>
+                <viewController id="Rqa-5f-bUK" customClass="NotificationsViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q3a-OB-TLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="uRX-h5-VbG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VdR-uy-RrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-2T-AUG">
+                                <rect key="frame" x="0.0" y="91" width="414" height="596"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="107" id="QqK-EO-Bfp" customClass="NotificaionTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QqK-EO-Bfp" id="qTn-UG-F60">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coV-AN-lj3">
+                                                    <rect key="frame" x="8" y="16" width="76" height="75"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen has Challenged you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-uU-mXa">
+                                                    <rect key="frame" x="94" y="43" width="227" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="displayedImage" destination="coV-AN-lj3" id="Amx-wg-CYu"/>
+                                            <outlet property="notificationLabel" destination="X2g-uU-mXa" id="PcT-pT-KpO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rqa-5f-bUK" id="XLA-wK-4Io"/>
+                                    <outlet property="delegate" destination="Rqa-5f-bUK" id="GwV-uo-aog"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" id="Lyh-6u-amy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="notificationTableView" destination="WFU-2T-AUG" id="H60-GF-cpC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbt-5z-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2218" y="-452"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ll-14-jG3">
             <objects>
@@ -1747,6 +1806,7 @@
                         <segue destination="YvJ-S3-ENb" kind="relationship" relationship="viewControllers" id="VGY-WA-mgN"/>
                         <segue destination="2tR-Jn-Oee" kind="relationship" relationship="viewControllers" id="9ht-77-zud"/>
                         <segue destination="7n0-qs-pBs" kind="relationship" relationship="viewControllers" id="N3K-5J-2vQ"/>
+                        <segue destination="Rqa-5f-bUK" kind="relationship" relationship="viewControllers" id="jcj-Q8-o3X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5Q-SZ-f7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1825,8 +1885,9 @@
         <image name="twitter-icon-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SeC-SE-gDC"/>
         <segue reference="fRU-1G-gzZ"/>
+        <segue reference="SeC-SE-gDC"/>
         <segue reference="kLt-Ag-aq1"/>
+        <segue reference="vCP-ZV-YwD"/>
     </inferredMetricsTieBreakers>
 </document>

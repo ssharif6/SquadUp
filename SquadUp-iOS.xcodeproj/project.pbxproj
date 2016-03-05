@@ -19,6 +19,8 @@
 		8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1681C897B19009BA652 /* RivalListCell.swift */; };
 		8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */; };
 		8549C16D1C8AA353009BA652 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16C1C8AA353009BA652 /* NotificationModel.swift */; };
+		8549C16F1C8ABA89009BA652 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */; };
+		8549C1711C8ABBA7009BA652 /* NotificaionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549C1701C8ABBA7009BA652 /* NotificaionTableViewCell.swift */; };
 		855758711C55944D00399C83 /* Tahoma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758701C55944D00399C83 /* Tahoma.ttf */; };
 		855758731C5594AA00399C83 /* Tahoma Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855758721C5594AA00399C83 /* Tahoma Bold.ttf */; };
 		855DF5561C5417E7009B6D82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5551C5417E7009B6D82 /* DataService.swift */; };
@@ -94,6 +96,8 @@
 		8549C1681C897B19009BA652 /* RivalListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalListCell.swift; sourceTree = "<group>"; };
 		8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalScreenViewController.swift; sourceTree = "<group>"; };
 		8549C16C1C8AA353009BA652 /* NotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		8549C1701C8ABBA7009BA652 /* NotificaionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificaionTableViewCell.swift; sourceTree = "<group>"; };
 		855758701C55944D00399C83 /* Tahoma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tahoma.ttf; sourceTree = "<group>"; };
 		855758721C5594AA00399C83 /* Tahoma Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tahoma Bold.ttf"; sourceTree = "<group>"; };
 		855DF5551C5417E7009B6D82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */,
 				8572F4D01C86AFEF00A3D54E /* RoundButton.swift */,
 				8549C1681C897B19009BA652 /* RivalListCell.swift */,
+				8549C1701C8ABBA7009BA652 /* NotificaionTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				8549C1641C8972AC009BA652 /* RivalChooseSportVC.swift */,
 				8549C1661C89783A009BA652 /* RivalListViewController.swift */,
 				8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */,
+				8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 				85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
 				8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */,
+				8549C1711C8ABBA7009BA652 /* NotificaionTableViewCell.swift in Sources */,
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
 				85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */,
 				8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */,
@@ -558,6 +565,7 @@
 				85DA31F41C691BA10078CCEF /* GameLobbyViewController.swift in Sources */,
 				8549C1671C89783A009BA652 /* RivalListViewController.swift in Sources */,
 				8549C1651C8972AC009BA652 /* RivalChooseSportVC.swift in Sources */,
+				8549C16F1C8ABA89009BA652 /* NotificationsViewController.swift in Sources */,
 				8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */,
 				8510E41E1C75C9B300C73C92 /* Message.swift in Sources */,
 				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,

@@ -72,20 +72,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         // TODO: Find Post History for Facebook User
                         let posts = []
                         let sports = []
-                        let name = AuthData.providerData["displayName"]
+                        var notifications:[String] = []
+                        notifications.append("note2")
                         let facebookID = AuthData.providerData["id"]
                         print(facebookID)
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]
                         print(profileImageUrlUser)
-                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg"]
+                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications] 
                         let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg")
-                        
                         let defaults = NSUserDefaults.standardUserDefaults()
                         let UserModelKey = "userModelKey"
                         let currentUserData = NSKeyedArchiver.archivedDataWithRootObject(currentUser)
                         defaults.setObject(currentUserData, forKey: UserModelKey)
                         
-                        DataService.ds.createFirebaseUser(AuthData.uid, user: user)
+                        DataService.ds.createFirebaseUser(AuthData.uid, user: user as! Dictionary<String, AnyObject>)
                         NSUserDefaults.standardUserDefaults().setValue(AuthData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier("LoggedIn", sender: nil)
                     }

@@ -73,6 +73,7 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
         if segue.identifier == "RivalChosen" {
             let vc = segue.destinationViewController as! RivalScreenViewController
             vc.personPassed = self.personToPass
+            vc.passedSport = self.passedLabel
         }
     }
     

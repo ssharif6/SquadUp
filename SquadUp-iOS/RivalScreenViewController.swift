@@ -14,7 +14,8 @@ class RivalScreenViewController: UIViewController {
     @IBOutlet weak var currentUserProfilePic: UIImageView!
     @IBOutlet weak var rivalProfilePic: UIImageView!
     var personPassed: UserModel!
-
+    var currentPerson: UserModel!
+    var passedSport: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class RivalScreenViewController: UIViewController {
         challengeNameLabel.textAlignment = .Center
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-        
+        self.currentPerson = userUnarchived
         let urlCurrent = NSURL(string: userUnarchived.profileImageURL)
         if userUnarchived.profileImageURL == "" {
             currentUserProfilePic.image = UIImage(named: "defaultProfile")
@@ -66,13 +67,29 @@ class RivalScreenViewController: UIViewController {
             self.rivalProfilePic.alpha = 1
             self.currentUserProfilePic.center.y = currentUserProfPicCenter.y
             self.rivalProfilePic.center.y = rivalProfilePicCenter.y
-            
         }), completion: nil)
-        
     }
     @IBAction func ChallengeButtonPressed(sender: AnyObject) {
         let key = personPassed.userKey
-        DataService.ds.REF_USERS.childByAppendingPath(key).childByAppendingPath("notifications")
+        let name = self.currentPerson.firstName + " " + self.currentPerson.lastName
+        let notification: Dictionary<String, AnyObject> = [
+            "notificationMessage": "\(name) has challenged you!",
+            "notificationType": "challenge",
+            "sentFromID": String(self.currentPerson.userKey)
+        ]
+        
+        let notificationPost = DataService.ds.REF_USERS.childByAppendingPath(key).childByAppendingPath("notifications").childByAutoId()
+        notificationPost.setValue(notification)
+        performSegueWithIdentifier("ChallengeSentSegue", sender: nil)
+
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ChallengeSentSegue" {
+            let vc = segue.destinationViewController as! RivalListViewController
+            vc.passedLabel = self.passedSport
+            
+        }
     }
 
     
