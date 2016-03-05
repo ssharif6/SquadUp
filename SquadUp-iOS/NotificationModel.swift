@@ -53,7 +53,6 @@ class NotificationModel {
         if let sentFromId = dictionary["sentFromID"] {
             _sentFromID = sentFromId as? String
         }
-        
     }
     
     

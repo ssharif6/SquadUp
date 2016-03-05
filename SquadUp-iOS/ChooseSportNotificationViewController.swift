@@ -55,9 +55,30 @@ class ChooseSportNotificationViewController: UIViewController, UITableViewDelega
                 selectedSports.append(sportCategories[indexPath!])
             }
         }
-        let sportsRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("Sports")
-        sportsRef.setValue(selectedSports)
-        print(selectedSports)
+        let notificationPost = DataService.ds.REF_USERS.childByAppendingPath("notifications").childByAutoId()
+        let notification: Dictionary<String, AnyObject> = [
+            "distance": "0.0"
+        ]
+        
+//        let lobby: Dictionary<String, AnyObject> = [
+//            "distance": "0.9",
+//            "lobbyName": lobbyNameTextField.text!,
+//            "maxCapacity": Int(numPlayersTextField.text!)!,
+//            "sportsID": sportLabel!,
+//            "description": descriptionTextField.text!,
+//            "currentCapacity": 1,
+//            "currentPlayers": userArray,
+//            "location": locationAddressTextField.text!,
+//            "date": self.selectedDate,
+//            "registered": "no",
+//            "address": self.locationAddressTextField.text!
+//        ]
+//        let lobbyPost = DataService.ds.REF_LOBBYGAMES.childByAutoId()
+//        lobbyPost.setValue(lobby)
+//
+//        let sportsRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("Sports")
+//        sportsRef.setValue(selectedSports)
+//        print(selectedSports)
         NSUserDefaults.standardUserDefaults().setValue(selectedSports, forKey: SELECTED_SPORTS)
         performSegueWithIdentifier("sportsPageToFeed", sender: nil)
     }

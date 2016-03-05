@@ -71,7 +71,8 @@ class RivalScreenViewController: UIViewController {
         
     }
     @IBAction func ChallengeButtonPressed(sender: AnyObject) {
-        
+        let key = personPassed.userKey
+        DataService.ds.REF_USERS.childByAppendingPath(key).childByAppendingPath("notifications")
     }
 
     
