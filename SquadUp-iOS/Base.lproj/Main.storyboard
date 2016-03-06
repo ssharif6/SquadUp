@@ -285,7 +285,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News Feed" badgeValue="Feed" id="Emk-I9-rdo"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="rsz_3feedicon" id="Emk-I9-rdo"/>
                     <navigationItem key="navigationItem" title="SquadUp Feed" id="h8x-te-idM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1794,7 +1794,7 @@
         <scene sceneID="AGy-dk-G83">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7n0-qs-pBs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Find a Game" id="A5c-hM-9kA"/>
+                    <tabBarItem key="tabBarItem" title="Find a Game" image="rsz_findagameicon" id="A5c-hM-9kA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ExK-7Z-8JZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1813,7 +1813,7 @@
         <scene sceneID="4ZD-73-akx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2tR-Jn-Oee" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="ZkO-2e-Pm0"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="rsz_profileicon" id="ZkO-2e-Pm0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="I" id="vm5-ZQ-8Xw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1859,6 +1859,9 @@
         <image name="lobbyBackground" width="1080" height="1920"/>
         <image name="locationPin" width="411" height="553"/>
         <image name="moreAsset" width="577" height="179"/>
+        <image name="rsz_3feedicon" width="30" height="30"/>
+        <image name="rsz_findagameicon" width="30" height="30"/>
+        <image name="rsz_profileicon" width="30" height="30"/>
         <image name="signInBackground" width="1077" height="1916"/>
         <image name="soccerTableView" width="1920" height="1080"/>
         <image name="squadUpTitle" width="464" height="110"/>

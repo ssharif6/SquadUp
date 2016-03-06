@@ -22,6 +22,7 @@ class FeedVCViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.contentInset = UIEdgeInsetsMake(-20, 0, -20, 0);
+        
 
         // Downloading data with Firebase
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
