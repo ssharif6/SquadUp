@@ -22,9 +22,14 @@ class UserModel: NSObject {
     private var _profileImageURL: String!
     private var _rating: String!
     private var _notifications: [NotificationModel]!
+    private var _recentActivity: [String]!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var recentActivity: [String] {
+        return _recentActivity
     }
     
     var rating: String {
@@ -63,7 +68,7 @@ class UserModel: NSObject {
         return _userKey
     }
     
-    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String) {
+    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String, recentActivity: [String]) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
@@ -73,6 +78,7 @@ class UserModel: NSObject {
         _userKey = key
         _rating = rating
         _profileImageURL = profileImageUrl
+        _recentActivity = recentActivity
     }
     
     required init(coder decoder: NSCoder) {
@@ -85,6 +91,7 @@ class UserModel: NSObject {
         _userKey = decoder.decodeObjectForKey("userKey") as? String
         _profileImageURL = decoder.decodeObjectForKey("profileImageKey") as? String
         _rating = decoder.decodeObjectForKey("ratingKey") as? String
+        _recentActivity = decoder.decodeObjectForKey("recentActivityKey") as? [String]
         super.init()
     }
     
@@ -97,6 +104,7 @@ class UserModel: NSObject {
         aCoder.encodeObject(_userKey, forKey: "userKey")
         aCoder.encodeObject(_profileImageURL, forKey: "profileImageKey")
         aCoder.encodeObject(_rating, forKey: "ratingKey")
+        aCoder.encodeObject(_recentActivity, forKey: "recentActivityKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -127,6 +135,9 @@ class UserModel: NSObject {
         }
         if let rating = dictionary["rating"] as? String {
             self._rating = rating
+        }
+        if let recentActivity = dictionary["recentActivity"] as? [String] {
+            self._recentActivity = recentActivity
         }
     }
     

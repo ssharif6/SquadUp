@@ -49,12 +49,11 @@ class JoinLobbyCell: UITableViewCell {
         lobbyBgImage.contentMode = UIViewContentMode.ScaleAspectFill
         if gameLobby.registered == "yes" {
             lobbyBgImage.image = UIImage(named: "sponsorBox.png")
-            
-        } else {
+            sponsoredImage.image = UIImage(named: "sponsorIcon")
+        } else if gameLobby.registered == "no" {
             lobbyBgImage.image = UIImage(named: "normalBox.png")
         }
-//        self.dateLabel.text = gameLobby.dayOfWeek
-//        self.distanceLabel.text = gameLobby.distance
+
     }
     
     // Add functgions for when somebody joins the lobby to increment the currentcapacity

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8502C9A91C8C297900224021 /* RecentActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */; };
+		8502C9AB1C8C33B800224021 /* PublicRecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */; };
 		8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA71C5DED9100063F7D /* FindGameVC.swift */; };
 		8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA91C5DEE2C00063F7D /* SportCell.swift */; };
 		8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */; };
@@ -86,6 +88,8 @@
 /* Begin PBXFileReference section */
 		08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivityTableViewCell.swift; sourceTree = "<group>"; };
+		8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicRecentActivityViewController.swift; sourceTree = "<group>"; };
 		8509CDA71C5DED9100063F7D /* FindGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGameVC.swift; sourceTree = "<group>"; };
 		8509CDA91C5DEE2C00063F7D /* SportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSportNotificationViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +300,7 @@
 				8572F4D01C86AFEF00A3D54E /* RoundButton.swift */,
 				8549C1681C897B19009BA652 /* RivalListCell.swift */,
 				8549C1701C8ABBA7009BA652 /* NotificaionTableViewCell.swift */,
+				8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */,
 				8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */,
 				85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */,
+				8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -558,11 +564,13 @@
 				85F7FE451C8BA1080082E90E /* MoreSettingsViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
 				8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */,
+				8502C9AB1C8C33B800224021 /* PublicRecentActivityViewController.swift in Sources */,
 				8549C1711C8ABBA7009BA652 /* NotificaionTableViewCell.swift in Sources */,
 				8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */,
 				85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */,
 				8549C1691C897B19009BA652 /* RivalListCell.swift in Sources */,
 				85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */,
+				8502C9A91C8C297900224021 /* RecentActivityTableViewCell.swift in Sources */,
 				8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */,
 				8549C16D1C8AA353009BA652 /* NotificationModel.swift in Sources */,
 				857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */,

@@ -103,12 +103,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         notifications.append(notification3)
                         notifications.append(notification4)
                         
+                        var recentActivity = [String]()
+                        recentActivity.append("game10")
+                        recentActivity.append("game11")
+                        
                         let facebookID = AuthData.providerData["id"]
                         print(facebookID)
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]
                         print(profileImageUrlUser)
-                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications] 
-                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg")
+                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity]
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity)
                         CURRENT_USER = currentUser
                         let defaults = NSUserDefaults.standardUserDefaults()
                         let UserModelKey = "userModelKey"

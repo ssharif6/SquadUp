@@ -1,31 +1,28 @@
 //
-//  RecentActivityViewController.swift
+//  PublicRecentActivityViewController.swift
 //  SquadUp-iOS
 //
-//  Created by Shaheen Sharifian on 2/20/16.
+//  Created by Shaheen Sharifian on 3/6/16.
 //  Copyright © 2016 Shaheen Sharifian. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class RecentActivityViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var recentActivityTableView: UITableView!
+class PublicRecentActivityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var games = [LobbyGameModel]()
+    var userPassed: UserModel!
     var gameIds: [String]!
+    var games = [LobbyGameModel]()
     
+    @IBOutlet weak var recentActivityTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         parseData()
     }
     
     func parseData() {
-        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
-        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-        gameIds = userUnarchived.recentActivity
-        
+        gameIds = userPassed.recentActivity
         for game in gameIds {
             DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
                 if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
@@ -40,26 +37,25 @@ class RecentActivityViewController: UIViewController, UITableViewDataSource, UIT
                         }
                     }
                 }
-            self.recentActivityTableView.reloadData()
+                self.recentActivityTable.reloadData()
             })
         }
-    }
-    
-    
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RecentActivityCell") as! RecentActivityTableViewCell
-        let game = games[indexPath.row]
-        cell.configureCell(game)
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PublicRecentActivityCell") as! RecentActivityTableViewCell
+        let game = games[indexPath.row]
+        cell.configureCell(game)
+        return cell
+    }
 }

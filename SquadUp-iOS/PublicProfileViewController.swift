@@ -103,5 +103,15 @@ class PublicProfileViewController: UIViewController {
             profileImage.image = UIImage(data:data!)
         }
     }
+    @IBAction func recentActivityPressed(sender: AnyObject) {
+        performSegueWithIdentifier("PublicRecentActivity", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PublicRecentActivity" {
+            let vc = segue.destinationViewController as! PublicRecentActivityViewController
+            vc.userPassed = self.user
+        }
+    }
     
 }
