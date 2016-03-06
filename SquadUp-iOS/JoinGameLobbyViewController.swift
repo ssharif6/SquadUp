@@ -13,6 +13,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var sportLabel: UILabel!
     @IBOutlet weak var sportsTableView: UITableView!
+    @IBOutlet weak var subscribedImage: UIImageView!
     
     var lobbyGames = [LobbyGameModel]()
     var lobbyObjectToPass: LobbyGameModel!
@@ -59,7 +60,6 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
                         print(lobbyGame.sport)
                         print(self.sportPassed)
                         if lobbyGame.sport == self.sportPassed {
-                            print("HALLELUJA")
                             self.lobbyGames.append(lobbyGame)
                         }
                     }
@@ -82,15 +82,11 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         return lobbyGames.count
     }
     
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let lobbyGame = lobbyGames[indexPath.row]
         if let cell: JoinLobbyCell = tableView.dequeueReusableCellWithIdentifier("JoinLobbyCell") as? JoinLobbyCell {
             cell.configureCell(lobbyGame)
-            if lobbyGame.registered == "yes" {
-                
-                cell.backgroundColor = UIColor(red: 0, green: 123, blue: 181, alpha: 1.0)
-                cell.textLabel?.textColor = UIColor.whiteColor()
-            }
             return cell
         } else {
             return JoinLobbyCell()

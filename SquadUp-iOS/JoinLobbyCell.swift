@@ -15,6 +15,9 @@ class JoinLobbyCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var numPeople: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var sponsoredImage: UIImageView!
+    @IBOutlet weak var lobbyBgImage: UIImageView!
+    @IBOutlet weak var containerView: UIView!
     
     var gameLobby: LobbyGameModel!
     var request = Request?()
@@ -43,6 +46,13 @@ class JoinLobbyCell: UITableViewCell {
         self.numPeople.text = currentTotalPlayers
         self.dateLabel.text = configureDate(gameLobby.date)
         self.dateLabel.textAlignment = .Right
+        lobbyBgImage.contentMode = UIViewContentMode.ScaleAspectFill
+        if gameLobby.registered == "yes" {
+            lobbyBgImage.image = UIImage(named: "sponsorBox.png")
+            
+        } else {
+            lobbyBgImage.image = UIImage(named: "normalBox.png")
+        }
 //        self.dateLabel.text = gameLobby.dayOfWeek
 //        self.distanceLabel.text = gameLobby.distance
     }
