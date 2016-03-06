@@ -31,7 +31,15 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
         locationManager?.requestWhenInUseAuthorization()
         locationManager?.startUpdatingLocation()
         locationMapView.showsUserLocation = true
+        searchBar.delegate = self
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -112,6 +120,62 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         performSegueWithIdentifier(SEGUE_MAP_TO_CREATE_LOBBY, sender: nil)
+    }
+    
+
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        self.locationMapView.removeAnnotations(self.locationMapView.annotations)
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = searchBar.text
+        request.region = self.locationMapView.region
+        let search = MKLocalSearch(request: request)
+        
+        search.startWithCompletionHandler { (response, error) -> Void in
+            if error != nil {
+                print("ERROR")
+            } else if response?.mapItems.count == 0 {
+                print("No Places found")
+            } else {
+                print("Found")
+                for item in response!.mapItems {
+                    let annotation = MKPointAnnotation()
+                    var title = ""
+                    var subThoroughfare: String = ""
+                    var thoroughfare: String = ""
+                    var locality: String = ""
+                    var postalCode: String = ""
+                    var adminArea: String = ""
+                    var country: String = ""
+                    
+                    if item.placemark.subThoroughfare != nil {
+                        subThoroughfare = item.placemark.subThoroughfare!
+                    }
+                    if item.placemark.thoroughfare != nil {
+                        thoroughfare = item.placemark.thoroughfare!
+                    }
+                    if item.placemark.locality != nil {
+                        locality = item.placemark.locality!
+                    }
+                    if item.placemark.postalCode != nil {
+                        postalCode = item.placemark.postalCode!
+                    }
+                    if item.placemark.administrativeArea != nil {
+                        adminArea = item.placemark.administrativeArea!
+                    }
+                    if item.placemark.country != nil {
+                        country = item.placemark.country!
+                    }
+                    title = " \(subThoroughfare) \(thoroughfare) \(locality), \(adminArea)"
+                    self.currentLocationToPass = title
+                    annotation.title = item.name
+                    annotation.subtitle = title
+                    annotation.coordinate = (item.placemark.location?.coordinate)!
+                    self.locationMapView.addAnnotation(annotation)
+                }
+            }
+        }
+        dismissKeyboard()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

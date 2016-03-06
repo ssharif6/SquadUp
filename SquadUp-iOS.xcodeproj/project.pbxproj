@@ -60,6 +60,8 @@
 		85DA31F01C6872730078CCEF /* JoinLobbyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */; };
 		85DA31F21C6883290078CCEF /* LobbyGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31F11C6883290078CCEF /* LobbyGameModel.swift */; };
 		85DA31F41C691BA10078CCEF /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31F31C691BA10078CCEF /* GameLobbyViewController.swift */; };
+		85F7FE431C8B9FB60082E90E /* MoreSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F7FE421C8B9FB60082E90E /* MoreSettingsTableViewCell.swift */; };
+		85F7FE451C8BA1080082E90E /* MoreSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */; };
 		85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F8DE001C620E65006DFF11 /* SportViewController.swift */; };
 		9E5E270CFABE55F98D8840C2 /* Pods_SquadUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F697A0BE0BD029798A22E8 /* Pods_SquadUp_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,8 @@
 		85DA31EF1C6872730078CCEF /* JoinLobbyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinLobbyCell.swift; sourceTree = "<group>"; };
 		85DA31F11C6883290078CCEF /* LobbyGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyGameModel.swift; sourceTree = "<group>"; };
 		85DA31F31C691BA10078CCEF /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
+		85F7FE421C8B9FB60082E90E /* MoreSettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreSettingsViewController.swift; sourceTree = "<group>"; };
 		85F8DE001C620E65006DFF11 /* SportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		B6C299F964AD7AAF68FAB18B /* Pods-SquadUp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,6 +281,7 @@
 		85A3C2C91C536F9400EF39EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85F7FE421C8B9FB60082E90E /* MoreSettingsTableViewCell.swift */,
 				85A3C2CC1C536FC900EF39EA /* FacebookLoginContainer.swift */,
 				85A3C2D01C53702B00EF39EA /* EmailLoginContainerView.swift */,
 				85A5E0C91C7FEFB700B2B5F8 /* PostCellView.swift */,
@@ -314,6 +319,7 @@
 				8549C1661C89783A009BA652 /* RivalListViewController.swift */,
 				8549C16A1C897EFC009BA652 /* RivalScreenViewController.swift */,
 				8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */,
+				85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -548,6 +554,8 @@
 				856E84191C56254100AC544C /* RatingStarContainerView.swift in Sources */,
 				8548BCFB1C755A6300CF3CA3 /* MapViewController.swift in Sources */,
 				85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */,
+				85F7FE431C8B9FB60082E90E /* MoreSettingsTableViewCell.swift in Sources */,
+				85F7FE451C8BA1080082E90E /* MoreSettingsViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
 				8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */,
 				8549C1711C8ABBA7009BA652 /* NotificaionTableViewCell.swift in Sources */,

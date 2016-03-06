@@ -614,6 +614,7 @@
                                 <state key="normal" title="Button" image="moreAsset"/>
                                 <connections>
                                     <action selector="moreButtonClicked:" destination="oth-yS-0ca" eventType="touchUpInside" id="WNl-CB-d7c"/>
+                                    <action selector="morePressed:" destination="6cc-7X-Y2t" eventType="touchUpInside" id="zOQ-St-O9T"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Rivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ht-ul-aCT">
@@ -918,10 +919,10 @@
             </objects>
             <point key="canvasLocation" x="2344" y="3055"/>
         </scene>
-        <!--View Controller-->
+        <!--More Settings View Controller-->
         <scene sceneID="qvo-So-pw8">
             <objects>
-                <viewController id="Tbx-d8-gMd" sceneMemberID="viewController">
+                <viewController id="Tbx-d8-gMd" customClass="MoreSettingsViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c5p-DO-o2v"/>
                         <viewControllerLayoutGuide type="bottom" id="ZDC-wi-wPh"/>
@@ -936,10 +937,46 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZEn-Jn-UnC">
+                                <rect key="frame" x="7" y="111" width="401" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreSettingCell" rowHeight="100" id="80J-s3-rds" customClass="MoreSettingsTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="401" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="80J-s3-rds" id="7nJ-ke-9jd">
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kua-UE-Bx4">
+                                                    <rect key="frame" x="8" y="17" width="66" height="66"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNq-2G-P0r">
+                                                    <rect key="frame" x="102" y="35" width="280" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="settingImage" destination="kua-UE-Bx4" id="qev-MF-sbc"/>
+                                            <outlet property="settingLabel" destination="rNq-2G-P0r" id="epf-6D-O5r"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tbx-d8-gMd" id="05W-Xh-jeN"/>
+                                    <outlet property="delegate" destination="Tbx-d8-gMd" id="cZF-9o-IeL"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="moreSettingsTableView" destination="ZEn-Jn-UnC" id="cpf-mN-5BJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0v-Wr-HJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

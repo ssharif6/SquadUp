@@ -70,6 +70,31 @@ class PublicProfileViewController: UIViewController {
         friendButton.enabled = false
     }
     
+    @IBAction func morePressed(sender: AnyObject) {
+        let optionsMenu = UIAlertController(title: "More Information", message: "Choose Option", preferredStyle: .ActionSheet)
+        let sendRequestAction = UIAlertAction(title: "Request Friend", style: .Default) { (alert) -> Void in
+            let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+            let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+            
+            let key = userUnarchived.userKey
+            let name = userUnarchived.firstName + " " + userUnarchived.lastName
+            let notification: Dictionary<String, AnyObject> = [
+                "notificationMessage": "\(name) has sent a Friend Request!",
+                "notificationType": "friendRequest",
+                "sentFromId": String(key)
+            ]
+            let notificationPost = DataService.ds.REF_USERS.childByAppendingPath(self.user.userKey).childByAppendingPath("notifications").childByAutoId()
+            notificationPost.setValue(notification)
+            self.friendButton.enabled = false
+        }
+        let blockAction = UIAlertAction(title: "Block User", style: .Destructive, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        optionsMenu.addAction(sendRequestAction)
+        optionsMenu.addAction(blockAction)
+        optionsMenu.addAction(cancelAction)
+        self.presentViewController(optionsMenu, animated: true, completion: nil)
+    }
+    
     func loadData() {
         profileName.text = self.user.firstName + " " + self.user.lastName
         let url = NSURL(string: imageUrlPassed)

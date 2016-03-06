@@ -23,17 +23,7 @@ class NotificaionTableViewCell: UITableViewCell {
     }
     
     func getUserData(notification: NotificationModel) {
-//        let user = notification.sentFrom
-//        let userUrl = NSURL(string: user.profileImageURL)
-//        if user.profileImageURL == "" {
-//            displayedImage.image = UIImage(named: "defaultProfile")
-//        } else {
-//            let data = NSData(contentsOfURL: userUrl!)
-//            if data != nil {
-//                displayedImage.image = UIImage(data: data!)
-//                displayedImage.contentMode = UIViewContentMode.ScaleAspectFit
-//            }
-//        }
+
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
                 for snap in snapshots {
