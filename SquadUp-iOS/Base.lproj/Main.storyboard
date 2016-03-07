@@ -991,37 +991,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-Sq-UEe">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="at9-xG-xRp">
+                                <rect key="frame" x="-22" y="-42" width="450" height="792"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-Sq-UEe">
                                 <rect key="frame" x="10" y="151" width="394" height="528"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RivalCell" rowHeight="107" id="ngr-sL-gQW" customClass="RivalListCell" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="394" height="107"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RivalCell" rowHeight="120" id="ngr-sL-gQW" customClass="RivalListCell" customModule="SquadUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ngr-sL-gQW" id="hmQ-g3-ZaO">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="106.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="normalBox" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-k7-96Y">
+                                                    <rect key="frame" x="0.0" y="0.5" width="394" height="98.5"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXT-GG-lgE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="98.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen Sharifian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-MH-4bO">
-                                                    <rect key="frame" x="86" y="41" width="242" height="25"/>
+                                                    <rect key="frame" x="86" y="40" width="242" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filledStar-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-zv-G9c">
-                                                    <rect key="frame" x="352" y="34" width="34" height="32"/>
+                                                    <rect key="frame" x="352" y="33" width="34" height="32"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0d-4Z-bLa">
-                                                    <rect key="frame" x="336" y="41" width="13" height="24"/>
+                                                    <rect key="frame" x="336" y="40" width="13" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="zE7-md-j2b">
-                                                    <rect key="frame" x="8" y="19" width="70" height="70"/>
+                                                    <rect key="frame" x="8" y="18" width="70" height="70"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="2xh-MH-4bO" id="4C9-Yc-rFH"/>
                                             <outlet property="numStarsLabel" destination="Z0d-4Z-bLa" id="MHa-3s-1FS"/>
@@ -1048,6 +1059,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="at9-xG-xRp" id="eNN-40-lLu"/>
                         <outlet property="rivalTableView" destination="dyC-Sq-UEe" id="slF-S3-veW"/>
                         <outlet property="sportLabel" destination="meK-iB-agp" id="cFb-UR-9Fn"/>
                         <segue destination="Dvz-pt-TB4" kind="show" identifier="RivalChosen" id="RB3-Fc-lKP"/>
@@ -1630,6 +1642,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="sportBackgroundImage" destination="2Ng-ag-WIo" id="Lnh-UQ-899"/>
                         <outlet property="sportLabel" destination="UPp-fG-I1x" id="crK-lp-nZV"/>
                         <outlet property="sportsTableView" destination="bP6-af-IZg" id="GYA-us-rHy"/>
                         <segue destination="wUR-xT-2ho" kind="show" identifier="lobbyToGame" id="6qs-Ld-BXv"/>
@@ -1741,6 +1754,9 @@
                                     <action selector="joinTeam:" destination="wUR-xT-2ho" eventType="touchUpInside" id="MOV-EJ-mOC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="md9-Pn-BjO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.78431372549019607" green="0.90196078431372551" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1945,7 +1961,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" id="Lyh-6u-amy"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notificationIcon" id="Lyh-6u-amy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="notificationTableView" destination="WFU-2T-AUG" id="H60-GF-cpC"/>
@@ -2046,6 +2062,8 @@
         <image name="lobbyBackground" width="1080" height="1920"/>
         <image name="locationPin" width="411" height="553"/>
         <image name="moreAsset" width="577" height="179"/>
+        <image name="normalBox" width="1004" height="206"/>
+        <image name="notificationIcon" width="30" height="30"/>
         <image name="rsz_3feedicon" width="30" height="30"/>
         <image name="rsz_findagameicon" width="30" height="30"/>
         <image name="rsz_profileicon" width="30" height="30"/>
@@ -2057,7 +2075,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="fRU-1G-gzZ"/>
         <segue reference="SeC-SE-gDC"/>
-        <segue reference="vW5-ns-HVo"/>
+        <segue reference="6qs-Ld-BXv"/>
         <segue reference="vCP-ZV-YwD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,11 +17,14 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var sportLabel: UILabel!
     @IBOutlet weak var rivalTableView: UITableView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     var rivalList = [UserModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var sportBackgroundText = "rivalScreen\(passedLabel)Back"
+        backgroundImage.image = UIImage(named: sportBackgroundText)
         sportLabel.text = "Choose a \(passedLabel) Rival"
         parseData()
     }

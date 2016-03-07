@@ -31,7 +31,6 @@ class JoinLobbyCell: UITableViewCell {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         let convertedDate = dateFormatter.dateFromString(dateString)
-        let dateConverted = dateFormatter.stringFromDate(convertedDate!)
         let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         let myComponents = myCalendar.components(.Weekday, fromDate: convertedDate!)
         let weekDay = myComponents.weekday

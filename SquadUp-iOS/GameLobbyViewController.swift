@@ -46,13 +46,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         getUsers()
         
     }
-    
-    //    override func viewWillDisappear(animated: Bool)
-    //    {
-    //        super.viewWillDisappear(animated)
-    //        self.navigationController?.navigationBarHidden = false
-    //    }
-    
+
     
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName

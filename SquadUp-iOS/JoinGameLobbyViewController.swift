@@ -14,6 +14,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var sportLabel: UILabel!
     @IBOutlet weak var sportsTableView: UITableView!
     @IBOutlet weak var subscribedImage: UIImageView!
+    @IBOutlet weak var sportBackgroundImage: UIImageView!
     
     var lobbyGames = [LobbyGameModel]()
     var lobbyObjectToPass: LobbyGameModel!
@@ -49,6 +50,8 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
         sportLabel.text = sportPassed + " Lobby"
+        var sportImageBG = sportPassed + "Background"
+        self.sportBackgroundImage.image = UIImage(named: sportImageBG)
         sportLabel.textAlignment = .Center;
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
