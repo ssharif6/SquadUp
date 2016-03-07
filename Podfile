@@ -6,7 +6,7 @@ target 'SquadUp-iOS' do
     pod 'Firebase', '>= 2.5.0'
     pod 'Alamofire', '~> 3.0'
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-    
+    pod 'Cosmos', '~> 1.2'
 end
 
 target 'SquadUp-iOSTests' do

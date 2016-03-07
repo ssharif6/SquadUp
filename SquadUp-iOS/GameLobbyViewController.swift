@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Cosmos
 
 class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var lobbyNameLabel: UILabel!
@@ -17,6 +18,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
     @IBOutlet weak var joinButton: UIButton!
+    @IBOutlet weak var ratingView: UIView!
     
     var lobbyModelObject: LobbyGameModel!
     var teamOneArray = [UserModel]()
@@ -25,6 +27,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var playerIdList = [String]()
     var team1: Bool!
     var currentUser: UserModel!
+    var fromRecentActivity: Bool! = false
     
     
     override func viewDidAppear(animated: Bool) {
@@ -36,25 +39,26 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         displayLobbyInfo()
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
+        
     }
     
-//    override func viewWillDisappear(animated: Bool)
-//    {
-//        super.viewWillDisappear(animated)
-//        self.navigationController?.navigationBarHidden = false
-//    }
+    //    override func viewWillDisappear(animated: Bool)
+    //    {
+    //        super.viewWillDisappear(animated)
+    //        self.navigationController?.navigationBarHidden = false
+    //    }
     
     
     func displayLobbyInfo() {
         lobbyNameLabel.text = lobbyModelObject.lobbyName
         lobbyNameLabel.textAlignment = .Center
         descriptionLabel.text = lobbyModelObject.description
-
+        
         addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
@@ -125,14 +129,16 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! GameLobbyTableViewCell
         switch(teamSegmentedControl.selectedSegmentIndex)
         {
         case 0:
-            cell.textLabel?.text = teamOneArray[indexPath.row].firstName + " " + teamOneArray[indexPath.row].lastName
+            let user = teamOneArray[indexPath.row]
+            cell.configureCell(user, fromRecentActivity: self.fromRecentActivity)
             break
         case 1:
-            cell.textLabel?.text = teamTwoArray[indexPath.row].firstName + " " + teamTwoArray[indexPath.row].lastName
+            let user = teamTwoArray[indexPath.row]
+            cell.configureCell(user, fromRecentActivity: self.fromRecentActivity)
             break
         default:
             break

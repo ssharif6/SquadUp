@@ -14,6 +14,7 @@ class PublicRecentActivityViewController: UIViewController, UITableViewDelegate,
     var userPassed: UserModel!
     var gameIds: [String]!
     var games = [LobbyGameModel]()
+    var gameToPass: LobbyGameModel!
     
     @IBOutlet weak var recentActivityTable: UITableView!
     override func viewDidLoad() {
@@ -49,7 +50,9 @@ class PublicRecentActivityViewController: UIViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        let game = games[indexPath.row]
+        self.gameToPass = game
+        performSegueWithIdentifier("RecentHistoryToGameLobby", sender: nil)
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -57,5 +60,13 @@ class PublicRecentActivityViewController: UIViewController, UITableViewDelegate,
         let game = games[indexPath.row]
         cell.configureCell(game)
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "RecentHistoryToGameLobby" {
+            let vc = segue.destinationViewController as! GameLobbyViewController
+            vc.lobbyModelObject = self.gameToPass
+            vc.fromRecentActivity = true
+        }
     }
 }
