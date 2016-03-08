@@ -27,12 +27,11 @@ class SportCell: UITableViewCell {
     
     func configureCell(sport: String!) {
         if(sport == "Basketball") {
-            //Put basketball image
             sportLabel.text = sport
             sportImage.image = UIImage(named: "basketballAndWhistle")
         } else if (sport == "Soccer") {
             sportLabel.text = sport
-            sportImage.image = UIImage(named: "soccerTableView")
+            sportImage.image = UIImage(named: "Soccer")
         } else if (sport == "Tennis") {
             sportLabel.text = sport
             sportImage.image = UIImage(named: "Tennis")
@@ -48,7 +47,7 @@ class SportCell: UITableViewCell {
             sportImage.image = UIImage(named: "Badminton")
         } else if (sport == "Ultimate Frisbee") {
             sportLabel.text = sport
-            // Set an image for Frisbee
+            sportImage.image = UIImage(named: "Frisbee")
         }
     }
     

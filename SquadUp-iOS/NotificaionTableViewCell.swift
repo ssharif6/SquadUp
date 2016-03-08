@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class NotificaionTableViewCell: UITableViewCell {
+    static var imageCache = NSCache()
     @IBOutlet weak var displayedImage: UIImageView!
     @IBOutlet weak var notificationLabel: UILabel!
     override func awakeFromNib() {

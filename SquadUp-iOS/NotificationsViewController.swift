@@ -16,6 +16,8 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     var notifications = [NotificationModel]()
     var notificationDeletedIndexPath: NSIndexPath? = nil
     var notificationToPass: NotificationModel!
+    static var imageCache = NSCache()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
