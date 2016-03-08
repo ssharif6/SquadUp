@@ -630,7 +630,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note1", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game2", "game10", "game12"]
 		},
@@ -647,7 +647,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note10"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game7", "game10", "game21"]
 		},
@@ -664,7 +664,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note0"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game11", "game26"]
 		},
@@ -681,7 +681,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note11", "note3", "note4"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game10", "game11", "game14", "game21"]
 		},
@@ -698,7 +698,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note24", "note6"],
 			"rating": "1",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -715,7 +715,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note12", "note0"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game1", "game2", "game10", "game16"]
 		},
@@ -732,7 +732,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note17", "note10"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game10", "game14", "game20"]
 		},
@@ -749,7 +749,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note15", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game7", "game10", "game13", "game19"]
 		},
@@ -766,7 +766,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note25", "note6"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game11", "game13", "game21"]
 		},
@@ -783,12 +783,12 @@
 			"skillLevel": "advanced",
 			"notifications": ["note16", "note4"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game1", "game4", "game6", "game10", "game14", "game20"]
 		},
 		"4424d20d-bdb5-4f34-9e13-fbbcf707fcae": {
-			"Sports": ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee"],
+			"Sports": ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee", "Tennis"],
 			"sportsSubscribed": [],
 			"firstName": "Guadalupe",
 			"gender": "male",
@@ -800,7 +800,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2"],
 			"friends": [],
 			"recentActivity": ["game1", "game3", "game10", "game11", "game14", "game26"]
 		},
@@ -817,7 +817,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note4"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game4", "game6", "game10", "game14", "game20"]
 		},
@@ -834,7 +834,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note10"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game8", "game14"]
 		},
@@ -851,7 +851,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8", "note0"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game1", "game11", "game22"]
 		},
@@ -868,7 +868,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note6", "note8"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game20"]
 		},
@@ -885,7 +885,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note8", "note9", "note10"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -902,7 +902,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "1",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game7", "game14", "game15"]
 		},
@@ -919,7 +919,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note13", "note3", "note4", "note6", "note8"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game18"]
 		},
@@ -936,7 +936,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game22"]
 		},
@@ -953,7 +953,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game4", "game8", "game14"]
 		},
@@ -970,7 +970,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note18", "note3", "note4", "note6", "note8", "note0", "note9"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game8", "game20"]
 		},
@@ -987,7 +987,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17"]
 		},
@@ -1004,7 +1004,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game11", "game12"]
 		},
@@ -1021,7 +1021,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game14"]
 		},
@@ -1038,7 +1038,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "1",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game12", "game14"]
 		},
@@ -1055,7 +1055,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6", "note8", "note9", "note10"],
 			"rating": "1",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game5", "game8", "game9", "game12", "game20"]
 		},
@@ -1072,7 +1072,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17", "game27"]
 		},
@@ -1089,7 +1089,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17", "game27"]
 		},
@@ -1106,7 +1106,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game13"]
 		},
@@ -1122,7 +1122,7 @@
 			"provider": "Email",
 			"notifications": ["note3", "note4", "note6", "note8", "note0"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game5", "game8", "game9", "game12"]
 		},
@@ -1138,7 +1138,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -1154,7 +1154,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game20"]
 		},
@@ -1170,7 +1170,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game22"]
 		},
@@ -1186,7 +1186,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note14", "note3", "note4", "note6", "note8", "note0", "note9"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17"]
 		},
@@ -1202,7 +1202,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game24"]
 		},
@@ -1218,7 +1218,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note2", "note3", "note4", "note6", "note8"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game18"]
 		},
@@ -1234,7 +1234,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note26", "note3", "note4"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -1250,7 +1250,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17"]
 		},
@@ -1266,7 +1266,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "1",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game26"]
 		},
@@ -1282,7 +1282,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game18"]
 		},
@@ -1298,7 +1298,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note19", "note3", "note4", "note6"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game17"]
 		},
@@ -1314,7 +1314,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game24"]
 		},
@@ -1330,7 +1330,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note23", "note3", "note4", "note6", "note8"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game26"]
 		},
@@ -1346,7 +1346,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game25"]
 		},
@@ -1362,7 +1362,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "4",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game20"]
 		},
@@ -1378,7 +1378,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note5", "note3", "note4"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game26"]
 		},
@@ -1394,7 +1394,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9", "note10"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game27"]
 		},
@@ -1410,7 +1410,7 @@
 			"skillLevel": "advanced",
 			"notifications": ["note3", "note4", "note6", "note8", "note0"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1426,7 +1426,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game20"]
 		},
@@ -1442,7 +1442,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -1458,7 +1458,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8", "note0"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1474,7 +1474,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9", "note10"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game23"]
 		},
@@ -1490,7 +1490,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note3", "note4"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1506,7 +1506,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1522,7 +1522,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6", "note8"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -1538,7 +1538,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6", "note8", "note0"],
 			"rating": "0",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game26"]
 		},
@@ -1554,7 +1554,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3"],
 			"rating": "2",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1570,7 +1570,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4"],
 			"rating": "3",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1586,7 +1586,7 @@
 			"skillLevel": "intermediate",
 			"notifications": ["note3", "note4", "note6"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		},
@@ -1602,7 +1602,7 @@
 			"skillLevel": "beginner",
 			"notifications": ["note7", "note3", "note4", "note6", "note8", "note0"],
 			"rating": "5",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": ["game19"]
 		},
@@ -1618,7 +1618,7 @@
 			"skillLevel": "",
 			"notifications": [],
 			"rating": "",
-			"rivals": [],
+			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
 			"recentActivity": []
 		}
