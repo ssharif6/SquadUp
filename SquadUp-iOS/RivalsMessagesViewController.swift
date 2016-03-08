@@ -16,28 +16,33 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        rivalsTableView.dataSource = self
+        rivalsTableView.delegate = self
         parseData()
     }
     func parseData() {
+        var asdf = [UserModel]()
         DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").observeEventType(.Value, withBlock: { snapshot in
-            var asdf = [UserModel]()
-
+            asdf = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
                 for snap in snapshots {
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
+                        print(key)
                         let user = UserModel(userKey: key, dictionary: userDict)
                         asdf.append(user)
                     }
                 }
             }
             self.idArray = asdf
+            self.rivalsTableView.reloadData()
         })
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RivalCell")
-        return cell
+        cell?.textLabel?.text = idArray[indexPath.row].firstName
+        return cell!
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

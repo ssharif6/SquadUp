@@ -150,6 +150,9 @@ class UserModel: NSObject {
         if let rivals = dictionary["rivals"] as? [String] {
             self._rivals = rivals
         }
+        if let notifications = dictionary["notifications"] as? [NotificationModel] {
+            self._notifications = notifications
+        }
     }
     
     func toString() -> String {

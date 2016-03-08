@@ -1993,6 +1993,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Rival" id="h02-yR-1Oc"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="rivalsTableView" destination="8OB-xz-fZl" id="Ale-bz-jde"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yA8-eg-fAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

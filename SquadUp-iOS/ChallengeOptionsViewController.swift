@@ -74,13 +74,14 @@ class ChallengeOptionsViewController: UIViewController {
     
     
     @IBAction func CheckmarkClicked(sender: AnyObject) {
-        DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").observeEventType(.Value, withBlock: { snapshot in
+        
             let userToUse: Dictionary<String, AnyObject>
             = [
-                "provider": self.user.provider, "id": self.user._userId, "rating": self.user.rating, "gender": self.user.gender, "firstName": self.user.firstName,"lastName": self.user.lastName, "posts": self.user.posts,"profileImageUrl": self.user.profileImageURL, "notifications": self.user.notifications, "recentActivity": self.user.recentActivity, "rivals": self.user.rivals
+                "provider": self.user.provider, "id": self.user._userId, "rating": self.user.rating, "gender": self.user.gender, "firstName": self.user.firstName,"lastName": self.user.lastName, "posts": self.user.posts,"profileImageUrl": self.user.profileImageURL, "notifications": [], "recentActivity": self.user.recentActivity, "rivals": self.user.rivals
             ]
-            DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").setValue(userToUse)
-        })
+            let post = DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").childByAutoId()
+            post.setValue(userToUse)
+    
     }
 
     @IBAction func xmarkChecked(sender: AnyObject) {
