@@ -11,6 +11,7 @@ import Firebase
 
 class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var sportLabelImage: UIImageView!
     @IBOutlet weak var sportLabel: UILabel!
     @IBOutlet weak var sportsTableView: UITableView!
     @IBOutlet weak var subscribedImage: UIImageView!
@@ -24,8 +25,8 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         self.sportsTableView.reloadData()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
-        sportLabel.text = sportPassed + " Lobby"
-        sportLabel.textAlignment = .Center;
+
+//        sportLabel.text = sportPassed + " Lobby"
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
@@ -49,10 +50,10 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
-        sportLabel.text = sportPassed + " Lobby"
-        var sportImageBG = sportPassed + "Background"
+        let imageText = sportPassed + "Lobby"
+        sportLabelImage.image = UIImage(named: imageText)
+        let sportImageBG = sportPassed + "Background"
         self.sportBackgroundImage.image = UIImage(named: sportImageBG)
-        sportLabel.textAlignment = .Center;
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {

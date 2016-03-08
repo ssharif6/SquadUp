@@ -12,10 +12,10 @@ import Firebase
 class RivalListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var passedLabel: String!
     var passedImage: UIImage!
-    
     var personToPass: UserModel!
     
-    @IBOutlet weak var sportLabel: UILabel!
+
+    @IBOutlet weak var sportImageLabel: UIImageView!
     @IBOutlet weak var rivalTableView: UITableView!
     @IBOutlet weak var backgroundImage: UIImageView!
     
@@ -25,7 +25,8 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         var sportBackgroundText = "rivalScreen\(passedLabel)Back"
         backgroundImage.image = UIImage(named: sportBackgroundText)
-        sportLabel.text = "Choose a \(passedLabel) Rival"
+        var titleImageText = "chooseA\(passedLabel)Rival"
+        sportImageLabel.image = UIImage(named: titleImageText)
         parseData()
     }
     
