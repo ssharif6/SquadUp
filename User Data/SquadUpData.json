@@ -628,7 +628,37 @@
 			"posts": ["11111112", "11111113", "11111114", "11111115"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note1", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -645,7 +675,37 @@
 			"posts": ["11111116", "11111117", "11111118"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -662,7 +722,37 @@
 			"posts": ["11111119"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -679,7 +769,37 @@
 			"posts": ["11111120", "11111121", "11111122", "11111123", "11111124"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note11", "note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -696,7 +816,37 @@
 			"posts": ["11111125", "11111126"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note24", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "1",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -713,7 +863,37 @@
 			"posts": ["11111127", "11111128", "11111129", "11111130", "11111131", "11111132"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note12", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -730,7 +910,37 @@
 			"posts": ["11111133", "11111134", "11111135"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note17", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -747,7 +957,37 @@
 			"posts": ["11111136", "11111137", "11111138"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note15", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -764,7 +1004,37 @@
 			"posts": ["11111139", "11111140", "11111141", "11111142"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note25", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -781,7 +1051,37 @@
 			"posts": ["11111143", "11111144", "11111145", "11111146", "11111147", "11111148"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note16", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -798,7 +1098,37 @@
 			"posts": ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2"],
 			"friends": [],
@@ -815,7 +1145,37 @@
 			"posts": ["11111155", "11111156", "11111157", "11111158", "11111159"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -832,7 +1192,37 @@
 			"posts": ["11111160", "11111161"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -849,7 +1239,37 @@
 			"posts": ["11111162", "11111163", "11111164"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -866,7 +1286,37 @@
 			"posts": ["11111165", "11111166"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -883,7 +1333,37 @@
 			"posts": ["11111167", "11111168", "11111169", "11111170", "11111171"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note8", "note9", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -900,7 +1380,37 @@
 			"posts": ["11111172", "11111173", "11111174"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "1",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -917,7 +1427,37 @@
 			"posts": ["11111175", "11111176", "11111177", "11111178", "11111179", "11111180", "11111181", "11111182", "11111183", "11111184"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note13", "note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -934,7 +1474,37 @@
 			"posts": ["11111185", "11111186"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -951,7 +1521,37 @@
 			"posts": ["11111187", "11111188", "11111189", "11111190"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -968,7 +1568,37 @@
 			"posts": ["11111191", "11111192", "11111193", "11111194", "11111195"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note18", "note3", "note4", "note6", "note8", "note0", "note9"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -985,7 +1615,37 @@
 			"posts": ["11111196"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1002,7 +1662,37 @@
 			"posts": ["11111197"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1019,7 +1709,37 @@
 			"posts": ["11111198", "11111199", "11111200", "11111201", "11111202"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1036,7 +1756,37 @@
 			"posts": ["11111203", "11111204"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "1",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1053,7 +1803,37 @@
 			"posts": ["11111205", "11111206", "11111207", "11111208", "11111209", "11111210"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6", "note8", "note9", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "1",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1070,7 +1850,37 @@
 			"posts": ["11111211", "11111212", "11111213"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1087,7 +1897,37 @@
 			"posts": ["11111214", "11111215", "11111216"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1104,7 +1944,37 @@
 			"posts": ["11111217", "11111218", "11111219", "11111220"],
 			"provider": "Email",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1120,7 +1990,37 @@
 			"profileImageUrl": "",
 			"posts": ["11111221", "11111222", "11111223", "11111224", "11111225", "11111226"],
 			"provider": "Email",
-			"notifications": ["note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1137,7 +2037,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1154,7 +2084,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1171,7 +2131,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1188,7 +2178,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note14", "note3", "note4", "note6", "note8", "note0", "note9"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1205,7 +2225,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1222,7 +2272,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note2", "note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1239,7 +2319,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note26", "note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1256,7 +2366,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1273,7 +2413,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "1",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1290,7 +2460,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1307,7 +2507,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note19", "note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1324,7 +2554,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1341,7 +2601,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note23", "note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1358,7 +2648,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1375,7 +2695,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "4",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1392,7 +2742,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note5", "note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1409,7 +2789,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1426,7 +2836,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
-			"notifications": ["note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1443,7 +2883,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1460,7 +2930,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1477,7 +2977,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1494,7 +3024,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4", "note6", "note8", "note0", "note9", "note10"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1511,7 +3071,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1528,7 +3118,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1545,7 +3165,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6", "note8"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1562,7 +3212,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1579,7 +3259,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1596,7 +3306,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1613,7 +3353,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
-			"notifications": ["note3", "note4", "note6"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
@@ -1630,7 +3400,37 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
-			"notifications": ["note7", "note3", "note4", "note6", "note8", "note0"],
+			"notifications": [{
+				"notificationMessage": "Renee has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Douglas has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+				"sportChallenge": "Basketball"
+			}, {
+				"notificationMessage": "Ted has sent you a Friend Request!",
+				"notificationType": "friendRequest",
+				"sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+				"sportChallenge": "None"
+			}, {
+				"notificationMessage": "Calvin has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+				"sportChallenge": "Badminton"
+			}, {
+				"notificationMessage": "Eunice has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"sportChallenge": "Tennis"
+			}, {
+				"notificationMessage": "Tommie has challenged you!",
+				"notificationType": "Challenge",
+				"sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+				"sportChallenge": "Soccer"
+			}],
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
