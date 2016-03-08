@@ -79,7 +79,7 @@ class ChallengeOptionsViewController: UIViewController {
             = [
                 "provider": self.user.provider, "id": self.user._userId, "rating": self.user.rating, "gender": self.user.gender, "firstName": self.user.firstName,"lastName": self.user.lastName, "posts": self.user.posts,"profileImageUrl": self.user.profileImageURL, "notifications": [], "recentActivity": self.user.recentActivity, "rivals": self.user.rivals
             ]
-            let post = DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").childByAutoId()
+            let post = DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").childByAppendingPath(self.user.userKey)
             post.setValue(userToUse)
     
     }
