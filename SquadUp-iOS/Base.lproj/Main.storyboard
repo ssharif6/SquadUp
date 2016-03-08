@@ -1939,7 +1939,7 @@
         <!--Rival-->
         <scene sceneID="alJ-nb-J95">
             <objects>
-                <viewController id="FjK-5L-Sl2" sceneMemberID="viewController">
+                <viewController id="FjK-5L-Sl2" customClass="RivalsMessagesViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0N-WN-5Qa"/>
                         <viewControllerLayoutGuide type="bottom" id="CdJ-ZJ-Fpy"/>

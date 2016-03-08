@@ -19,6 +19,7 @@ class ChallengeOptionsViewController: UIViewController {
     var passedIndex: Int!
     var passedNotificationsArray = [NotificationModel]()
     var didNotificationsLoad: String!
+    var user: UserModel!
 
     
     override func viewDidLoad() {
@@ -50,6 +51,7 @@ class ChallengeOptionsViewController: UIViewController {
                         print(snap.key)
                         if(challenger == snap.key) {
                             let user = UserModel(userKey: snap.key, dictionary: userDict)
+                            self.user = user
                             print("Notification Person Found")
                             self.nameLabel.text = user.firstName + " " + user.lastName
                             let userUrl = NSURL(string: user.profileImageURL)
@@ -72,23 +74,18 @@ class ChallengeOptionsViewController: UIViewController {
     
     
     @IBAction func CheckmarkClicked(sender: AnyObject) {
-        
+        DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").observeEventType(.Value, withBlock: { snapshot in
+            let userToUse: Dictionary<String, AnyObject>
+            = [
+                "provider": self.user.provider, "id": self.user._userId, "rating": self.user.rating, "gender": self.user.gender, "firstName": self.user.firstName,"lastName": self.user.lastName, "posts": self.user.posts,"profileImageUrl": self.user.profileImageURL, "notifications": self.user.notifications, "recentActivity": self.user.recentActivity, "rivals": self.user.rivals
+            ]
+            DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").setValue(userToUse)
+        })
     }
 
     @IBAction func xmarkChecked(sender: AnyObject) {
         self.passedNotificationsArray.removeAtIndex(passedIndex)
-//        var notificationsDict = [Dictionary<String, AnyObject>]()
-//        for (var i = 0; i < self.passedNotificationsArray.count; i++) {
-//            let note = self.passedNotificationsArray[i]
-//            let notification: Dictionary<String, AnyObject> = [
-//                "notificationMessage": "\(note.notificationString)",
-//                "notificationType": "\(note.notificationType)",
-//                "sentFromID": "\(note.sentFromId)",
-//                "sportChallenge": note.sportChallenge
-//            ]
-//            notificationsDict.append(notification)
-//        }
-//        DataService.ds.REF_USER_CURRENT.childByAppendingPath("notifications").setValue(notificationsDict)
+        
         performSegueWithIdentifier("OptionsToNotifications", sender: nil)
     }
     
