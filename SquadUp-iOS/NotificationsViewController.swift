@@ -100,13 +100,8 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let notification = notifications[indexPath.row]
-        if notification.notificationType == "Challenge" {
-            self.notificationToPass = notification
-            performSegueWithIdentifier("ChallengeNotification", sender: nil)
-        } else if notification.notificationType == "friendRequest" {
-            
-        }
-        
+        self.notificationToPass = notification
+        performSegueWithIdentifier("ChallengeNotification", sender: nil)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
