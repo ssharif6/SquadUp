@@ -75,7 +75,8 @@ class RivalScreenViewController: UIViewController {
         let notification: Dictionary<String, AnyObject> = [
             "notificationMessage": "\(name) has challenged you!",
             "notificationType": "challenge",
-            "sentFromID": String(self.currentPerson.userKey)
+            "sentFromID": String(self.currentPerson.userKey),
+            "sportChallenge": passedSport
         ]
         
         let notificationPost = DataService.ds.REF_USERS.childByAppendingPath(key).childByAppendingPath("notifications").childByAutoId()

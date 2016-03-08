@@ -15,6 +15,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     
     var notifications = [NotificationModel]()
     var notificationDeletedIndexPath: NSIndexPath? = nil
+    var notificationToPass: NotificationModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,11 +97,25 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let notification = notifications[indexPath.row]
+        if notification.notificationType == "Challenge" {
+            self.notificationToPass = notification
+            performSegueWithIdentifier("ChallengeNotification", sender: nil)
+        } else if notification.notificationType == "friendRequest" {
+            
+        }
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notifications.count
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ChallengeNotification" {
+            let vc = segue.destinationViewController as! ChallengeOptionsViewController
+            vc.notificationPassed = self.notificationToPass
+        }
     }
     
 }

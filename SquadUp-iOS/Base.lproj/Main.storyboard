@@ -1118,7 +1118,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="401" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kua-UE-Bx4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kua-UE-Bx4">
                                                     <rect key="frame" x="8" y="17" width="66" height="66"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNq-2G-P0r">
@@ -1936,7 +1936,69 @@
             </objects>
             <point key="canvasLocation" x="2349" y="265"/>
         </scene>
-        <!--Notifications-->
+        <!--Challenge Options View Controller-->
+        <scene sceneID="TMo-uS-kqN">
+            <objects>
+                <viewController id="CIx-h8-SqH" customClass="ChallengeOptionsViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XbO-Nf-9wk"/>
+                        <viewControllerLayoutGuide type="bottom" id="HdB-dJ-Z5M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z6R-6V-wO0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notificationBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dgg-4h-KFU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IT3-St-BlD">
+                                <rect key="frame" x="82" y="156" width="250" height="250"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-51-HiJ">
+                                <rect key="frame" x="277" y="348" width="75" height="75"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shaheen Sharifian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kp-ra-e6t">
+                                <rect key="frame" x="63" y="431" width="289" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prr-Ct-XSZ">
+                                <rect key="frame" x="82" y="585" width="70" height="64"/>
+                                <state key="normal" title="Button" image="checkmarkChallengeIcon"/>
+                                <connections>
+                                    <action selector="CheckmarkClicked:" destination="CIx-h8-SqH" eventType="touchUpInside" id="04e-I0-FwU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyL-Vp-qda">
+                                <rect key="frame" x="262" y="585" width="70" height="64"/>
+                                <state key="normal" title="Button" image="xMarkChallengeIcon"/>
+                                <connections>
+                                    <action selector="xmarkChecked:" destination="CIx-h8-SqH" eventType="touchUpInside" id="xCG-UA-Cbv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have been Challenged By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-RV-33N">
+                                <rect key="frame" x="20" y="81" width="374" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="jbQ-RV-33N" id="m1I-Dm-nPK"/>
+                        <outlet property="nameLabel" destination="9kp-ra-e6t" id="7EX-6u-42I"/>
+                        <outlet property="profileImage" destination="IT3-St-BlD" id="g9P-ww-qRd"/>
+                        <outlet property="sportImage" destination="ppC-51-HiJ" id="0KZ-CP-Xl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POY-gJ-0dJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="-652"/>
+        </scene>
+        <!--Notifications View Controller-->
         <scene sceneID="CIF-IN-6UY">
             <objects>
                 <viewController id="Rqa-5f-bUK" customClass="NotificationsViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -1952,7 +2014,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-2T-AUG">
-                                <rect key="frame" x="0.0" y="142" width="414" height="545"/>
+                                <rect key="frame" x="0.0" y="162" width="414" height="525"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="122" id="QqK-EO-Bfp" customClass="NotificaionTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
@@ -2000,20 +2062,21 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notificationTitle" translatesAutoresizingMaskIntoConstraints="NO" id="qu2-IC-jCV">
-                                <rect key="frame" x="87" y="46" width="240" height="47"/>
+                                <rect key="frame" x="87" y="72" width="240" height="47"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notificationIcon2" id="Lyh-6u-amy"/>
+                    <navigationItem key="navigationItem" id="Tde-Ld-sNU"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="notificationTableView" destination="WFU-2T-AUG" id="H60-GF-cpC"/>
+                        <segue destination="CIx-h8-SqH" kind="show" identifier="ChallengeNotification" id="uby-uL-hlg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbt-5z-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-447"/>
+            <point key="canvasLocation" x="2751" y="-447"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ll-14-jG3">
@@ -2029,12 +2092,12 @@
                         <segue destination="YvJ-S3-ENb" kind="relationship" relationship="viewControllers" id="VGY-WA-mgN"/>
                         <segue destination="2tR-Jn-Oee" kind="relationship" relationship="viewControllers" id="9ht-77-zud"/>
                         <segue destination="7n0-qs-pBs" kind="relationship" relationship="viewControllers" id="N3K-5J-2vQ"/>
-                        <segue destination="Rqa-5f-bUK" kind="relationship" relationship="viewControllers" id="jcj-Q8-o3X"/>
+                        <segue destination="f9L-B1-xuY" kind="relationship" relationship="viewControllers" id="jcj-Q8-o3X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5Q-SZ-f7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="-536"/>
+            <point key="canvasLocation" x="3240" y="-536"/>
         </scene>
         <!--Find a Game-->
         <scene sceneID="AGy-dk-G83">
@@ -2053,7 +2116,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuR-aa-nhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750" y="-371"/>
+            <point key="canvasLocation" x="4282" y="-371"/>
         </scene>
         <!--Profile-->
         <scene sceneID="4ZD-73-akx">
@@ -2077,6 +2140,25 @@
             </objects>
             <point key="canvasLocation" x="3253" y="349"/>
         </scene>
+        <!--Notifications-->
+        <scene sceneID="zH1-8i-slV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f9L-B1-xuY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notificationIcon2" id="Lyh-6u-amy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cxL-Uy-mAB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rqa-5f-bUK" kind="relationship" relationship="rootViewController" id="nGj-28-kZy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6I-dA-dce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2219" y="-447"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Badminton" width="936" height="825"/>
@@ -2095,6 +2177,7 @@
         <image name="basketballAndWhistle" width="1400" height="1050"/>
         <image name="boxingGlove" width="495" height="583"/>
         <image name="cameraWhite" width="625" height="513"/>
+        <image name="checkmarkChallengeIcon" width="670" height="670"/>
         <image name="chooseASport" width="977" height="137"/>
         <image name="chooseASportPic" width="1080" height="1920"/>
         <image name="defaultProfile" width="334" height="400"/>
@@ -2124,10 +2207,11 @@
         <image name="soccerTableView" width="1920" height="1080"/>
         <image name="squadUpTitle" width="464" height="110"/>
         <image name="startLobbyBackground" width="653" height="859"/>
+        <image name="xMarkChallengeIcon" width="670" height="670"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dmH-np-esF"/>
         <segue reference="bAx-IJ-bqG"/>
+        <segue reference="dmH-np-esF"/>
         <segue reference="SeC-SE-gDC"/>
         <segue reference="6qs-Ld-BXv"/>
     </inferredMetricsTieBreakers>

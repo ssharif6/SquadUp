@@ -35,6 +35,7 @@
 		8572F4D11C86AFEF00A3D54E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572F4D01C86AFEF00A3D54E /* RoundButton.swift */; };
 		857DA4EE1C79A5A300B0AEA8 /* RecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DA4ED1C79A5A300B0AEA8 /* RecentActivityViewController.swift */; };
 		857DA4F01C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */; };
+		858E2DCE1C8EC0F000F11359 /* ChallengeOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858E2DCD1C8EC0F000F11359 /* ChallengeOptionsViewController.swift */; };
 		85A3C29B1C536B5A00EF39EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */; };
 		85A3C29D1C536B5A00EF39EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A3C29C1C536B5A00EF39EA /* ViewController.swift */; };
 		85A3C2A01C536B5A00EF39EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A3C29E1C536B5A00EF39EA /* Main.storyboard */; };
@@ -118,6 +119,7 @@
 		8572F4D01C86AFEF00A3D54E /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		857DA4ED1C79A5A300B0AEA8 /* RecentActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivityViewController.swift; sourceTree = "<group>"; };
 		857DA4EF1C7A7B5200B0AEA8 /* ChooseSportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSportsTableViewCell.swift; sourceTree = "<group>"; };
+		858E2DCD1C8EC0F000F11359 /* ChallengeOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeOptionsViewController.swift; sourceTree = "<group>"; };
 		85A3C2971C536B5A00EF39EA /* SquadUp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SquadUp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A3C29A1C536B5A00EF39EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85A3C29C1C536B5A00EF39EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				8549C16E1C8ABA89009BA652 /* NotificationsViewController.swift */,
 				85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */,
 				8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */,
+				858E2DCD1C8EC0F000F11359 /* ChallengeOptionsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
 				85A5E0CA1C7FEFB700B2B5F8 /* PostCellView.swift in Sources */,
 				85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */,
+				858E2DCE1C8EC0F000F11359 /* ChallengeOptionsViewController.swift in Sources */,
 				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
 				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
 				855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */,

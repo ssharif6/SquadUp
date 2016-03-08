@@ -15,6 +15,7 @@ class NotificationModel {
     private var _sentFrom: UserModel!
     private var _notificationKey: String!
     private var _sentFromID: String!
+    private var _sportChallenge: String!
     var user: UserModel!
 
     
@@ -28,6 +29,10 @@ class NotificationModel {
     
     var sentFromId: String {
         return _sentFromID
+    }
+    
+    var sportChallenge: String {
+        return _sportChallenge
     }
     
 //    var sentFrom: UserModel {
@@ -58,6 +63,9 @@ class NotificationModel {
         }
         if let sentFromId = dictionary["sentFromID"] {
             _sentFromID = sentFromId as? String
+        }
+        if let sportChallenge = dictionary["sportChallenge"] {
+            _sportChallenge = sportChallenge as? String
         }
     }
     

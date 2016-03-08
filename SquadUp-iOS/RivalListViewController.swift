@@ -23,9 +23,9 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var sportBackgroundText = "rivalScreen\(passedLabel)Back"
+        let sportBackgroundText = "rivalScreen\(passedLabel)Back"
         backgroundImage.image = UIImage(named: sportBackgroundText)
-        var titleImageText = "chooseA\(passedLabel)Rival"
+        let titleImageText = "chooseA\(passedLabel)Rival"
         sportImageLabel.image = UIImage(named: titleImageText)
         parseData()
     }
@@ -44,7 +44,6 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
                         print(user.firstName)
                         print(user.sports)
                         if user.sports.contains(self.passedLabel) {
-                            print("WOOT")
                             asdf.append(user)
                         }
                     }

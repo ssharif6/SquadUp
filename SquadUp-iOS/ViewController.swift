@@ -77,31 +77,50 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         let posts = []
                         let sports = []
                         var notifications = [Dictionary<String, AnyObject>]()
-
+                        
                         let notification1: Dictionary<String, AnyObject> = [
-                            "notificationMessage": "Nelson has challenged you!",
-                            "notificationType": "challenge",
-                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                            "notificationMessage": "Renee has challenged you!",
+                            "notificationType": "Challenge",
+                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629",
+                            "sportChallenge": "Tennis"
                         ]
                         let notification2: Dictionary<String, AnyObject> = [
-                            "notificationMessage": "Zilai has challenged you!",
-                            "notificationType": "challenge",
-                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                            "notificationMessage": "Douglas has challenged you!",
+                            "notificationType": "Challenge",
+                            "sentFromID": "06f11c84-c68e-43a6-99c0-cde53399946f",
+                            "sportChallenge": "Basketball"
                         ]
-                        let notification3: Dictionary<String, AnyObject> = [
-                            "notificationMessage": "Alina has challenged you!",
-                            "notificationType": "challenge",
-                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                        let notification6: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Tommie has challenged you!",
+                            "notificationType": "Challenge",
+                            "sentFromID": "0b11d418-285b-4b3a-aadd-04d57ec98043",
+                            "sportChallenge": "Soccer"
                         ]
                         let notification4: Dictionary<String, AnyObject> = [
-                            "notificationMessage": "Max has challenged you!",
-                            "notificationType": "challenge",
-                            "sentFromID": "0111ce31-04c5-4213-8b62-af233bb3b629"
+                            "notificationMessage": "Calvin has challenged you!",
+                            "notificationType": "Challenge",
+                            "sentFromID": "100d0a06-5791-4865-96bf-3682dcd7922d",
+                            "sportChallenge": "Badminton"
                         ]
+                        let notification5: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Eunice has challenged you!",
+                            "notificationType": "Challenge",
+                            "sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+                            "sportChallenge": "Tennis"
+                        ]
+                        let notification3: Dictionary<String, AnyObject> = [
+                            "notificationMessage": "Ted has sent you a Friend Request!",
+                            "notificationType": "friendRequest",
+                            "sentFromID": "d3d9d8ff-10d7-4476-adcf-23af9c8ebb42",
+                            "sportChallenge": "None"
+                        ]
+                        
                         notifications.append(notification1)
                         notifications.append(notification2)
                         notifications.append(notification3)
                         notifications.append(notification4)
+                        notifications.append(notification5)
+                        notifications.append(notification6)
                         
                         var recentActivity = [String]()
                         recentActivity.append("game10")
