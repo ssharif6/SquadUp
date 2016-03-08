@@ -9,8 +9,10 @@
 import UIKit
 import Firebase
 import Cosmos
+import MapKit
 
 class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var lobbyNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var addressButton: UIButton!
@@ -18,7 +20,6 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var team1TableView: UITableView!
     @IBOutlet weak var teamSegmentedControl: UISegmentedControl!
     @IBOutlet weak var joinButton: UIButton!
-    @IBOutlet weak var ratingView: UIView!
     
     var lobbyModelObject: LobbyGameModel!
     var teamOneArray = [UserModel]()
@@ -28,6 +29,8 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     var team1: Bool!
     var currentUser: UserModel!
     var fromRecentActivity: Bool! = false
+    var coords: CLLocationCoordinate2D?
+    var placemarkPassed: MKPlacemark?
     
     
     override func viewDidAppear(animated: Bool) {
@@ -52,7 +55,10 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         lobbyNameLabel.text = lobbyModelObject.lobbyName
         lobbyNameLabel.textAlignment = .Center
         descriptionLabel.text = lobbyModelObject.description
-        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let convertedDate = dateFormatter.dateFromString(lobbyModelObject.date)
+        timeLabel.text = dateFormatter.stringFromDate(convertedDate!)
         addressButton.setTitle(lobbyModelObject.address, forState: .Normal)
     }
     
@@ -167,7 +173,9 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         self.team1TableView.reloadData()
         
     }
-    
+    @IBAction func addressClicked(sender: AnyObject) {
+        
+    }
 }
 
 

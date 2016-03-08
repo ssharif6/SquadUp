@@ -20,6 +20,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     var descriptionPassed: String = ""
     var numPlayersPassed: String = ""
     var sportPassed: String!
+    var placemarkToPass: MKPlacemark?
     
     
     override func viewDidLoad() {
@@ -119,6 +120,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
     }
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        self.placemarkToPass = MKPlacemark(coordinate: view.annotation!.coordinate, addressDictionary: nil)
         performSegueWithIdentifier(SEGUE_MAP_TO_CREATE_LOBBY, sender: nil)
     }
     
@@ -186,7 +188,6 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
             vc.passedDescription = self.descriptionPassed
             vc.numPlayersPassed = self.numPlayersPassed
             vc.sportPassed = self.sportPassed
-
         }
     }
     

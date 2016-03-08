@@ -920,12 +920,9 @@
                                     <action selector="frisbeeClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="aW5-Jb-Dei"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAC-c8-8ar">
-                                <rect key="frame" x="104" y="78" width="207" height="38"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chooseASport" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-04-kdy">
+                                <rect key="frame" x="87" y="83" width="240" height="45"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1021,7 +1018,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="at9-xG-xRp">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="-16" y="20" width="446" height="716"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-Sq-UEe">
                                 <rect key="frame" x="10" y="151" width="394" height="528"/>
@@ -1292,12 +1289,9 @@
                                     <action selector="frisbeeClicked:" destination="evr-DG-UF3" eventType="touchUpInside" id="hrw-gG-0v5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blT-vl-59P">
-                                <rect key="frame" x="104" y="78" width="207" height="38"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chooseASport" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-Eb-5sH">
+                                <rect key="frame" x="87" y="81" width="240" height="45"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1753,24 +1747,6 @@
                                     <action selector="controlChanged:" destination="wUR-xT-2ho" eventType="valueChanged" id="eu1-Kr-ymj"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basketball 4 v 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-M8-Ub0">
-                                <rect key="frame" x="95" y="79" width="225" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YMCA Basketball Gym #2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm4-0M-HBo">
-                                <rect key="frame" x="20" y="127" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-tq-o2Q">
-                                <rect key="frame" x="7" y="147" width="401" height="30"/>
-                                <state key="normal" title="14230 Bel-Red Road, Bellevue, WA">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infoBox" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-w7-tkT">
                                 <rect key="frame" x="20" y="79" width="374" height="113"/>
                             </imageView>
@@ -1781,6 +1757,34 @@
                                     <action selector="joinTeam:" destination="wUR-xT-2ho" eventType="touchUpInside" id="MOV-EJ-mOC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basketball 4 v 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-M8-Ub0">
+                                <rect key="frame" x="95" y="79" width="225" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YMCA Basketball Gym #2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm4-0M-HBo">
+                                <rect key="frame" x="20" y="118" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-tq-o2Q">
+                                <rect key="frame" x="25" y="135" width="359" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="14230 Bel-Red Road, Bellevue, WA">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addressClicked:" destination="wUR-xT-2ho" eventType="touchUpInside" id="QgW-nr-zs1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4:30 Sunday Jan 22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-0z-4hQ">
+                                <rect key="frame" x="77" y="162" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.2666666667" green="0.54117647059999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.78431372549019607" green="0.90196078431372551" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1793,6 +1797,7 @@
                         <outlet property="team1ContainerView" destination="RCu-UL-YIt" id="px5-H3-nw1"/>
                         <outlet property="team1TableView" destination="kN5-A6-lDj" id="eNk-yo-vkV"/>
                         <outlet property="teamSegmentedControl" destination="gQT-wM-SRs" id="8SZ-zJ-tpz"/>
+                        <outlet property="timeLabel" destination="Lbb-0z-4hQ" id="ely-pn-Xaz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3V-R6-sah" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2090,6 +2095,7 @@
         <image name="basketballAndWhistle" width="1400" height="1050"/>
         <image name="boxingGlove" width="495" height="583"/>
         <image name="cameraWhite" width="625" height="513"/>
+        <image name="chooseASport" width="977" height="137"/>
         <image name="chooseASportPic" width="1080" height="1920"/>
         <image name="defaultProfile" width="334" height="400"/>
         <image name="feedBackground-1" width="1080" height="1920"/>
