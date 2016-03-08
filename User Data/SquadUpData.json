@@ -1367,7 +1367,7 @@
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"100d0a06-5791-4865-96bf-3682dcd7922d": {
 			"Sports": ["Soccer", "Football", "Badminton", "Tennis"],
@@ -2870,7 +2870,7 @@
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"e93b23c4-901e-4ebc-a9d7-5fa0f1173e83": {
 			"Sports": ["Football"],
@@ -3011,7 +3011,7 @@
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"87630f3f-81a7-47fe-8fcf-7455138ecdf3": {
 			"Sports": ["Frisbee", "Soccer", "Tennis", "Football"],
@@ -3105,7 +3105,7 @@
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"1c80708b-425d-433b-abcd-eaa896d56bf3": {
 			"Sports": ["Tennis"],
@@ -3152,7 +3152,7 @@
 			"rating": "0",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"3410e0e5-e5bc-488b-b891-d18713a61d13": {
 			"Sports": ["Frisbee", "Baseball"],
@@ -3293,7 +3293,7 @@
 			"rating": "2",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"756ae550-5080-45d0-b457-f4fda074bda5": {
 			"Sports": ["Tennis"],
@@ -3340,7 +3340,7 @@
 			"rating": "3",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"b65b553b-397e-4c77-9ff4-cd9d501978be": {
 			"Sports": ["Soccer"],
@@ -3387,7 +3387,7 @@
 			"rating": "5",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		},
 		"184fa9ac-3924-4f31-befe-b68efee57472": {
 			"Sports": ["Soccer", "Badminton", "Tennis", "Frisbee"],
@@ -3451,7 +3451,7 @@
 			"rating": "",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
 			"friends": [],
-			"recentActivity": []
+			"recentActivity": ["game1"]
 		}
 	}
 }
