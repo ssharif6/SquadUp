@@ -16,15 +16,18 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     var notifications = [NotificationModel]()
     var notificationDeletedIndexPath: NSIndexPath? = nil
     var notificationToPass: NotificationModel!
-    static var imageCache = NSCache()
+    var index: Int!
+    var didLoadAlready: String!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         parseNotificationData()
+        
     }
     
     func parseNotificationData() {
+        if didLoadAlready != "Loaded" {
         var asdf = [NotificationModel]()
         DataService.ds.REF_USER_CURRENT.childByAppendingPath("notifications").observeEventType(.Value, withBlock: { snapshot in
             asdf = []
@@ -40,6 +43,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
             self.notifications = asdf
             self.notificationTableView.reloadData()
         })
+        }
     }
     
     func cancelDeletedNotification(alertAction: UIAlertAction!) {
@@ -101,6 +105,8 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let notification = notifications[indexPath.row]
         self.notificationToPass = notification
+        self.index = indexPath.row
+        self.didLoadAlready = "Loaded"
         performSegueWithIdentifier("ChallengeNotification", sender: nil)
     }
     
@@ -112,6 +118,9 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
         if segue.identifier == "ChallengeNotification" {
             let vc = segue.destinationViewController as! ChallengeOptionsViewController
             vc.notificationPassed = self.notificationToPass
+            vc.passedIndex = self.index
+            vc.passedNotificationsArray = self.notifications
+            vc.didNotificationsLoad = self.didLoadAlready
         }
     }
     

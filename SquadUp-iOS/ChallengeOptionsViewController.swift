@@ -16,6 +16,10 @@ class ChallengeOptionsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var sportImage: UIImageView!
     var notificationPassed: NotificationModel!
+    var passedIndex: Int!
+    var passedNotificationsArray = [NotificationModel]()
+    var didNotificationsLoad: String!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +72,32 @@ class ChallengeOptionsViewController: UIViewController {
     
     
     @IBAction func CheckmarkClicked(sender: AnyObject) {
+        
     }
 
     @IBAction func xmarkChecked(sender: AnyObject) {
+        self.passedNotificationsArray.removeAtIndex(passedIndex)
+//        var notificationsDict = [Dictionary<String, AnyObject>]()
+//        for (var i = 0; i < self.passedNotificationsArray.count; i++) {
+//            let note = self.passedNotificationsArray[i]
+//            let notification: Dictionary<String, AnyObject> = [
+//                "notificationMessage": "\(note.notificationString)",
+//                "notificationType": "\(note.notificationType)",
+//                "sentFromID": "\(note.sentFromId)",
+//                "sportChallenge": note.sportChallenge
+//            ]
+//            notificationsDict.append(notification)
+//        }
+//        DataService.ds.REF_USER_CURRENT.childByAppendingPath("notifications").setValue(notificationsDict)
+        performSegueWithIdentifier("OptionsToNotifications", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "OptionsToNotifications" {
+            let vc = segue.destinationViewController as! NotificationsViewController
+            vc.notifications = self.passedNotificationsArray
+            vc.didLoadAlready = "Loaded"
+        }
     }
     
 

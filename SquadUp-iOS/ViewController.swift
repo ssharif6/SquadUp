@@ -125,13 +125,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         var recentActivity = [String]()
                         recentActivity.append("game10")
                         recentActivity.append("game11")
-                        
+                        var rivals = [String]()
+                        rivals.append("4424d20d-bdb5-4f34-9e13-fbbcf707fcae")
                         let facebookID = AuthData.providerData["id"]
                         print(facebookID)
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]
                         print(profileImageUrlUser)
-                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity]
-                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity)
+                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity, "rivals": rivals]
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity, rivals: rivals)
                         CURRENT_USER = currentUser
                         let defaults = NSUserDefaults.standardUserDefaults()
                         let UserModelKey = "userModelKey"

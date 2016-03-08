@@ -28,7 +28,7 @@ class SportCell: UITableViewCell {
     func configureCell(sport: String!) {
         if(sport == "Basketball") {
             sportLabel.text = sport
-            sportImage.image = UIImage(named: "basketballAndWhistle")
+            sportImage.image = UIImage(named: "Basketball")
         } else if (sport == "Soccer") {
             sportLabel.text = sport
             sportImage.image = UIImage(named: "Soccer")

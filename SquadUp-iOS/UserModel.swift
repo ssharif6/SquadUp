@@ -23,9 +23,14 @@ class UserModel: NSObject {
     private var _rating: String!
     private var _notifications: [NotificationModel]!
     private var _recentActivity: [String]!
+    private var _rivals: [String]!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var rivals: [String] {
+        return _rivals
     }
     
     var recentActivity: [String] {
@@ -68,7 +73,7 @@ class UserModel: NSObject {
         return _userKey
     }
     
-    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String, recentActivity: [String]) {
+    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String, recentActivity: [String], rivals: [String]) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
@@ -79,6 +84,7 @@ class UserModel: NSObject {
         _rating = rating
         _profileImageURL = profileImageUrl
         _recentActivity = recentActivity
+        _rivals = rivals
     }
     
     required init(coder decoder: NSCoder) {
@@ -92,6 +98,7 @@ class UserModel: NSObject {
         _profileImageURL = decoder.decodeObjectForKey("profileImageKey") as? String
         _rating = decoder.decodeObjectForKey("ratingKey") as? String
         _recentActivity = decoder.decodeObjectForKey("recentActivityKey") as? [String]
+        _rivals = decoder.decodeObjectForKey("rivalsKey") as? [String]
         super.init()
     }
     
@@ -105,6 +112,7 @@ class UserModel: NSObject {
         aCoder.encodeObject(_profileImageURL, forKey: "profileImageKey")
         aCoder.encodeObject(_rating, forKey: "ratingKey")
         aCoder.encodeObject(_recentActivity, forKey: "recentActivityKey")
+        aCoder.encodeObject(_rivals, forKey: "rivalsKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -138,6 +146,9 @@ class UserModel: NSObject {
         }
         if let recentActivity = dictionary["recentActivity"] as? [String] {
             self._recentActivity = recentActivity
+        }
+        if let rivals = dictionary["rivals"] as? [String] {
+            self._rivals = rivals
         }
     }
     
