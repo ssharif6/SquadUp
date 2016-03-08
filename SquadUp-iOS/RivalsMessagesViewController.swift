@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 
-class RivalsMessagesViewController: UIViewController {
+class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var idArray = [String]()
+    var idArray = [UserModel]()
+    @IBOutlet weak var rivalsTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +20,14 @@ class RivalsMessagesViewController: UIViewController {
     }
     func parseData() {
         DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").observeEventType(.Value, withBlock: { snapshot in
-            var asdf = [String]()
+            var asdf = [UserModel]()
 
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
                 for snap in snapshots {
-                    if let rivalsDict = snap.value as? Dictionary<String, AnyObject> {
-                        let value = snap.value as! String
-                        print(value)
-                        print("DUCK FUCKER")
-                        asdf.append(value)
-                        
+                    if let userDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
+                        let user = UserModel(userKey: key, dictionary: userDict)
+                        asdf.append(user)
                     }
                 }
             }
@@ -36,5 +35,17 @@ class RivalsMessagesViewController: UIViewController {
         })
     }
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("RivalCell")
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return idArray.count
+    }
     
 }
