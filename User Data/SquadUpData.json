@@ -613,7 +613,7 @@
 		"note": {
 			"notificationMessage": "",
 			"notificationType": "",
-			"sentFromID"
+			"sentFromID": ""
 		}
 	},
 	"users": {
