@@ -22,13 +22,19 @@ class PublicProfileViewController: UIViewController {
     @IBOutlet weak var fifthStar: UIImageView!
     @IBOutlet weak var profileName: UILabel!
     
+    @IBOutlet weak var friendRequestLabel: UILabel!
     var userPassed: String!
     var imageUrlPassed: String!
     var user: UserModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.friendRequestLabel.hidden = true
+        profileImage.layer.borderWidth = 0.5
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.borderColor = UIColor.blackColor().CGColor
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+        profileImage.clipsToBounds = true
         var asdf: UserModel!
         DataService.ds.REF_USERS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -54,6 +60,7 @@ class PublicProfileViewController: UIViewController {
     
     @IBOutlet weak var friendButton: UIButton!
     @IBAction func addFriendPressed(sender: AnyObject) {
+        friendRequestLabel.hidden = false
         // post to firebase
         let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
         let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel

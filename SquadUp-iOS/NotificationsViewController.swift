@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class NotificationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,6 +19,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     var notificationToPass: NotificationModel!
     var index: Int!
     var didLoadAlready: String!
+    static var imageCache = NSCache()
 
     
     override func viewDidLoad() {
@@ -99,6 +101,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("NotificationCell") as! NotificaionTableViewCell
         cell.configureCell(notifications[indexPath.row])
+
         return cell
     }
     

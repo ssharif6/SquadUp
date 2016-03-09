@@ -81,12 +81,12 @@ class ChallengeOptionsViewController: UIViewController {
             ]
             let post = DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").childByAppendingPath(self.user.userKey)
             post.setValue(userToUse)
-    
+        performSegueWithIdentifier("OptionsToRivals", sender: nil)
+
     }
 
     @IBAction func xmarkChecked(sender: AnyObject) {
         self.passedNotificationsArray.removeAtIndex(passedIndex)
-        
         performSegueWithIdentifier("OptionsToNotifications", sender: nil)
     }
     

@@ -11,7 +11,6 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     
-    @IBOutlet weak var coverImage: UIImageView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var recentHistoryButton: UIButton!
     @IBOutlet weak var moreInfoButton: UIButton!
@@ -28,7 +27,11 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
+        profileImage.layer.borderWidth = 0.5
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.borderColor = UIColor.blackColor().CGColor
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+        profileImage.clipsToBounds = true
         
     }
     

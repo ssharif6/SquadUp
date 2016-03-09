@@ -36,18 +36,27 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidAppear(animated: Bool) {
         team1TableView.dataSource = self
         team1TableView.delegate = self
+        if fromRecentActivity == true {
+            joinButton.hidden = true
+        }
         getUsers()
         viewDidLoad()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if fromRecentActivity == true {
+            joinButton.hidden = true
+        }
         displayLobbyInfo()
         team1TableView.dataSource = self
         team1TableView.delegate = self
         getUsers()
         
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        fromRecentActivity = false
     }
 
     
