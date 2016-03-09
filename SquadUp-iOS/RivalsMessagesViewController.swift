@@ -40,9 +40,10 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RivalCell")
-        cell?.textLabel?.text = idArray[indexPath.row].firstName
-        return cell!
+        let cell = tableView.dequeueReusableCellWithIdentifier("RivalCell") as! RivalsTableViewCell
+        let user = idArray[indexPath.row]
+        cell.configureCell(user)
+        return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

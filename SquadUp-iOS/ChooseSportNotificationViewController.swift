@@ -12,7 +12,7 @@ class ChooseSportNotificationViewController: UIViewController, UITableViewDelega
     
     @IBOutlet weak var sportTableView: UITableView!
     
-    var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis", "Ultimate Frisbee"]
+    var sportCategories = ["Badminton", "Baseball", "Basketball", "Football", "Soccer", "Tennis", "Frisbee"]
     var selectedSports: [String] = []
 
     override func viewDidLoad() {

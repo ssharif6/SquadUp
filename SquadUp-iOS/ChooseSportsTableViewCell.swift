@@ -45,7 +45,7 @@ class ChooseSportsTableViewCell: UITableViewCell {
         } else if (sport == "Badminton") {
             sportLabel.text = sport
             sportImage.image = UIImage(named: "Badminton")
-        } else if (sport == "Ultimate Frisbee") {
+        } else if (sport == "Frisbee") {
             sportLabel.text = sport
             sportImage.image = UIImage(named: "Frisbee")
             // Set an image for Frisbee

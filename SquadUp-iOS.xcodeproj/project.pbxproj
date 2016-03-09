@@ -30,6 +30,7 @@
 		855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5571C54360F009B6D82 /* FeedVCViewController.swift */; };
 		855DF55A1C543711009B6D82 /* PostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */; };
 		855DF55E1C54505D009B6D82 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF55D1C54505D009B6D82 /* Post.swift */; };
+		856714841C8F768400F5A68A /* RivalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856714831C8F768400F5A68A /* RivalsTableViewCell.swift */; };
 		8569C9A81C55E93700CE7197 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8569C9A71C55E93700CE7197 /* ProfileViewController.swift */; };
 		856E84171C55F38D00AC544C /* RivalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */; };
 		856E84191C56254100AC544C /* RatingStarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E84181C56254100AC544C /* RatingStarContainerView.swift */; };
@@ -114,6 +115,7 @@
 		855DF5571C54360F009B6D82 /* FeedVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVCViewController.swift; sourceTree = "<group>"; };
 		855DF5591C543711009B6D82 /* PostCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCellTableViewCell.swift; sourceTree = "<group>"; };
 		855DF55D1C54505D009B6D82 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		856714831C8F768400F5A68A /* RivalsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalsTableViewCell.swift; sourceTree = "<group>"; };
 		8569C9A71C55E93700CE7197 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		856C67111C5CA3F300012D28 /* SquadUp-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SquadUp-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		856E84161C55F38D00AC544C /* RivalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				8549C1701C8ABBA7009BA652 /* NotificaionTableViewCell.swift */,
 				8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */,
 				85DEA0D21C8D092800FC8AF0 /* GameLobbyTableViewCell.swift */,
+				856714831C8F768400F5A68A /* RivalsTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856714841C8F768400F5A68A /* RivalsTableViewCell.swift in Sources */,
 				8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */,
 				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
