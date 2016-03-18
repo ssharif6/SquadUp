@@ -628,6 +628,12 @@
 			"posts": ["11111112", "11111113", "11111114", "11111115"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess59",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -675,6 +681,12 @@
 			"posts": ["11111116", "11111117", "11111118"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess1",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -722,6 +734,12 @@
 			"posts": ["11111119"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess2",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -769,6 +787,12 @@
 			"posts": ["11111120", "11111121", "11111122", "11111123", "11111124"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess3",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -816,6 +840,12 @@
 			"posts": ["11111125", "11111126"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess4",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -863,6 +893,12 @@
 			"posts": ["11111127", "11111128", "11111129", "11111130", "11111131", "11111132"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess5",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -910,6 +946,12 @@
 			"posts": ["11111133", "11111134", "11111135"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess6",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -957,6 +999,12 @@
 			"posts": ["11111136", "11111137", "11111138"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess7",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1004,6 +1052,12 @@
 			"posts": ["11111139", "11111140", "11111141", "11111142"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess8",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1051,6 +1105,12 @@
 			"posts": ["11111143", "11111144", "11111145", "11111146", "11111147", "11111148"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess9",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1098,6 +1158,12 @@
 			"posts": ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess10",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1145,6 +1211,12 @@
 			"posts": ["11111155", "11111156", "11111157", "11111158", "11111159"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess11",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1192,6 +1264,12 @@
 			"posts": ["11111160", "11111161"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess12",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1239,6 +1317,12 @@
 			"posts": ["11111162", "11111163", "11111164"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess13",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1286,6 +1370,12 @@
 			"posts": ["11111165", "11111166"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess14",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1333,6 +1423,12 @@
 			"posts": ["11111167", "11111168", "11111169", "11111170", "11111171"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess15",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1380,6 +1476,12 @@
 			"posts": ["11111172", "11111173", "11111174"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess16",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1427,6 +1529,12 @@
 			"posts": ["11111175", "11111176", "11111177", "11111178", "11111179", "11111180", "11111181", "11111182", "11111183", "11111184"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess17",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1474,6 +1582,12 @@
 			"posts": ["11111185", "11111186"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess18",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1521,6 +1635,12 @@
 			"posts": ["11111187", "11111188", "11111189", "11111190"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess19",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1568,6 +1688,12 @@
 			"posts": ["11111191", "11111192", "11111193", "11111194", "11111195"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess20",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1615,6 +1741,12 @@
 			"posts": ["11111196"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess21",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1662,6 +1794,12 @@
 			"posts": ["11111197"],
 			"provider": "Email",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess22",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1709,6 +1847,12 @@
 			"posts": ["11111198", "11111199", "11111200", "11111201", "11111202"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess23",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1756,6 +1900,12 @@
 			"posts": ["11111203", "11111204"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess24",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1803,6 +1953,12 @@
 			"posts": ["11111205", "11111206", "11111207", "11111208", "11111209", "11111210"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess25",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1850,6 +2006,12 @@
 			"posts": ["11111211", "11111212", "11111213"],
 			"provider": "Email",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess26",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1897,6 +2059,12 @@
 			"posts": ["11111214", "11111215", "11111216"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess27",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -1944,6 +2112,12 @@
 			"posts": ["11111217", "11111218", "11111219", "11111220"],
 			"provider": "Email",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess28",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2037,6 +2211,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess29",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2084,6 +2264,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess30",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2131,6 +2317,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess31",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2178,6 +2370,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess32",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2225,6 +2423,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess33",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2272,6 +2476,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess34",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2319,6 +2529,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess35",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2366,6 +2582,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess36",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2413,6 +2635,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess37",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2460,6 +2688,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess38",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2507,6 +2741,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess39",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2554,6 +2794,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess40",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2601,6 +2847,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess41",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2648,6 +2900,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess42",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2695,6 +2953,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess43",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2742,6 +3006,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess44",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2789,6 +3059,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess45",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2836,6 +3112,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "advanced",
+			"messages":[{
+				"messageID": "mess46",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2883,6 +3165,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess47",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2930,6 +3218,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess48",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -2977,6 +3271,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess49",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3024,6 +3324,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess50",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3071,6 +3377,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess51",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3118,6 +3430,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess52",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3165,6 +3483,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess53",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3212,6 +3536,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess54",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3259,6 +3589,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess55",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3306,6 +3642,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess56",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3353,6 +3695,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "intermediate",
+			"messages":[{
+				"messageID": "mess57",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3400,6 +3748,12 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "beginner",
+			"messages":[{
+				"messageID": "mess58",
+				"messageBody": "Hi there, let's play!",
+				"sentFromID": "184fa9ac-3924-4f31-befe-b68efee57472",
+				"dateCreated": "21-03-2016 9:36"
+				}],
 			"notifications": [{
 				"notificationMessage": "Renee has challenged you!",
 				"notificationType": "Challenge",
@@ -3447,6 +3801,7 @@
 			"posts": ["post9"],
 			"provider": "Facebook",
 			"skillLevel": "",
+			"messages": [],
 			"notifications": [],
 			"rating": "",
 			"rivals": ["4424d20d-bdb5-4f34-9e13-fbbcf707fcae"],
