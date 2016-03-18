@@ -1,42 +1,40 @@
 //
-//  ViewController.swift
+//  Message.swift
 //  SquadUp-iOS
 //
-//  Created by Shaheen Sharifian on 1/23/16.
+//  Created by Shaheen Sharifian on 3/18/16.
 //  Copyright © 2016 Shaheen Sharifian. All rights reserved.
 //
+
 import Foundation
 
-class Message : NSObject {
-    var text_: String
-    var sender_: String
-    var date_: NSDate
-    var imageUrl_: String?
+class Message {
     
-    convenience init(text: String?, sender: String?) {
-        self.init(text: text, sender: sender, imageUrl: nil)
+    private var _messageBody: String!
+    private var _sentFrom: String! // User's Guid
+    private var _created: NSDate!
+    
+    var messageBody: String {
+        return _messageBody
     }
     
-    init(text: String?, sender: String?, imageUrl: String?) {
-        self.text_ = text!
-        self.sender_ = sender!
-        self.date_ = NSDate()
-        self.imageUrl_ = imageUrl
+    var sentFrom: String {
+        return _sentFrom
     }
     
-    func text() -> String! {
-        return text_;
+    var created: NSDate {
+        return _created
     }
     
-    func sender() -> String! {
-        return sender_;
-    }
-    
-    func date() -> NSDate! {
-        return date_;
-    }
-    
-    func imageUrl() -> String? {
-        return imageUrl_;
+    init(messageKey: String, dictionary: Dictionary<String, AnyObject>) {
+        if let messageBody = dictionary["messageBody"] {
+            _messageBody = messageBody as! String
+        }
+        if let sentFrom = dictionary["sentFrom"] {
+            _sentFrom = sentFrom as! String
+        }
+        if let created = dictionary["created"] {
+            _created = created as! NSDate
+        }
     }
 }

@@ -74,14 +74,14 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     func divideTeams() {
         teamOneArray = []
         teamTwoArray = []
-        var shit: Bool = true
+        var choosen: Bool = true
         for player in self.playersInLobby {
-            if (shit) {
+            if (choosen) {
                 teamOneArray.append(player)
             } else {
                 teamTwoArray.append(player)
             }
-            shit = !shit
+            choosen = !choosen
         }
         print("Team 1")
         print(teamOneArray)

@@ -12,8 +12,8 @@
 		8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA71C5DED9100063F7D /* FindGameVC.swift */; };
 		8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA91C5DEE2C00063F7D /* SportCell.swift */; };
 		850ECD131C9BD6FD00EB8F87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */; };
+		850ECD151C9C9A3E00EB8F87 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD141C9C9A3E00EB8F87 /* Message.swift */; };
 		8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */; };
-		8510E41E1C75C9B300C73C92 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E41D1C75C9B300C73C92 /* Message.swift */; };
 		8510E42A1C785D5200C73C92 /* PublicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */; };
 		852877B61C8EE1B7009C7B09 /* RivalsMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852877B51C8EE1B7009C7B09 /* RivalsMessagesViewController.swift */; };
 		8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */; };
@@ -98,8 +98,8 @@
 		8509CDA71C5DED9100063F7D /* FindGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGameVC.swift; sourceTree = "<group>"; };
 		8509CDA91C5DEE2C00063F7D /* SportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		850ECD141C9C9A3E00EB8F87 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSportNotificationViewController.swift; sourceTree = "<group>"; };
-		8510E41D1C75C9B300C73C92 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicProfileViewController.swift; sourceTree = "<group>"; };
 		852877B51C8EE1B7009C7B09 /* RivalsMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalsMessagesViewController.swift; sourceTree = "<group>"; };
 		8548BCF81C7551B000CF3CA3 /* CreateNewLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewLobbyViewController.swift; sourceTree = "<group>"; };
@@ -287,7 +287,7 @@
 				85D664951C61F57D00CBDD0A /* UserModel.swift */,
 				85DA31F11C6883290078CCEF /* LobbyGameModel.swift */,
 				8549C16C1C8AA353009BA652 /* NotificationModel.swift */,
-				8510E41D1C75C9B300C73C92 /* Message.swift */,
+				850ECD141C9C9A3E00EB8F87 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -602,13 +602,13 @@
 				8549C1651C8972AC009BA652 /* RivalChooseSportVC.swift in Sources */,
 				8549C16F1C8ABA89009BA652 /* NotificationsViewController.swift in Sources */,
 				8548BCF91C7551B000CF3CA3 /* CreateNewLobbyViewController.swift in Sources */,
-				8510E41E1C75C9B300C73C92 /* Message.swift in Sources */,
 				85A3C2D31C53704E00EF39EA /* FacebookLoginButton.swift in Sources */,
 				857DA4EE1C79A5A300B0AEA8 /* RecentActivityViewController.swift in Sources */,
 				85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */,
 				855DF5561C5417E7009B6D82 /* DataService.swift in Sources */,
 				8510E42A1C785D5200C73C92 /* PublicProfileViewController.swift in Sources */,
 				85D664961C61F57D00CBDD0A /* UserModel.swift in Sources */,
+				850ECD151C9C9A3E00EB8F87 /* Message.swift in Sources */,
 				852877B61C8EE1B7009C7B09 /* RivalsMessagesViewController.swift in Sources */,
 				8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */,
 			);

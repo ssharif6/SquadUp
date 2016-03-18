@@ -24,9 +24,14 @@ class UserModel: NSObject {
     private var _notifications: [NotificationModel]!
     private var _recentActivity: [String]!
     private var _rivals: [String]!
+    private var _messages: [String]!
     
     var firstName: String {
         return _firstName
+    }
+    
+    var messages: [String] {
+        return _messages
     }
     
     var rivals: [String] {
@@ -73,7 +78,7 @@ class UserModel: NSObject {
         return _userKey
     }
     
-    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String, recentActivity: [String], rivals: [String]) {
+    init(key: String, firstName: String, lastName: String, gender: String, userId: String, posts: [String], sports: [String], rating: String, profileImageUrl: String, recentActivity: [String], rivals: [String], messages: [String]) {
         _firstName = firstName
         _lastName = lastName
         _gender = gender
@@ -85,6 +90,7 @@ class UserModel: NSObject {
         _profileImageURL = profileImageUrl
         _recentActivity = recentActivity
         _rivals = rivals
+        _messages = messages
     }
     
     required init(coder decoder: NSCoder) {
@@ -99,6 +105,7 @@ class UserModel: NSObject {
         _rating = decoder.decodeObjectForKey("ratingKey") as? String
         _recentActivity = decoder.decodeObjectForKey("recentActivityKey") as? [String]
         _rivals = decoder.decodeObjectForKey("rivalsKey") as? [String]
+        _messages = decoder.decodeObjectForKey("messagesKey") as? [String]
         super.init()
     }
     
@@ -113,6 +120,7 @@ class UserModel: NSObject {
         aCoder.encodeObject(_rating, forKey: "ratingKey")
         aCoder.encodeObject(_recentActivity, forKey: "recentActivityKey")
         aCoder.encodeObject(_rivals, forKey: "rivalsKey")
+        aCoder.encodeObject(_messages, forKey: "messagesKey")
     }
     
     init (userKey: String, dictionary: Dictionary<String, AnyObject>) {
@@ -149,6 +157,9 @@ class UserModel: NSObject {
         }
         if let rivals = dictionary["rivals"] as? [String] {
             self._rivals = rivals
+        }
+        if let messages = dictionary["messages"] as? [String] {
+            self._messages = messages
         }
         if let notifications = dictionary["notifications"] as? [NotificationModel] {
             self._notifications = notifications

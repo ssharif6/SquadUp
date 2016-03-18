@@ -11,6 +11,7 @@ import UIKit
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     
     var messagesArray:[String] = [String]()
+    var userPassed: UserModel!
     
     @IBOutlet weak var dockViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var sendButton: UIButton!
@@ -27,7 +28,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func sendButtonTapped(sender: UIButton) {
         // perform animation to grow the dock view
         self.messagesTextField.endEditing(true)
-        
+        // Post to firebase
     }
     
     func tableViewTapped() {
@@ -35,10 +36,11 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func downloadMessages() {
-        
+        // get all the data from firebase
     }
     
     // MARK: Textfield Delegate Methods
+    
     func textFieldDidBeginEditing(textField: UITextField) {
         self.view.layoutIfNeeded()
         UIView.animateWithDuration(0.3, animations: {

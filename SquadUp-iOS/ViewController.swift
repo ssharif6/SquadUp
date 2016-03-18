@@ -134,10 +134,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         
                         
                         
-                        let mockUser = UserModel(key: "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", firstName: "Guadalupe", lastName: "Neal", gender: "male", userId: "M12", posts: ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"], sports: ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee", "Tennis"], rating: "4", profileImageUrl: "", recentActivity: ["game1", "game3", "game10", "game11", "game14", "game26"], rivals: [""])
+                        let mockUser = UserModel(key: "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", firstName: "Guadalupe", lastName: "Neal", gender: "male", userId: "M12", posts: ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"], sports: ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee", "Tennis"], rating: "4", profileImageUrl: "", recentActivity: ["game1", "game3", "game10", "game11", "game14", "game26"], rivals: [""], messages: [""])
+                        print(mockUser)
                         
-                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity, "rivals": rivals]
-                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity, rivals: rivals)
+                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity, "rivals": rivals, "messages": [""]]
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity, rivals: rivals, messages: [""])
                         
                         CURRENT_USER = currentUser
                         let defaults = NSUserDefaults.standardUserDefaults()
