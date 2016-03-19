@@ -13,6 +13,7 @@
 		8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA91C5DEE2C00063F7D /* SportCell.swift */; };
 		850ECD131C9BD6FD00EB8F87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */; };
 		850ECD151C9C9A3E00EB8F87 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD141C9C9A3E00EB8F87 /* Message.swift */; };
+		850ECD171C9D267F00EB8F87 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD161C9D267F00EB8F87 /* MessagesTableViewCell.swift */; };
 		8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */; };
 		8510E42A1C785D5200C73C92 /* PublicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */; };
 		852877B61C8EE1B7009C7B09 /* RivalsMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852877B51C8EE1B7009C7B09 /* RivalsMessagesViewController.swift */; };
@@ -99,6 +100,7 @@
 		8509CDA91C5DEE2C00063F7D /* SportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		850ECD141C9C9A3E00EB8F87 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		850ECD161C9D267F00EB8F87 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
 		8510E41B1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSportNotificationViewController.swift; sourceTree = "<group>"; };
 		8510E4291C785D5200C73C92 /* PublicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicProfileViewController.swift; sourceTree = "<group>"; };
 		852877B51C8EE1B7009C7B09 /* RivalsMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RivalsMessagesViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */,
 				85DEA0D21C8D092800FC8AF0 /* GameLobbyTableViewCell.swift */,
 				856714831C8F768400F5A68A /* RivalsTableViewCell.swift */,
+				850ECD161C9D267F00EB8F87 /* MessagesTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				856714841C8F768400F5A68A /* RivalsTableViewCell.swift in Sources */,
+				850ECD171C9D267F00EB8F87 /* MessagesTableViewCell.swift in Sources */,
 				8549C16B1C897EFC009BA652 /* RivalScreenViewController.swift in Sources */,
 				85A3C2D51C53707300EF39EA /* EmailPasswordTextField.swift in Sources */,
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,

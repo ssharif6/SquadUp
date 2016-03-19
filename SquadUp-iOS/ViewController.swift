@@ -128,10 +128,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         var rivals = [String]()
                         rivals.append("")
                         let facebookID = AuthData.providerData["id"]
-                        print(facebookID)
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]
                         print(profileImageUrlUser)
-                        
                         
                         
                         let mockUser = UserModel(key: "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", firstName: "Guadalupe", lastName: "Neal", gender: "male", userId: "M12", posts: ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"], sports: ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee", "Tennis"], rating: "4", profileImageUrl: "", recentActivity: ["game1", "game3", "game10", "game11", "game14", "game26"], rivals: [""], messages: [""])
@@ -195,8 +193,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             showErrorAlert("Email and Password Required", msg: "You must enter an Email and Password")
         }
     }
-    
-    
     
     func showErrorAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)

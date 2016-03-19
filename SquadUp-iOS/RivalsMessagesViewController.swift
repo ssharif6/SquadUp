@@ -12,6 +12,7 @@ import Firebase
 class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var idArray = [UserModel]()
+    var userToPass: UserModel!
     @IBOutlet weak var rivalsTableView: UITableView!
 
     override func viewDidLoad() {
@@ -47,11 +48,21 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        let user = idArray[indexPath.row]
+        self.userToPass = user
+        self.performSegueWithIdentifier("rivalToChat",sender: self)
+
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return idArray.count
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "rivalToChat" {
+            let vc = segue.destinationViewController as! ChatViewController
+            vc.userPassed = self.userToPass
+        }
     }
     
 }

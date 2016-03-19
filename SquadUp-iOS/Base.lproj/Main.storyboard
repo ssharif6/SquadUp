@@ -573,13 +573,24 @@
                                 <rect key="frame" x="20" y="20" width="374" height="656"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="0U8-gP-T3u">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="0U8-gP-T3u" customClass="MessagesTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0U8-gP-T3u" id="2kS-NE-cNt">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhM-Pu-2jx">
+                                                    <rect key="frame" x="8" y="11" width="284" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="rhM-Pu-2jx" id="DHl-Vz-BUP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -631,7 +642,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="dockViewHeightConstraint" destination="khS-bH-RSY" id="SLq-yY-C9J"/>
-                        <outlet property="messagesTableView" destination="Tgw-lq-yOP" id="UMD-bT-cDn"/>
+                        <outlet property="messagesTableView" destination="Tgw-lq-yOP" id="bjd-G8-tUP"/>
                         <outlet property="messagesTextField" destination="zBx-Um-sqP" id="bvM-5f-Wls"/>
                         <outlet property="sendButton" destination="0YV-XJ-ejI" id="7GX-xr-ixU"/>
                     </connections>
@@ -2015,7 +2026,6 @@
                                             <outlet property="containerView" destination="a1D-cw-9a5" id="1v4-d6-eIh"/>
                                             <outlet property="nameLabel" destination="N3n-I4-CZc" id="QCY-eS-JLB"/>
                                             <outlet property="profileImage" destination="iIq-YH-DF4" id="RPe-yO-bw8"/>
-                                            <segue destination="DkB-AE-fzG" kind="show" id="apv-g3-bn1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2030,6 +2040,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="rivalsTableView" destination="8OB-xz-fZl" id="Ale-bz-jde"/>
+                        <segue destination="DkB-AE-fzG" kind="show" identifier="rivalToChat" id="TZo-bb-TAE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yA8-eg-fAO" userLabel="First Responder" sceneMemberID="firstResponder"/>

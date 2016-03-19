@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class NotificaionTableViewCell: UITableViewCell {
-    static var imageCache = NSCache()
     @IBOutlet weak var displayedImage: UIImageView!
     @IBOutlet weak var notificationLabel: UILabel!
     override func awakeFromNib() {
@@ -37,11 +36,17 @@ class NotificaionTableViewCell: UITableViewCell {
                             if user.profileImageURL == "" {
                                 self.displayedImage.image = UIImage(named: "defaultProfile")
                             } else {
-                                let data = NSData(contentsOfURL: userUrl!)
-                                if data != nil {
-                                    self.displayedImage.image = UIImage(data: data!)
-                                    self.displayedImage.contentMode = UIViewContentMode.ScaleAspectFit
+                                if let image = imageCache.objectForKey(user.profileImageURL) as? UIImage {
+                                    self.displayedImage.image = image
+                                } else {
+                                    let data = NSData(contentsOfURL: userUrl!)
+                                    if data != nil {
+                                        self.displayedImage.image = UIImage(data: data!)
+                                        self.displayedImage.contentMode = UIViewContentMode.ScaleAspectFit
+                                        imageCache.setObject(UIImage(data: data!)!, forKey: user.profileImageURL)
+                                    }
                                 }
+                                
                             }
 
                         }

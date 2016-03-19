@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
+
 
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     
-    var messagesArray:[String] = [String]()
+    var messagesArray:[Message] = [Message]()
     var userPassed: UserModel!
     
     @IBOutlet weak var dockViewHeightConstraint: NSLayoutConstraint!
@@ -23,20 +25,47 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.messagesTextField.delegate = self
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tableViewTapped")
         self.messagesTableView.addGestureRecognizer(tapGesture)
+        downloadChatHistory()
+    }
+    
+    func downloadChatHistory() {
+        messagesArray.removeAll()
+        DataService.ds.REF_USER_CURRENT.childByAppendingPath("messages").childByAppendingPath(userPassed.userKey).childByAppendingPath("messages").observeEventType(.Value, withBlock: { snapshot in
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                for snap in snapshots {
+                    if let messageDict = snap.value as? Dictionary<String, AnyObject> {
+                        let message = Message(messageKey: snap.key, dictionary: messageDict)
+                        self.messagesArray.append(message)
+                    }
+                    
+                }
+            }
+            self.messagesTableView.reloadData()
+        })
     }
 
     @IBAction func sendButtonTapped(sender: UIButton) {
         // perform animation to grow the dock view
         self.messagesTextField.endEditing(true)
         // Post to firebase
+        self.messagesArray.removeAll()
+        let messagePost = DataService.ds.REF_USER_CURRENT.childByAppendingPath("messages").childByAppendingPath(userPassed.userKey).childByAppendingPath("messages").childByAutoId()
+        let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
+        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+        let sentUserMessagePost = DataService.ds.REF_USERS.childByAppendingPath(userPassed.userKey).childByAppendingPath("messages").childByAppendingPath(userUnarchived.userKey).childByAppendingPath("messages").childByAutoId()
+
+        let message: Dictionary<String, AnyObject> = [
+            "dateCreated": timestamp,
+            "messageBody": messagesTextField.text!,
+            "sentFromID": userUnarchived.userKey
+        ]
+        messagePost.setValue(message)
+        sentUserMessagePost.setValue(message)
     }
     
     func tableViewTapped() {
         self.messagesTextField.endEditing(true)
-    }
-    
-    func downloadMessages() {
-        // get all the data from firebase
     }
     
     // MARK: Textfield Delegate Methods
@@ -68,8 +97,10 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell")
-        return cell!
+        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessagesTableViewCell
+        let message = messagesArray[indexPath.row]
+        cell.configureCell(message)
+        return cell
     }
 
 }
