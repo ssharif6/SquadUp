@@ -53,6 +53,10 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         let imageText = sportPassed + "Lobby"
         sportLabelImage.image = UIImage(named: imageText)
         let sportImageBG = sportPassed + "Background"
+        // Eventually Add Image Icon
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: ""), style: UIBarButtonItemStyle.Plain, target: self, action: #selector(openMapSearch))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(openMapSearch))
+        
         self.sportBackgroundImage.image = UIImage(named: sportImageBG)
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
@@ -72,6 +76,12 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
             self.sportsTableView.reloadData()
         })
         
+    }
+    
+    func openMapSearch() {
+        // open MapView that has pins for locations
+        let mapViewController = FindGameMapView()
+        self.navigationController?.pushViewController(mapViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

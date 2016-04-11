@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8502C9A91C8C297900224021 /* RecentActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */; };
 		8502C9AB1C8C33B800224021 /* PublicRecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */; };
+		8508D87C1CBB6F61003CB002 /* FindGameMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8508D87B1CBB6F61003CB002 /* FindGameMapView.swift */; };
 		8509CDA81C5DED9100063F7D /* FindGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA71C5DED9100063F7D /* FindGameVC.swift */; };
 		8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509CDA91C5DEE2C00063F7D /* SportCell.swift */; };
 		850ECD131C9BD6FD00EB8F87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */; };
@@ -98,6 +99,7 @@
 		5C754B29D12BE1A88AD0545A /* Pods-SquadUp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquadUp-iOS/Pods-SquadUp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8502C9A81C8C297900224021 /* RecentActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivityTableViewCell.swift; sourceTree = "<group>"; };
 		8502C9AA1C8C33B800224021 /* PublicRecentActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicRecentActivityViewController.swift; sourceTree = "<group>"; };
+		8508D87B1CBB6F61003CB002 /* FindGameMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGameMapView.swift; sourceTree = "<group>"; };
 		8509CDA71C5DED9100063F7D /* FindGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGameVC.swift; sourceTree = "<group>"; };
 		8509CDA91C5DEE2C00063F7D /* SportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				852877B51C8EE1B7009C7B09 /* RivalsMessagesViewController.swift */,
 				850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */,
 				8518F0181CBB53BC0049FC6D /* ChatLogController.swift */,
+				8508D87B1CBB6F61003CB002 /* FindGameMapView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				855DF55E1C54505D009B6D82 /* Post.swift in Sources */,
 				85A5E0CA1C7FEFB700B2B5F8 /* PostCellView.swift in Sources */,
 				85DA31EE1C6871E00078CCEF /* JoinGameLobbyViewController.swift in Sources */,
+				8508D87C1CBB6F61003CB002 /* FindGameMapView.swift in Sources */,
 				858E2DCE1C8EC0F000F11359 /* ChallengeOptionsViewController.swift in Sources */,
 				855DF5581C54360F009B6D82 /* FeedVCViewController.swift in Sources */,
 				85A3C2D11C53702B00EF39EA /* EmailLoginContainerView.swift in Sources */,
