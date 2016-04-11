@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import MapKit
 
 class LobbyGameModel {
     private var _lobbyId: String!
@@ -24,6 +25,13 @@ class LobbyGameModel {
     private var _date: String!
     private var _registered: String!
     private var _currentPlayersList = [UserModel]()
+    private var _gameLatitude: Double!
+    private var _gameLongitude: Double!
+    
+    var gameLocationCoordinate: CLLocationCoordinate2D {
+        let coordinate = CLLocationCoordinate2DMake(_gameLatitude, _gameLongitude)
+        return coordinate
+    }
     
     var lobbyName: String {
         return _lobbyName
@@ -104,6 +112,12 @@ class LobbyGameModel {
         }
         if let registered = dictionary["registered"] as? String {
             self._registered = registered
+        }
+        if let latitude = dictionary["latitude"] as? Double {
+            self._gameLatitude = latitude
+        }
+        if let longitude = dictionary["longitude"] as? Double {
+            self._gameLongitude = longitude
         }
         
     }

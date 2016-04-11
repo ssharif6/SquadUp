@@ -10,6 +10,7 @@ import MapKit
 
 class FindGameMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    var gameLobbyArray = [LobbyGameModel]()
     var mapView: MKMapView!
     let locationManager = CLLocationManager()
     
@@ -29,7 +30,6 @@ class FindGameMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDel
         mapView.zoomEnabled = true
         mapView.showsUserLocation = true
         view.addSubview(mapView)
-        
     }
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
@@ -39,6 +39,18 @@ class FindGameMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDel
         let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(locationCoordinate, span)
         mapView.setRegion(region, animated: true)
+    }
+    
+    func addPinsOfLobbies() {
+        for game in gameLobbyArray {
+            let coordinate = game.gameLocationCoordinate
+            // add custom pins
+            let pin = MKPointAnnotation()
+            pin.coordinate = coordinate
+            pin.title = game.lobbyName
+            pin.subtitle = game.description
+            mapView.addAnnotation(pin)
+        }
     }
     
 }

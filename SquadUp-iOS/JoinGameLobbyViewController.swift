@@ -81,6 +81,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     func openMapSearch() {
         // open MapView that has pins for locations
         let mapViewController = FindGameMapView()
+        mapViewController.gameLobbyArray = self.lobbyGames
         self.navigationController?.pushViewController(mapViewController, animated: true)
     }
     
