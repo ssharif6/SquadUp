@@ -30,7 +30,7 @@ class CreateNewLobbyViewController: UIViewController {
         super.viewDidLoad()
         datePicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateNewLobbyViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     

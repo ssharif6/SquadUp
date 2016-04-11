@@ -23,10 +23,13 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.messagesTextField.delegate = self
-        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tableViewTapped")
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.tableViewTapped))
         self.messagesTableView.addGestureRecognizer(tapGesture)
         downloadChatHistory()
+        self.messagesTableView.rowHeight = 80
+        self.messagesTableView.rowHeight = UITableViewAutomaticDimension
     }
+
     
     func downloadChatHistory() {
         messagesArray.removeAll()
@@ -88,6 +91,10 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // MARK: TableView Delegate Methods
     
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messagesArray.count
     }
@@ -95,10 +102,12 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // Do something
     }
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessagesTableViewCell
         let message = messagesArray[indexPath.row]
+        cell.messageLabel.numberOfLines = 0
         cell.configureCell(message)
         return cell
     }

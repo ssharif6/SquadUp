@@ -17,10 +17,12 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         rivalsTableView.dataSource = self
         rivalsTableView.delegate = self
         parseData()
     }
+    
     func parseData() {
         var asdf = [UserModel]()
         DataService.ds.REF_USER_CURRENT.childByAppendingPath("rivals").observeEventType(.Value, withBlock: { snapshot in
@@ -50,8 +52,12 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let user = idArray[indexPath.row]
         self.userToPass = user
-        self.performSegueWithIdentifier("rivalToChat",sender: self)
-
+//        self.performSegueWithIdentifier("rivalToChat",sender: self)
+        let layout = UICollectionViewFlowLayout()
+        let messagesCollectionView = ChatLogController(collectionViewLayout: layout)
+        messagesCollectionView.rival = user
+        messagesCollectionView.userPassed = user
+        self.navigationController?.pushViewController(messagesCollectionView, animated: true)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

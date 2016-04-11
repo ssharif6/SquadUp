@@ -12,7 +12,7 @@ class Message {
     
     private var _messageBody: String!
     private var _sentFrom: String! // User's Guid
-    private var _created: NSDate!
+    private var _created: String!
     
     var messageBody: String {
         return _messageBody
@@ -22,7 +22,7 @@ class Message {
         return _sentFrom
     }
     
-    var created: NSDate {
+    var created: String {
         return _created
     }
     
@@ -30,11 +30,11 @@ class Message {
         if let messageBody = dictionary["messageBody"] {
             _messageBody = messageBody as! String
         }
-        if let sentFrom = dictionary["sentFrom"] {
+        if let sentFrom = dictionary["sentFromID"] {
             _sentFrom = sentFrom as! String
         }
-        if let created = dictionary["created"] {
-            _created = created as! NSDate
+        if let created = dictionary["dateCreated"] {
+            _created = created as! String
         }
     }
 }

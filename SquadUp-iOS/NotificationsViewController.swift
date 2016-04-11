@@ -79,7 +79,7 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
                 self.notifications.removeAtIndex(indexPath.row)
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                 var notificationsDict = [Dictionary<String, AnyObject>]()
-                for (var i = 0; i < self.notifications.count; i++) {
+                for (var i = 0; i < self.notifications.count; i += 1) {
                     let note = self.notifications[i]
                     let notification: Dictionary<String, AnyObject> = [
                         "notificationMessage": "\(note.notificationString)",

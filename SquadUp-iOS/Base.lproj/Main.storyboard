@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -569,35 +569,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-lq-yOP">
-                                <rect key="frame" x="20" y="20" width="374" height="656"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="0U8-gP-T3u" customClass="MessagesTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0U8-gP-T3u" id="2kS-NE-cNt">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhM-Pu-2jx">
-                                                    <rect key="frame" x="8" y="11" width="284" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="messageLabel" destination="rhM-Pu-2jx" id="DHl-Vz-BUP"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="DkB-AE-fzG" id="wU9-RM-hhF"/>
-                                    <outlet property="delegate" destination="DkB-AE-fzG" id="6ra-ad-hFS"/>
-                                </connections>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7l-PE-Bpj" userLabel="DockView">
                                 <rect key="frame" x="20" y="676" width="374" height="60"/>
                                 <subviews>
@@ -627,6 +598,47 @@
                                     <constraint firstAttribute="height" constant="60" id="khS-bH-RSY"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-lq-yOP">
+                                <rect key="frame" x="20" y="20" width="374" height="656"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="80" id="0U8-gP-T3u" customClass="MessagesTableViewCell" customModule="SquadUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0U8-gP-T3u" id="2kS-NE-cNt">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-57-z4c">
+                                                    <rect key="frame" x="8" y="15" width="50" height="50"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhM-Pu-2jx">
+                                                    <rect key="frame" x="85" y="22" width="263" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rhM-Pu-2jx" secondAttribute="trailing" constant="18" id="BHt-vv-CR0"/>
+                                                <constraint firstItem="rhM-Pu-2jx" firstAttribute="leading" secondItem="B4s-57-z4c" secondAttribute="trailing" constant="27" id="eJS-Hd-mW1"/>
+                                                <constraint firstItem="B4s-57-z4c" firstAttribute="leading" secondItem="2kS-NE-cNt" secondAttribute="leadingMargin" id="gW5-yJ-W97"/>
+                                                <constraint firstItem="B4s-57-z4c" firstAttribute="top" secondItem="2kS-NE-cNt" secondAttribute="topMargin" constant="7" id="i5M-Kn-uZy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rhM-Pu-2jx" secondAttribute="bottom" constant="15" id="isS-bg-Jp7"/>
+                                                <constraint firstItem="rhM-Pu-2jx" firstAttribute="top" secondItem="2kS-NE-cNt" secondAttribute="topMargin" constant="14" id="thT-eq-Qb3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="rhM-Pu-2jx" id="DHl-Vz-BUP"/>
+                                            <outlet property="profileIMage" destination="B4s-57-z4c" id="hSq-kE-GbF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DkB-AE-fzG" id="wU9-RM-hhF"/>
+                                    <outlet property="delegate" destination="DkB-AE-fzG" id="6ra-ad-hFS"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1973,7 +1985,7 @@
             </objects>
             <point key="canvasLocation" x="2349" y="265"/>
         </scene>
-        <!--Rival-->
+        <!--Rivals Messages View Controller-->
         <scene sceneID="alJ-nb-J95">
             <objects>
                 <viewController id="FjK-5L-Sl2" customClass="RivalsMessagesViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -2036,7 +2048,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rival" image="rsz_rivalstabbaricon" id="h02-yR-1Oc"/>
+                    <navigationItem key="navigationItem" id="YHF-ug-mUx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="rivalsTableView" destination="8OB-xz-fZl" id="Ale-bz-jde"/>
@@ -2045,7 +2057,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yA8-eg-fAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="-699"/>
+            <point key="canvasLocation" x="1718" y="-699"/>
         </scene>
         <!--Challenge Options View Controller-->
         <scene sceneID="TMo-uS-kqN">
@@ -2104,13 +2116,13 @@
                         <outlet property="profileImage" destination="IT3-St-BlD" id="g9P-ww-qRd"/>
                         <outlet property="sportImage" destination="ppC-51-HiJ" id="0KZ-CP-Xl5"/>
                         <segue destination="Rqa-5f-bUK" kind="show" identifier="OptionsToNotifications" id="wKG-yc-iqR"/>
-                        <segue destination="FjK-5L-Sl2" kind="show" identifier="ChallengeAcceptedSegue" id="RsQ-gX-SJw"/>
-                        <segue destination="FjK-5L-Sl2" kind="show" identifier="OptionsToRivals" id="6s4-gl-oSP"/>
+                        <segue destination="NiK-9o-zfP" kind="show" identifier="ChallengeAcceptedSegue" id="RsQ-gX-SJw"/>
+                        <segue destination="NiK-9o-zfP" kind="show" identifier="OptionsToRivals" id="6s4-gl-oSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POY-gJ-0dJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="-652"/>
+            <point key="canvasLocation" x="2213" y="-652"/>
         </scene>
         <!--Notifications View Controller-->
         <scene sceneID="CIF-IN-6UY">
@@ -2190,7 +2202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbt-5z-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2751" y="-447"/>
+            <point key="canvasLocation" x="3283" y="-447"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ll-14-jG3">
@@ -2207,12 +2219,12 @@
                         <segue destination="2tR-Jn-Oee" kind="relationship" relationship="viewControllers" id="9ht-77-zud"/>
                         <segue destination="7n0-qs-pBs" kind="relationship" relationship="viewControllers" id="N3K-5J-2vQ"/>
                         <segue destination="f9L-B1-xuY" kind="relationship" relationship="viewControllers" id="jcj-Q8-o3X"/>
-                        <segue destination="FjK-5L-Sl2" kind="relationship" relationship="viewControllers" id="acs-sk-78Z"/>
+                        <segue destination="NiK-9o-zfP" kind="relationship" relationship="viewControllers" id="acs-sk-78Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5Q-SZ-f7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3240" y="-536"/>
+            <point key="canvasLocation" x="3772" y="-536"/>
         </scene>
         <!--Find a Game-->
         <scene sceneID="AGy-dk-G83">
@@ -2231,7 +2243,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuR-aa-nhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4282" y="-371"/>
+            <point key="canvasLocation" x="4814" y="-371"/>
         </scene>
         <!--Profile-->
         <scene sceneID="4ZD-73-akx">
@@ -2272,7 +2284,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6I-dA-dce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-447"/>
+            <point key="canvasLocation" x="2751" y="-447"/>
+        </scene>
+        <!--Rival-->
+        <scene sceneID="NKp-5f-rcJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NiK-9o-zfP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rival" image="rsz_rivalstabbaricon" id="h02-yR-1Oc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7rt-rF-nOM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FjK-5L-Sl2" kind="relationship" relationship="rootViewController" id="bCN-2Z-2FP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCR-Eu-ihG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-699"/>
         </scene>
     </scenes>
     <resources>
@@ -2334,11 +2365,11 @@
         <image name="xMarkChallengeIcon" width="670" height="670"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="acs-sk-78Z"/>
         <segue reference="fRU-1G-gzZ"/>
         <segue reference="vW5-ns-HVo"/>
-        <segue reference="R6O-au-n6v"/>
         <segue reference="wKG-yc-iqR"/>
-        <segue reference="6s4-gl-oSP"/>
         <segue reference="vCP-ZV-YwD"/>
+        <segue reference="R6O-au-n6v"/>
     </inferredMetricsTieBreakers>
 </document>
