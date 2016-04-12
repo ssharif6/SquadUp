@@ -11,7 +11,9 @@
 			"sportsID": "Basketball",
 			"date": "24-02-2016 20:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5041 12th Ave NE Seattle, WA 98105",
+			"latitude": 47.666141,
+			"longitude": -122.315500,
 		},
 		"game2": {
 			"registered": "yes",
@@ -24,7 +26,9 @@
 			"sportsID": "Badminton",
 			"date": "01-03-2016 12:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game3": {
 			"registered": "no",
@@ -37,7 +41,9 @@
 			"sportsID": "Badminton",
 			"date": "01-03-2016 12:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5041 12th Ave NE Seattle, WA 98105",
+			"latitude": 47.666141,
+			"longitude": -122.315500,
 		},
 		"game4": {
 			"registered": "no",
@@ -50,7 +56,9 @@
 			"sportsID": "Badminton",
 			"date": "01-03-2016 12:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5041 12th Ave NE Seattle, WA 98105",
+			"latitude": 47.666141,
+			"longitude": -122.315500,
 		},
 		"game5": {
 			"registered": "no",
@@ -63,7 +71,9 @@
 			"sportsID": "Badminton",
 			"date": "01-03-2016 12:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5041 12th Ave NE Seattle, WA 98105",
+			"latitude": 47.666141,
+			"longitude": -122.315500,
 		},
 		"game6": {
 			"registered": "no",
@@ -76,7 +86,9 @@
 			"sportsID": "Badminton",
 			"date": "24-02-2016 15:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game7": {
 			"registered": "no",
@@ -89,7 +101,9 @@
 			"sportsID": "Tennis",
 			"date": "25-02-2016 14:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game8": {
 			"registered": "no",
@@ -102,7 +116,9 @@
 			"sportsID": "Soccer",
 			"date": "26-02-2016 15:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
+			"latitude": 47.674220,
+			"longitude": -122.308287,
 		},
 		"game9": {
 			"registered": "no",
@@ -115,7 +131,9 @@
 			"sportsID": "Badminton",
 			"date": "26-02-2016 14:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game10": {
 			"registered": "no",
@@ -128,7 +146,9 @@
 			"sportsID": "Football",
 			"date": "27-02-2016 17:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
+			"latitude": 47.674220,
+			"longitude": -122.308287,
 		},
 		"game11": {
 			"registered": "no",
@@ -141,7 +161,9 @@
 			"sportsID": "Baseball",
 			"date": "27-02-2016 13:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game12": {
 			"registered": "no",
@@ -154,7 +176,9 @@
 			"sportsID": "Frisbee",
 			"date": "28-02-2016 16:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "2101 N Northlake Way, Seattle, WA 98103",
+			"latitude": 47.645638,
+			"longitude": -122.334375,
 		},
 		"game13": {
 			"registered": "no",
@@ -166,7 +190,9 @@
 			"sportsID": "Tennis",
 			"date": "29-02-2016 14:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game14": {
 			"registered": "no",
@@ -179,7 +205,9 @@
 			"sportsID": "Soccer",
 			"date": "29-02-2016 19:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game15": {
 			"registered": "yes",
@@ -192,7 +220,9 @@
 			"sportsID": "Badminton",
 			"date": "02-03-2016 14:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game16": {
 			"registered": "yes",
@@ -205,7 +235,9 @@
 			"sportsID": "Badminton",
 			"date": "02-03-2016 18:30",
 			"description": "UW Badminton Team Fundraiser Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game17": {
 			"registered": "no",
@@ -218,7 +250,9 @@
 			"sportsID": "Soccer",
 			"date": "05-03-2016 12:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "2101 N Northlake Way, Seattle, WA 98103",
+			"latitude": 47.645638,
+			"longitude": -122.334375,
 		},
 		"game18": {
 			"registered": "no",
@@ -231,7 +265,9 @@
 			"sportsID": "Basketball",
 			"date": "05-03-2016 18:00",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game19": {
 			"registered": "no",
@@ -244,7 +280,9 @@
 			"sportsID": "Frisbee",
 			"date": "04-03-2016 15:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "2101 N Northlake Way, Seattle, WA 98103",
+			"latitude": 47.645638,
+			"longitude": -122.334375,
 		},
 		"game20": {
 			"registered": "no",
@@ -257,7 +295,9 @@
 			"sportsID": "Football",
 			"date": "05-03-2016 14:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
+			"latitude": 47.674220,
+			"longitude": -122.308287,
 		},
 		"game21": {
 			"registered": "yes",
@@ -270,7 +310,9 @@
 			"sportsID": "Tennis",
 			"date": "06-03-2016 14:00",
 			"description": "UW Tennis Doubles Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game22": {
 			"registered": "yes",
@@ -283,7 +325,9 @@
 			"sportsID": "Tennis",
 			"date": "06-03-2016 14:00",
 			"description": "UW Tennis Doubles Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game23": {
 			"registered": "yes",
@@ -296,7 +340,9 @@
 			"sportsID": "Tennis",
 			"date": "06-03-2016 14:00",
 			"description": "UW Tennis Doubles Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game24": {
 			"registered": "yes",
@@ -309,7 +355,9 @@
 			"sportsID": "Tennis",
 			"date": "06-03-2016 14:00",
 			"description": "UW Tennis Doubles Tournament",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game25": {
 			"registered": "no",
@@ -322,7 +370,9 @@
 			"sportsID": "Badminton",
 			"date": "07-03-2016 16:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game26": {
 			"registered": "no",
@@ -335,7 +385,9 @@
 			"sportsID": "Baseball",
 			"date": "07-03-2016 13:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
+			"latitude": 47.653678,
+			"longitude": -122.301278,
 		},
 		"game27": {
 			"registered": "no",
@@ -348,72 +400,9 @@
 			"sportsID": "Frisbee",
 			"date": "06-03-2016 13:30",
 			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game28": {
-			"registered": "no",
-			"currentCapacity": 2,
-			"currentPlayers": [],
-			"distance": "1.3",
-			"id": "0028",
-			"lobbyName": "",
-			"maxCapacity": 10,
-			"sportsID": "",
-			"date": "",
-			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game29": {
-			"registered": "no",
-			"currentCapacity": 5,
-			"currentPlayers": [],
-			"distance": "1.7",
-			"id": "0029",
-			"lobbyName": "",
-			"maxCapacity": 6,
-			"sportsID": "",
-			"date": "",
-			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game30": {
-			"registered": "no",
-			"currentCapacity": 1,
-			"currentPlayers": [],
-			"distance": "0.6",
-			"id": "game0030",
-			"lobbyName": "",
-			"maxCapacity": 4,
-			"sportsID": "",
-			"date": "",
-			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game31": {
-			"registered": "no",
-			"currentCapacity": 1,
-			"currentPlayers": [],
-			"distance": "0.7",
-			"id": "game0031",
-			"lobbyName": "",
-			"maxCapacity": 6,
-			"sportsID": "",
-			"date": "",
-			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
-		},
-		"game32": {
-			"registered": "no",
-			"currentCapacity": 6,
-			"currentPlayers": [],
-			"distance": "0.3",
-			"id": "game0032",
-			"lobbyName": "",
-			"maxCapacity": 10,
-			"sportsID": "",
-			"date": "",
-			"description": "",
-			"address": "3924 Montlake Blvd NE, Seattle, WA 98195"
+			"address": "2101 N Northlake Way, Seattle, WA 98103",
+			"latitude": 47.645638,
+			"longitude": -122.334375,
 		}
 	},
 	"posts": {
