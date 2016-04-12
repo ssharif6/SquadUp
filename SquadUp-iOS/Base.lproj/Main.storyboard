@@ -25,7 +25,7 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerId" id="BYZ-38-t0r" customClass="ViewController" customModule="SquadUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,10 +34,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signInBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-ia-U56">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="signInBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-ia-U56">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyA-nc-jfk" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyA-nc-jfk" customClass="FacebookLoginButton" customModule="SquadUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="17" y="526" width="328" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="Ssb-Ld-osT"/>
@@ -63,7 +63,7 @@
                                     <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7C-Pn-VK0"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Password" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-R4-fzx" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Password" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-R4-fzx" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="41" y="229" width="280" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="r7E-mQ-zVf"/>
@@ -72,13 +72,13 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squadUpTitle" translatesAutoresizingMaskIntoConstraints="NO" id="bYo-6o-0cs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="squadUpTitle" translatesAutoresizingMaskIntoConstraints="NO" id="bYo-6o-0cs">
                                 <rect key="frame" x="67" y="28" width="240" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="rd4-di-YO0"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Email" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-dO-bm0" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Email" textAlignment="center" minimumFontSize="17" background="inputBox" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-dO-bm0" customClass="EmailPasswordTextField" customModule="SquadUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="41" y="146" width="280" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="eiQ-IX-KDy"/>
@@ -1205,12 +1205,21 @@
                                     <outlet property="delegate" destination="Tbx-d8-gMd" id="cZF-9o-IeL"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phx-bG-py5">
+                                <rect key="frame" x="362" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="moreSettingsTableView" destination="ZEn-Jn-UnC" id="cpf-mN-5BJ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LogoutSegue" id="Sha-SW-1Un"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0v-Wr-HJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2354,11 +2363,11 @@
         <image name="xMarkChallengeIcon" width="670" height="670"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bAx-IJ-bqG"/>
-        <segue reference="acs-sk-78Z"/>
-        <segue reference="vW5-ns-HVo"/>
-        <segue reference="R6O-au-n6v"/>
-        <segue reference="wKG-yc-iqR"/>
         <segue reference="vCP-ZV-YwD"/>
+        <segue reference="wKG-yc-iqR"/>
+        <segue reference="fRU-1G-gzZ"/>
+        <segue reference="Hux-ZT-Zhg"/>
+        <segue reference="acs-sk-78Z"/>
+        <segue reference="R6O-au-n6v"/>
     </inferredMetricsTieBreakers>
 </document>

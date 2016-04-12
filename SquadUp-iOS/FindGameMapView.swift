@@ -29,6 +29,7 @@ class FindGameMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDel
         mapView.delegate = self
         mapView.zoomEnabled = true
         mapView.showsUserLocation = true
+        addPinsOfLobbies()
         view.addSubview(mapView)
     }
     
@@ -42,6 +43,7 @@ class FindGameMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDel
     }
     
     func addPinsOfLobbies() {
+        mapView.removeAnnotations(mapView.annotations)
         for game in gameLobbyArray {
             let coordinate = game.gameLocationCoordinate
             // add custom pins

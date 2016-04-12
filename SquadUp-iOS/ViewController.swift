@@ -12,13 +12,23 @@ import FBSDKLoginKit
 import SwiftyJSON
 import Alamofire
 
+var facebookLogin = FBSDKLoginManager()
+
 var CURRENT_USER: UserModel!
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
+
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
     var usersArray: [UserModel]!
+    
+    // User Logged In Fields
+    var fullName: String! = ""
+    var profileImageUrl: String! = ""
+    var firstName: String! = ""
+    var lastName: String! = ""
+    var genderString: String! = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +38,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         passwordField.layer.borderColor = UIColor.clearColor().CGColor
         passwordField.layer.borderWidth = 0
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.setTabBarVisible(false, animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -54,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func facebookButtonPressed(sender: UIButton!) {
-        let facebookLogin = FBSDKLoginManager()
+        facebookLogin = FBSDKLoginManager()
         
         facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) -> Void in
             if facebookError != nil {
@@ -65,6 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
                 print("Facebook Login Successful")
                 // Perform Authentication
+                self.fetchProfile()
                 DataService.ds.REF_BASE.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { error, AuthData in
                     
                     if error != nil {
@@ -74,6 +86,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         print("Logged in")
                         // Create Firebase User
                         // TODO: Find Post History for Facebook User
+                        
+                        // User Information
+                        
+                        
+                        
                         let posts = []
                         let sports = []
                         var notifications = [Dictionary<String, AnyObject>]()
@@ -131,12 +148,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         let profileImageUrlUser = AuthData.providerData["profileImageURL"]
                         print(profileImageUrlUser)
                         
-                        
-                        let mockUser = UserModel(key: "4424d20d-bdb5-4f34-9e13-fbbcf707fcae", firstName: "Guadalupe", lastName: "Neal", gender: "male", userId: "M12", posts: ["11111149", "11111150", "11111151", "11111152", "11111153", "11111154"], sports: ["Soccer", "Badminton", "Football", "Baseball", "Basketball", "Frisbee", "Tennis"], rating: "4", profileImageUrl: "", recentActivity: ["game1", "game3", "game10", "game11", "game14", "game26"], rivals: [""], messages: [""])
-                        print(mockUser)
-                        
-                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": "male", "firstName": "Shaheen","lastName": "Sharifian", "posts": "hullo","profileImageUrl": "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", "notifications": notifications, "recentActivity": recentActivity, "rivals": rivals, "messages": [""]]
-                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: "Shaheen", lastName: "Sharifian", gender: "Male", userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: "https://scontent.xx.fbcdn.net/hphotos-xat1/t31.0-8/11696464_10207272910963902_1507282739428184290_o.jpg", recentActivity: recentActivity, rivals: rivals, messages: [""])
+                        let user = ["provider": AuthData.provider!, "id": "user", "rating": "5", "gender": self.genderString, "firstName": self.firstName,"lastName": self.lastName, "posts": "hullo","profileImageUrl": self.profileImageUrl, "notifications": notifications, "recentActivity": recentActivity, "rivals": rivals, "messages": [""]]
+                        let currentUser: UserModel = UserModel(key: AuthData.uid, firstName: self.firstName, lastName: self.lastName, gender: self.genderString, userId: facebookID as! String, posts: posts as! [String], sports: sports as! [String], rating: "5", profileImageUrl: self.profileImageUrl, recentActivity: recentActivity, rivals: rivals, messages: [""])
                         
                         CURRENT_USER = currentUser
                         let defaults = NSUserDefaults.standardUserDefaults()
@@ -150,9 +163,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     }
                     
                 })
-                
             }
         }
+        
     }
     
     // For email
@@ -194,6 +207,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func fetchProfile() {
+        // Fetches information for Facebook
+        let parameters = ["fields": "email, first_name, last_name, picture.type(large)"]
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).startWithCompletionHandler { (connection, result, error) in
+            if error != nil {
+                print(error)
+                return
+            }
+//            let email = result["email"] as? String
+            let firstName = result["first_name"] as? String
+            self.firstName = firstName
+            let lastName = result["last_name"] as? String
+            self.lastName = lastName
+            self.fullName = firstName! + " " + lastName!
+            if let gender = result["gender"] as? String {
+                self.genderString = gender
+            }
+            if let picture = result["picture"] as? NSDictionary, data = picture["data"] as? NSDictionary, url = data["url"] as? String {
+                self.profileImageUrl = url
+            }
+        }
+    }
+    
     func showErrorAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
         let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
@@ -203,4 +239,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 }
-
+extension UITabBarController {
+    
+    func setTabBarVisible(visible:Bool, animated:Bool) {
+        
+        // bail if the current state matches the desired state
+        if (tabBarIsVisible() == visible) { return }
+        
+        // get a frame calculation ready
+        let frame = self.tabBar.frame
+        let height = frame.size.height
+        let offsetY = (visible ? -height : height)
+        
+        // animate the tabBar
+        UIView.animateWithDuration(animated ? 0.3 : 0.0) {
+            self.tabBar.frame = CGRectOffset(frame, 0, offsetY)
+            self.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height + offsetY)
+            self.view.setNeedsDisplay()
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func tabBarIsVisible() ->Bool {
+        return self.tabBar.frame.origin.y < CGRectGetMaxY(self.view.frame)
+    }
+}

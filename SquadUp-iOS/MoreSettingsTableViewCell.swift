@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class MoreSettingsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var settingLabel: UILabel!
     @IBOutlet weak var settingImage: UIImageView!
+    let facebookLogin = FBSDKLoginManager()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,10 +32,12 @@ class MoreSettingsTableViewCell: UITableViewCell {
             settingImage.image = UIImage(named: "filledStar-1")
         } else if label == "Log Out" {
             settingImage.image = UIImage(named: "moreLogoutIcon")
+            
+
         }
         settingLabel.text = label
         settingLabel.textAlignment = .Left
     }
 
-
+    
 }

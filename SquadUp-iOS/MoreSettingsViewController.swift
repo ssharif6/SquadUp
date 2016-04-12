@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+
 
 class MoreSettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -14,8 +16,7 @@ class MoreSettingsViewController: UIViewController, UITableViewDelegate, UITable
     
     var settingsArray = ["Edit Profile", "Notifications", "Create Lobby", "Join Lobby", "Rate Us", "Log Out"]
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -26,7 +27,14 @@ class MoreSettingsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        if indexPath.row == 5 {
+            NSUserDefaults.standardUserDefaults().setObject(nil, forKey: KEY_UID)
+            NSUserDefaults.standardUserDefaults().setObject(nil, forKey: SELECTED_SPORTS)
+            facebookLogin.logOut()
+            let LoginVCOBJ = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ViewControllerId") as! ViewController
+            self.navigationController?.viewControllers = [LoginVCOBJ]
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
