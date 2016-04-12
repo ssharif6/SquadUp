@@ -27,16 +27,22 @@ class RivalListCell: UITableViewCell {
     func configureCell(user: UserModel) {
         // figure out rating data here
         let url = NSURL(string: user.profileImageURL)
-        if user.profileImageURL == "" {
-            profileImage.image = UIImage(named: "defaultProfile")
+        if let image = imageCache.objectForKey(user.profileImageURL) as? UIImage {
+            self.profileImage.image = image
         } else {
-            let data = NSData(contentsOfURL:url!)
-            if data != nil {
-                profileImage.image = UIImage(data:data!)
-                profileImage.contentMode = UIViewContentMode.ScaleAspectFit
-
+            if user.profileImageURL == "" {
+                profileImage.image = UIImage(named: "defaultProfile")
+            } else {
+                let data = NSData(contentsOfURL:url!)
+                if data != nil {
+                    profileImage.image = UIImage(data:data!)
+                    profileImage.contentMode = UIViewContentMode.ScaleAspectFit
+                }
+                imageCache.setObject(UIImage(data: data!)!, forKey: user.profileImageURL)
             }
         }
+        
+        
         nameLabel.text = user.firstName + " " + user.lastName
         let rating = user.rating
         numStarsLabel.text = String(rating)
@@ -47,4 +53,5 @@ class RivalListCell: UITableViewCell {
     }
 
 
+    
 }

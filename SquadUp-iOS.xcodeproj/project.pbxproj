@@ -71,6 +71,7 @@
 		85DA31F21C6883290078CCEF /* LobbyGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31F11C6883290078CCEF /* LobbyGameModel.swift */; };
 		85DA31F41C691BA10078CCEF /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA31F31C691BA10078CCEF /* GameLobbyViewController.swift */; };
 		85DEA0D31C8D092800FC8AF0 /* GameLobbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEA0D21C8D092800FC8AF0 /* GameLobbyTableViewCell.swift */; };
+		85E7544F1CBC3C2100F1D0D2 /* SuggestedRivalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7544E1CBC3C2100F1D0D2 /* SuggestedRivalCell.swift */; };
 		85F7FE431C8B9FB60082E90E /* MoreSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F7FE421C8B9FB60082E90E /* MoreSettingsTableViewCell.swift */; };
 		85F7FE451C8BA1080082E90E /* MoreSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */; };
 		85F8DE011C620E65006DFF11 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F8DE001C620E65006DFF11 /* SportViewController.swift */; };
@@ -168,6 +169,7 @@
 		85DA31F11C6883290078CCEF /* LobbyGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyGameModel.swift; sourceTree = "<group>"; };
 		85DA31F31C691BA10078CCEF /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
 		85DEA0D21C8D092800FC8AF0 /* GameLobbyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyTableViewCell.swift; sourceTree = "<group>"; };
+		85E7544E1CBC3C2100F1D0D2 /* SuggestedRivalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedRivalCell.swift; sourceTree = "<group>"; };
 		85F7FE421C8B9FB60082E90E /* MoreSettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreSettingsTableViewCell.swift; sourceTree = "<group>"; };
 		85F7FE441C8BA1080082E90E /* MoreSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreSettingsViewController.swift; sourceTree = "<group>"; };
 		85F8DE001C620E65006DFF11 /* SportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				856714831C8F768400F5A68A /* RivalsTableViewCell.swift */,
 				850ECD161C9D267F00EB8F87 /* MessagesTableViewCell.swift */,
 				8518F01A1CBB5B550049FC6D /* ChatLogCollectionViewCell.swift */,
+				85E7544E1CBC3C2100F1D0D2 /* SuggestedRivalCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				85F7FE431C8B9FB60082E90E /* MoreSettingsTableViewCell.swift in Sources */,
 				85F7FE451C8BA1080082E90E /* MoreSettingsViewController.swift in Sources */,
 				8509CDAA1C5DEE2C00063F7D /* SportCell.swift in Sources */,
+				85E7544F1CBC3C2100F1D0D2 /* SuggestedRivalCell.swift in Sources */,
 				8510E41C1C75AA9900C73C92 /* ChooseSportNotificationViewController.swift in Sources */,
 				8502C9AB1C8C33B800224021 /* PublicRecentActivityViewController.swift in Sources */,
 				8549C1711C8ABBA7009BA652 /* NotificaionTableViewCell.swift in Sources */,

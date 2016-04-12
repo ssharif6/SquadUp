@@ -41,8 +41,6 @@ class RivalListViewController: UIViewController, UITableViewDelegate, UITableVie
                     if let userDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let user = UserModel(userKey: key, dictionary: userDict)
-                        print(user.firstName)
-                        print(user.sports)
                         if user.sports.contains(self.passedLabel) {
                             asdf.append(user)
                         }

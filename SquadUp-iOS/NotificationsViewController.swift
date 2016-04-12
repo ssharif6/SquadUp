@@ -19,7 +19,6 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     var notificationToPass: NotificationModel!
     var index: Int!
     var didLoadAlready: String!
-    static var imageCache = NSCache()
 
     
     override func viewDidLoad() {

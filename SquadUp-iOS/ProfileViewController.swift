@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    private let cellId = "cellId"
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var recentHistoryButton: UIButton!
@@ -21,6 +22,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var fourthStar: UIImageView!
     @IBOutlet weak var fifthStar: UIImageView!
     @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var lobbyObjectPassed: LobbyGameModel!
     
@@ -32,7 +34,11 @@ class ProfileViewController: UIViewController {
         profileImage.layer.borderColor = UIColor.blackColor().CGColor
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         profileImage.clipsToBounds = true
-        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = UIColor.clearColor()
+        collectionView.registerClass(SuggestedRivalCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.alwaysBounceHorizontal = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -54,6 +60,24 @@ class ProfileViewController: UIViewController {
     }
     @IBAction func recentActivityClicked(sender: AnyObject) {
     }
+
+    // MARK UICollectionView Delegate Methods
     
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! SuggestedRivalCell
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(view.frame.width, 100)
+    }
     
 }
