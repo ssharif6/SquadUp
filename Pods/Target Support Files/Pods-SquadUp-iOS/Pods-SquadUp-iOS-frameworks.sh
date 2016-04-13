@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SquadUp-iOS/Alamofire.framework"
   install_framework "Pods-SquadUp-iOS/Cosmos.framework"
   install_framework "Pods-SquadUp-iOS/Firebase.framework"
+  install_framework "Pods-SquadUp-iOS/LiquidFloatingActionButton.framework"
   install_framework "Pods-SquadUp-iOS/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SquadUp-iOS/Alamofire.framework"
   install_framework "Pods-SquadUp-iOS/Cosmos.framework"
   install_framework "Pods-SquadUp-iOS/Firebase.framework"
+  install_framework "Pods-SquadUp-iOS/LiquidFloatingActionButton.framework"
   install_framework "Pods-SquadUp-iOS/SwiftyJSON.framework"
 fi

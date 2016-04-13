@@ -7,6 +7,7 @@ target 'SquadUp-iOS' do
     pod 'Alamofire', '~> 3.0'
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'Cosmos', '~> 1.2'
+    pod 'LiquidFloatingActionButton', :git => 'https://github.com/yoavlt/LiquidFloatingActionButton', :branch => 'swift-2.0'
 end
 
 target 'SquadUp-iOSTests' do

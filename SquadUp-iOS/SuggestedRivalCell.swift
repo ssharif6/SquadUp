@@ -37,7 +37,10 @@ class SuggestedRivalCell: UICollectionViewCell, UICollectionViewDataSource, UICo
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-20-[v0]-20-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": suggestedRivalsCollectionView]))
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": suggestedRivalsCollectionView]))
         suggestedRivalsCollectionView.registerClass(SuggestedRivalIndividualCell.self, forCellWithReuseIdentifier: cellId)
+        // Parse Data for Suggested Rivals
     }
+    
+    
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5

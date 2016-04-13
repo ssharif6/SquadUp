@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
+import LiquidFloatingActionButton
 
-class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
     
     @IBOutlet weak var sportLabelImage: UIImageView!
     @IBOutlet weak var sportLabel: UILabel!
@@ -21,10 +22,15 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     var lobbyObjectToPass: LobbyGameModel!
     var sportPassed: String!
     
+    // LiquidFloatingButton
+    var ButtonCells = [LiquidFloatingCell]()
+    var floatingActionButton: LiquidFloatingActionButton!
+    
     override func viewDidAppear(animated: Bool) {
         self.sportsTableView.reloadData()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
+        createFloatingButtons()
 
 //        sportLabel.text = sportPassed + " Lobby"
         DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
@@ -113,6 +119,51 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
             let vc = segue.destinationViewController as! GameLobbyViewController
             vc.lobbyModelObject = self.lobbyObjectToPass
         }
+    }
+    
+    // For floating button
+    private func createFloatingButtons() {
+        ButtonCells.append(createButtonCell("Steph"))
+        ButtonCells.append(createButtonCell("Steph"))
+        ButtonCells.append(createButtonCell("Steph"))
+        ButtonCells.append(createButtonCell("Steph"))
+
+//        ButtonCells.append(createButtonCell("Use Maps Icon"))
+        
+        let floatingFrame = CGRectMake(self.view.frame.width - 26 - 56, self.view.frame.height - 76 - 56, 56, 56)
+        let floatingButton = createButton(floatingFrame, style: .Up)
+        self.view.addSubview(floatingButton)
+        self.floatingActionButton = floatingButton
+    }
+    
+    private func createButton(frame: CGRect, style: LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton {
+        let floatingActionButton = LiquidFloatingActionButton(frame: frame)
+        floatingActionButton.animateStyle = style
+        floatingActionButton.dataSource = self
+        floatingActionButton.delegate = self
+        return floatingActionButton
+    }
+    
+    private func createButtonCell(iconName: String) -> LiquidFloatingCell {
+        return LiquidFloatingCell(icon: UIImage(named: iconName)!)
+    }
+    
+    func cellForIndex(index: Int) -> LiquidFloatingCell {
+        return ButtonCells[index]
+    }
+    
+    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+        return ButtonCells.count
+    }
+    
+    func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+        self.floatingActionButton.close()
+        // First button Map
+        // Second button Find by Game Name
+        // Create Game
+        // Find by Person
+        // Find by Level
+        
     }
     
 }

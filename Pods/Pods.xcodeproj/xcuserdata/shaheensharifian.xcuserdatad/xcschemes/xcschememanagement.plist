@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LiquidFloatingActionButton-LiquidFloatingActionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LiquidFloatingActionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SquadUp-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2E4A37C88D68A62EA5C1BC7A2A4D19AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
@@ -42,17 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92A2A65A209621BB390A2070B2D4D47C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF307429745203DDD65DC45778234A0C</key>
+		<key>C37473F95FABEFCB16EE3272AEE2BEB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECB4143196184B0E0EA02182DB2B9CCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA924BDF3242401DCDAD15E594DAC0D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

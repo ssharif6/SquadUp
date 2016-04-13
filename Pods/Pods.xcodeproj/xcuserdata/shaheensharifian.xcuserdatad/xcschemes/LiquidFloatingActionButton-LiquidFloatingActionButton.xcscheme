@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3782584D332341DFA729092E'
-               BlueprintName = 'Pods-SquadUp-iOS'
+               BlueprintIdentifier = '29F099CF84571829EAA32B3F'
+               BlueprintName = 'LiquidFloatingActionButton-LiquidFloatingActionButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_SquadUp_iOS.framework'>
+               BuildableName = 'LiquidFloatingActionButton.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
