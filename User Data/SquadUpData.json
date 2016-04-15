@@ -13,7 +13,8 @@
 			"description": "",
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
-			"longitude": -122.315500
+			"longitude": -122.315500,
+			"skillLevel": "beginner"
 		},
 		"game2": {
 			"registered": "yes",
@@ -28,7 +29,8 @@
 			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "advanced"
 		},
 		"game3": {
 			"registered": "no",
@@ -43,7 +45,8 @@
 			"description": "",
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
-			"longitude": -122.315500
+			"longitude": -122.315500,
+			"skillLevel": "advanced"
 		},
 		"game4": {
 			"registered": "no",
@@ -58,7 +61,8 @@
 			"description": "",
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
-			"longitude": -122.315500
+			"longitude": -122.315500,
+			"skillLevel": "advanced"
 		},
 		"game5": {
 			"registered": "no",
@@ -73,7 +77,8 @@
 			"description": "",
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
-			"longitude": -122.315500
+			"longitude": -122.315500,
+			"skillLevel": "intermediate"
 		},
 		"game6": {
 			"registered": "no",
@@ -88,7 +93,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game7": {
 			"registered": "no",
@@ -103,7 +109,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "intermediate"
 		},
 		"game8": {
 			"registered": "no",
@@ -118,7 +125,8 @@
 			"description": "",
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
-			"longitude": -122.308287
+			"longitude": -122.308287,
+			"skillLevel": "intermediate"
 		},
 		"game9": {
 			"registered": "no",
@@ -133,7 +141,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game10": {
 			"registered": "no",
@@ -148,7 +157,8 @@
 			"description": "",
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
-			"longitude": -122.308287
+			"longitude": -122.308287,
+			"skillLevel": "beginner"
 		},
 		"game11": {
 			"registered": "no",
@@ -163,7 +173,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game12": {
 			"registered": "no",
@@ -178,7 +189,8 @@
 			"description": "",
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
-			"longitude": -122.334375
+			"longitude": -122.334375,
+			"skillLevel": "beginner"
 		},
 		"game13": {
 			"registered": "no",
@@ -192,7 +204,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "intermediate"
 		},
 		"game14": {
 			"registered": "no",
@@ -207,7 +220,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "intermediate"
 		},
 		"game15": {
 			"registered": "yes",
@@ -222,7 +236,8 @@
 			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "advanced"
 		},
 		"game16": {
 			"registered": "yes",
@@ -237,7 +252,8 @@
 			"description": "UW Badminton Team Fundraiser Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "advanced"
 		},
 		"game17": {
 			"registered": "no",
@@ -252,7 +268,8 @@
 			"description": "",
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
-			"longitude": -122.334375
+			"longitude": -122.334375,
+			"skillLevel": "advanced"
 		},
 		"game18": {
 			"registered": "no",
@@ -267,7 +284,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "intermediate"
 		},
 		"game19": {
 			"registered": "no",
@@ -282,7 +300,8 @@
 			"description": "",
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
-			"longitude": -122.334375
+			"longitude": -122.334375,
+			"skillLevel": "intermediate"
 		},
 		"game20": {
 			"registered": "no",
@@ -297,7 +316,8 @@
 			"description": "",
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
-			"longitude": -122.308287
+			"longitude": -122.308287,
+			"skillLevel": "beginner"
 		},
 		"game21": {
 			"registered": "yes",
@@ -312,7 +332,8 @@
 			"description": "UW Tennis Doubles Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "intermediate"
 		},
 		"game22": {
 			"registered": "yes",
@@ -327,7 +348,8 @@
 			"description": "UW Tennis Doubles Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game23": {
 			"registered": "yes",
@@ -342,7 +364,8 @@
 			"description": "UW Tennis Doubles Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game24": {
 			"registered": "yes",
@@ -357,7 +380,8 @@
 			"description": "UW Tennis Doubles Tournament",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "beginner"
 		},
 		"game25": {
 			"registered": "no",
@@ -372,7 +396,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": "advanced"
 		},
 		"game26": {
 			"registered": "no",
@@ -387,7 +412,8 @@
 			"description": "",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
-			"longitude": -122.301278
+			"longitude": -122.301278,
+			"skillLevel": ""
 		},
 		"game27": {
 			"registered": "no",
@@ -402,7 +428,8 @@
 			"description": "",
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
-			"longitude": -122.334375
+			"longitude": -122.334375,
+			"skillLevel": "beginner"
 		}
 	},
 	"posts": {
