@@ -16,6 +16,7 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.lightGrayColor()
         collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: CellId)
+        navigationController?.navigationBar.tintColor = UIColor.rgb(0, green: 171, blue: 236)
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
