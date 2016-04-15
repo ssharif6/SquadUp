@@ -90,7 +90,7 @@ class FeedCell: UICollectionViewCell {
     let distanceLabel: UILabel = {
         let label = UILabel()
         label.text = "0.9 Mi"
-        label.font = UIFont.systemFontOfSize(14)
+        label.font = UIFont(name: "Arial", size: 14)
         label.textColor = UIColor.lightGrayColor()
         return label
     }()
@@ -128,26 +128,28 @@ class FeedCell: UICollectionViewCell {
     
     //MARK: Buttons
     
-    let joinButton = FeedCell.buttonForTitle("Join", imageName: "")
-    let commentButton = FeedCell.buttonForTitle("Comment", imageName: "")
-    let shareButton = FeedCell.buttonForTitle("Share", imageName: "")
+    let joinButton = FeedCell.buttonForTitle("Join", imageName: "tennisJoinIconSmall")
+    let commentButton = FeedCell.buttonForTitle("Comment", imageName: "messageIconSmall")
+    let shareButton = FeedCell.buttonForTitle("Share", imageName: "shareIconSmall")
     
-    
+    // For 
     static func buttonForTitle(title: String, imageName: String) -> UIButton {
             let button = UIButton()
             button.setTitle(title, forState: .Normal)
+            button.titleLabel!.font = UIFont(name: "Arial", size: 18)
             button.setTitleColor(UIColor.rgb(143, green: 150, blue: 162), forState: .Normal)
-            //        button.setImage(UIImage(named: "like"), forState: .Normal)
-            //        button.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
+                    button.setImage(UIImage(named: imageName), forState: .Normal)
+                    button.titleEdgeInsets = UIEdgeInsetsMake(0, 4, 0, 0)
             return button
     }
     
     let locationButton: UIButton = {
         let button = UIButton()
         button.setTitle("San Fransisco, CA", forState: .Normal)
+        button.titleLabel!.font = UIFont(name: "Arial", size: 14)
+        button.setNeedsLayout()
         button.setTitleColor(UIColor.rgb(143, green: 150, blue: 162), forState: .Normal)
-        button.setImage("mapIcon", forState: .Normal)
-        button.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
+        button.setImage(UIImage(named: "mapIconSmall-1"), forState: .Normal)
         return button
     }()
     
@@ -163,13 +165,14 @@ class FeedCell: UICollectionViewCell {
         addSubview(shareButton)
         addSubview(sportLabel)
         addSubview(distanceLabel)
+        addSubview(locationButton)
         
 //        addConstraintsWithFormat("H:|-8-[v0(44)]-8-[v1]|", view: profileImageView, nameLabel)
 //        addConstraintsWithFormat("V:|-8-[v0]", view: nameLabel)
         addConstraintsWithFormat("H:|-8-[v0]|", view: sportLabel)
         addConstraintsWithFormat("V:|-8-[v0]", view: sportLabel)
-        addConstraintsWithFormat("H:[v0]-4-|", view: distanceLabel)
-        addConstraintsWithFormat("V:|-12-[v0]", view: distanceLabel)
+        addConstraintsWithFormat("H:[v0]-8-|", view: distanceLabel)
+        addConstraintsWithFormat("V:|-28-[v0]", view: distanceLabel)
         addConstraintsWithFormat("H:|-8-[v0]-8-|", view: sportBackgroundImageView)
         addConstraintsWithFormat("V:|-52-[v0(44)]-4-[v1]-8-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportInformationTextView, sportBackgroundImageView, numPeopleGoingLabel, dividerLineView, joinButton)
         addConstraintsWithFormat("H:|-8-[v0]-4-|", view: sportInformationTextView)
@@ -180,6 +183,8 @@ class FeedCell: UICollectionViewCell {
         addConstraintsWithFormat("H:|[v0(v2)][v1(v2)][v2]|", view: joinButton, commentButton, shareButton)
         addConstraintsWithFormat("V:[v0(44)]|", view: commentButton)
         addConstraintsWithFormat("V:[v0(44)]|", view: shareButton)
+        addConstraintsWithFormat("H:[v0]-8-|", view: locationButton)
+        addConstraintsWithFormat("V:|-8-[v0]", view: locationButton)
 
 
 
