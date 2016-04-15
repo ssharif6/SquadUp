@@ -61,6 +61,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
 
     
     func displayLobbyInfo() {
+        print(lobbyModelObject.address)
         lobbyNameLabel.text = lobbyModelObject.lobbyName
         lobbyNameLabel.textAlignment = .Center
         descriptionLabel.text = lobbyModelObject.description
@@ -88,6 +89,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         print("Team 2")
         print(teamTwoArray)
     }
+    
     
     func getUsers() {
         var asdf = [UserModel]()
