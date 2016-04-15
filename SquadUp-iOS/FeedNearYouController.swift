@@ -13,6 +13,7 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Events Near You"
+        
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.lightGrayColor()
         collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: CellId)
@@ -78,11 +79,19 @@ class FeedCell: UICollectionViewCell {
         let label = UILabel()
         label.numberOfLines = 2
         let attributedText = NSMutableAttributedString(string: "Tennis", attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(22)])
-        attributedText.appendAttributedString(NSAttributedString(string: "\nDecmber 18th San Fransisco 5:30PM", attributes: [NSFontAttributeName: UIFont.systemFontOfSize(14), NSForegroundColorAttributeName: UIColor(red: 155/255, green: 161/255, blue: 171/255, alpha: 1)]))
+        attributedText.appendAttributedString(NSAttributedString(string: "\n2016-04-15 Fri at 6:10", attributes: [NSFontAttributeName: UIFont.systemFontOfSize(14), NSForegroundColorAttributeName: UIColor(red: 155/255, green: 161/255, blue: 171/255, alpha: 1)]))
         label.attributedText = attributedText
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.characters.count))
+        return label
+    }()
+    
+    let distanceLabel: UILabel = {
+        let label = UILabel()
+        label.text = "0.9 Mi"
+        label.font = UIFont.systemFontOfSize(14)
+        label.textColor = UIColor.lightGrayColor()
         return label
     }()
     
@@ -133,6 +142,15 @@ class FeedCell: UICollectionViewCell {
             return button
     }
     
+    let locationButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("San Fransisco, CA", forState: .Normal)
+        button.setTitleColor(UIColor.rgb(143, green: 150, blue: 162), forState: .Normal)
+        button.setImage("mapIcon", forState: .Normal)
+        button.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
+        return button
+    }()
+    
     
     func setupViews() {
         backgroundColor = UIColor.whiteColor()
@@ -144,11 +162,14 @@ class FeedCell: UICollectionViewCell {
         addSubview(commentButton)
         addSubview(shareButton)
         addSubview(sportLabel)
+        addSubview(distanceLabel)
         
 //        addConstraintsWithFormat("H:|-8-[v0(44)]-8-[v1]|", view: profileImageView, nameLabel)
 //        addConstraintsWithFormat("V:|-8-[v0]", view: nameLabel)
         addConstraintsWithFormat("H:|-8-[v0]|", view: sportLabel)
         addConstraintsWithFormat("V:|-8-[v0]", view: sportLabel)
+        addConstraintsWithFormat("H:[v0]-4-|", view: distanceLabel)
+        addConstraintsWithFormat("V:|-12-[v0]", view: distanceLabel)
         addConstraintsWithFormat("H:|-8-[v0]-8-|", view: sportBackgroundImageView)
         addConstraintsWithFormat("V:|-52-[v0(44)]-4-[v1]-8-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportInformationTextView, sportBackgroundImageView, numPeopleGoingLabel, dividerLineView, joinButton)
         addConstraintsWithFormat("H:|-8-[v0]-4-|", view: sportInformationTextView)
