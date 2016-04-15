@@ -157,7 +157,12 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
-        self.floatingActionButton.close()
+        if(index == 0) {
+            let mapViewController = FindGameMapView()
+            self.navigationController?.pushViewController(mapViewController, animated: true)
+        } else if index == 1 {
+            self.navigationController?.pushViewController(CreateNewLobbyViewController(), animated: true)
+        }
         // First button Map
         // Second button Find by Game Name
         // Create Game
