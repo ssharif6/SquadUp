@@ -335,6 +335,7 @@
 		85A3C2CA1C536F9700EF39EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8592F36B1CC0949000E9E766 /* FeedNearYouController.swift */,
 				85A3C29C1C536B5A00EF39EA /* ViewController.swift */,
 				855DF5571C54360F009B6D82 /* FeedVCViewController.swift */,
 				8569C9A71C55E93700CE7197 /* ProfileViewController.swift */,
@@ -358,7 +359,6 @@
 				850ECD121C9BD6FD00EB8F87 /* ChatViewController.swift */,
 				8518F0181CBB53BC0049FC6D /* ChatLogController.swift */,
 				8508D87B1CBB6F61003CB002 /* FindGameMapView.swift */,
-				8592F36B1CC0949000E9E766 /* FeedNearYouController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

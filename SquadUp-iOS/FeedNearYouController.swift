@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class FeedNearYouController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class FeedNearYouController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIPopoverPresentationControllerDelegate {
     private var CellId = "cellId"
     private var lobbyGames = [LobbyGameModel]()
     private var lobbyToPass: LobbyGameModel!
@@ -17,13 +17,14 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Events Near You"
-        
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.lightGrayColor()
         collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: CellId)
         navigationController?.navigationBar.tintColor = UIColor.rgb(0, green: 171, blue: 236)
         
         parseData()
+        
+        
     }
     
     // Mark: Delegate Methods
@@ -37,21 +38,12 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
         self.lobbyToPass = lobbyGames[indexPath.row]
         cell.joinButton.addTarget(self, action: #selector(FeedNearYouController.joinButtonClicked(_:)), forControlEvents: .TouchDown)
         cell.locationButton.addTarget(self, action: #selector(FeedNearYouController.locationButtonCLicked(_:)), forControlEvents: .TouchDown)
+        cell.commentButton.addTarget(self, action: #selector(FeedNearYouController.commentButtonClicked(_:)), forControlEvents: .TouchDown)
         cell.configureCell(lobbyGames[indexPath.row])
         return cell
     }
     
-    func locationButtonCLicked(sender: UIButton) {
-        let mapViewController = FindGameMapView()
-        var array = [LobbyGameModel]()
-        array.append(lobbyToPass)
-        mapViewController.gameLobbyArray = array
-        self.navigationController?.pushViewController(mapViewController, animated: true)
-    }
     
-    func joinButtonClicked(sender: UIButton) {
-        performSegueWithIdentifier("CollectionViewToGameLobby", sender: self)
-    }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(view.frame.width, 400)
@@ -75,9 +67,25 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
         }
     }
     
+    func locationButtonCLicked(sender: UIButton) {
+        let mapViewController = FindGameMapView()
+        var array = [LobbyGameModel]()
+        array.append(lobbyToPass)
+        mapViewController.gameLobbyArray = array
+        self.navigationController?.pushViewController(mapViewController, animated: true)
+    }
+    
+    func joinButtonClicked(sender: UIButton) {
+        performSegueWithIdentifier("CollectionViewToGameLobby", sender: self)
+    }
+    
+    func commentButtonClicked(sender: UIButton) {
+        // Open a Modal to type in a comment
+    }
+    
     // MARK: Download Data from Firebase
     func parseData() {
-        DataService.ds.REF_LOBBYGAMES.observeEventType(.Value, withBlock: { snapshot in
+        DataService.ds.REF_LOBBYGAMES.queryOrderedByChild("distance").observeEventType(.Value, withBlock: { snapshot in
             self.lobbyGames = []
             // Parse Firebase Data
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {

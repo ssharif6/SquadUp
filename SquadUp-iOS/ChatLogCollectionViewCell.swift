@@ -12,9 +12,28 @@ class ChatLogCollectionViewCell: UICollectionViewCell {
     
     var messageTextView: UITextView = {
         let textView = UITextView()
+        textView.backgroundColor = UIColor.clearColor()
         textView.font = UIFont.systemFontOfSize(16)
+        textView.textColor = UIColor.whiteColor()
         textView.text = "Sample Message"
         return textView
+    }()
+    
+    let textBubbleView: UIView = {
+       let view = UIView()
+        view.backgroundColor = UIColor.rgb(2, green: 143, blue: 204)
+        view.layer.cornerRadius = 15
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .ScaleAspectFill
+        imageView.layer.cornerRadius = 15
+        imageView.layer.masksToBounds = true
+        
+        return imageView
     }()
     
     override init(frame: CGRect) {
@@ -27,10 +46,13 @@ class ChatLogCollectionViewCell: UICollectionViewCell {
     }
     
     func setupViews() {
-        backgroundColor = UIColor.whiteColor()
+        addSubview(textBubbleView)
         addSubview(messageTextView)
-        addConstraintsWithFormat("H:|[v0]|", views: messageTextView)
-        addConstraintsWithFormat("V:|[v0]|", views: messageTextView)
+        addSubview(profileImageView)
+        
+        addConstraintsWithFormat("H:|-8-[v0(30)]", view: profileImageView)
+        addConstraintsWithFormat("V:[v0(30)]|", view: profileImageView)
+        profileImageView.backgroundColor = UIColor.redColor()
     }
     
     
