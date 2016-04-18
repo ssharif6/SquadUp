@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CreateNewLobbyViewController: UIViewController {
+class CreateNewLobbyViewController: UITableViewController, UITextViewDelegate {
     
     @IBOutlet weak var lobbyNameTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var numPlayersTextField: UITextField!
     @IBOutlet weak var locationAddressTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     var passedLocationString: String?
     var passedLobbyName: String?
@@ -30,8 +30,16 @@ class CreateNewLobbyViewController: UIViewController {
         super.viewDidLoad()
         datePicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         
+        let barButtonItem = UIBarButtonItem(title: "Create", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(CreateNewLobbyViewController.createLobbyPressed))
+        
+        self.navigationItem.rightBarButtonItems = [barButtonItem]
+            
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateNewLobbyViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        //textview regulation
+        descriptionTextView.textContainer.maximumNumberOfLines = 2
+        descriptionTextView.textContainer.lineBreakMode = NSLineBreakMode.ByTruncatingTail
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -42,7 +50,7 @@ class CreateNewLobbyViewController: UIViewController {
             lobbyNameTextField.text = passedLobbyName
         }
         if passedDescription != nil {
-            descriptionTextField.text = passedDescription
+            descriptionTextView.text = passedDescription
         }
         if numPlayersPassed != nil {
             numPlayersTextField.text = numPlayersPassed
@@ -53,8 +61,6 @@ class CreateNewLobbyViewController: UIViewController {
         viewDidLoad()
     }
     
-    
-    
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -63,7 +69,7 @@ class CreateNewLobbyViewController: UIViewController {
         var emptyText = ""
         if lobbyNameTextField.text == "" {
             emptyText += "Lobby Name"
-        } else if descriptionTextField.text == "" {
+        } else if descriptionTextView.text == "" {
             emptyText += "Description"
         } else if numPlayersTextField.text == "" {
             emptyText += "Number Of Players Field"
@@ -104,7 +110,7 @@ class CreateNewLobbyViewController: UIViewController {
                 "lobbyName": lobbyNameTextField.text!,
                 "maxCapacity": Int(numPlayersTextField.text!)!,
                 "sportsID": sportLabel!,
-                "description": descriptionTextField.text!,
+                "description": descriptionTextView.text!,
                 "currentCapacity": 1,
                 "currentPlayers": userArray,
                 "location": locationAddressTextField.text!,
@@ -126,8 +132,8 @@ class CreateNewLobbyViewController: UIViewController {
             if lobbyNameTextField != nil {
                 vc.lobbyNamePassed = lobbyNameTextField.text!
             }
-            if descriptionTextField != nil {
-                vc.descriptionPassed = descriptionTextField.text!
+            if descriptionTextView != nil {
+                vc.descriptionPassed = descriptionTextView.text!
             }
             if numPlayersTextField != nil {
                 vc.numPlayersPassed = numPlayersTextField.text!
@@ -139,5 +145,12 @@ class CreateNewLobbyViewController: UIViewController {
         }
     }
     
+    func textViewDidBeginEditing(textView: UITextView) {
+        if textView.text == "Description" {
+            textView.text = ""
+            textView.textColor = UIColor.blackColor()
+        }
+        
+    }
     
 }
