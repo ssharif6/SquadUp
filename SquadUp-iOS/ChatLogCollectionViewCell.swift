@@ -52,7 +52,6 @@ class ChatLogCollectionViewCell: UICollectionViewCell {
         
         addConstraintsWithFormat("H:|-8-[v0(30)]", view: profileImageView)
         addConstraintsWithFormat("V:[v0(30)]|", view: profileImageView)
-        profileImageView.backgroundColor = UIColor.redColor()
     }
     
     

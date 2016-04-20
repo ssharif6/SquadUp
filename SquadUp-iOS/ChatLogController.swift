@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UITextViewDelegate {
     
     private let cellId = "cellId"
     
@@ -22,11 +22,34 @@ class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlo
         }
     }
     
+    let textTextView: UITextView = {
+        let textView = UITextView()
+    
+        
+        textView.text = "TEST"
+        let size = CGSizeMake(250, 1000)
+        let options = NSStringDrawingOptions.UsesFontLeading.union(.UsesLineFragmentOrigin)
+        let estimatedFrame = NSString(string: textView.text).boundingRectWithSize(size, options: options, attributes: [NSFontAttributeName: UIFont.systemFontOfSize(18)], context: nil)
+        textView.frame = CGRectMake(8, UIScreen.mainScreen().bounds.size.height - 80, UIScreen.mainScreen().bounds.size.width, estimatedFrame.height + 40)
+        textView.scrollEnabled = false
+        return textView
+    }()
+    
+    func textViewDidChange(textView: UITextView) {
+        let fixedWidth = textView.frame.size.width
+        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max - 100))
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max - 100))
+        var newFrame = textView.frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        textView.frame = newFrame;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = UIColor.whiteColor()
         collectionView?.registerClass(ChatLogCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.alwaysBounceVertical = true
+        setupViews()
         downloadChatHistory()
     }
     
@@ -46,8 +69,19 @@ class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlo
         let options = NSStringDrawingOptions.UsesFontLeading.union(.UsesLineFragmentOrigin)
         let estimatedFrame = NSString(string: messageText).boundingRectWithSize(size, options: options, attributes: [NSFontAttributeName: UIFont.systemFontOfSize(18)], context: nil)
         
-        cell.messageTextView.frame = CGRectMake(48 + 8, 0, estimatedFrame.width + 16, estimatedFrame.height + 20)
-        cell.textBubbleView.frame = CGRectMake(48, 0, estimatedFrame.width + 16 + 15, estimatedFrame.height + 15)
+        if self.messagesArray[indexPath.item].isSender.boolValue {
+            cell.messageTextView.frame = CGRectMake(48 + 8, 0, estimatedFrame.width + 16, estimatedFrame.height + 20)
+            cell.textBubbleView.frame = CGRectMake(48, 0, estimatedFrame.width + 16 + 15, estimatedFrame.height + 15)
+            cell.profileImageView.hidden = false
+        } else {
+            cell.profileImageView.hidden = true
+            cell.textBubbleView.backgroundColor = UIColor.rgb(230, green: 230, blue: 230)
+            cell.messageTextView.textColor = UIColor.blackColor()
+            cell.messageTextView.frame = CGRectMake(view.frame.width - estimatedFrame.width - 16 - 16, 0, estimatedFrame.width + 16, estimatedFrame.height + 20)
+            cell.textBubbleView.frame = CGRectMake(view.frame.width - estimatedFrame.width - 16 - 8 - 16, 0, estimatedFrame.width + 16 + 15, estimatedFrame.height + 15)
+        }
+        
+        
         return cell
     }
     
@@ -81,7 +115,12 @@ class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlo
             self.collectionView!.reloadData()
         })
     }
+    
+    func setupViews() {
+        self.view.addSubview(textTextView)
+        
+        // Constraints
+        
+    }
 
 }
-
-    

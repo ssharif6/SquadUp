@@ -34,7 +34,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegat
         locationMapView.showsUserLocation = true
         searchBar.delegate = self
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MapViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
     }
