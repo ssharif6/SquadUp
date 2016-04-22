@@ -239,6 +239,7 @@
 			"sportsID": "Tennis",
 			"date": "29-02-2016 14:00",
 			"description": "",
+            "distance": "0.9",
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,

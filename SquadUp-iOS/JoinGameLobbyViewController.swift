@@ -26,10 +26,12 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     var ButtonCells = [LiquidFloatingCell]()
     var floatingActionButton: LiquidFloatingActionButton!
     
+
     override func viewDidAppear(animated: Bool) {
         self.sportsTableView.reloadData()
         sportsTableView.dataSource = self
         sportsTableView.delegate = self
+
         createFloatingButtons()
 
 //        sportLabel.text = sportPassed + " Lobby"
@@ -52,6 +54,16 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         })
 
     }
+    
+    func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
+        self.floatingActionButton.hidden = true
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        self.floatingActionButton.hidden = false
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sportsTableView.dataSource = self
@@ -123,7 +135,8 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     // For floating button
     private func createFloatingButtons() {
-        ButtonCells.append(createButtonCell("Steph"))
+        ButtonCells.removeAll()
+        ButtonCells.append(createButtonCell("mapIconLarge"))
         ButtonCells.append(createButtonCell("Steph"))
         ButtonCells.append(createButtonCell("Steph"))
         ButtonCells.append(createButtonCell("Steph"))
@@ -138,6 +151,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     private func createButton(frame: CGRect, style: LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton {
         let floatingActionButton = LiquidFloatingActionButton(frame: frame)
+        floatingActionButton.color = UIColor.rgb(0, green: 172, blue: 237)
         floatingActionButton.animateStyle = style
         floatingActionButton.dataSource = self
         floatingActionButton.delegate = self
@@ -163,6 +177,7 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         } else if index == 1 {
             self.navigationController?.pushViewController(CreateNewLobbyViewController(), animated: true)
         }
+        liquidFloatingActionButton.close()
         // First button Map
         // Second button Find by Game Name
         // Create Game
