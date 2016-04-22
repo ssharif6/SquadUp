@@ -14,7 +14,10 @@
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
 			"longitude": -122.315500,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game2": {
 			"registered": "yes",
@@ -30,7 +33,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game3": {
 			"registered": "no",
@@ -46,7 +52,10 @@
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
 			"longitude": -122.315500,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game4": {
 			"registered": "no",
@@ -62,7 +71,10 @@
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
 			"longitude": -122.315500,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game5": {
 			"registered": "no",
@@ -78,7 +90,10 @@
 			"address": "5041 12th Ave NE Seattle, WA 98105",
 			"latitude": 47.666141,
 			"longitude": -122.315500,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game6": {
 			"registered": "no",
@@ -94,7 +109,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game7": {
 			"registered": "no",
@@ -110,7 +128,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game8": {
 			"registered": "no",
@@ -126,7 +147,10 @@
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
 			"longitude": -122.308287,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game9": {
 			"registered": "no",
@@ -142,7 +166,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game10": {
 			"registered": "no",
@@ -158,7 +185,10 @@
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
 			"longitude": -122.308287,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game11": {
 			"registered": "no",
@@ -174,7 +204,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game12": {
 			"registered": "no",
@@ -190,12 +223,16 @@
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
 			"longitude": -122.334375,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game13": {
 			"registered": "no",
 			"currentCapacity": 3,
 			"currentPlayers": ["f880a1e2-d4de-4ca2-84a1-42e843618d25", "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2", "1e2e7e03-1499-49c3-bc8d-0f0c39cf9d49"],
+			"distance": "0.6",
 			"id": "game0013",
 			"lobbyName": "2 v 2",
 			"maxCapacity": 4,
@@ -205,7 +242,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game14": {
 			"registered": "no",
@@ -221,7 +261,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game15": {
 			"registered": "yes",
@@ -237,7 +280,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game16": {
 			"registered": "yes",
@@ -253,7 +299,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game17": {
 			"registered": "no",
@@ -269,7 +318,10 @@
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
 			"longitude": -122.334375,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game18": {
 			"registered": "no",
@@ -285,7 +337,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game19": {
 			"registered": "no",
@@ -301,7 +356,10 @@
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
 			"longitude": -122.334375,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game20": {
 			"registered": "no",
@@ -317,7 +375,10 @@
 			"address": "5520 Ravenna Ave NE, Seattle, WA 98105",
 			"latitude": 47.674220,
 			"longitude": -122.308287,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game21": {
 			"registered": "yes",
@@ -333,7 +394,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "intermediate"
+			"skillLevel": 2,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game22": {
 			"registered": "yes",
@@ -349,7 +413,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game23": {
 			"registered": "yes",
@@ -365,7 +432,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game24": {
 			"registered": "yes",
@@ -381,7 +451,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "beginner"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game25": {
 			"registered": "no",
@@ -397,7 +470,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": "advanced"
+			"skillLevel": 3,
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game26": {
 			"registered": "no",
@@ -413,7 +489,10 @@
 			"address": "3924 Montlake Blvd NE, Seattle, WA 98195",
 			"latitude": 47.653678,
 			"longitude": -122.301278,
-			"skillLevel": ""
+			"skillLevel": "",
+			"city": "Seattle",
+			"state": "WA"
+
 		},
 		"game27": {
 			"registered": "no",
@@ -429,65 +508,10 @@
 			"address": "2101 N Northlake Way, Seattle, WA 98103",
 			"latitude": 47.645638,
 			"longitude": -122.334375,
-			"skillLevel": "beginner"
-		}
-	},
-	"posts": {
-		"post2": {
-			"activity": "Playing Basketball",
-			"id": "9cf7d719-d67b-4a1e-88e5-4c0c12deb7b1",
-			"name": "Lyndon Anderson",
-			"numLikes": 13,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/549400_921117804604935_7705884156376729906_n.jpg?oh=07e233bf9f626b03366b5d957ab029ff&oe=5759C6DF"
-		},
-		"post3": {
-			"activity": "Playing Soccer",
-			"id": "8d3727d0-cfe1-4c21-8934-7dd5fdf1f923",
-			"name": "Ronaldo Sanchez",
-			"numLikes": 142,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12074832_10153775433927164_5907529625463796036_n.jpg?oh=c2612d84ea69b047c8f80aa59deb6efc&oe=57566241"
-		},
-		"post4": {
-			"activity": "Taking a break",
-			"name": "Dwight Gray",
-			"id": "48dc592b-3471-48a1-bcc9-e990abccf8fa",
-			"numLikes": 23,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10996479_852065677885_6552232101526768372_n.jpg?oh=4f46ab7d83bcf1075a5eee598221e6ad&oe=5724ADE6"
-		},
-		"post5": {
-			"activity": "Playing ultimate Frisbee",
-			"name": "Nicolas Rivera",
-			"id": "4881988c-a78e-4ce6-af46-73e265bf002c",
-			"numLikes": 10,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11990645_728179417314752_2724151631881485315_n.jpg?oh=a8e7b0cbf362ee1e161fea419f71f7e4&oe=57707CE0"
-		},
-		"post6": {
-			"activity": "Playing Football",
-			"name": "Samuel Tran",
-			"id": "66bad232-2bf0-453a-8e70-f727fb7514b8",
-			"numLikes": 59,
-			"profileImageUrl": "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/12642940_10205708269974139_2430665863436191798_n.jpg?oh=c596850aeb218eb886947c8630a0e5dd&oe=575FF63C"
-		},
-		"post7": {
-			"activity": "Playing Soccer",
-			"name": "Adrian Matthews",
-			"id": "d2fffce8-e6e2-4edd-83a5-5532ea4fd4a2",
-			"numLikes": 243,
-			"profileImageUrl": "https://usatthebiglead.files.wordpress.com/2014/09/adrian-peterson-minnesota-vikings.jpg?w=1000&h=687"
-		},
-		"post8": {
-			"activity": "Taking a break",
-			"name": "Ernesto Valdez",
-			"id": "39287cf7-aa96-420d-9688-1affa01ad831",
-			"numLikes": 98,
-			"profileImageUrl": "https://i.ytimg.com/vi/2BxJP_LVGbI/maxresdefault.jpg"
-		},
-		"post9": {
-			"activity": "Playing Baseball",
-			"name": "Jacob Ramirez",
-			"id": "79db5730-0641-447e-8935-fd09b8928189",
-			"numLikes": 32,
-			"profileImageUrl": "https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11012885_1243790262304141_2628282675820046074_n.jpg?oh=079f4b1904c65146900997417146ea87&oe=576D376D"
+			"skillLevel": 1,
+			"city": "Seattle",
+			"state": "WA"
+
 		}
 	},
 	"notifications": {
