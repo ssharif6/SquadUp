@@ -15,6 +15,11 @@ class RivalsMessagesViewController: UIViewController, UITableViewDelegate, UITab
     var userToPass: UserModel!
     @IBOutlet weak var rivalsTableView: UITableView!
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.hidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
