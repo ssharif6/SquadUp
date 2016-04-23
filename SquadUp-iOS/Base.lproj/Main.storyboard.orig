@@ -1241,7 +1241,11 @@
                                         <rect key="frame" x="0.0" y="28" width="401" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="80J-s3-rds" id="7nJ-ke-9jd">
+<<<<<<< HEAD
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+=======
                                             <rect key="frame" x="0.0" y="0.0" width="401" height="99"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kua-UE-Bx4">
@@ -1595,7 +1599,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-qc-drV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="3320" y="3232"/>
+=======
             <point key="canvasLocation" x="3393" y="3196"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
         </scene>
         <!--Join Game Lobby View Controller-->
         <scene sceneID="v9F-7n-EfK">
@@ -1717,7 +1725,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="358" height="68"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XRM-zo-294" id="lVb-BS-wsE">
+<<<<<<< HEAD
+                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="68"/>
+=======
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="67"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPS-tP-yRb">
@@ -1868,7 +1880,11 @@
                                         <rect key="frame" x="0.0" y="28" width="401" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5yF-PQ-CIQ" id="32v-lw-4cX">
+<<<<<<< HEAD
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="72"/>
+=======
                                             <rect key="frame" x="0.0" y="0.0" width="401" height="71"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHr-HX-5DK">
@@ -1884,7 +1900,11 @@
                                         <rect key="frame" x="0.0" y="100" width="401" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gk9-kQ-eut" id="Iyf-rj-uNX">
+<<<<<<< HEAD
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="72"/>
+=======
                                             <rect key="frame" x="0.0" y="0.0" width="401" height="71"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intermediate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih5-Up-oku">
@@ -1900,7 +1920,11 @@
                                         <rect key="frame" x="0.0" y="172" width="401" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G77-FX-5CU" id="7TM-zc-OV7">
+<<<<<<< HEAD
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="72"/>
+=======
                                             <rect key="frame" x="0.0" y="0.0" width="401" height="71"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advanced" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1E-4Y-sgH">
@@ -2384,8 +2408,14 @@
         <segue reference="vCP-ZV-YwD"/>
         <segue reference="fRU-1G-gzZ"/>
         <segue reference="acs-sk-78Z"/>
+<<<<<<< HEAD
+        <segue reference="PZa-H8-OFa"/>
+        <segue reference="vCP-ZV-YwD"/>
+        <segue reference="R6O-au-n6v"/>
+=======
         <segue reference="76D-H0-YWa"/>
         <segue reference="geZ-zk-Vby"/>
+>>>>>>> d95d64fb2d9412e8f1b5d888acfa292a38019da1
         <segue reference="wKG-yc-iqR"/>
     </inferredMetricsTieBreakers>
 </document>
