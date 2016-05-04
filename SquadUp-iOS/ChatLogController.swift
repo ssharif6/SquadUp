@@ -83,11 +83,12 @@ class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlo
             "dateCreated": timestamp,
             "messageBody": inputTextField.text!,
             "sentFromID": userUnarchived.userKey,
-            "isSender": true,
+            "isSender": false,
             "messageId": "TestId"
         ]
         messagePost.setValue(message)
         sentUserMessagePost.setValue(message)
+        self.inputTextField.text = ""
     }
     
     func handleKeyboardNotification(notification: NSNotification) {
@@ -134,8 +135,30 @@ class ChatLogController: UICollectionViewController, UICollectionViewDelegateFlo
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! ChatLogCollectionViewCell
         cell.messageTextView.text = self.messagesArray[indexPath.item].messageBody
-        
-        cell.profileImageView.image = UIImage(named: "Steph")
+        if(self.messagesArray[indexPath.item].isSender) {
+            let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+            let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+            let urlRival = NSURL(string: userUnarchived.profileImageURL)
+            if userUnarchived.profileImageURL == "" {
+                cell.profileImageView.image = UIImage(named: "defaultProfile")
+            } else {
+                let data = NSData(contentsOfURL: urlRival!)
+                if data != nil {
+                    cell.profileImageView.image = UIImage(data: data!)
+                }
+            }
+        } else {
+            let urlRival = NSURL(string: userPassed.profileImageURL)
+            if userPassed.profileImageURL == "" {
+                cell.profileImageView.image = UIImage(named: "defaultProfile")
+            } else {
+                let data = NSData(contentsOfURL: urlRival!)
+                if data != nil {
+                    cell.profileImageView.image = UIImage(data: data!)
+                }
+            }
+        }
+
         
         let messageText = messagesArray[indexPath.item].messageBody
         let size = CGSizeMake(250, 1000)
