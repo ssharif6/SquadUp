@@ -23,8 +23,6 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
         navigationController?.navigationBar.tintColor = UIColor.rgb(0, green: 171, blue: 236)
         
         parseData()
-        
-        
     }
     
     // Mark: Delegate Methods
@@ -113,7 +111,7 @@ class FeedCell: UICollectionViewCell {
     override var highlighted: Bool {
         didSet {
             backgroundColor = highlighted ? UIColor.rgb(0, green: 172, blue: 237) : UIColor.whiteColor()
-            sportLabel.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
+            labelSport.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
             distanceLabel.textColor = highlighted ? UIColor.whiteColor() : UIColor.lightGrayColor()
             sportInformationTextView.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
             numPeopleGoingLabel.textColor = highlighted ? UIColor.whiteColor() : UIColor.lightGrayColor()
@@ -126,25 +124,22 @@ class FeedCell: UICollectionViewCell {
     
     func configureCell(gameLobby: LobbyGameModel) {
         // set all the variables here
-//        sportLabel.text = gameLobby.sport
+        labelSport.text = gameLobby.sport + " " + gameLobby.description
         distanceLabel.text = gameLobby.distance + " Mi"
         sportInformationTextView.text = gameLobby.description
         locationButton.setImage(UIImage(named: "mapIconSmall-12"), forState: .Normal)
-        sportBackgroundImageView.image = UIImage(named: gameLobby.sport + "Pic")
+        sportBackgroundImageView.image = UIImage(named: gameLobby.sport + "Base")
         joinButton.setTitle("Join", forState: .Normal)
         joinButton.setImage(UIImage(named: "\(gameLobby.sport)JoinIconSmall"), forState: .Normal)
         numPeopleGoingLabel.text = "\(gameLobby.currentCapacity) People Going" + "     37 Comments"
     }
     
-    let sportLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 2
-        let attributedText = NSMutableAttributedString(string: "Tennis", attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(22)])
-        attributedText.appendAttributedString(NSAttributedString(string: "\n2016-04-15 Fri at 6:10", attributes: [NSFontAttributeName: UIFont.systemFontOfSize(14), NSForegroundColorAttributeName: UIColor(red: 155/255, green: 161/255, blue: 171/255, alpha: 1)]))
-        label.attributedText = attributedText
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 4
-        attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.string.characters.count))
+    
+    let labelSport: UILabel = {
+       let label = UILabel()
+        label.text = "Soccer 11 v 11"
+        label.font = UIFont(name: "Arial", size: 28)
+        label.textColor = UIColor.whiteColor()
         return label
     }()
     
@@ -226,6 +221,12 @@ class FeedCell: UICollectionViewCell {
     
     
     func setupViews() {
+        
+        let centerX = NSLayoutConstraint(item: locationButton, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
+        
+        let centerXSportLabel = NSLayoutConstraint(item: labelSport, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
+        let centerYSportLabel = NSLayoutConstraint(item: labelSport, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0)
+
         backgroundColor = UIColor.whiteColor()
         addSubview(sportInformationTextView)
         addSubview(sportBackgroundImageView)
@@ -234,15 +235,18 @@ class FeedCell: UICollectionViewCell {
         addSubview(joinButton)
         addSubview(favoriteButton)
         addSubview(shareButton)
-//        addSubview(sportLabel)
+        addSubview(labelSport)
         addSubview(distanceLabel)
         addSubview(locationButton)
         
         addConstraintsWithFormat("H:[v0]-14-|", view: distanceLabel)
         addConstraintsWithFormat("V:|-20-[v0]", view: distanceLabel)
-        addConstraintsWithFormat("H:|-8-[v0]-8-|", view: sportBackgroundImageView)
+        self.labelSport.translatesAutoresizingMaskIntoConstraints = false
+        self.addConstraints([centerXSportLabel])
+        addConstraintsWithFormat("V:|-100-[v0]", view: labelSport)
+        addConstraintsWithFormat("H:|[v0]|", view: sportBackgroundImageView)
 //        addConstraintsWithFormat("V:|-52-[v0(44)]-4-[v1]-8-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportInformationTextView, sportBackgroundImageView, numPeopleGoingLabel, dividerLineView, joinButton)
-        addConstraintsWithFormat("V:|-8-[v0]-4-[v1(44)]-6-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportBackgroundImageView, sportInformationTextView, numPeopleGoingLabel, dividerLineView, joinButton)
+        addConstraintsWithFormat("V:|[v0]-4-[v1(44)]-6-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportBackgroundImageView, sportInformationTextView, numPeopleGoingLabel, dividerLineView, joinButton)
         addConstraintsWithFormat("H:[v0]-8-|", view: sportInformationTextView)
         addConstraintsWithFormat("H:|-12-[v0]-12-|", view: numPeopleGoingLabel)
         addConstraintsWithFormat("H:|-12-[v0]-12-|", view: dividerLineView)
@@ -253,7 +257,6 @@ class FeedCell: UICollectionViewCell {
         addConstraintsWithFormat("V:[v0(44)]|", view: shareButton)
         
 //        addConstraintsWithFormat("H:|-65-[v0]|", view: locationButton)
-        let centerX = NSLayoutConstraint(item: locationButton, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
         self.locationButton.translatesAutoresizingMaskIntoConstraints = false
         addConstraintsWithFormat("V:[v0]-150-|", view: locationButton)
         self.addConstraints([centerX])
