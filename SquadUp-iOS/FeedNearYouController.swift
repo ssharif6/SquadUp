@@ -124,11 +124,12 @@ class FeedCell: UICollectionViewCell {
     
     func configureCell(gameLobby: LobbyGameModel) {
         // set all the variables here
-        labelSport.text = gameLobby.sport + " " + gameLobby.description
+        labelSport.text = gameLobby.sport + " " + gameLobby.lobbyName
+        labelSport.textColor = UIColor.whiteColor()
         distanceLabel.text = gameLobby.distance + " Mi"
         sportInformationTextView.text = gameLobby.description
         locationButton.setImage(UIImage(named: "mapIconSmall-12"), forState: .Normal)
-        sportBackgroundImageView.image = UIImage(named: gameLobby.sport + "Base")
+        sportBackgroundImageView.image = UIImage(named: gameLobby.sport + "Pic")
         joinButton.setTitle("Join", forState: .Normal)
         joinButton.setImage(UIImage(named: "\(gameLobby.sport)JoinIconSmall"), forState: .Normal)
         numPeopleGoingLabel.text = "\(gameLobby.currentCapacity) People Going" + "     37 Comments"
@@ -138,7 +139,7 @@ class FeedCell: UICollectionViewCell {
     let labelSport: UILabel = {
        let label = UILabel()
         label.text = "Soccer 11 v 11"
-        label.font = UIFont(name: "Arial", size: 28)
+        label.font = UIFont(name: "Arial", size: 34)
         label.textColor = UIColor.whiteColor()
         return label
     }()
@@ -163,8 +164,8 @@ class FeedCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Tennis")
         imageView.contentMode = .ScaleToFill
-        imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 8
+//        imageView.layer.masksToBounds = true
+//        imageView.layer.cornerRadius = 8
         return imageView
     }()
     
