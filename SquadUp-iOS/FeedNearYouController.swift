@@ -8,24 +8,43 @@
 
 import UIKit
 import Firebase
+import CoreLocation
 
-class FeedNearYouController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIPopoverPresentationControllerDelegate {
+class FeedNearYouController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIPopoverPresentationControllerDelegate, CLLocationManagerDelegate {
     private var CellId = "cellId"
     private var lobbyGames = [LobbyGameModel]()
     private var lobbyToPass: LobbyGameModel!
+    var locationManager: CLLocationManager = CLLocationManager()
+    var currentLocation: CLLocationCoordinate2D!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
         navigationItem.title = "Events Near You"
         collectionView?.alwaysBounceVertical = true
-        collectionView?.backgroundColor = UIColor.lightGrayColor()
+        collectionView?.backgroundColor = UIColor.rgb(220, green: 220, blue: 220)
         collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: CellId)
         navigationController?.navigationBar.tintColor = UIColor.rgb(0, green: 171, blue: 236)
-        
         parseData()
+//        lobbyGames.sortInPlace { (element1, element2) -> Bool in
+//            let a: Double? = Double(element1.distance)
+//            let b: Double? = Double(element2.distance)
+//            return a < b
+//        }
     }
     
     // Mark: Delegate Methods
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations.last!
+        self.currentLocation = userLocation.coordinate
+    }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return lobbyGames.count
@@ -91,6 +110,8 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
                     if let lobbyGameDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let lobbyGame = LobbyGameModel(lobbyKey: key, dictionary: lobbyGameDict)
+                        lobbyGame.calculateDistanceAway(self.currentLocation)
+                        // Post this to firebase
                         self.lobbyGames.append(lobbyGame)
                     }
                 }
@@ -99,7 +120,23 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
         })
     }
     
-    
+    func postNewLocationDataToFirebase() {
+        
+//        let messagePost = DataService.ds.REF_USER_CURRENT.childByAppendingPath("messages").childByAppendingPath(userPassed.userKey).childByAutoId()
+//        let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
+//        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
+//        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
+//        let sentUserMessagePost = DataService.ds.REF_USERS.childByAppendingPath(userPassed.userKey).childByAppendingPath("messages").childByAppendingPath(userUnarchived.userKey).childByAppendingPath("messages").childByAutoId()
+//        
+//        let message: Dictionary<String, AnyObject> = [
+//            "dateCreated": timestamp,
+//            "messageBody": inputTextField.text!,
+//            "sentFromID": userUnarchived.userKey,
+//            "isSender": false,
+//            "messageId": "TestId"
+//        ]
+//        messagePost.setValue(message)
+    }
 }
 
 class FeedCell: UICollectionViewCell {
@@ -111,9 +148,9 @@ class FeedCell: UICollectionViewCell {
     override var highlighted: Bool {
         didSet {
             backgroundColor = highlighted ? UIColor.rgb(0, green: 172, blue: 237) : UIColor.whiteColor()
-            labelSport.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
+//            labelSport.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
             distanceLabel.textColor = highlighted ? UIColor.whiteColor() : UIColor.lightGrayColor()
-            sportInformationTextView.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
+//            sportInformationTextView.textColor = highlighted ? UIColor.whiteColor() : UIColor.blackColor()
             numPeopleGoingLabel.textColor = highlighted ? UIColor.whiteColor() : UIColor.lightGrayColor()
         }
     }
@@ -122,17 +159,21 @@ class FeedCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Data of Cell set here
     func configureCell(gameLobby: LobbyGameModel) {
         // set all the variables here
         labelSport.text = gameLobby.sport + " " + gameLobby.lobbyName
         labelSport.textColor = UIColor.whiteColor()
         distanceLabel.text = gameLobby.distance + " Mi"
         sportInformationTextView.text = gameLobby.description
+        var locationButtonText = "\(gameLobby.city), \(gameLobby.state)"
+        locationButton.setTitle(locationButtonText, forState: .Normal)
         locationButton.setImage(UIImage(named: "mapIconSmall-12"), forState: .Normal)
         sportBackgroundImageView.image = UIImage(named: gameLobby.sport + "Pic")
         joinButton.setTitle("Join", forState: .Normal)
         joinButton.setImage(UIImage(named: "\(gameLobby.sport)JoinIconSmall"), forState: .Normal)
-        numPeopleGoingLabel.text = "\(gameLobby.currentCapacity) People Going" + "     37 Comments"
+        numPeopleGoingLabel.text = "\(gameLobby.currentCapacity) People Going"
+        dateOfGameLabel.text = "\(gameLobby.date)"
     }
     
     
@@ -147,7 +188,7 @@ class FeedCell: UICollectionViewCell {
     let distanceLabel: UILabel = {
         let label = UILabel()
         label.text = "0.9 Mi"
-        label.font = UIFont(name: "Arial", size: 14)
+        label.font = UIFont(name: "Arial", size: 18)
         label.textColor = UIColor.lightGrayColor()
         return label
     }()
@@ -169,10 +210,18 @@ class FeedCell: UICollectionViewCell {
         return imageView
     }()
     
+    let dateOfGameLabel: UILabel = {
+       let label = UILabel()
+        label.text = "Date of Game"
+        label.textColor = UIColor.whiteColor()
+        label.font = UIFont(name: "Arial", size: 16)
+        return label
+    }()
+    
     let numPeopleGoingLabel: UILabel = {
         let label = UILabel()
-        label.text = "21 People Going  37 Comments"
-        label.font = UIFont.systemFontOfSize(12)
+        label.text = "21 People Going"
+        label.font = UIFont.systemFontOfSize(14)
         label.textColor = UIColor.rgb(155, green: 161, blue: 171)
         return label
     }()
@@ -195,14 +244,13 @@ class FeedCell: UICollectionViewCell {
     }()
     
 //    let commentButton = FeedCell.buttonForTitle("Comment", imageName: "messageIconSmall")
-    let favoriteButton = FeedCell.buttonForTitle("Favorite", imageName: "filledStar")
+    let favoriteButton = FeedCell.buttonForTitle("Favorite", imageName: "UnfilledStarSmall")
     let shareButton = FeedCell.buttonForTitle("Share", imageName: "shareIconSmall")
     
     // For 
     static func buttonForTitle(title: String, imageName: String) -> UIButton {
             let button = UIButton()
             button.setTitle(title, forState: .Normal)
-        
             button.titleLabel!.font = UIFont(name: "Arial", size: 18)
             button.setTitleColor(UIColor.rgb(143, green: 150, blue: 162), forState: .Normal)
             button.setImage(UIImage(named: imageName), forState: .Normal)
@@ -226,10 +274,13 @@ class FeedCell: UICollectionViewCell {
         let centerX = NSLayoutConstraint(item: locationButton, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
         
         let centerXSportLabel = NSLayoutConstraint(item: labelSport, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
+        
+        let centerXDateLabel = NSLayoutConstraint(item: dateOfGameLabel, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
+        
         let centerYSportLabel = NSLayoutConstraint(item: labelSport, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0)
 
         backgroundColor = UIColor.whiteColor()
-        addSubview(sportInformationTextView)
+//        addSubview(sportInformationTextView)
         addSubview(sportBackgroundImageView)
         addSubview(numPeopleGoingLabel)
         addSubview(dividerLineView)
@@ -239,6 +290,7 @@ class FeedCell: UICollectionViewCell {
         addSubview(labelSport)
         addSubview(distanceLabel)
         addSubview(locationButton)
+        addSubview(dateOfGameLabel)
         
         addConstraintsWithFormat("H:[v0]-14-|", view: distanceLabel)
         addConstraintsWithFormat("V:|-20-[v0]", view: distanceLabel)
@@ -247,20 +299,20 @@ class FeedCell: UICollectionViewCell {
         addConstraintsWithFormat("V:|-100-[v0]", view: labelSport)
         addConstraintsWithFormat("H:|[v0]|", view: sportBackgroundImageView)
 //        addConstraintsWithFormat("V:|-52-[v0(44)]-4-[v1]-8-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportInformationTextView, sportBackgroundImageView, numPeopleGoingLabel, dividerLineView, joinButton)
-        addConstraintsWithFormat("V:|[v0]-4-[v1(44)]-6-[v2(24)]-6-[v3(0.9)][v4(44)]|", view: sportBackgroundImageView, sportInformationTextView, numPeopleGoingLabel, dividerLineView, joinButton)
-        addConstraintsWithFormat("H:[v0]-8-|", view: sportInformationTextView)
+        addConstraintsWithFormat("V:|[v0]-4-[v1(24)]-6-[v2(0.9)][v3(44)]|", view: sportBackgroundImageView, numPeopleGoingLabel, dividerLineView, joinButton)
         addConstraintsWithFormat("H:|-12-[v0]-12-|", view: numPeopleGoingLabel)
         addConstraintsWithFormat("H:|-12-[v0]-12-|", view: dividerLineView)
         
         // Button Constraints
-        addConstraintsWithFormat("H:|[v0(v2)][v1(v2)][v2]|", view: joinButton, shareButton, favoriteButton)
+        addConstraintsWithFormat("H:|[v0(v2)][v1(v2)][v2]|", view: joinButton, favoriteButton, shareButton)
         addConstraintsWithFormat("V:[v0(44)]|", view: favoriteButton)
         addConstraintsWithFormat("V:[v0(44)]|", view: shareButton)
         
 //        addConstraintsWithFormat("H:|-65-[v0]|", view: locationButton)
         self.locationButton.translatesAutoresizingMaskIntoConstraints = false
         addConstraintsWithFormat("V:[v0]-150-|", view: locationButton)
-        self.addConstraints([centerX])
+        addConstraintsWithFormat("V:[v0]-120-|", view: dateOfGameLabel)
+        self.addConstraints([centerX, centerXDateLabel])
     }
     
 }

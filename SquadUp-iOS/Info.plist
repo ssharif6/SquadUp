@@ -78,6 +78,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow us to use Maps?</string>
+	<key>privacy - location usage description</key>
+	<string>Location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allow us to use Maps?</string>
 	<key>UIAppFonts</key>

@@ -2303,7 +2303,7 @@
         <scene sceneID="ESi-Na-abR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nN-2Z-7ny" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sports Feed" id="pbl-o5-nDV"/>
+                    <tabBarItem key="tabBarItem" title="Sports Feed" image="SportsFeedIcon" id="pbl-o5-nDV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="klb-aJ-FJw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2337,6 +2337,7 @@
         <image name="RecentHistoryAsset" width="284" height="369"/>
         <image name="Sign In Button" width="824" height="210"/>
         <image name="Soccer" width="1920" height="1080"/>
+        <image name="SportsFeedIcon" width="35" height="35"/>
         <image name="Steph" width="640" height="400"/>
         <image name="Tennis" width="1253" height="762"/>
         <image name="backgroundTellUsAboutYourself" width="1162" height="1999"/>

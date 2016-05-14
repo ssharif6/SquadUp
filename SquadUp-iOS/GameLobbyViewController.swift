@@ -162,6 +162,10 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+    func calculateDistance() {
+        
+    }
+    
     @IBAction func controlChanged(sender: AnyObject) {
         team1TableView.reloadData()
     }

@@ -15,6 +15,11 @@ class NotificaionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        displayedImage.layer.borderWidth = 1
+        displayedImage.layer.masksToBounds = false
+        displayedImage.layer.borderColor = UIColor.blackColor().CGColor
+        displayedImage.layer.cornerRadius = displayedImage.frame.height/2
+        displayedImage.clipsToBounds = true
     }
     
     func configureCell(notification: NotificationModel) {

@@ -27,10 +27,20 @@ class LobbyGameModel {
     private var _currentPlayersList = [UserModel]()
     private var _gameLatitude: Double!
     private var _gameLongitude: Double!
+    private var _city: String!
+    private var _state: String!
     
     var gameLocationCoordinate: CLLocationCoordinate2D {
         let coordinate = CLLocationCoordinate2DMake(_gameLatitude, _gameLongitude)
         return coordinate
+    }
+    
+    var state: String {
+        return _state
+    }
+    
+    var city: String {
+        return _city
     }
     
     var lobbyName: String {
@@ -66,7 +76,12 @@ class LobbyGameModel {
     }
     
     var distance: String {
-        return _distance
+        set (distanceParam) {
+            
+        }
+        get {
+            return _distance
+        }
     }
     
     var sport: String {
@@ -119,7 +134,13 @@ class LobbyGameModel {
         if let longitude = dictionary["longitude"] as? Double {
             self._gameLongitude = longitude
         }
+        if let city = dictionary["city"] as? String {
+            self._city = city
+        }
         
+        if let state = dictionary["state"] as? String {
+            self._state = state
+        }
     }
     
     func checkIfMaxCapacity() -> Bool{
@@ -146,6 +167,17 @@ class LobbyGameModel {
             return false // throw error
         }
         return true
+    }
+    
+    func calculateDistanceAway(coordinate: CLLocationCoordinate2D) {
+        let lobbyLocation = CLLocation(latitude: _gameLatitude, longitude: _gameLongitude)
+        let userLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let distance = userLocation.distanceFromLocation(lobbyLocation) * 0.000621371
+        let distanceRounded = Double(round(10*distance)/10)
+        let distancePost = DataService.ds.REF_LOBBYGAMES.childByAppendingPath(self._lobbyKey).childByAppendingPath("distance")
+        distancePost.setValue("\(distanceRounded)")
+        _distance = "\(distanceRounded)"
+        
     }
     
 }
