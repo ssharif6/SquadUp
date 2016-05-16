@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.1.5)
   - Cosmos (1.2.1)
   - Firebase (2.5.0)
+  - IOStickyHeader (0.3.0)
   - LiquidFloatingActionButton (0.1.1)
   - SwiftyJSON (2.3.2)
 
@@ -9,6 +10,7 @@ DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Cosmos (~> 1.2)
   - Firebase (>= 2.5.0)
+  - IOStickyHeader
   - LiquidFloatingActionButton (from `https://github.com/yoavlt/LiquidFloatingActionButton`,
     branch `swift-2.0`)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
@@ -32,6 +34,7 @@ SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
   Cosmos: 27ddd077ef5859659a4bbbbd84137ae717f020e8
   Firebase: 744617c0733b45198f9486ebd5cac64ec2d10d79
+  IOStickyHeader: 4550b071f8f3df73a361a3152aab8e5a3bae1ea8
   LiquidFloatingActionButton: dcdae1e59eb07eccbf60c027001a4d6731c345c9
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

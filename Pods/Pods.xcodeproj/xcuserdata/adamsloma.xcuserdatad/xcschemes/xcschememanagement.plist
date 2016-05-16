@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IOStickyHeader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LiquidFloatingActionButton-LiquidFloatingActionButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4C820BAC26950FF8198AB97CA1F92414</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>608B49B5DDACC601EE8044A1931993F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>976670A74A2CECE95A17748BCF89DB0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C37473F95FABEFCB16EE3272AEE2BEB6</key>
+		<key>B7E6FC3F7BD4E7296010469FA6023E8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>ECB4143196184B0E0EA02182DB2B9CCA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA924BDF3242401DCDAD15E594DAC0D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

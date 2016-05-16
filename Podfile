@@ -8,6 +8,7 @@ target 'SquadUp-iOS' do
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'Cosmos', '~> 1.2'
     pod 'LiquidFloatingActionButton', :git => 'https://github.com/yoavlt/LiquidFloatingActionButton', :branch => 'swift-2.0'
+    pod 'IOStickyHeader'
 end
 
 target 'SquadUp-iOSTests' do
