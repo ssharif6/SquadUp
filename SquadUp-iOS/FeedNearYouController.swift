@@ -16,9 +16,14 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
     private var lobbyToPass: LobbyGameModel!
     var locationManager: CLLocationManager = CLLocationManager()
     var currentLocation: CLLocationCoordinate2D!
+    var refreshControl: UIRefreshControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), forControlEvents: UIControlEvents.ValueChanged)
+        collectionView?.addSubview(refreshControl)
         self.locationManager = CLLocationManager()
         self.locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
@@ -37,6 +42,11 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
 //            let b: Double? = Double(element2.distance)
 //            return a < b
 //        }
+    }
+    
+    func refresh() {
+        parseData()
+        self.refreshControl.endRefreshing()
     }
     
     // Mark: Delegate Methods
@@ -110,7 +120,7 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
                     if let lobbyGameDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let lobbyGame = LobbyGameModel(lobbyKey: key, dictionary: lobbyGameDict)
-                        lobbyGame.calculateDistanceAway(self.currentLocation)
+//                        lobbyGame.calculateDistanceAway(self.currentLocation)
                         // Post this to firebase
                         self.lobbyGames.append(lobbyGame)
                     }
@@ -118,24 +128,6 @@ class FeedNearYouController: UICollectionViewController, UICollectionViewDelegat
             }
             self.collectionView?.reloadData()
         })
-    }
-    
-    func postNewLocationDataToFirebase() {
-        
-//        let messagePost = DataService.ds.REF_USER_CURRENT.childByAppendingPath("messages").childByAppendingPath(userPassed.userKey).childByAutoId()
-//        let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
-//        let user = NSUserDefaults.standardUserDefaults().dataForKey("userModelKey")!
-//        let userUnarchived = NSKeyedUnarchiver.unarchiveObjectWithData(user) as! UserModel
-//        let sentUserMessagePost = DataService.ds.REF_USERS.childByAppendingPath(userPassed.userKey).childByAppendingPath("messages").childByAppendingPath(userUnarchived.userKey).childByAppendingPath("messages").childByAutoId()
-//        
-//        let message: Dictionary<String, AnyObject> = [
-//            "dateCreated": timestamp,
-//            "messageBody": inputTextField.text!,
-//            "sentFromID": userUnarchived.userKey,
-//            "isSender": false,
-//            "messageId": "TestId"
-//        ]
-//        messagePost.setValue(message)
     }
 }
 

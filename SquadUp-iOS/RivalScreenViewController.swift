@@ -81,7 +81,7 @@ class RivalScreenViewController: UIViewController {
         
         let notificationPost = DataService.ds.REF_USERS.childByAppendingPath(key).childByAppendingPath("notifications").childByAutoId()
         notificationPost.setValue(notification)
-        performSegueWithIdentifier("ChallengeSentSegue", sender: nil)
+//        performSegueWithIdentifier("ChallengeSentSegue", sender: nil)
 
     }
     

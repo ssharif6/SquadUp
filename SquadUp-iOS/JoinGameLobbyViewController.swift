@@ -139,7 +139,6 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         ButtonCells.append(createButtonCell("mapIconLarge"))
         ButtonCells.append(createButtonCell("Steph"))
         ButtonCells.append(createButtonCell("Steph"))
-        ButtonCells.append(createButtonCell("Steph"))
 
 //        ButtonCells.append(createButtonCell("Use Maps Icon"))
         
@@ -172,10 +171,10 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
     
     func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         if(index == 0) {
-            let mapViewController = FindGameMapView()
-            self.navigationController?.pushViewController(mapViewController, animated: true)
+            openMapSearch()
         } else if index == 1 {
-            self.navigationController?.pushViewController(CreateNewLobbyViewController(), animated: true)
+            let vc = CreateNewLobbyViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         liquidFloatingActionButton.close()
         // First button Map
@@ -183,7 +182,6 @@ class JoinGameLobbyViewController: UIViewController, UITableViewDelegate, UITabl
         // Create Game
         // Find by Person
         // Find by Level
-        
     }
     
 }

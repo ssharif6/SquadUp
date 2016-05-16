@@ -2196,7 +2196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbt-5z-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3815" y="-447"/>
+            <point key="canvasLocation" x="3356" y="-1235"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ll-14-jG3">
@@ -2278,7 +2278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6I-dA-dce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3283" y="-447"/>
+            <point key="canvasLocation" x="3198" y="-354"/>
         </scene>
         <!--Rival-->
         <scene sceneID="NKp-5f-rcJ">
@@ -2385,8 +2385,8 @@
         <segue reference="vCP-ZV-YwD"/>
         <segue reference="fRU-1G-gzZ"/>
         <segue reference="acs-sk-78Z"/>
+        <segue reference="nGj-28-kZy"/>
         <segue reference="76D-H0-YWa"/>
         <segue reference="geZ-zk-Vby"/>
-        <segue reference="wKG-yc-iqR"/>
     </inferredMetricsTieBreakers>
 </document>
